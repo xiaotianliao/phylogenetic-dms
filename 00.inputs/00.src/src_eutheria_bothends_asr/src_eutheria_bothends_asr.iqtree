@@ -1,0 +1,415 @@
+IQ-TREE 2.3.4 COVID-edition built Jun 18 2024
+
+Input file name: /lustre/scratch126/gengen/projects/alpha-allostery-global/phylo-dms/02.mafft_out/src_eutheria_trimmed_bothends_einsi_082224_aligned.fasta
+Type of analysis: tree reconstruction
+Random seed number: 442041
+
+REFERENCES
+----------
+
+To cite IQ-TREE please use:
+
+Bui Quang Minh, Heiko A. Schmidt, Olga Chernomor, Dominik Schrempf,
+Michael D. Woodhams, Arndt von Haeseler, and Robert Lanfear (2020)
+IQ-TREE 2: New models and efficient methods for phylogenetic inference
+in the genomic era. Mol. Biol. Evol., in press.
+https://doi.org/10.1093/molbev/msaa015
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 164 sequences with 737 amino-acid sites
+Number of constant sites: 533 (= 72.3202% of all sites)
+Number of invariant (constant or ambiguous constant) sites: 533 (= 72.3202% of all sites)
+Number of parsimony informative sites: 64
+Number of distinct site patterns: 361
+
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: Q.mammal+I+R2
+
+State frequencies: (model)
+
+Model of rate heterogeneity: Invar+FreeRate with 2 categories
+Proportion of invariable sites: 0.5859
+Site proportion and rates:  (0.3216,0.7046) (0.0924,8.3684)
+
+ Category  Relative_rate  Proportion
+  0         0              0.5859
+  1         0.7046         0.3216
+  2         8.3684         0.0924
+
+MAXIMUM LIKELIHOOD TREE
+-----------------------
+
+Log-likelihood of the tree: -5309.5797 (s.e. 288.9930)
+Unconstrained log-likelihood (without tree): -3868.2282
+Number of free parameters (#branches + #model parameters): 328
+Akaike information criterion (AIC) score: 11275.1593
+Corrected Akaike information criterion (AICc) score: 11804.1397
+Bayesian information criterion (BIC) score: 12784.8082
+
+Total tree length (sum of branch lengths): 2.4247
+Sum of internal branch lengths: 0.3478 (14.3428% of tree length)
+
+WARNING: 91 near-zero internal branches (<0.0014) should be treated with caution
+         Such branches are denoted by '**' in the figure below
+
+NOTE: Tree is UNROOTED although outgroup taxon '28737_0|SRC|protooncogene_tyrosineprotein_kinase_Src' is drawn at root
+
++--28737_0|SRC|protooncogene_tyrosineprotein_kinase_Src
+| (Node1)
+|  +--9371_0|SRC|protooncogene_tyrosineprotein_kinase_Src_isoform_X1
++--| (Node2)
+|  +--1230840_0|SRC|protooncogene_tyrosineprotein_kinase_Src_isoform_X1
+|
+|                       +--9361_0|SRC|protooncogene_tyrosineprotein_kinase_Src
+|                    +--| (Node10)
+|                    |  +--51337_0|Src|protooncogene_tyrosineprotein_kinase_Src_isoform_X1
+|                 +**| (Node9)
+|                 |  |     +--246437_0|SRC|protooncogene_tyrosineprotein_kinase_Src_isoform_X1
+|                 |  |  +--| (Node12)
+|                 |  |  |  +--482537_0|SRC|protooncogene_tyrosineprotein_kinase_Src_isoform_X1
+|                 |  +--| (Node11)
+|                 |     |        +--379532_0|SRC|Tyrosineprotein_kinase
+|                 |     |     +**| (Node15)
+|                 |     |     |  +--30611_0|SRC|protooncogene_tyrosineprotein_kinase_Src
+|                 |     |  +**| (Node14)
+|                 |     |  |  +**9447_0|123622361|protooncogene_tyrosineprotein_kinase_Src
+|                 |     +--| (Node13)
+|                 |        +--30608_0|SRC|protooncogene_tyrosineprotein_kinase_Src_isoform_X1
+|              +**| (Node8)
+|              |  +**591936_0|SRC|protooncogene_tyrosineprotein_kinase_Src
+|           +--| (Node7)
+|           |  +--37293_0|SRC|Tyrosineprotein_kinase
+|        +--| (Node6)
+|        |  |                                               +**9793_0|SRC|protooncogene_tyrosineprotein_kinase_Src
+|        |  |                                            +--| (Node31)
+|        |  |                                            |  +**9796_0|SRC|Tyrosineprotein_kinase
+|        |  |                                         +--| (Node30)
+|        |  |                                         |  |  +--1868482_0|SRC|Tyrosineprotein_kinase
+|        |  |                                         |  +--| (Node32)
+|        |  |                                         |     |              +--10181_0|Src|protooncogene_tyrosineprotein_kinase_Src_isoform_X3
+|        |  |                                         |     |           +--| (Node37)
+|        |  |                                         |     |           |  +----------885580_0|Src|protooncogene_tyrosineprotein_kinase_Src
+|        |  |                                         |     |        +**| (Node36)
+|        |  |                                         |     |        |  +--10160_0|Src|Tyrosineprotein_kinase
+|        |  |                                         |     |     +--| (Node35)
+|        |  |                                         |     |     |  +--10141_0|SRC|Tyrosineprotein_kinase
+|        |  |                                         |     |  +--| (Node34)
+|        |  |                                         |     |  |  |     +**105255_0|122120491|protooncogene_tyrosineprotein_kinase_Src
+|        |  |                                         |     |  |  |  +--| (Node39)
+|        |  |                                         |     |  |  |  |  +**10020_0|Src|Tyrosineprotein_kinase
+|        |  |                                         |     |  |  +--| (Node38)
+|        |  |                                         |     |  |     +--214514_0|125353459|protooncogene_tyrosineprotein_kinase_Src
+|        |  |                                         |     +--| (Node33)
+|        |  |                                         |        |  +--30640_0|124977049|protooncogene_tyrosineprotein_kinase_Src_isoform_X1
+|        |  |                                         |        +--| (Node40)
+|        |  |                                         |           |  +**43179_0|SRC|Tyrosineprotein_kinase
+|        |  |                                         |           +--| (Node41)
+|        |  |                                         |              |  +**9995_0|124085578|Tyrosineprotein_kinase
+|        |  |                                         |              +**| (Node42)
+|        |  |                                         |                 +**9999_0|Src|protooncogene_tyrosineprotein_kinase_Src
+|        |  |                                      +**| (Node29)
+|        |  |                                      |  |                          +--79684_0|Src|protooncogene_tyrosineprotein_kinase_Src_isoform_X1
+|        |  |                                      |  |                       +--| (Node51)
+|        |  |                                      |  |                       |  +--1047088_0|119814345|protooncogene_tyrosineprotein_kinase_Src
+|        |  |                                      |  |                    +--| (Node50)
+|        |  |                                      |  |                    |  |  +--111838_0|121460112|protooncogene_tyrosineprotein_kinase_Src_isoform_X1
+|        |  |                                      |  |                    |  +**| (Node52)
+|        |  |                                      |  |                    |     +**447135_0|125404780|protooncogene_tyrosineprotein_kinase_Src_isoform_X1
+|        |  |                                      |  |                 +**| (Node49)
+|        |  |                                      |  |                 |  |                 +**10116_0|Src|Protooncogene_tyrosineprotein_kinase_Src
+|        |  |                                      |  |                 |  |              +--| (Node58)
+|        |  |                                      |  |                 |  |              |  +--10093_0|Src|protooncogene_tyrosineprotein_kinase_Src_isoform_X1
+|        |  |                                      |  |                 |  |           +**| (Node57)
+|        |  |                                      |  |                 |  |           |  +--61156_0|Src|protooncogene_tyrosineprotein_kinase_Src_isoform_X1
+|        |  |                                      |  |                 |  |        +**| (Node56)
+|        |  |                                      |  |                 |  |        |  +--491861_0|Src|protooncogene_tyrosineprotein_kinase_Src
+|        |  |                                      |  |                 |  |     +**| (Node55)
+|        |  |                                      |  |                 |  |     |  +**10117_0|Src|protooncogene_tyrosineprotein_kinase_Src_isoform_X1
+|        |  |                                      |  |                 |  |  +--| (Node54)
+|        |  |                                      |  |                 |  |  |  |  +**35658_0|Src|protooncogene_tyrosineprotein_kinase_Src_isoform_X1
+|        |  |                                      |  |                 |  |  |  +--| (Node59)
+|        |  |                                      |  |                 |  |  |     |  +**10089_0|Src|Tyrosineprotein_kinase
+|        |  |                                      |  |                 |  |  |     +--| (Node60)
+|        |  |                                      |  |                 |  |  |        +**10090_0|Src|Neuronal_protooncogene_tyrosineprotein_kinase_Src
+|        |  |                                      |  |                 |  +--| (Node53)
+|        |  |                                      |  |                 |     +--10047_0|Src|protooncogene_tyrosineprotein_kinase_Src_isoform_X1
+|        |  |                                      |  |              +**| (Node48)
+|        |  |                                      |  |              |  +--1026970_0|Src|protooncogene_tyrosineprotein_kinase_Src
+|        |  |                                      |  |           +--| (Node47)
+|        |  |                                      |  |           |  |        +**10041_0|Src|protooncogene_tyrosineprotein_kinase_Src_isoform_X1
+|        |  |                                      |  |           |  |     +--| (Node63)
+|        |  |                                      |  |           |  |     |  +**230844_0|Src|Tyrosineprotein_kinase
+|        |  |                                      |  |           |  |  +**| (Node62)
+|        |  |                                      |  |           |  |  |  +--10029_0|Src|Tyrosineprotein_kinase
+|        |  |                                      |  |           |  +--| (Node61)
+|        |  |                                      |  |           |     +**38674_0|118582036|protooncogene_tyrosineprotein_kinase_Src_isoform_X1
+|        |  |                                      |  |        +**| (Node46)
+|        |  |                                      |  |        |  |     +**81572_0|SRC|protooncogene_tyrosineprotein_kinase_Src_isoform_X1
+|        |  |                                      |  |        |  |  +--| (Node65)
+|        |  |                                      |  |        |  |  |  +--61853_0|SRC|protooncogene_tyrosineprotein_kinase_Src_isoform_X1
+|        |  |                                      |  |        |  +--| (Node64)
+|        |  |                                      |  |        |     +**9601_0|SRC|Tyrosineprotein_kinase
+|        |  |                                      |  |     +**| (Node45)
+|        |  |                                      |  |     |  +**9597_0|SRC|protooncogene_tyrosineprotein_kinase_Src_isoform_X1
+|        |  |                                      |  |  +**| (Node44)
+|        |  |                                      |  |  |  +**9598_0|SRC|Tyrosineprotein_kinase
+|        |  |                                      |  +--| (Node43)
+|        |  |                                      |     +**9606_0|SRC|Protooncogene_tyrosineprotein_kinase_Src
+|        |  |                                   +**| (Node28)
+|        |  |                                   |  +**9544_0|SRC|Tyrosineprotein_kinase
+|        |  |                                +**| (Node27)
+|        |  |                                |  +**9545_0|SRC|protooncogene_tyrosineprotein_kinase_Src_isoform_X1
+|        |  |                             +**| (Node26)
+|        |  |                             |  +**61622_0|SRC|protooncogene_tyrosineprotein_kinase_Src
+|        |  |                          +**| (Node25)
+|        |  |                          |  +**9565_0|SRC|protooncogene_tyrosineprotein_kinase_Src
+|        |  |                       +**| (Node24)
+|        |  |                       |  +**60711_0|SRC|protooncogene_tyrosineprotein_kinase_Src_isoform_X1
+|        |  |                    +**| (Node23)
+|        |  |                    |  +**39432_0|SRC|Tyrosineprotein_kinase
+|        |  |                 +**| (Node22)
+|        |  |                 |  +**61621_0|SRC|Tyrosineprotein_kinase
+|        |  |              +**| (Node21)
+|        |  |              |  +**9555_0|SRC|Tyrosineprotein_kinase
+|        |  |           +**| (Node20)
+|        |  |           |  +**9541_0|SRC|protooncogene_tyrosineprotein_kinase_Src_isoform_X1
+|        |  |        +**| (Node19)
+|        |  |        |  +**9568_0|SRC|Tyrosineprotein_kinase
+|        |  |     +**| (Node18)
+|        |  |     |  +--9483_0|SRC|Tyrosineprotein_kinase
+|        |  |  +**| (Node17)
+|        |  |  |  +**54180_0|SRC|protooncogene_tyrosineprotein_kinase_Src
+|        |  +**| (Node16)
+|        |     |  +**9515_0|SRC|Tyrosineprotein_kinase
+|        |     +--| (Node66)
+|        |        +**1737458_0|SRC|protooncogene_tyrosineprotein_kinase_Src_isoform_X1
+|     +--| (Node5)
+|     |  +--73337_0|LOC101404460|protooncogene_tyrosineprotein_kinase_Src_isoform_X1
+|  +--| (Node4)
+|  |  |              +--9785_0|SRC|protooncogene_tyrosineprotein_kinase_Src
+|  |  |           +--| (Node71)
+|  |  |           |  +--127582_0|LOC101342555|Tyrosineprotein_kinase
+|  |  |        +--| (Node70)
+|  |  |        |  +**9417_0|119063250|protooncogene_tyrosineprotein_kinase_Src
+|  |  |     +--| (Node69)
+|  |  |     |  |        +**41426_0|125122607|protooncogene_tyrosineprotein_kinase_Src
+|  |  |     |  |     +--| (Node74)
+|  |  |     |  |     |  +**9823_0|SRC|Tyrosineprotein_kinase
+|  |  |     |  |  +**| (Node73)
+|  |  |     |  |  |  |                 +**1574408_0|122449164|protooncogene_tyrosineprotein_kinase_Src
+|  |  |     |  |  |  |              +**| (Node80)
+|  |  |     |  |  |  |              |  +**9860_0|122682430|protooncogene_tyrosineprotein_kinase_Src
+|  |  |     |  |  |  |           +**| (Node79)
+|  |  |     |  |  |  |           |  +**59538_0|SRC|protooncogene_tyrosineprotein_kinase_Src
+|  |  |     |  |  |  |        +**| (Node78)
+|  |  |     |  |  |  |        |  +**9925_0|SRC|protooncogene_tyrosineprotein_kinase_Src_isoform_X1
+|  |  |     |  |  |  |     +**| (Node77)
+|  |  |     |  |  |  |     |  |  +**89462_0|SRC|protooncogene_tyrosineprotein_kinase_Src_isoform_X1
+|  |  |     |  |  |  |     |  +--| (Node81)
+|  |  |     |  |  |  |     |     |     +**72004_0|SRC|Tyrosineprotein_kinase
+|  |  |     |  |  |  |     |     |  +**| (Node83)
+|  |  |     |  |  |  |     |     |  |  |  +**9915_0|SRC|Tyrosineprotein_kinase
+|  |  |     |  |  |  |     |     |  |  +**| (Node84)
+|  |  |     |  |  |  |     |     |  |     +**43346_0|SRC|Tyrosineprotein_kinase
+|  |  |     |  |  |  |     |     +--| (Node82)
+|  |  |     |  |  |  |     |        +**9913_0|SRC|protooncogene_tyrosineprotein_kinase_Src_isoform_X1
+|  |  |     |  |  |  |  +--| (Node76)
+|  |  |     |  |  |  |  |  +--9880_0|SRC|Tyrosineprotein_kinase
+|  |  |     |  |  |  +--| (Node75)
+|  |  |     |  |  |     |                       +**9731_0|SRC|protooncogene_tyrosineprotein_kinase_Src_isoform_X1
+|  |  |     |  |  |     |                    +**| (Node92)
+|  |  |     |  |  |     |                    |  +**9739_0|SRC|Tyrosineprotein_kinase
+|  |  |     |  |  |     |                 +**| (Node91)
+|  |  |     |  |  |     |                 |  +**90247_0|SRC|protooncogene_tyrosineprotein_kinase_Src_isoform_X1
+|  |  |     |  |  |     |              +--| (Node90)
+|  |  |     |  |  |     |              |  +**9733_0|SRC|protooncogene_tyrosineprotein_kinase_Src_isoform_X1
+|  |  |     |  |  |     |           +**| (Node89)
+|  |  |     |  |  |     |           |  +-----------------------40151_0|SRC|protooncogene_tyrosineprotein_kinase_Src_isoform_X1
+|  |  |     |  |  |     |        +**| (Node88)
+|  |  |     |  |  |     |        |  +**42100_0|SRC|protooncogene_tyrosineprotein_kinase_Src
+|  |  |     |  |  |     |     +--| (Node87)
+|  |  |     |  |  |     |     |  +**9749_0|SRC|Tyrosineprotein_kinase
+|  |  |     |  |  |     |  +**| (Node86)
+|  |  |     |  |  |     |  |  +--118797_0|SRC|Tyrosineprotein_kinase
+|  |  |     |  |  |     +--| (Node85)
+|  |  |     |  |  |        |  +**9771_0|118881157|protooncogene_tyrosineprotein_kinase_Src_isoform_X1
+|  |  |     |  |  |        +--| (Node93)
+|  |  |     |  |  |           +--310752_0|SRC|Tyrosineprotein_kinase
+|  |  |     |  +--| (Node72)
+|  |  |     |     |  +--30538_0|SRC|Tyrosineprotein_kinase
+|  |  |     |     +--| (Node94)
+|  |  |     |        |     +**9838_0|SRC|protooncogene_tyrosineprotein_kinase_Src_isoform_X1
+|  |  |     |        |  +**| (Node96)
+|  |  |     |        |  |  +**419612_0|SRC|protooncogene_tyrosineprotein_kinase_Src_isoform_X1
+|  |  |     |        +**| (Node95)
+|  |  |     |           +**9837_0|SRC|protooncogene_tyrosineprotein_kinase_Src
+|  |  |  +**| (Node68)
+|  |  |  |  |  +**9974_0|SRC|protooncogene_tyrosineprotein_kinase_Src_isoform_X1
+|  |  |  |  +--| (Node97)
+|  |  |  |     +--143292_0|118920869|protooncogene_tyrosineprotein_kinase_Src_isoform_X1
+|  |  +**| (Node67)
+|  |     |                    +--143302_0|SRC|protooncogene_tyrosineprotein_kinase_Src_isoform_X1
+|  |     |                 +--| (Node104)
+|  |     |                 |  +--27622_0|118618720|protooncogene_tyrosineprotein_kinase_Src_isoform_X1
+|  |     |              +**| (Node103)
+|  |     |              |  |                 +--50954_0|119233001|protooncogene_tyrosineprotein_kinase_Src
+|  |     |              |  |              +--| (Node110)
+|  |     |              |  |              |  |     +--27675_0|119515409|protooncogene_tyrosineprotein_kinase_Src_isoform_X1
+|  |     |              |  |              |  |  +--| (Node112)
+|  |     |              |  |              |  |  |  +--42254_0|SRC|protooncogene_tyrosineprotein_kinase_Src_isoform_X1
+|  |     |              |  |              |  +--| (Node111)
+|  |     |              |  |              |     |  +--130825_0|121157350|protooncogene_tyrosineprotein_kinase_Src_isoform_X1
+|  |     |              |  |              |     +--| (Node113)
+|  |     |              |  |              |        +--9978_0|SRC|protooncogene_tyrosineprotein_kinase_Src_isoform_X1
+|  |     |              |  |           +**| (Node109)
+|  |     |              |  |           |  |                                                                       +**494514_0|121478063|protooncogene_tyrosineprotein_kinase_Src_isoform_X1
+|  |     |              |  |           |  |                                                                    +**| (Node137)
+|  |     |              |  |           |  |                                                                    |  |     +**29073_0|SRC|Tyrosineprotein_kinase
+|  |     |              |  |           |  |                                                                    |  |  +**| (Node139)
+|  |     |              |  |           |  |                                                                    |  |  |  |              +**9646_0|SRC|Tyrosineprotein_kinase
+|  |     |              |  |           |  |                                                                    |  |  |  |           +--| (Node144)
+|  |     |              |  |           |  |                                                                    |  |  |  |           |  +--------------------------------------------------------10036_0|Src|Tyrosineprotein_kinase
+|  |     |              |  |           |  |                                                                    |  |  |  |        +**| (Node143)
+|  |     |              |  |           |  |                                                                    |  |  |  |        |  |        +**9657_0|125108930|protooncogene_tyrosineprotein_kinase_Src_isoform_X1
+|  |     |              |  |           |  |                                                                    |  |  |  |        |  |     +**| (Node147)
+|  |     |              |  |           |  |                                                                    |  |  |  |        |  |     |  +**391180_0|LOC111141563|Tyrosineprotein_kinase
+|  |     |              |  |           |  |                                                                    |  |  |  |        |  |  +**| (Node146)
+|  |     |              |  |           |  |                                                                    |  |  |  |        |  |  |  +**76717_0|SRC|protooncogene_tyrosineprotein_kinase_Src_isoform_X1
+|  |     |              |  |           |  |                                                                    |  |  |  |        |  +--| (Node145)
+|  |     |              |  |           |  |                                                                    |  |  |  |        |     +--9662_0|123926730|protooncogene_tyrosineprotein_kinase_Src_isoform_X2
+|  |     |              |  |           |  |                                                                    |  |  |  |     +**| (Node142)
+|  |     |              |  |           |  |                                                                    |  |  |  |     |  +**452646_0|122916091|protooncogene_tyrosineprotein_kinase_Src_isoform_X1
+|  |     |              |  |           |  |                                                                    |  |  |  |  +**| (Node141)
+|  |     |              |  |           |  |                                                                    |  |  |  |  |  +**46844_0|123580240|protooncogene_tyrosineprotein_kinase_Src_isoform_X1
+|  |     |              |  |           |  |                                                                    |  |  |  +**| (Node140)
+|  |     |              |  |           |  |                                                                    |  |  |     +**61388_0|125162234|protooncogene_tyrosineprotein_kinase_Src
+|  |     |              |  |           |  |                                                                    |  +**| (Node138)
+|  |     |              |  |           |  |                                                                    |     +--32536_0|SRC|Tyrosineprotein_kinase
+|  |     |              |  |           |  |                                                                 +**| (Node136)
+|  |     |              |  |           |  |                                                                 |  +**286419_0|SRC|protooncogene_tyrosineprotein_kinase_Src_isoform_X1
+|  |     |              |  |           |  |                                                              +**| (Node135)
+|  |     |              |  |           |  |                                                              |  +**61384_0|124504000|protooncogene_tyrosineprotein_kinase_Src
+|  |     |              |  |           |  |                                                           +**| (Node134)
+|  |     |              |  |           |  |                                                           |  +**9644_0|113258578|protooncogene_tyrosineprotein_kinase_Src
+|  |     |              |  |           |  |                                                        +**| (Node133)
+|  |     |              |  |           |  |                                                        |  +**36723_0|SRC|protooncogene_tyrosineprotein_kinase_Src_isoform_X1
+|  |     |              |  |           |  |                                                     +**| (Node132)
+|  |     |              |  |           |  |                                                     |  |           +**34886_0|LOC114203512|protooncogene_tyrosineprotein_kinase_Src
+|  |     |              |  |           |  |                                                     |  |        +**| (Node151)
+|  |     |              |  |           |  |                                                     |  |        |  +**34886_0|LOC114203513|protooncogene_tyrosineprotein_kinase_Src
+|  |     |              |  |           |  |                                                     |  |     +**| (Node150)
+|  |     |              |  |           |  |                                                     |  |     |  |  +--34884_0|LOC112827425|Tyrosineprotein_kinase
+|  |     |              |  |           |  |                                                     |  |     |  +--| (Node152)
+|  |     |              |  |           |  |                                                     |  |     |     +**34884_0|LOC112827757|Tyrosineprotein_kinase
+|  |     |              |  |           |  |                                                     |  |  +**| (Node149)
+|  |     |              |  |           |  |                                                     |  |  |  +**9704_0|SRC|Tyrosineprotein_kinase
+|  |     |              |  |           |  |                                                     |  +--| (Node148)
+|  |     |              |  |           |  |                                                     |     +**9708_0|SRC|Tyrosineprotein_kinase
+|  |     |              |  |           |  |                                                  +**| (Node131)
+|  |     |              |  |           |  |                                                  |  +**9713_0|SRC|Tyrosineprotein_kinase
+|  |     |              |  |           |  |                                               +**| (Node130)
+|  |     |              |  |           |  |                                               |  +**9711_0|118541755|protooncogene_tyrosineprotein_kinase_Src_isoform_X1
+|  |     |              |  |           |  |                                            +**| (Node129)
+|  |     |              |  |           |  |                                            |  +**61383_0|SRC|protooncogene_tyrosineprotein_kinase_Src_isoform_X1
+|  |     |              |  |           |  |                                         +**| (Node128)
+|  |     |              |  |           |  |                                         |  +**9643_0|123796968|protooncogene_tyrosineprotein_kinase_Src
+|  |     |              |  |           |  |                                      +**| (Node127)
+|  |     |              |  |           |  |                                      |  +**9696_0|SRC|Tyrosineprotein_kinase
+|  |     |              |  |           |  |                                   +**| (Node126)
+|  |     |              |  |           |  |                                   |  +**37029_0|122496297|protooncogene_tyrosineprotein_kinase_Src_isoform_X1
+|  |     |              |  |           |  |                                +**| (Node125)
+|  |     |              |  |           |  |                                |  +**9720_0|SRC|protooncogene_tyrosineprotein_kinase_Src_isoform_X1
+|  |     |              |  |           |  |                             +**| (Node124)
+|  |     |              |  |           |  |                             |  +**1608482_0|121012223|protooncogene_tyrosineprotein_kinase_Src_isoform_X1
+|  |     |              |  |           |  |                          +**| (Node123)
+|  |     |              |  |           |  |                          |  +**9689_0|122215572|protooncogene_tyrosineprotein_kinase_Src
+|  |     |              |  |           |  |                       +**| (Node122)
+|  |     |              |  |           |  |                       |  +**9627_0|SRC|Tyrosineprotein_kinase
+|  |     |              |  |           |  |                    +**| (Node121)
+|  |     |              |  |           |  |                    |  +**9685_0|SRC|protooncogene_tyrosineprotein_kinase_Src_isoform_X1
+|  |     |              |  |           |  |                 +**| (Node120)
+|  |     |              |  |           |  |                 |  +**9615_0|SRC|Tyrosineprotein_kinase
+|  |     |              |  |           |  |              +**| (Node119)
+|  |     |              |  |           |  |              |  +**9669_0|SRC|Tyrosineprotein_kinase
+|  |     |              |  |           |  |           +**| (Node118)
+|  |     |              |  |           |  |           |  +**9691_0|SRC|Tyrosineprotein_kinase
+|  |     |              |  |           |  |        +**| (Node117)
+|  |     |              |  |           |  |        |  |  +--37032_0|SRC|Tyrosineprotein_kinase
+|  |     |              |  |           |  |        |  +--| (Node153)
+|  |     |              |  |           |  |        |     +**9694_0|102968822|protooncogene_tyrosineprotein_kinase_Src
+|  |     |              |  |           |  |     +**| (Node116)
+|  |     |              |  |           |  |     |  +**29088_0|SRC|Tyrosineprotein_kinase
+|  |     |              |  |           |  |  +**| (Node115)
+|  |     |              |  |           |  |  |  |  +**9716_0|123851763|protooncogene_tyrosineprotein_kinase_Src
+|  |     |              |  |           |  |  |  +--| (Node154)
+|  |     |              |  |           |  |  |     +**9715_0|SRC|protooncogene_tyrosineprotein_kinase_Src
+|  |     |              |  |           |  +--| (Node114)
+|  |     |              |  |           |     +--95912_0|120228611|protooncogene_tyrosineprotein_kinase_Src
+|  |     |              |  |        +--| (Node108)
+|  |     |              |  |        |  +--9430_0|SRC|Tyrosineprotein_kinase
+|  |     |              |  |     +**| (Node107)
+|  |     |              |  |     |  +**9423_0|123814829|protooncogene_tyrosineprotein_kinase_Src_isoform_X1
+|  |     |              |  |  +**| (Node106)
+|  |     |              |  |  |  +**89673_0|SRC|SRC
+|  |     |              |  +--| (Node105)
+|  |     |              |     +--192404_0|118985456|protooncogene_tyrosineprotein_kinase_Src_isoform_X1
+|  |     |           +**| (Node102)
+|  |     |           |  |  +--59463_0|SRC|protooncogene_tyrosineprotein_kinase_Src_isoform_X1
+|  |     |           |  +--| (Node155)
+|  |     |           |     +**51298_0|118662917|protooncogene_tyrosineprotein_kinase_Src_isoform_X1
+|  |     |        +**| (Node101)
+|  |     |        |  +**29078_0|SRC|protooncogene_tyrosineprotein_kinase_Src_isoform_X1
+|  |     |     +**| (Node100)
+|  |     |     |  |        +--59472_0|118707487|protooncogene_tyrosineprotein_kinase_Src_isoform_X1
+|  |     |     |  |     +**| (Node158)
+|  |     |     |  |     |  +--9407_0|SRC|protooncogene_tyrosineprotein_kinase_Src_isoform_X1
+|  |     |     |  |  +**| (Node157)
+|  |     |     |  |  |  +-----132908_0|SRC|Tyrosineprotein_kinase
+|  |     |     |  +--| (Node156)
+|  |     |     |     |  +**9402_0|SRC|Tyrosineprotein_kinase
+|  |     |     |     +**| (Node159)
+|  |     |     |        +**143291_0|120603636|protooncogene_tyrosineprotein_kinase_Src
+|  |     |  +--| (Node99)
+|  |     |  |  +--291302_0|SRC|protooncogene_tyrosineprotein_kinase_Src
+|  |     +**| (Node98)
+|  |        |  +--9365_0|SRC|Tyrosineprotein_kinase
+|  |        +--| (Node160)
+|  |           |  +--186990_0|SRC|protooncogene_tyrosineprotein_kinase_Src_isoform_X1
+|  |           +--| (Node161)
+|  |              |  +--59479_0|SRC|Tyrosineprotein_kinase
+|  |              +--| (Node162)
+|  |                 +--89399_0|SRC|protooncogene_tyrosineprotein_kinase_Src_isoform_X1
++--| (Node3)
+   +--185453_0|SRC|Tyrosineprotein_kinase
+
+Tree in newick format:
+
+(28737_0|SRC|protooncogene_tyrosineprotein_kinase_Src:0.0028625151,(9371_0|SRC|protooncogene_tyrosineprotein_kinase_Src_isoform_X1:0.0145327106,1230840_0|SRC|protooncogene_tyrosineprotein_kinase_Src_isoform_X1:0.0027710462)Node2:0.0029542351,((((((((9361_0|SRC|protooncogene_tyrosineprotein_kinase_Src:0.0592789546,51337_0|Src|protooncogene_tyrosineprotein_kinase_Src_isoform_X1:0.0189200461)Node10:0.0114646868,((246437_0|SRC|protooncogene_tyrosineprotein_kinase_Src_isoform_X1:0.0253801780,482537_0|SRC|protooncogene_tyrosineprotein_kinase_Src_isoform_X1:0.0086724561)Node12:0.0056234879,(((379532_0|SRC|Tyrosineprotein_kinase:0.0028061021,30611_0|SRC|protooncogene_tyrosineprotein_kinase_Src:0.0056928999)Node15:0.0000020062,9447_0|123622361|protooncogene_tyrosineprotein_kinase_Src:0.0000028912)Node14:0.0000020025,30608_0|SRC|protooncogene_tyrosineprotein_kinase_Src_isoform_X1:0.0086306022)Node13:0.0028474079)Node11:0.0056300388)Node9:0.0000022050,591936_0|SRC|protooncogene_tyrosineprotein_kinase_Src:0.0000021624)Node8:0.0000840709,37293_0|SRC|Tyrosineprotein_kinase:0.0056543294)Node7:0.0043555648,((((((((((((((((9793_0|SRC|protooncogene_tyrosineprotein_kinase_Src:0.0000010037,9796_0|SRC|Tyrosineprotein_kinase:0.0000010037)Node31:0.0202637554,(1868482_0|SRC|Tyrosineprotein_kinase:0.0059015419,(((((10181_0|Src|protooncogene_tyrosineprotein_kinase_Src_isoform_X3:0.0119318463,885580_0|Src|protooncogene_tyrosineprotein_kinase_Src:0.1651947086)Node37:0.0080678703,10160_0|Src|Tyrosineprotein_kinase:0.0058025553)Node36:0.0000028382,10141_0|SRC|Tyrosineprotein_kinase:0.0145579166)Node35:0.0068087452,((105255_0|122120491|protooncogene_tyrosineprotein_kinase_Src:0.0000010037,10020_0|Src|Tyrosineprotein_kinase:0.0000027424)Node39:0.0069354308,214514_0|125353459|protooncogene_tyrosineprotein_kinase_Src:0.0083013376)Node38:0.0226102139)Node34:0.0139616941,(30640_0|124977049|protooncogene_tyrosineprotein_kinase_Src_isoform_X1:0.0086487551,(43179_0|SRC|Tyrosineprotein_kinase:0.0000010037,(9995_0|124085578|Tyrosineprotein_kinase:0.0000010037,9999_0|Src|protooncogene_tyrosineprotein_kinase_Src:0.0000010037)Node42:0.0000024477)Node41:0.0029579499)Node40:0.0058569132)Node33:0.0045218758)Node32:0.0047746431)Node30:0.0046929436,(((((((((79684_0|Src|protooncogene_tyrosineprotein_kinase_Src_isoform_X1:0.0057373328,1047088_0|119814345|protooncogene_tyrosineprotein_kinase_Src:0.0029031636)Node51:0.0028025887,(111838_0|121460112|protooncogene_tyrosineprotein_kinase_Src_isoform_X1:0.0028609087,447135_0|125404780|protooncogene_tyrosineprotein_kinase_Src_isoform_X1:0.0000010037)Node52:0.0000027124)Node50:0.0114501517,((((((10116_0|Src|Protooncogene_tyrosineprotein_kinase_Src:0.0000024102,10093_0|Src|protooncogene_tyrosineprotein_kinase_Src_isoform_X1:0.0029531032)Node58:0.0028640530,61156_0|Src|protooncogene_tyrosineprotein_kinase_Src_isoform_X1:0.0057592223)Node57:0.0000023735,491861_0|Src|protooncogene_tyrosineprotein_kinase_Src:0.0057684712)Node56:0.0000021354,10117_0|Src|protooncogene_tyrosineprotein_kinase_Src_isoform_X1:0.0000010037)Node55:0.0000026836,(35658_0|Src|protooncogene_tyrosineprotein_kinase_Src_isoform_X1:0.0005004300,(10089_0|Src|Tyrosineprotein_kinase:0.0000010037,10090_0|Src|Neuronal_protooncogene_tyrosineprotein_kinase_Src:0.0000010037)Node60:0.0028105515)Node59:0.0024637335)Node54:0.0057192467,10047_0|Src|protooncogene_tyrosineprotein_kinase_Src_isoform_X1:0.0058603938)Node53:0.0028227699)Node49:0.0000023308,1026970_0|Src|protooncogene_tyrosineprotein_kinase_Src:0.0229389215)Node48:0.0000023506,(((10041_0|Src|protooncogene_tyrosineprotein_kinase_Src_isoform_X1:0.0000010037,230844_0|Src|Tyrosineprotein_kinase:0.0000021664)Node63:0.0027595191,10029_0|Src|Tyrosineprotein_kinase:0.0056291128)Node62:0.0000029459,38674_0|118582036|protooncogene_tyrosineprotein_kinase_Src_isoform_X1:0.0000023722)Node61:0.0028189567)Node47:0.0061752832,((81572_0|SRC|protooncogene_tyrosineprotein_kinase_Src_isoform_X1:0.0000024227,61853_0|SRC|protooncogene_tyrosineprotein_kinase_Src_isoform_X1:0.0028127937)Node65:0.0028079575,9601_0|SRC|Tyrosineprotein_kinase:0.0000024119)Node64:0.0027969512)Node46:0.0000023468,9597_0|SRC|protooncogene_tyrosineprotein_kinase_Src_isoform_X1:0.0000024060)Node45:0.0000024484,9598_0|SRC|Tyrosineprotein_kinase:0.0000010037)Node44:0.0000020171,9606_0|SRC|Protooncogene_tyrosineprotein_kinase_Src:0.0000023930)Node43:0.0029735213)Node29:0.0000010038,9544_0|SRC|Tyrosineprotein_kinase:0.0000010037)Node28:0.0000028614,9545_0|SRC|protooncogene_tyrosineprotein_kinase_Src_isoform_X1:0.0000010037)Node27:0.0000024279,61622_0|SRC|protooncogene_tyrosineprotein_kinase_Src:0.0000010037)Node26:0.0000023703,9565_0|SRC|protooncogene_tyrosineprotein_kinase_Src:0.0000010037)Node25:0.0000010038,60711_0|SRC|protooncogene_tyrosineprotein_kinase_Src_isoform_X1:0.0000010037)Node24:0.0000010038,39432_0|SRC|Tyrosineprotein_kinase:0.0000010037)Node23:0.0000010038,61621_0|SRC|Tyrosineprotein_kinase:0.0000010037)Node22:0.0000010038,9555_0|SRC|Tyrosineprotein_kinase:0.0000010037)Node21:0.0000010038,9541_0|SRC|protooncogene_tyrosineprotein_kinase_Src_isoform_X1:0.0000010037)Node20:0.0000020397,9568_0|SRC|Tyrosineprotein_kinase:0.0000010037)Node19:0.0000020396,9483_0|SRC|Tyrosineprotein_kinase:0.0028307806)Node18:0.0000029073,54180_0|SRC|protooncogene_tyrosineprotein_kinase_Src:0.0000010037)Node17:0.0000024588,(9515_0|SRC|Tyrosineprotein_kinase:0.0000026557,1737458_0|SRC|protooncogene_tyrosineprotein_kinase_Src_isoform_X1:0.0000021805)Node66:0.0027973954)Node16:0.0000021743)Node6:0.0059716724,73337_0|LOC101404460|protooncogene_tyrosineprotein_kinase_Src_isoform_X1:0.0028483123)Node5:0.0058857743,(((((9785_0|SRC|protooncogene_tyrosineprotein_kinase_Src:0.0054914366,127582_0|LOC101342555|Tyrosineprotein_kinase:0.0080422872)Node71:0.0038550639,9417_0|119063250|protooncogene_tyrosineprotein_kinase_Src:0.0000029798)Node70:0.0028464050,(((41426_0|125122607|protooncogene_tyrosineprotein_kinase_Src:0.0000024532,9823_0|SRC|Tyrosineprotein_kinase:0.0000024350)Node74:0.0055627423,((((((1574408_0|122449164|protooncogene_tyrosineprotein_kinase_Src:0.0000010037,9860_0|122682430|protooncogene_tyrosineprotein_kinase_Src:0.0000010037)Node80:0.0000010038,59538_0|SRC|protooncogene_tyrosineprotein_kinase_Src:0.0000010037)Node79:0.0000023260,9925_0|SRC|protooncogene_tyrosineprotein_kinase_Src_isoform_X1:0.0000010037)Node78:0.0000026994,(89462_0|SRC|protooncogene_tyrosineprotein_kinase_Src_isoform_X1:0.0000024031,((72004_0|SRC|Tyrosineprotein_kinase:0.0000010037,(9915_0|SRC|Tyrosineprotein_kinase:0.0000010037,43346_0|SRC|Tyrosineprotein_kinase:0.0000010037)Node84:0.0000028074)Node83:0.0000010038,9913_0|SRC|protooncogene_tyrosineprotein_kinase_Src_isoform_X1:0.0000010037)Node82:0.0028099282)Node81:0.0028095615)Node77:0.0000024312,9880_0|SRC|Tyrosineprotein_kinase:0.0028552294)Node76:0.0057351693,((((((((9731_0|SRC|protooncogene_tyrosineprotein_kinase_Src_isoform_X1:0.0000010037,9739_0|SRC|Tyrosineprotein_kinase:0.0000010037)Node92:0.0000022717,90247_0|SRC|protooncogene_tyrosineprotein_kinase_Src_isoform_X1:0.0000010037)Node91:0.0000010038,9733_0|SRC|protooncogene_tyrosineprotein_kinase_Src_isoform_X1:0.0000010037)Node90:0.0027350779,40151_0|SRC|protooncogene_tyrosineprotein_kinase_Src_isoform_X1:0.3679471737)Node89:0.0000022910,42100_0|SRC|protooncogene_tyrosineprotein_kinase_Src:0.0000010037)Node88:0.0000020099,9749_0|SRC|Tyrosineprotein_kinase:0.0000010037)Node87:0.0028860967,118797_0|SRC|Tyrosineprotein_kinase:0.0027937303)Node86:0.0000029487,(9771_0|118881157|protooncogene_tyrosineprotein_kinase_Src_isoform_X1:0.0000020318,310752_0|SRC|Tyrosineprotein_kinase:0.0027849368)Node93:0.0027644608)Node85:0.0058656880)Node75:0.0029772999)Node73:0.0000029429,(30538_0|SRC|Tyrosineprotein_kinase:0.0027930870,((9838_0|SRC|protooncogene_tyrosineprotein_kinase_Src_isoform_X1:0.0000010037,419612_0|SRC|protooncogene_tyrosineprotein_kinase_Src_isoform_X1:0.0000010037)Node96:0.0000025751,9837_0|SRC|protooncogene_tyrosineprotein_kinase_Src:0.0000010037)Node95:0.0000010038)Node94:0.0084889950)Node72:0.0030289157)Node69:0.0029624747,(9974_0|SRC|protooncogene_tyrosineprotein_kinase_Src_isoform_X1:0.0000021186,143292_0|118920869|protooncogene_tyrosineprotein_kinase_Src_isoform_X1:0.0028075514)Node97:0.0056417825)Node68:0.0000029071,(((((((143302_0|SRC|protooncogene_tyrosineprotein_kinase_Src_isoform_X1:0.0058754739,27622_0|118618720|protooncogene_tyrosineprotein_kinase_Src_isoform_X1:0.0058571311)Node104:0.0028098315,((((((50954_0|119233001|protooncogene_tyrosineprotein_kinase_Src:0.0053742873,((27675_0|119515409|protooncogene_tyrosineprotein_kinase_Src_isoform_X1:0.0159117787,42254_0|SRC|protooncogene_tyrosineprotein_kinase_Src_isoform_X1:0.0397236354)Node112:0.0040903493,(130825_0|121157350|protooncogene_tyrosineprotein_kinase_Src_isoform_X1:0.0065028580,9978_0|SRC|protooncogene_tyrosineprotein_kinase_Src_isoform_X1:0.0051876457)Node113:0.0361061127)Node111:0.0088634235)Node110:0.0033160865,((((((((((((((((((((((((494514_0|121478063|protooncogene_tyrosineprotein_kinase_Src_isoform_X1:0.0000010037,((29073_0|SRC|Tyrosineprotein_kinase:0.0000010037,(((((9646_0|SRC|Tyrosineprotein_kinase:0.0000024086,10036_0|Src|Tyrosineprotein_kinase:0.8648938167)Node144:0.0029270283,(((9657_0|125108930|protooncogene_tyrosineprotein_kinase_Src_isoform_X1:0.0000024475,391180_0|LOC111141563|Tyrosineprotein_kinase:0.0000010037)Node147:0.0000023722,76717_0|SRC|protooncogene_tyrosineprotein_kinase_Src_isoform_X1:0.0000010037)Node146:0.0004612501,9662_0|123926730|protooncogene_tyrosineprotein_kinase_Src_isoform_X2:0.0027304110)Node145:0.0024958502)Node143:0.0000010038,452646_0|122916091|protooncogene_tyrosineprotein_kinase_Src_isoform_X1:0.0000010037)Node142:0.0000010038,46844_0|123580240|protooncogene_tyrosineprotein_kinase_Src_isoform_X1:0.0000010037)Node141:0.0000010038,61388_0|125162234|protooncogene_tyrosineprotein_kinase_Src:0.0000010037)Node140:0.0000010038)Node139:0.0000025623,32536_0|SRC|Tyrosineprotein_kinase:0.0028328778)Node138:0.0000023403)Node137:0.0000010038,286419_0|SRC|protooncogene_tyrosineprotein_kinase_Src_isoform_X1:0.0000010037)Node136:0.0000010038,61384_0|124504000|protooncogene_tyrosineprotein_kinase_Src:0.0000010037)Node135:0.0000023448,9644_0|113258578|protooncogene_tyrosineprotein_kinase_Src:0.0000024677)Node134:0.0000023134,36723_0|SRC|protooncogene_tyrosineprotein_kinase_Src_isoform_X1:0.0000010037)Node133:0.0000024319,((((34886_0|LOC114203512|protooncogene_tyrosineprotein_kinase_Src:0.0000010037,34886_0|LOC114203513|protooncogene_tyrosineprotein_kinase_Src:0.0000010037)Node151:0.0000024156,(34884_0|LOC112827425|Tyrosineprotein_kinase:0.0028777122,34884_0|LOC112827757|Tyrosineprotein_kinase:0.0000020284)Node152:0.0028976887)Node150:0.0000020077,9704_0|SRC|Tyrosineprotein_kinase:0.0000024160)Node149:0.0000023617,9708_0|SRC|Tyrosineprotein_kinase:0.0000024320)Node148:0.0057571813)Node132:0.0000024564,9713_0|SRC|Tyrosineprotein_kinase:0.0000010037)Node131:0.0000010038,9711_0|118541755|protooncogene_tyrosineprotein_kinase_Src_isoform_X1:0.0000010037)Node130:0.0000010038,61383_0|SRC|protooncogene_tyrosineprotein_kinase_Src_isoform_X1:0.0000010037)Node129:0.0000010038,9643_0|123796968|protooncogene_tyrosineprotein_kinase_Src:0.0000010037)Node128:0.0000023148,9696_0|SRC|Tyrosineprotein_kinase:0.0000010037)Node127:0.0000010038,37029_0|122496297|protooncogene_tyrosineprotein_kinase_Src_isoform_X1:0.0000010037)Node126:0.0000010038,9720_0|SRC|protooncogene_tyrosineprotein_kinase_Src_isoform_X1:0.0000010037)Node125:0.0000010038,1608482_0|121012223|protooncogene_tyrosineprotein_kinase_Src_isoform_X1:0.0000010037)Node124:0.0000023245,9689_0|122215572|protooncogene_tyrosineprotein_kinase_Src:0.0000010037)Node123:0.0000010038,9627_0|SRC|Tyrosineprotein_kinase:0.0000010037)Node122:0.0000010038,9685_0|SRC|protooncogene_tyrosineprotein_kinase_Src_isoform_X1:0.0000010037)Node121:0.0000010038,9615_0|SRC|Tyrosineprotein_kinase:0.0000021857)Node120:0.0000010038,9669_0|SRC|Tyrosineprotein_kinase:0.0000010037)Node119:0.0000010038,9691_0|SRC|Tyrosineprotein_kinase:0.0000010037)Node118:0.0000020411,(37032_0|SRC|Tyrosineprotein_kinase:0.0028509197,9694_0|102968822|protooncogene_tyrosineprotein_kinase_Src:0.0000022844)Node153:0.0028324209)Node117:0.0000023142,29088_0|SRC|Tyrosineprotein_kinase:0.0000010037)Node116:0.0000023369,(9716_0|123851763|protooncogene_tyrosineprotein_kinase_Src:0.0000020327,9715_0|SRC|protooncogene_tyrosineprotein_kinase_Src:0.0000021086)Node154:0.0057733365)Node115:0.0000022528,95912_0|120228611|protooncogene_tyrosineprotein_kinase_Src:0.0088400255)Node114:0.0058393128)Node109:0.0000020785,9430_0|SRC|Tyrosineprotein_kinase:0.0244017330)Node108:0.0028709820,9423_0|123814829|protooncogene_tyrosineprotein_kinase_Src_isoform_X1:0.0000023464)Node107:0.0000025020,89673_0|SRC|SRC:0.0000021778)Node106:0.0000023797,192404_0|118985456|protooncogene_tyrosineprotein_kinase_Src_isoform_X1:0.0179253607)Node105:0.0028702876)Node103:0.0000023727,(59463_0|SRC|protooncogene_tyrosineprotein_kinase_Src_isoform_X1:0.0028564749,51298_0|118662917|protooncogene_tyrosineprotein_kinase_Src_isoform_X1:0.0000023506)Node155:0.0028241494)Node102:0.0000023727,29078_0|SRC|protooncogene_tyrosineprotein_kinase_Src_isoform_X1:0.0000010037)Node101:0.0000023107,(((59472_0|118707487|protooncogene_tyrosineprotein_kinase_Src_isoform_X1:0.0205073371,9407_0|SRC|protooncogene_tyrosineprotein_kinase_Src_isoform_X1:0.0085475637)Node158:0.0000024207,132908_0|SRC|Tyrosineprotein_kinase:0.0943542043)Node157:0.0000022574,(9402_0|SRC|Tyrosineprotein_kinase:0.0000010037,143291_0|120603636|protooncogene_tyrosineprotein_kinase_Src:0.0000010037)Node159:0.0000022881)Node156:0.0028216111)Node100:0.0000022953,291302_0|SRC|protooncogene_tyrosineprotein_kinase_Src:0.0028694714)Node99:0.0028831477,(9365_0|SRC|Tyrosineprotein_kinase:0.0135014684,(186990_0|SRC|protooncogene_tyrosineprotein_kinase_Src_isoform_X1:0.0056884747,(59479_0|SRC|Tyrosineprotein_kinase:0.0055413319,89399_0|SRC|protooncogene_tyrosineprotein_kinase_Src_isoform_X1:0.0027671872)Node162:0.0206229108)Node161:0.0027756823)Node160:0.0059984900)Node98:0.0000020088)Node67:0.0000026108)Node4:0.0119223174,185453_0|SRC|Tyrosineprotein_kinase:0.0120473981)Node3:0.0024317442)Node1;
+
+ALISIM COMMAND
+--------------
+To simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis, you can use the following command:
+
+--alisim simulated_MSA -t /lustre/scratch126/gengen/projects/alpha-allostery-global/phylo-dms/02.iqtree_intermediates/03.out_asr/src_eutheria_bothends_asr/src_eutheria_bothends_asr.treefile -m "Q.mammal+I{0.585935}+R2{0.32165,0.704602,0.0924153,8.36836}" --length 737
+
+To mimic the alignment used to produce this analysis, i.e. simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis *and* copying the same gap positions as the original alignment, you can use the following command:
+
+iqtree -s /lustre/scratch126/gengen/projects/alpha-allostery-global/phylo-dms/02.mafft_out/src_eutheria_trimmed_bothends_einsi_082224_aligned.fasta --alisim mimicked_MSA
+
+To simulate any number of alignments in either of the two commandlines above, use the --num-alignments options, for example mimic 100 alignments you would use the command line:
+
+iqtree -s /lustre/scratch126/gengen/projects/alpha-allostery-global/phylo-dms/02.mafft_out/src_eutheria_trimmed_bothends_einsi_082224_aligned.fasta --alisim mimicked_MSA --num-alignments 100
+
+For more information on using AliSim, please visit: www.iqtree.org/doc/AliSim
+
+TIME STAMP
+----------
+
+Date and time: Thu Aug 22 11:02:26 2024
+Total CPU time used: 2011.6 seconds (0h:33m:31s)
+Total wall-clock time used: 689.006 seconds (0h:11m:29s)
+

@@ -1,0 +1,75 @@
+"transition","mutations","mutation_count"
+"Node1 to Node2","G151S",1
+"Node2 to Node3","S151G | A179T",2
+"Node3 to Node4","T128A | V183A | V335A | I430T",4
+"Node4 to Node5","T160A | N178S",2
+"Node5 to Node6","G152A | T179A",2
+"Node6 to Node7","T37E | T39L | A335T",3
+"Node9 to Node10","R29E | V30I | F31P | S32G | R34F | Q36S | P40G | G41D | V42S | C43S | A44S | K45G | T46P | C58L | L59A | P60S | T64V | N72S | G598S",19
+"Node10 to Node11","E29R | I30V | P31F | G32S | F34R | S36Q | G40P | D41G | S42V | S43C | S44A | G45K | P46T | L58C | A59L | S60P | V64T | S72N | A152V | A160T | S598G",21
+"Node11 to Node12","S178N | A209T",2
+"Node12 to Node13","G151A | N178S | T209A",3
+"Node15 to Node16","E37T | L39T | A151G | V152A | T160A | T335A",6
+"Node29 to Node30","N130S | T206A",2
+"Node30 to Node31","G155P | S161A | P177A | S178P | A180P | A335V",6
+"Node31 to Node32","P155G | A161S | A177P | P178G | P180A | V335A",6
+"Node32 to Node33","A335T",1
+"Node33 to Node34","S80G | A152P | G178A",3
+"Node34 to Node35","Q81P",1
+"Node36 to Node37","A416V",1
+"Node37 to Node38","D78E | A79G | P81Q | S130A | G155P | H174L | A179S | V416A",8
+"Node38 to Node39","A128T | A208T",2
+"Node39 to Node40","E78D | G79A | G80S | T128A | A130S | A131T | P152A | G153A | P155G | L174H | A178G | S179A | T208A",13
+"Node40 to Node41","H174L",1
+"Node42 to Node43","S130N | T131V | A153G | L174H | G178S | A206T | T335A",7
+"Node46 to Node47","A152G | G153A | T206P",3
+"Node49 to Node50","A183T | A207G | S219T | N334S",4
+"Node50 to Node51","A128T",1
+"Node51 to Node52","T128A",1
+"Node52 to Node53","T183P | G207A | T219S | S334N",4
+"Node53 to Node54","S533N | A570S",2
+"Node57 to Node58","S178N",1
+"Node58 to Node59","A128T | N178S",2
+"Node59 to Node60","T128S",1
+"Node60 to Node61","S128A | P183A | P184T | N533S | S570A",5
+"Node62 to Node63","A171T",1
+"Node63 to Node64","A128T | G152A | A153G | T171A | T184P | P206T",6
+"Node64 to Node65","S178G",1
+"Node65 to Node66","T128A | V131A | G178S | A207T",4
+"Node66 to Node67","A152G | A160T | S178N | A179T | T207A",5
+"Node68 to Node69","A131T",1
+"Node69 to Node70","A335T",1
+"Node70 to Node71","A128T",1
+"Node71 to Node72","T128A | T335A | E706D",3
+"Node73 to Node74","N178S | V602A",2
+"Node74 to Node75","S178N | N600S | A602V",3
+"Node75 to Node76","T160S | A171S",2
+"Node80 to Node81","P127S",1
+"Node81 to Node82","A233S",1
+"Node84 to Node85","S127P | E129D | S160T | S171A | N178S | S233A",6
+"Node86 to Node87","T435M",1
+"Node89 to Node90","T480A",1
+"Node92 to Node93","A335V | M435T | A480T",3
+"Node93 to Node94","D129E | G151S | S178N | V335A | N409S | S533N | S600N",7
+"Node96 to Node97","T131A | S151G | S165N | A207T | S409N | N533S | D706E",7
+"Node97 to Node98","N165S | T207A",2
+"Node98 to Node99","A183S",1
+"Node103 to Node104","A171T",1
+"Node104 to Node105","A131T | T171A",2
+"Node107 to Node108","N178S",1
+"Node109 to Node110","N409S",1
+"Node110 to Node111","G153A | T160S | S183T",3
+"Node111 to Node112","S80G",1
+"Node112 to Node113","T39L | N72S | G80S | P127Q | A128T | N130S | G151C | S161A | A171V | T205A | H510N | F552L | V602S | S726A",14
+"Node113 to Node114","L39T | S72N | Q127P | T128A | S130N | C151G | A153G | S160T | A161S | V171A | T183P | P184S | A205T | S409N | N510H | L552F | S602V | A726S",18
+"Node143 to Node144","R123C",1
+"Node144 to Node145","C123R | A128T",2
+"Node147 to Node148","T128A | A335S | N409S",3
+"Node151 to Node152","G151S",1
+"Node152 to Node153","S335A | S409N",2
+"Node153 to Node154","S151G | I485V | K489R",3
+"Node154 to Node155","T131A | S178N | P183S | S184P | A208T | V485I | R489K",7
+"Node155 to Node156","T208A | A209S",2
+"Node159 to Node160","G151S | S183T | S209A",3
+"Node160 to Node161","A208S",1
+"Node161 to Node162","G152A | T160A | T179M | A209T | Q274H | Q283H | A335V",7

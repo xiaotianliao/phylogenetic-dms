@@ -1,0 +1,338 @@
+IQ-TREE multicore version 2.3.4 COVID-edition for Linux x86 64-bit built Jun 18 2024
+Developed by Bui Quang Minh, James Barbetti, Nguyen Lam Tung, Olga Chernomor,
+Heiko Schmidt, Dominik Schrempf, Michael Woodhams, Ly Trong Nhan, Thomas Wong
+
+Host:    b11-hm-01 (AVX2, FMA3, 4019 GB RAM)
+Command: iqtree2 -s /lustre/scratch126/gengen/projects/alpha-allostery-global/phylo-dms/02.mafft_out/src_eutheria_trimmed_bothends_einsi_082224_aligned.fasta -m Q.mammal+I+R2 -asr -nt AUTO -pre /lustre/scratch126/gengen/projects/alpha-allostery-global/phylo-dms/02.iqtree_intermediates/03.out_asr/src_eutheria_bothends_asr/src_eutheria_bothends_asr
+Seed:    442041 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Thu Aug 22 10:50:57 2024
+Kernel:  AVX+FMA - auto-detect threads (20 CPU cores detected)
+
+Reading alignment file /lustre/scratch126/gengen/projects/alpha-allostery-global/phylo-dms/02.mafft_out/src_eutheria_trimmed_bothends_einsi_082224_aligned.fasta ... Fasta format detected
+Reading fasta file: done in 0.00478292 secs using 84.34% CPU
+Alignment most likely contains protein sequences
+Alignment has 164 sequences with 737 columns, 361 distinct patterns
+64 parsimony-informative, 140 singleton sites, 533 constant sites
+                                                                          Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 0.0159944 secs using 746.5% CPU
+   1  28737_0|SRC|protooncogene_tyrosineprotein_kinase_Src                       27.27%    passed    100.00%
+   2  9371_0|SRC|protooncogene_tyrosineprotein_kinase_Src_isoform_X1             24.97%    passed    100.00%
+   3  9361_0|SRC|protooncogene_tyrosineprotein_kinase_Src                        22.66%    passed     99.98%
+   4  9785_0|SRC|protooncogene_tyrosineprotein_kinase_Src                        27.27%    passed    100.00%
+   5  185453_0|SRC|Tyrosineprotein_kinase                                        26.46%    passed    100.00%
+   6  143302_0|SRC|protooncogene_tyrosineprotein_kinase_Src_isoform_X1           26.46%    passed    100.00%
+   7  9974_0|SRC|protooncogene_tyrosineprotein_kinase_Src_isoform_X1             24.97%    passed    100.00%
+   8  1230840_0|SRC|protooncogene_tyrosineprotein_kinase_Src_isoform_X1          26.46%    passed    100.00%
+   9  50954_0|119233001|protooncogene_tyrosineprotein_kinase_Src                 27.27%    passed    100.00%
+  10  246437_0|SRC|protooncogene_tyrosineprotein_kinase_Src_isoform_X1           24.97%    passed    100.00%
+  11  127582_0|LOC101342555|Tyrosineprotein_kinase                               26.46%    passed    100.00%
+  12  482537_0|SRC|protooncogene_tyrosineprotein_kinase_Src_isoform_X1           24.97%    passed    100.00%
+  13  143292_0|118920869|protooncogene_tyrosineprotein_kinase_Src_isoform_X1     24.97%    passed    100.00%
+  14  27675_0|119515409|protooncogene_tyrosineprotein_kinase_Src_isoform_X1      24.97%    passed    100.00%
+  15  59463_0|SRC|protooncogene_tyrosineprotein_kinase_Src_isoform_X1            26.32%    passed    100.00%
+  16  494514_0|121478063|protooncogene_tyrosineprotein_kinase_Src_isoform_X1     24.97%    passed    100.00%
+  17  37032_0|SRC|Tyrosineprotein_kinase                                         24.97%    passed    100.00%
+  18  9711_0|118541755|protooncogene_tyrosineprotein_kinase_Src_isoform_X1       24.97%    passed    100.00%
+  19  73337_0|LOC101404460|protooncogene_tyrosineprotein_kinase_Src_isoform_X1   24.97%    passed    100.00%
+  20  9365_0|SRC|Tyrosineprotein_kinase                                          26.87%    passed    100.00%
+  21  34886_0|LOC114203512|protooncogene_tyrosineprotein_kinase_Src              27.27%    passed    100.00%
+  22  34886_0|LOC114203513|protooncogene_tyrosineprotein_kinase_Src              27.27%    passed    100.00%
+  23  41426_0|125122607|protooncogene_tyrosineprotein_kinase_Src                 26.32%    passed    100.00%
+  24  42254_0|SRC|protooncogene_tyrosineprotein_kinase_Src_isoform_X1            26.59%    passed    100.00%
+  25  95912_0|120228611|protooncogene_tyrosineprotein_kinase_Src                 27.27%    passed    100.00%
+  26  9644_0|113258578|protooncogene_tyrosineprotein_kinase_Src                  27.27%    passed    100.00%
+  27  130825_0|121157350|protooncogene_tyrosineprotein_kinase_Src_isoform_X1     26.59%    passed    100.00%
+  28  9716_0|123851763|protooncogene_tyrosineprotein_kinase_Src                  27.27%    passed    100.00%
+  29  186990_0|SRC|protooncogene_tyrosineprotein_kinase_Src_isoform_X1           24.97%    passed    100.00%
+  30  29073_0|SRC|Tyrosineprotein_kinase                                         27.27%    passed    100.00%
+  31  9646_0|SRC|Tyrosineprotein_kinase                                          26.46%    passed    100.00%
+  32  30538_0|SRC|Tyrosineprotein_kinase                                         24.97%    passed    100.00%
+  33  9643_0|123796968|protooncogene_tyrosineprotein_kinase_Src                  27.27%    passed    100.00%
+  34  9838_0|SRC|protooncogene_tyrosineprotein_kinase_Src_isoform_X1             24.97%    passed    100.00%
+  35  29088_0|SRC|Tyrosineprotein_kinase                                         27.27%    passed    100.00%
+  36  9793_0|SRC|protooncogene_tyrosineprotein_kinase_Src                        27.54%    passed    100.00%
+  37  34884_0|LOC112827425|Tyrosineprotein_kinase                                27.27%    passed    100.00%
+  38  34884_0|LOC112827757|Tyrosineprotein_kinase                                27.27%    passed    100.00%
+  39  9704_0|SRC|Tyrosineprotein_kinase                                          24.97%    passed    100.00%
+  40  9720_0|SRC|protooncogene_tyrosineprotein_kinase_Src_isoform_X1             24.97%    passed    100.00%
+  41  9837_0|SRC|protooncogene_tyrosineprotein_kinase_Src                        27.27%    passed    100.00%
+  42  9796_0|SRC|Tyrosineprotein_kinase                                          25.24%    passed    100.00%
+  43  9713_0|SRC|Tyrosineprotein_kinase                                          24.97%    passed    100.00%
+  44  9627_0|SRC|Tyrosineprotein_kinase                                          24.97%    passed    100.00%
+  45  59472_0|118707487|protooncogene_tyrosineprotein_kinase_Src_isoform_X1      24.69%    passed    100.00%
+  46  9823_0|SRC|Tyrosineprotein_kinase                                          24.15%    passed    100.00%
+  47  27622_0|118618720|protooncogene_tyrosineprotein_kinase_Src_isoform_X1      26.32%    passed    100.00%
+  48  51298_0|118662917|protooncogene_tyrosineprotein_kinase_Src_isoform_X1      24.83%    passed    100.00%
+  49  29078_0|SRC|protooncogene_tyrosineprotein_kinase_Src_isoform_X1            24.83%    passed    100.00%
+  50  9715_0|SRC|protooncogene_tyrosineprotein_kinase_Src                        27.27%    passed    100.00%
+  51  419612_0|SRC|protooncogene_tyrosineprotein_kinase_Src_isoform_X1           24.97%    passed    100.00%
+  52  9978_0|SRC|protooncogene_tyrosineprotein_kinase_Src_isoform_X1             26.46%    passed    100.00%
+  53  9402_0|SRC|Tyrosineprotein_kinase                                          27.27%    passed    100.00%
+  54  9417_0|119063250|protooncogene_tyrosineprotein_kinase_Src                  27.27%    passed    100.00%
+  55  9657_0|125108930|protooncogene_tyrosineprotein_kinase_Src_isoform_X1       26.46%    passed    100.00%
+  56  291302_0|SRC|protooncogene_tyrosineprotein_kinase_Src                      27.14%    passed    100.00%
+  57  1868482_0|SRC|Tyrosineprotein_kinase                                       26.46%    passed    100.00%
+  58  9430_0|SRC|Tyrosineprotein_kinase                                          27.14%    passed    100.00%
+  59  9685_0|SRC|protooncogene_tyrosineprotein_kinase_Src_isoform_X1             24.97%    passed    100.00%
+  60  9691_0|SRC|Tyrosineprotein_kinase                                          24.97%    passed    100.00%
+  61  32536_0|SRC|Tyrosineprotein_kinase                                         24.97%    passed    100.00%
+  62  37029_0|122496297|protooncogene_tyrosineprotein_kinase_Src_isoform_X1      24.97%    passed    100.00%
+  63  61388_0|125162234|protooncogene_tyrosineprotein_kinase_Src                 27.27%    passed    100.00%
+  64  10181_0|Src|protooncogene_tyrosineprotein_kinase_Src_isoform_X3            23.34%    passed     99.98%
+  65  379532_0|SRC|Tyrosineprotein_kinase                                        27.27%    passed    100.00%
+  66  76717_0|SRC|protooncogene_tyrosineprotein_kinase_Src_isoform_X1            24.97%    passed    100.00%
+  67  9407_0|SRC|protooncogene_tyrosineprotein_kinase_Src_isoform_X1             24.97%    passed    100.00%
+  68  452646_0|122916091|protooncogene_tyrosineprotein_kinase_Src_isoform_X1     24.97%    passed    100.00%
+  69  59479_0|SRC|Tyrosineprotein_kinase                                         24.97%    passed    100.00%
+  70  9708_0|SRC|Tyrosineprotein_kinase                                          24.97%    passed    100.00%
+  71  9447_0|123622361|protooncogene_tyrosineprotein_kinase_Src                  27.27%    passed    100.00%
+  72  286419_0|SRC|protooncogene_tyrosineprotein_kinase_Src_isoform_X1           24.97%    passed    100.00%
+  73  9694_0|102968822|protooncogene_tyrosineprotein_kinase_Src                  27.27%    passed    100.00%
+  74  9696_0|SRC|Tyrosineprotein_kinase                                          27.27%    passed    100.00%
+  75  10160_0|Src|Tyrosineprotein_kinase                                         27.27%    passed    100.00%
+  76  143291_0|120603636|protooncogene_tyrosineprotein_kinase_Src                27.27%    passed    100.00%
+  77  192404_0|118985456|protooncogene_tyrosineprotein_kinase_Src_isoform_X1     26.32%    passed    100.00%
+  78  36723_0|SRC|protooncogene_tyrosineprotein_kinase_Src_isoform_X1            24.97%    passed    100.00%
+  79  30611_0|SRC|protooncogene_tyrosineprotein_kinase_Src                       27.27%    passed    100.00%
+  80  9662_0|123926730|protooncogene_tyrosineprotein_kinase_Src_isoform_X2       24.97%    passed    100.00%
+  81  9689_0|122215572|protooncogene_tyrosineprotein_kinase_Src                  27.27%    passed    100.00%
+  82  10141_0|SRC|Tyrosineprotein_kinase                                         26.46%    passed    100.00%
+  83  61384_0|124504000|protooncogene_tyrosineprotein_kinase_Src                 27.27%    passed    100.00%
+  84  89673_0|SRC|SRC                                                            24.83%    passed    100.00%
+  85  1608482_0|121012223|protooncogene_tyrosineprotein_kinase_Src_isoform_X1    24.97%    passed    100.00%
+  86  89399_0|SRC|protooncogene_tyrosineprotein_kinase_Src_isoform_X1            24.97%    passed    100.00%
+  87  61383_0|SRC|protooncogene_tyrosineprotein_kinase_Src_isoform_X1            24.97%    passed    100.00%
+  88  46844_0|123580240|protooncogene_tyrosineprotein_kinase_Src_isoform_X1      24.97%    passed    100.00%
+  89  885580_0|Src|protooncogene_tyrosineprotein_kinase_Src                      31.21%    passed     99.88%
+  90  9423_0|123814829|protooncogene_tyrosineprotein_kinase_Src_isoform_X1       26.32%    passed    100.00%
+  91  9615_0|SRC|Tyrosineprotein_kinase                                          24.97%    passed    100.00%
+  92  132908_0|SRC|Tyrosineprotein_kinase                                        28.77%    passed    100.00%
+  93  30608_0|SRC|protooncogene_tyrosineprotein_kinase_Src_isoform_X1            25.10%    passed    100.00%
+  94  1574408_0|122449164|protooncogene_tyrosineprotein_kinase_Src               26.46%    passed    100.00%
+  95  9925_0|SRC|protooncogene_tyrosineprotein_kinase_Src_isoform_X1             25.64%    passed    100.00%
+  96  9731_0|SRC|protooncogene_tyrosineprotein_kinase_Src_isoform_X1             25.37%    passed     99.98%
+  97  391180_0|LOC111141563|Tyrosineprotein_kinase                               27.27%    passed    100.00%
+  98  9860_0|122682430|protooncogene_tyrosineprotein_kinase_Src                  26.46%    passed    100.00%
+  99  59538_0|SRC|protooncogene_tyrosineprotein_kinase_Src                       26.46%    passed    100.00%
+ 100  105255_0|122120491|protooncogene_tyrosineprotein_kinase_Src                27.68%    passed    100.00%
+ 101  42100_0|SRC|protooncogene_tyrosineprotein_kinase_Src                       25.78%    passed    100.00%
+ 102  10020_0|Src|Tyrosineprotein_kinase                                         27.68%    passed    100.00%
+ 103  90247_0|SRC|protooncogene_tyrosineprotein_kinase_Src_isoform_X1            24.97%    passed     99.73%
+ 104  89462_0|SRC|protooncogene_tyrosineprotein_kinase_Src_isoform_X1            25.64%    passed    100.00%
+ 105  118797_0|SRC|Tyrosineprotein_kinase                                        25.64%    passed    100.00%
+ 106  9739_0|SRC|Tyrosineprotein_kinase                                          25.51%    passed     99.99%
+ 107  9771_0|118881157|protooncogene_tyrosineprotein_kinase_Src_isoform_X1       23.88%    passed    100.00%
+ 108  9669_0|SRC|Tyrosineprotein_kinase                                          24.97%    passed    100.00%
+ 109  72004_0|SRC|Tyrosineprotein_kinase                                         25.64%    passed    100.00%
+ 110  9749_0|SRC|Tyrosineprotein_kinase                                          23.74%    passed    100.00%
+ 111  9915_0|SRC|Tyrosineprotein_kinase                                          26.59%    passed    100.00%
+ 112  37293_0|SRC|Tyrosineprotein_kinase                                         24.97%    passed    100.00%
+ 113  9733_0|SRC|protooncogene_tyrosineprotein_kinase_Src_isoform_X1             22.52%    passed     99.85%
+ 114  9913_0|SRC|protooncogene_tyrosineprotein_kinase_Src_isoform_X1             24.15%    passed    100.00%
+ 115  40151_0|SRC|protooncogene_tyrosineprotein_kinase_Src_isoform_X1            22.80%    passed     99.65%
+ 116  79684_0|Src|protooncogene_tyrosineprotein_kinase_Src_isoform_X1            24.97%    passed    100.00%
+ 117  9880_0|SRC|Tyrosineprotein_kinase                                          25.64%    passed    100.00%
+ 118  10116_0|Src|Protooncogene_tyrosineprotein_kinase_Src                       26.46%    passed    100.00%
+ 119  10047_0|Src|protooncogene_tyrosineprotein_kinase_Src_isoform_X1            26.46%    passed    100.00%
+ 120  30640_0|124977049|protooncogene_tyrosineprotein_kinase_Src_isoform_X1      25.10%    passed    100.00%
+ 121  9515_0|SRC|Tyrosineprotein_kinase                                          24.97%    passed    100.00%
+ 122  61156_0|Src|protooncogene_tyrosineprotein_kinase_Src_isoform_X1            26.46%    passed    100.00%
+ 123  81572_0|SRC|protooncogene_tyrosineprotein_kinase_Src_isoform_X1            24.97%    passed    100.00%
+ 124  491861_0|Src|protooncogene_tyrosineprotein_kinase_Src                      27.27%    passed    100.00%
+ 125  310752_0|SRC|Tyrosineprotein_kinase                                        24.42%    passed    100.00%
+ 126  10041_0|Src|protooncogene_tyrosineprotein_kinase_Src_isoform_X1            24.97%    passed    100.00%
+ 127  10029_0|Src|Tyrosineprotein_kinase                                         24.83%    passed    100.00%
+ 128  111838_0|121460112|protooncogene_tyrosineprotein_kinase_Src_isoform_X1     24.97%    passed    100.00%
+ 129  1047088_0|119814345|protooncogene_tyrosineprotein_kinase_Src               27.27%    passed    100.00%
+ 130  43346_0|SRC|Tyrosineprotein_kinase                                         26.46%    passed    100.00%
+ 131  43179_0|SRC|Tyrosineprotein_kinase                                         25.10%    passed    100.00%
+ 132  61853_0|SRC|protooncogene_tyrosineprotein_kinase_Src_isoform_X1            24.97%    passed    100.00%
+ 133  447135_0|125404780|protooncogene_tyrosineprotein_kinase_Src_isoform_X1     26.46%    passed    100.00%
+ 134  51337_0|Src|protooncogene_tyrosineprotein_kinase_Src_isoform_X1            26.73%    passed    100.00%
+ 135  9995_0|124085578|Tyrosineprotein_kinase                                    27.41%    passed    100.00%
+ 136  214514_0|125353459|protooncogene_tyrosineprotein_kinase_Src                27.54%    passed    100.00%
+ 137  9999_0|Src|protooncogene_tyrosineprotein_kinase_Src                        27.41%    passed    100.00%
+ 138  38674_0|118582036|protooncogene_tyrosineprotein_kinase_Src_isoform_X1      24.97%    passed    100.00%
+ 139  1026970_0|Src|protooncogene_tyrosineprotein_kinase_Src                     26.46%    passed    100.00%
+ 140  10117_0|Src|protooncogene_tyrosineprotein_kinase_Src_isoform_X1            26.46%    passed    100.00%
+ 141  10036_0|Src|Tyrosineprotein_kinase                                         23.47%    passed      6.23%
+ 142  35658_0|Src|protooncogene_tyrosineprotein_kinase_Src_isoform_X1            26.46%    passed    100.00%
+ 143  54180_0|SRC|protooncogene_tyrosineprotein_kinase_Src                       27.27%    passed    100.00%
+ 144  9545_0|SRC|protooncogene_tyrosineprotein_kinase_Src_isoform_X1             24.97%    passed    100.00%
+ 145  10089_0|Src|Tyrosineprotein_kinase                                         25.10%    passed    100.00%
+ 146  61621_0|SRC|Tyrosineprotein_kinase                                         24.97%    passed    100.00%
+ 147  9555_0|SRC|Tyrosineprotein_kinase                                          24.97%    passed    100.00%
+ 148  9598_0|SRC|Tyrosineprotein_kinase                                          24.97%    passed    100.00%
+ 149  39432_0|SRC|Tyrosineprotein_kinase                                         24.97%    passed    100.00%
+ 150  9597_0|SRC|protooncogene_tyrosineprotein_kinase_Src_isoform_X1             24.97%    passed    100.00%
+ 151  10093_0|Src|protooncogene_tyrosineprotein_kinase_Src_isoform_X1            26.59%    passed    100.00%
+ 152  591936_0|SRC|protooncogene_tyrosineprotein_kinase_Src                      27.27%    passed    100.00%
+ 153  10090_0|Src|Neuronal_protooncogene_tyrosineprotein_kinase_Src              25.10%    passed    100.00%
+ 154  9483_0|SRC|Tyrosineprotein_kinase                                          24.97%    passed    100.00%
+ 155  230844_0|Src|Tyrosineprotein_kinase                                        24.97%    passed    100.00%
+ 156  9568_0|SRC|Tyrosineprotein_kinase                                          27.27%    passed    100.00%
+ 157  9601_0|SRC|Tyrosineprotein_kinase                                          26.46%    passed    100.00%
+ 158  9541_0|SRC|protooncogene_tyrosineprotein_kinase_Src_isoform_X1             24.97%    passed    100.00%
+ 159  1737458_0|SRC|protooncogene_tyrosineprotein_kinase_Src_isoform_X1          24.97%    passed    100.00%
+ 160  9565_0|SRC|protooncogene_tyrosineprotein_kinase_Src                        27.27%    passed    100.00%
+ 161  9544_0|SRC|Tyrosineprotein_kinase                                          27.27%    passed    100.00%
+ 162  9606_0|SRC|Protooncogene_tyrosineprotein_kinase_Src                        27.27%    passed    100.00%
+ 163  60711_0|SRC|protooncogene_tyrosineprotein_kinase_Src_isoform_X1            24.97%    passed    100.00%
+ 164  61622_0|SRC|protooncogene_tyrosineprotein_kinase_Src                       27.27%    passed    100.00%
+****  TOTAL                                                                      25.91%  0 sequences failed composition chi2 test (p-value<5%; df=19)
+
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 0.026 seconds
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+
+NOTE: 19 MB RAM (0 GB) is required!
+Measuring multi-threading efficiency up to 20 CPU cores
+Increase to 10 rounds for branch lengths
+30 trees examined
+Threads: 1 / Time: 20.337 sec / Speedup: 1.000 / Efficiency: 100% / LogL: -7966
+Threads: 2 / Time: 12.866 sec / Speedup: 1.581 / Efficiency: 79% / LogL: -7966
+Threads: 3 / Time: 10.796 sec / Speedup: 1.884 / Efficiency: 63% / LogL: -7966
+Threads: 4 / Time: 11.690 sec / Speedup: 1.740 / Efficiency: 43% / LogL: -7966
+BEST NUMBER OF THREADS: 3
+
+Estimate model parameters (epsilon = 0.100)
+1. Initial log-likelihood: -5647.925
+2. Current log-likelihood: -5371.634
+3. Current log-likelihood: -5356.026
+4. Current log-likelihood: -5350.918
+5. Current log-likelihood: -5350.020
+6. Current log-likelihood: -5349.881
+Optimal log-likelihood: -5349.849
+Proportion of invariable sites: 0.585
+Site proportion and rates:  (0.321,0.700) (0.094,8.210)
+Parameters optimization took 6 rounds (1.524 sec)
+Wrote distance file to... 
+Computing ML distances based on estimated model parameters...
+Calculating distance matrix: done in 0.647534 secs using 301.1% CPU
+Computing ML distances took 0.647700 sec (of wall-clock time) 1.950094 sec (of CPU time)
+Setting up auxiliary I and S matrices: done in 0.000532014 secs using 285.3% CPU
+Computing RapidNJ tree took 0.033989 sec (of wall-clock time) 0.058480 sec (of CPU time)
+Log-likelihood of RapidNJ tree: -5357.660
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Generating 98 parsimony trees... 2.192 second
+Computing log-likelihood of 98 initial trees ... 4.626 seconds
+Current best score: -5346.852
+
+Do NNI search on 20 best initial trees
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 1: -5328.251
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 2: -5321.489
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 5: -5320.388
+Iteration 10 / LogL: -5339.591 / Time: 0h:1m:19s
+Iteration 20 / LogL: -5335.947 / Time: 0h:1m:35s
+Finish initializing candidate tree set (20)
+Current best tree score: -5320.388 / CPU time: 37.129
+Number of iterations: 20
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 21: -5319.003
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 23: -5318.988
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 26: -5317.845
+BETTER TREE FOUND at iteration 27: -5317.837
+Iteration 30 / LogL: -5322.756 / Time: 0h:1m:51s (0h:6m:13s left)
+Iteration 40 / LogL: -5327.966 / Time: 0h:2m:7s (0h:4m:43s left)
+Iteration 50 / LogL: -5327.330 / Time: 0h:2m:24s (0h:3m:46s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 60: -5316.126
+Iteration 60 / LogL: -5316.126 / Time: 0h:2m:41s (0h:4m:34s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 67: -5314.607
+Iteration 70 / LogL: -5317.864 / Time: 0h:2m:57s (0h:4m:9s left)
+Iteration 80 / LogL: -5344.691 / Time: 0h:3m:13s (0h:3m:33s left)
+Iteration 90 / LogL: -5316.933 / Time: 0h:3m:26s (0h:2m:58s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 92: -5311.776
+BETTER TREE FOUND at iteration 96: -5311.775
+Iteration 100 / LogL: -5319.157 / Time: 0h:3m:42s (0h:3m:35s left)
+BETTER TREE FOUND at iteration 104: -5311.774
+Iteration 110 / LogL: -5318.266 / Time: 0h:4m:0s (0h:3m:27s left)
+Iteration 120 / LogL: -5313.733 / Time: 0h:4m:15s (0h:3m:0s left)
+Iteration 130 / LogL: -5325.185 / Time: 0h:4m:30s (0h:2m:35s left)
+Iteration 140 / LogL: -5311.779 / Time: 0h:4m:47s (0h:2m:12s left)
+Iteration 150 / LogL: -5314.076 / Time: 0h:5m:6s (0h:1m:50s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 151: -5311.626
+Iteration 160 / LogL: -5325.909 / Time: 0h:5m:24s (0h:3m:5s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 161: -5310.791
+Iteration 170 / LogL: -5310.797 / Time: 0h:5m:41s (0h:3m:3s left)
+Iteration 180 / LogL: -5316.173 / Time: 0h:5m:54s (0h:2m:40s left)
+BETTER TREE FOUND at iteration 188: -5310.788
+Iteration 190 / LogL: -5311.393 / Time: 0h:6m:6s (0h:3m:9s left)
+Iteration 200 / LogL: -5310.799 / Time: 0h:6m:17s (0h:2m:46s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 206: -5310.510
+Iteration 210 / LogL: -5312.242 / Time: 0h:6m:30s (0h:2m:59s left)
+Iteration 220 / LogL: -5311.229 / Time: 0h:6m:42s (0h:2m:37s left)
+Iteration 230 / LogL: -5325.926 / Time: 0h:6m:53s (0h:2m:17s left)
+Iteration 240 / LogL: -5320.422 / Time: 0h:7m:4s (0h:1m:57s left)
+Iteration 250 / LogL: -5310.782 / Time: 0h:7m:16s (0h:1m:38s left)
+Iteration 260 / LogL: -5315.551 / Time: 0h:7m:27s (0h:1m:19s left)
+Iteration 270 / LogL: -5310.514 / Time: 0h:7m:39s (0h:1m:1s left)
+BETTER TREE FOUND at iteration 274: -5310.502
+Iteration 280 / LogL: -5315.906 / Time: 0h:7m:51s (0h:2m:38s left)
+Iteration 290 / LogL: -5312.503 / Time: 0h:8m:2s (0h:2m:20s left)
+Iteration 300 / LogL: -5312.610 / Time: 0h:8m:13s (0h:2m:2s left)
+Iteration 310 / LogL: -5330.132 / Time: 0h:8m:25s (0h:1m:44s left)
+Iteration 320 / LogL: -5314.697 / Time: 0h:8m:37s (0h:1m:27s left)
+Iteration 330 / LogL: -5341.164 / Time: 0h:8m:49s (0h:1m:10s left)
+BETTER TREE FOUND at iteration 334: -5310.498
+Iteration 340 / LogL: -5312.970 / Time: 0h:9m:0s (0h:2m:29s left)
+Iteration 350 / LogL: -5337.219 / Time: 0h:9m:11s (0h:2m:12s left)
+Iteration 360 / LogL: -5310.911 / Time: 0h:9m:22s (0h:1m:55s left)
+BETTER TREE FOUND at iteration 365: -5310.496
+Iteration 370 / LogL: -5318.832 / Time: 0h:9m:34s (0h:2m:27s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 371: -5309.580
+Iteration 380 / LogL: -5315.272 / Time: 0h:9m:46s (0h:2m:20s left)
+Iteration 390 / LogL: -5310.703 / Time: 0h:9m:58s (0h:2m:4s left)
+Iteration 400 / LogL: -5316.332 / Time: 0h:10m:8s (0h:1m:48s left)
+Iteration 410 / LogL: -5316.297 / Time: 0h:10m:20s (0h:1m:32s left)
+Iteration 420 / LogL: -5315.238 / Time: 0h:10m:30s (0h:1m:16s left)
+Iteration 430 / LogL: -5319.494 / Time: 0h:10m:41s (0h:1m:1s left)
+Iteration 440 / LogL: -5317.212 / Time: 0h:10m:51s (0h:0m:46s left)
+Iteration 450 / LogL: -5310.189 / Time: 0h:11m:3s (0h:0m:31s left)
+Iteration 460 / LogL: -5317.453 / Time: 0h:11m:13s (0h:0m:16s left)
+Iteration 470 / LogL: -5312.147 / Time: 0h:11m:26s (0h:0m:1s left)
+TREE SEARCH COMPLETED AFTER 472 ITERATIONS / Time: 0h:11m:27s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.010)
+1. Initial log-likelihood: -5309.580
+Optimal log-likelihood: -5309.580
+Proportion of invariable sites: 0.586
+Site proportion and rates:  (0.322,0.705) (0.092,8.368)
+Parameters optimization took 1 rounds (0.102 sec)
+BEST SCORE FOUND : -5309.580
+Ancestral state probabilities printed to /lustre/scratch126/gengen/projects/alpha-allostery-global/phylo-dms/02.iqtree_intermediates/03.out_asr/src_eutheria_bothends_asr/src_eutheria_bothends_asr.state
+Total tree length: 2.425
+
+Total number of iterations: 472
+CPU time used for tree search: 1875.666 sec (0h:31m:15s)
+Wall-clock time used for tree search: 629.460 sec (0h:10m:29s)
+Total CPU time used: 2011.604 sec (0h:33m:31s)
+Total wall-clock time used: 689.001 sec (0h:11m:29s)
+
+Analysis results written to: 
+  IQ-TREE report:                /lustre/scratch126/gengen/projects/alpha-allostery-global/phylo-dms/02.iqtree_intermediates/03.out_asr/src_eutheria_bothends_asr/src_eutheria_bothends_asr.iqtree
+  Maximum-likelihood tree:       /lustre/scratch126/gengen/projects/alpha-allostery-global/phylo-dms/02.iqtree_intermediates/03.out_asr/src_eutheria_bothends_asr/src_eutheria_bothends_asr.treefile
+  Likelihood distances:          /lustre/scratch126/gengen/projects/alpha-allostery-global/phylo-dms/02.iqtree_intermediates/03.out_asr/src_eutheria_bothends_asr/src_eutheria_bothends_asr.mldist
+  Ancestral state:               /lustre/scratch126/gengen/projects/alpha-allostery-global/phylo-dms/02.iqtree_intermediates/03.out_asr/src_eutheria_bothends_asr/src_eutheria_bothends_asr.state
+  Screen log file:               /lustre/scratch126/gengen/projects/alpha-allostery-global/phylo-dms/02.iqtree_intermediates/03.out_asr/src_eutheria_bothends_asr/src_eutheria_bothends_asr.log
+
+Date and Time: Thu Aug 22 11:02:26 2024
