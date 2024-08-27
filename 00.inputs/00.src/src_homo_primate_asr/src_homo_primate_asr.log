@@ -1,0 +1,382 @@
+IQ-TREE multicore version 2.3.6 for Linux x86 64-bit built Aug  4 2024
+Developed by Bui Quang Minh, Nguyen Lam Tung, Olga Chernomor, Heiko Schmidt,
+Dominik Schrempf, Michael Woodhams, Ly Trong Nhan, Thomas Wong
+
+Host:    b12-hm-02 (AVX2, FMA3, 4019 GB RAM)
+Command: iqtree2 -s /lustre/scratch126/gengen/projects/alpha-allostery-global/phylo-dms/02.mafft_out/src_homo_primate_mafft_einsi_aligned.fasta -m JTT+R4 -asr -nt AUTO -pre /lustre/scratch126/gengen/projects/alpha-allostery-global/phylo-dms/02.iqtree_intermediates/03.out_asr/src_homo_primate_asr/src_homo_primate_asr
+Seed:    342771 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Tue Aug 27 14:03:21 2024
+Kernel:  AVX+FMA - auto-detect threads (20 CPU cores detected)
+
+Reading alignment file /lustre/scratch126/gengen/projects/alpha-allostery-global/phylo-dms/02.mafft_out/src_homo_primate_mafft_einsi_aligned.fasta ... Fasta format detected
+Reading fasta file: done in 0.0102795 secs using 70.27% CPU
+Alignment most likely contains protein sequences
+Alignment has 119 sequences with 1982 columns, 1334 distinct patterns
+631 parsimony-informative, 525 singleton sites, 826 constant sites
+WARNING: Some sequence names are changed as follows:
+9606_0:000414 -> 9606_0_000414
+9606_0:000615 -> 9606_0_000615
+9606_0:0006d4 -> 9606_0_0006d4
+9606_0:001389 -> 9606_0_001389
+9606_0:001503 -> 9606_0_001503
+9606_0:0018b3 -> 9606_0_0018b3
+9606_0:0018dd -> 9606_0_0018dd
+9606_0:001d79 -> 9606_0_001d79
+9606_0:0021ca -> 9606_0_0021ca
+9606_0:00225d -> 9606_0_00225d
+9606_0:00253e -> 9606_0_00253e
+9606_0:0041a7 -> 9606_0_0041a7
+9606_0:004857 -> 9606_0_004857
+9606_0:0048d0 -> 9606_0_0048d0
+9606_0:00493f -> 9606_0_00493f
+9606_0:004ddb -> 9606_0_004ddb
+9606_0:005053 -> 9606_0_005053
+1868482_0:002e9c -> 1868482_0_002e9c
+379532_0:000df2 -> 379532_0_000df2
+9447_0:004290 -> 9447_0_004290
+30611_0:002cf7 -> 30611_0_002cf7
+30608_0:004b67 -> 30608_0_004b67
+37293_0:000c18 -> 37293_0_000c18
+9515_0:0007c5 -> 9515_0_0007c5
+81572_0:004020 -> 81572_0_004020
+61853_0:003ed3 -> 61853_0_003ed3
+54180_0:000e85 -> 54180_0_000e85
+9545_0:000f9d -> 9545_0_000f9d
+61621_0:00495b -> 61621_0_00495b
+9555_0:000f27 -> 9555_0_000f27
+9598_0:00139d -> 9598_0_00139d
+39432_0:000cc9 -> 39432_0_000cc9
+9597_0:00156c -> 9597_0_00156c
+591936_0:000e66 -> 591936_0_000e66
+9483_0:000db6 -> 9483_0_000db6
+9568_0:000b97 -> 9568_0_000b97
+9601_0:001360 -> 9601_0_001360
+9531_0:001e61 -> 9531_0_001e61
+9541_0:001953 -> 9541_0_001953
+1737458_0:002095 -> 1737458_0_002095
+9565_0:00159b -> 9565_0_00159b
+9544_0:001663 -> 9544_0_001663
+9606_0:0012a1 -> 9606_0_0012a1
+60711_0:0026e9 -> 60711_0_0026e9
+61622_0:0006ef -> 61622_0_0006ef
+9595_0:00132f -> 9595_0_00132f
+336983_0:004427 -> 336983_0_004427
+1868482_0:001f89 -> 1868482_0_001f89
+379532_0:000d8d -> 379532_0_000d8d
+9447_0:002d76 -> 9447_0_002d76
+30611_0:002de8 -> 30611_0_002de8
+30608_0:00235f -> 30608_0_00235f
+37293_0:00212e -> 37293_0_00212e
+9515_0:003b67 -> 9515_0_003b67
+9515_0:003ba4 -> 9515_0_003ba4
+81572_0:00269a -> 81572_0_00269a
+81572_0:0026c1 -> 81572_0_0026c1
+61853_0:0017ae -> 61853_0_0017ae
+61853_0:001a5c -> 61853_0_001a5c
+54180_0:000686 -> 54180_0_000686
+54180_0:000693 -> 54180_0_000693
+9545_0:002a1e -> 9545_0_002a1e
+9545_0:002a53 -> 9545_0_002a53
+61621_0:00389e -> 61621_0_00389e
+9555_0:0034d6 -> 9555_0_0034d6
+9555_0:003536 -> 9555_0_003536
+9598_0:00251e -> 9598_0_00251e
+9598_0:0026a7 -> 9598_0_0026a7
+39432_0:003e4f -> 39432_0_003e4f
+9597_0:002590 -> 9597_0_002590
+9597_0:002812 -> 9597_0_002812
+591936_0:003475 -> 591936_0_003475
+9483_0:000464 -> 9483_0_000464
+9483_0:000596 -> 9483_0_000596
+9568_0:004edc -> 9568_0_004edc
+9601_0:002568 -> 9601_0_002568
+9601_0:0025a8 -> 9601_0_0025a8
+9531_0:00370d -> 9531_0_00370d
+9541_0:003d5f -> 9541_0_003d5f
+9541_0:003ddf -> 9541_0_003ddf
+1737458_0:0030c2 -> 1737458_0_0030c2
+9565_0:003a46 -> 9565_0_003a46
+9544_0:003c26 -> 9544_0_003c26
+9606_0:0026b3 -> 9606_0_0026b3
+60711_0:004e6c -> 60711_0_004e6c
+60711_0:004e85 -> 60711_0_004e85
+61622_0:0042ff -> 61622_0_0042ff
+9595_0:0025b8 -> 9595_0_0025b8
+9595_0:002605 -> 9595_0_002605
+336983_0:004b77 -> 336983_0_004b77
+1868482_0:004542 -> 1868482_0_004542
+379532_0:003c22 -> 379532_0_003c22
+9447_0:003e11 -> 9447_0_003e11
+30611_0:00162f -> 30611_0_00162f
+30608_0:003a9f -> 30608_0_003a9f
+37293_0:0039cd -> 37293_0_0039cd
+9515_0:001faf -> 9515_0_001faf
+81572_0:004b19 -> 81572_0_004b19
+61853_0:002c59 -> 61853_0_002c59
+54180_0:003870 -> 54180_0_003870
+9545_0:00205c -> 9545_0_00205c
+61621_0:0046ad -> 61621_0_0046ad
+9555_0:003abd -> 9555_0_003abd
+9598_0:004c81 -> 9598_0_004c81
+39432_0:003408 -> 39432_0_003408
+9597_0:004d4d -> 9597_0_004d4d
+591936_0:004570 -> 591936_0_004570
+9483_0:001a5b -> 9483_0_001a5b
+9568_0:000f2c -> 9568_0_000f2c
+9601_0:0049b8 -> 9601_0_0049b8
+9531_0:0044e9 -> 9531_0_0044e9
+9541_0:0029b4 -> 9541_0_0029b4
+1737458_0:000660 -> 1737458_0_000660
+9565_0:0028fb -> 9565_0_0028fb
+9544_0:002a5b -> 9544_0_002a5b
+60711_0:002f68 -> 60711_0_002f68
+61622_0:0036d8 -> 61622_0_0036d8
+61622_0:005267 -> 61622_0_005267
+336983_0:0046da -> 336983_0_0046da
+
+                  Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 0.00799793 secs using 1900% CPU
+   1  9606_0_000414      74.32%    passed      9.98%
+   2  9606_0_000615      73.31%    passed     16.43%
+   3  9606_0_0006d4      40.36%    passed     58.82%
+   4  9606_0_001389      73.41%    failed      0.15%
+   5  9606_0_001503      68.72%    failed      2.93%
+   6  9606_0_0018b3      72.91%    passed     21.56%
+   7  9606_0_0018dd      74.52%    failed      1.57%
+   8  9606_0_001d79      41.62%    failed      0.00%
+   9  9606_0_0021ca      74.52%    passed     38.03%
+  10  9606_0_00225d      74.17%    failed      0.42%
+  11  9606_0_00253e      42.99%    passed     33.49%
+  12  9606_0_0041a7      72.60%    passed     64.24%
+  13  9606_0_004857      75.38%    failed      1.01%
+  14  9606_0_0048d0      73.46%    passed     45.06%
+  15  9606_0_00493f      72.96%    passed     96.95%
+  16  9606_0_004ddb      65.94%    failed      0.00%
+  17  9606_0_005053      65.04%    failed      0.36%
+  18  1868482_0_002e9c   68.16%    failed      2.58%
+  19  379532_0_000df2    68.16%    failed      0.63%
+  20  9447_0_004290      68.16%    failed      0.31%
+  21  30611_0_002cf7     68.47%    failed      0.36%
+  22  30608_0_004b67     78.46%    failed      0.24%
+  23  37293_0_000c18     66.70%    failed      0.74%
+  24  9515_0_0007c5      68.16%    failed      0.82%
+  25  81572_0_004020     68.16%    failed      0.44%
+  26  61853_0_003ed3     68.16%    failed      0.45%
+  27  54180_0_000e85     67.00%    failed      0.47%
+  28  9545_0_000f9d      65.49%    failed      0.54%
+  29  61621_0_00495b     67.10%    failed      0.42%
+  30  9555_0_000f27      77.55%    failed      1.71%
+  31  9598_0_00139d      68.16%    failed      0.54%
+  32  39432_0_000cc9     68.16%    failed      0.64%
+  33  9597_0_00156c      68.16%    failed      0.54%
+  34  591936_0_000e66    68.21%    failed      0.46%
+  35  9483_0_000db6      68.16%    failed      0.93%
+  36  9568_0_000b97      68.21%    failed      0.46%
+  37  9601_0_001360      68.16%    failed      0.33%
+  38  9531_0_001e61      67.61%    failed      3.02%
+  39  9541_0_001953      68.21%    failed      0.36%
+  40  1737458_0_002095   68.16%    failed      1.00%
+  41  9565_0_00159b      68.21%    failed      0.36%
+  42  9544_0_001663      68.21%    failed      0.36%
+  43  9606_0_0012a1      68.16%    failed      0.38%
+  44  60711_0_0026e9     68.21%    failed      0.54%
+  45  61622_0_0006ef     67.00%    failed      0.41%
+  46  9595_0_00132f      68.16%    failed      0.47%
+  47  336983_0_004427    68.21%    failed      0.39%
+  48  1868482_0_001f89   45.61%    passed     46.12%
+  49  379532_0_000d8d    42.18%    passed     20.90%
+  50  9447_0_002d76      42.18%    passed     24.46%
+  51  30611_0_002de8     42.03%    passed     31.84%
+  52  30608_0_00235f     42.33%    passed     24.42%
+  53  37293_0_00212e     42.03%    passed     22.98%
+  54  9515_0_003b67      42.03%    passed     20.83%
+  55  9515_0_003ba4      42.99%    passed     23.72%
+  56  81572_0_00269a     42.99%    passed     30.92%
+  57  81572_0_0026c1     42.03%    passed     26.70%
+  58  61853_0_0017ae     42.99%    passed     35.38%
+  59  61853_0_001a5c     42.03%    passed     28.67%
+  60  54180_0_000686     42.03%    passed     31.14%
+  61  54180_0_000693     42.99%    passed     34.10%
+  62  9545_0_002a1e      43.04%    passed     32.26%
+  63  9545_0_002a53      42.08%    passed     27.26%
+  64  61621_0_00389e     42.03%    passed     31.14%
+  65  9555_0_0034d6      42.03%    passed     32.56%
+  66  9555_0_003536      42.99%    passed     36.25%
+  67  9598_0_00251e      42.28%    passed     43.90%
+  68  9598_0_0026a7      42.03%    passed     26.98%
+  69  39432_0_003e4f     42.03%    passed     25.20%
+  70  9597_0_002590      42.03%    passed     26.69%
+  71  9597_0_002812      42.28%    passed     43.53%
+  72  591936_0_003475    42.03%    passed     27.03%
+  73  9483_0_000464      42.03%    passed     33.13%
+  74  9483_0_000596      42.99%    passed     36.87%
+  75  9568_0_004edc      42.03%    passed     28.49%
+  76  9601_0_002568      42.99%    passed     31.45%
+  77  9601_0_0025a8      42.03%    passed     27.88%
+  78  9531_0_00370d      42.03%    passed     32.38%
+  79  9541_0_003d5f      42.99%    passed     35.21%
+  80  9541_0_003ddf      42.03%    passed     30.29%
+  81  1737458_0_0030c2   42.03%    passed     16.55%
+  82  9565_0_003a46      42.03%    passed     33.38%
+  83  9544_0_003c26      42.03%    passed     32.48%
+  84  9606_0_0026b3      42.03%    passed     27.63%
+  85  60711_0_004e6c     42.03%    passed     28.36%
+  86  60711_0_004e85     42.99%    passed     32.44%
+  87  61622_0_0042ff     42.03%    passed     31.14%
+  88  9595_0_0025b8      42.99%    passed     34.79%
+  89  9595_0_002605      42.03%    passed     29.85%
+  90  336983_0_004b77    42.03%    passed     32.22%
+  91  1868482_0_004542   72.65%    passed     96.03%
+  92  379532_0_003c22    72.96%    passed     96.34%
+  93  9447_0_003e11      72.96%    passed     95.60%
+  94  30611_0_00162f     72.96%    passed     96.82%
+  95  30608_0_003a9f     72.15%    passed     84.03%
+  96  37293_0_0039cd     72.10%    passed     90.13%
+  97  9515_0_001faf      72.10%    passed     85.98%
+  98  81572_0_004b19     72.10%    passed     83.77%
+  99  61853_0_002c59     72.10%    passed     84.21%
+ 100  54180_0_003870     72.96%    passed     96.37%
+ 101  9545_0_00205c      72.10%    passed     87.55%
+ 102  61621_0_0046ad     72.10%    passed     87.55%
+ 103  9555_0_003abd      72.10%    passed     87.55%
+ 104  9598_0_004c81      72.10%    passed     88.24%
+ 105  39432_0_003408     72.10%    passed     87.55%
+ 106  9597_0_004d4d      72.10%    passed     88.24%
+ 107  591936_0_004570    72.96%    passed     95.91%
+ 108  9483_0_001a5b      72.10%    passed     89.89%
+ 109  9568_0_000f2c      72.96%    passed     96.37%
+ 110  9601_0_0049b8      72.65%    passed     96.87%
+ 111  9531_0_0044e9      68.06%    passed     77.41%
+ 112  9541_0_0029b4      72.10%    passed     87.55%
+ 113  1737458_0_000660   72.10%    passed     85.98%
+ 114  9565_0_0028fb      72.96%    passed     96.37%
+ 115  9544_0_002a5b      72.96%    passed     96.37%
+ 116  60711_0_002f68     72.10%    passed     87.55%
+ 117  61622_0_0036d8     72.96%    passed     96.37%
+ 118  61622_0_005267     78.86%    passed     61.42%
+ 119  336983_0_0046da    77.70%    passed     48.13%
+WARNING: 73 sequences contain more than 50% gaps/ambiguity
+****  TOTAL              59.87%  38 sequences failed composition chi2 test (p-value<5%; df=19)
+
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 0.127 seconds
+
+NOTE: 99 MB RAM (0 GB) is required!
+Measuring multi-threading efficiency up to 20 CPU cores
+Increase to 10 rounds for branch lengths
+6 trees examined
+Threads: 1 / Time: 22.639 sec / Speedup: 1.000 / Efficiency: 100% / LogL: -81147
+Threads: 2 / Time: 11.046 sec / Speedup: 2.049 / Efficiency: 102% / LogL: -81147
+Threads: 3 / Time: 10.728 sec / Speedup: 2.110 / Efficiency: 70% / LogL: -81147
+Threads: 4 / Time: 11.621 sec / Speedup: 1.948 / Efficiency: 49% / LogL: -81147
+BEST NUMBER OF THREADS: 2
+
+Estimate model parameters (epsilon = 0.100)
+1. Initial log-likelihood: -28436.814
+2. Current log-likelihood: -26294.013
+3. Current log-likelihood: -26264.223
+4. Current log-likelihood: -26250.597
+5. Current log-likelihood: -26235.991
+6. Current log-likelihood: -26233.023
+7. Current log-likelihood: -26232.218
+8. Current log-likelihood: -26231.835
+9. Current log-likelihood: -26231.569
+10. Current log-likelihood: -26231.384
+11. Current log-likelihood: -26231.251
+Optimal log-likelihood: -26231.152
+Site proportion and rates:  (0.230,0.106) (0.369,0.436) (0.303,1.067) (0.098,4.992)
+Parameters optimization took 11 rounds (20.309 sec)
+Wrote distance file to... 
+Computing ML distances based on estimated model parameters...
+Calculating distance matrix: done in 0.824613 secs using 200% CPU
+Computing ML distances took 0.825225 sec (of wall-clock time) 1.650233 sec (of CPU time)
+Setting up auxiliary I and S matrices: done in 0.000362704 secs using 207.6% CPU
+Computing RapidNJ tree took 0.017753 sec (of wall-clock time) 0.025105 sec (of CPU time)
+Log-likelihood of RapidNJ tree: -26410.824
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Generating 98 parsimony trees... 4.923 second
+Computing log-likelihood of 98 initial trees ... 18.497 seconds
+Current best score: -26231.152
+
+Do NNI search on 20 best initial trees
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 1: -26204.712
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 2: -26145.751
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 3: -26087.372
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 4: -26085.322
+Iteration 10 / LogL: -26109.027 / Time: 0h:3m:20s
+Iteration 20 / LogL: -26085.950 / Time: 0h:4m:46s
+Finish initializing candidate tree set (20)
+Current best tree score: -26085.322 / CPU time: 207.123
+Number of iterations: 20
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Iteration 30 / LogL: -26221.269 / Time: 0h:6m:3s (0h:15m:26s left)
+Iteration 40 / LogL: -26085.661 / Time: 0h:7m:15s (0h:11m:53s left)
+Iteration 50 / LogL: -26085.433 / Time: 0h:8m:31s (0h:9m:23s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 53: -26084.648
+Iteration 60 / LogL: -26212.494 / Time: 0h:9m:46s (0h:15m:23s left)
+BETTER TREE FOUND at iteration 68: -26084.644
+Iteration 70 / LogL: -26086.754 / Time: 0h:11m:2s (0h:15m:40s left)
+Iteration 80 / LogL: -26084.648 / Time: 0h:12m:25s (0h:13m:49s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 84: -26084.506
+BETTER TREE FOUND at iteration 85: -26084.505
+Iteration 90 / LogL: -26088.367 / Time: 0h:13m:39s (0h:14m:34s left)
+Iteration 100 / LogL: -26086.759 / Time: 0h:14m:55s (0h:12m:48s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 106: -26084.441
+Iteration 110 / LogL: -26101.118 / Time: 0h:16m:19s (0h:14m:22s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 119: -26084.134
+Iteration 120 / LogL: -26086.698 / Time: 0h:17m:39s (0h:14m:41s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 128: -26084.120
+Iteration 130 / LogL: -26084.515 / Time: 0h:19m:14s (0h:14m:37s left)
+Iteration 140 / LogL: -26090.877 / Time: 0h:20m:33s (0h:13m:0s left)
+BETTER TREE FOUND at iteration 146: -26084.118
+Iteration 150 / LogL: -26087.080 / Time: 0h:21m:46s (0h:14m:1s left)
+Iteration 160 / LogL: -26084.143 / Time: 0h:23m:9s (0h:12m:31s left)
+Iteration 170 / LogL: -26086.270 / Time: 0h:24m:30s (0h:11m:1s left)
+Iteration 180 / LogL: -26094.688 / Time: 0h:25m:55s (0h:9m:33s left)
+Iteration 190 / LogL: -26085.046 / Time: 0h:27m:31s (0h:8m:9s left)
+Iteration 200 / LogL: -26084.638 / Time: 0h:28m:50s (0h:6m:39s left)
+Iteration 210 / LogL: -26084.857 / Time: 0h:30m:17s (0h:5m:12s left)
+Iteration 220 / LogL: -26089.363 / Time: 0h:31m:35s (0h:3m:45s left)
+Iteration 230 / LogL: -26085.297 / Time: 0h:33m:0s (0h:2m:18s left)
+Iteration 240 / LogL: -26085.956 / Time: 0h:34m:18s (0h:0m:51s left)
+TREE SEARCH COMPLETED AFTER 247 ITERATIONS / Time: 0h:35m:12s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.010)
+1. Initial log-likelihood: -26084.118
+Optimal log-likelihood: -26084.116
+Site proportion and rates:  (0.231,0.098) (0.390,0.418) (0.282,1.048) (0.097,5.362)
+Parameters optimization took 1 rounds (1.694 sec)
+BEST SCORE FOUND : -26084.116
+Ancestral state probabilities printed to /lustre/scratch126/gengen/projects/alpha-allostery-global/phylo-dms/02.iqtree_intermediates/03.out_asr/src_homo_primate_asr/src_homo_primate_asr.state
+Total tree length: 24.174
+
+Total number of iterations: 247
+CPU time used for tree search: 4057.776 sec (1h:7m:37s)
+Wall-clock time used for tree search: 2033.695 sec (0h:33m:53s)
+Total CPU time used: 4232.826 sec (1h:10m:32s)
+Total wall-clock time used: 2116.868 sec (0h:35m:16s)
+
+Analysis results written to: 
+  IQ-TREE report:                /lustre/scratch126/gengen/projects/alpha-allostery-global/phylo-dms/02.iqtree_intermediates/03.out_asr/src_homo_primate_asr/src_homo_primate_asr.iqtree
+  Maximum-likelihood tree:       /lustre/scratch126/gengen/projects/alpha-allostery-global/phylo-dms/02.iqtree_intermediates/03.out_asr/src_homo_primate_asr/src_homo_primate_asr.treefile
+  Likelihood distances:          /lustre/scratch126/gengen/projects/alpha-allostery-global/phylo-dms/02.iqtree_intermediates/03.out_asr/src_homo_primate_asr/src_homo_primate_asr.mldist
+  Ancestral state:               /lustre/scratch126/gengen/projects/alpha-allostery-global/phylo-dms/02.iqtree_intermediates/03.out_asr/src_homo_primate_asr/src_homo_primate_asr.state
+  Screen log file:               /lustre/scratch126/gengen/projects/alpha-allostery-global/phylo-dms/02.iqtree_intermediates/03.out_asr/src_homo_primate_asr/src_homo_primate_asr.log
+
+Date and Time: Tue Aug 27 14:38:38 2024
