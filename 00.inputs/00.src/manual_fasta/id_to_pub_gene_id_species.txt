@@ -1,0 +1,123 @@
+9606_0:000414 | "Homo sapiens | "LCK
+9606_0:000615 | "Homo sapiens | "c-fgr;FGR
+9606_0:0006d4 | "Homo sapiens | "ABL2
+9606_0:0012a1 | "Homo sapiens | "TEC
+9606_0:001389 | "Homo sapiens | "TXK
+9606_0:001503 | "Homo sapiens | "ITK
+9606_0:0018b3 | "Homo sapiens | "FYN
+9606_0:0018dd | "Homo sapiens | "FRK
+9606_0:001d79 | "Homo sapiens | "EGFR
+9606_0:0021ca | "Homo sapiens | "BLK
+9606_0:00225d | "Homo sapiens | "LYN
+9606_0:00253e | "Homo sapiens | "ABL1
+9606_0:0026b3 | "Homo sapiens | "ABL1
+9606_0:0041a7 | "Homo sapiens | "YES1
+9606_0:004857 | "Homo sapiens | "SRMS
+9606_0:0048d0 | "Homo sapiens | "HCK
+9606_0:00493f | "Homo sapiens | "SRC
+9606_0:004ddb | "Homo sapiens | "BMX
+9606_0:005053 | "Homo sapiens | "BTK
+1868482_0:002e9c | "Carlito syrichta | "TEC
+379532_0:000df2 | "Propithecus coquereli | "TEC
+9447_0:004290 | "Lemur catta | "123624818
+30611_0:002cf7 | "Otolemur garnettii | "TEC
+30608_0:004b67 | "Microcebus murinus | "LOC105874757
+37293_0:000c18 | "Aotus nancymaae | "TEC
+9515_0:0007c5 | "Sapajus apella | "TEC
+81572_0:004020 | "Hylobates moloch | "TEC
+61853_0:003ed3 | "Nomascus leucogenys | "TEC
+54180_0:000e85 | "Trachypithecus francoisi | "TEC
+9545_0:000f9d | "Macaca nemestrina | "TEC
+61621_0:00495b | "Rhinopithecus bieti | "TEC
+9555_0:000f27 | "Papio anubis | "TEC
+9598_0:00139d | "Pan troglodytes | "TEC
+39432_0:000cc9 | "Saimiri boliviensis boliviensis | "TEC
+9597_0:00156c | "Pan paniscus | "TEC
+591936_0:000e66 | "Piliocolobus tephrosceles | "TEC
+9483_0:000db6 | "Callithrix jacchus | "TEC
+9568_0:000b97 | "Mandrillus leucophaeus | "TEC
+9601_0:001360 | "Pongo abelii | "TEC
+9531_0:001e61 | "Cercocebus atys | "TEC
+9541_0:001953 | "Macaca fascicularis | "TEC
+1737458_0:002095 | "Cebus capucinus imitator | "TEC
+9565_0:00159b | "Theropithecus gelada | "TEC
+9544_0:001663 | "Macaca mulatta | "TEC
+9606_0:0012a1 | "Homo sapiens | "TEC
+60711_0:0026e9 | "Chlorocebus sabaeus | "TEC
+61622_0:0006ef | "Rhinopithecus roxellana | "TEC
+9595_0:00132f | "Gorilla gorilla gorilla | "TEC
+336983_0:004427 | "Colobus angolensis palliatus | "TEC
+1868482_0:001f89 | "Carlito syrichta | "ABL1
+379532_0:000d8d | "Propithecus coquereli | "ABL1
+9447_0:002d76 | "Lemur catta | "123646592
+30611_0:002de8 | "Otolemur garnettii | "ABL1
+30608_0:00235f | "Microcebus murinus | "ABL1
+37293_0:00212e | "Aotus nancymaae | "ABL1
+9515_0:003b67 | "Sapajus apella | "ABL1
+9515_0:003ba4 | "Sapajus apella | "ABL1
+81572_0:00269a | "Hylobates moloch | "ABL1
+81572_0:0026c1 | "Hylobates moloch | "ABL1
+61853_0:0017ae | "Nomascus leucogenys | "ABL1
+61853_0:001a5c | "Nomascus leucogenys | "ABL1
+54180_0:000686 | "Trachypithecus francoisi | "ABL1
+54180_0:000693 | "Trachypithecus francoisi | "ABL1
+9545_0:002a1e | "Macaca nemestrina | "ABL1
+9545_0:002a53 | "Macaca nemestrina | "ABL1
+61621_0:00389e | "Rhinopithecus bieti | "ABL1
+9555_0:0034d6 | "Papio anubis | "ABL1
+9555_0:003536 | "Papio anubis | "ABL1
+9598_0:00251e | "Pan troglodytes | "ABL1
+9598_0:0026a7 | "Pan troglodytes | "ABL1
+39432_0:003e4f | "Saimiri boliviensis boliviensis | "ABL1
+9597_0:002590 | "Pan paniscus | "ABL1
+9597_0:002812 | "Pan paniscus | "ABL1
+591936_0:003475 | "Piliocolobus tephrosceles | "ABL1
+9483_0:000464 | "Callithrix jacchus | "ABL1
+9483_0:000596 | "Callithrix jacchus | "ABL1
+9568_0:004edc | "Mandrillus leucophaeus | "ABL1
+9601_0:002568 | "Pongo abelii | "ABL1
+9601_0:0025a8 | "Pongo abelii | "ABL1
+9531_0:00370d | "Cercocebus atys | "ABL1
+9541_0:003d5f | "Macaca fascicularis | "123569215
+9541_0:003ddf | "Macaca fascicularis | "ABL1
+1737458_0:0030c2 | "Cebus capucinus imitator | "ABL1
+9565_0:003a46 | "Theropithecus gelada | "ABL1
+9544_0:003c26 | "Macaca mulatta | "ABL1
+9606_0:00253e | "Homo sapiens | "ABL1
+9606_0:0026b3 | "Homo sapiens | "ABL1
+60711_0:004e6c | "Chlorocebus sabaeus | "ABL1
+60711_0:004e85 | "Chlorocebus sabaeus | "ABL1
+61622_0:0042ff | "Rhinopithecus roxellana | "ABL1
+9595_0:0025b8 | "Gorilla gorilla gorilla | "109028161
+9595_0:002605 | "Gorilla gorilla gorilla | "ABL1
+336983_0:004b77 | "Colobus angolensis palliatus | "ABL1
+1868482_0:004542 | "Carlito syrichta | "SRC
+379532_0:003c22 | "Propithecus coquereli | "SRC
+9447_0:003e11 | "Lemur catta | "123622361
+30611_0:00162f | "Otolemur garnettii | "SRC
+30608_0:003a9f | "Microcebus murinus | "SRC
+37293_0:0039cd | "Aotus nancymaae | "SRC
+9515_0:001faf | "Sapajus apella | "SRC
+81572_0:004b19 | "Hylobates moloch | "SRC
+61853_0:002c59 | "Nomascus leucogenys | "SRC
+54180_0:003870 | "Trachypithecus francoisi | "SRC
+9545_0:00205c | "Macaca nemestrina | "SRC
+61621_0:0046ad | "Rhinopithecus bieti | "SRC
+9555_0:003abd | "Papio anubis | "SRC
+9598_0:004c81 | "Pan troglodytes | "SRC
+39432_0:003408 | "Saimiri boliviensis boliviensis | "SRC
+9597_0:004d4d | "Pan paniscus | "SRC
+591936_0:004570 | "Piliocolobus tephrosceles | "SRC
+9483_0:001a5b | "Callithrix jacchus | "SRC
+9568_0:000f2c | "Mandrillus leucophaeus | "SRC
+9601_0:0049b8 | "Pongo abelii | "SRC
+9531_0:0044e9 | "Cercocebus atys | "SRC
+9541_0:0029b4 | "Macaca fascicularis | "SRC
+1737458_0:000660 | "Cebus capucinus imitator | "SRC
+9565_0:0028fb | "Theropithecus gelada | "SRC
+9544_0:002a5b | "Macaca mulatta | "SRC
+9606_0:00493f | "Homo sapiens | "SRC
+60711_0:002f68 | "Chlorocebus sabaeus | "SRC
+61622_0:0036d8 | "Rhinopithecus roxellana | "SRC
+61622_0:005267 | "Rhinopithecus roxellana | "LOC115895854
+336983_0:0046da | "Colobus angolensis palliatus | "SRC
