@@ -1,118 +1,0 @@
-----------------------------------------------------------------------
-Checking blastp
-----------------------------------------------------------------------
-
-    installed:       Y
-    binary_path:     /software/hgi/envs/conda/team354/xl7/topiary/bin/blastp
-    binary runs:     Y
-    version:         2.16.0+
-    minimum version: 2.0
-    passes:          Y
-
-----------------------------------------------------------------------
-Checking makeblastdb
-----------------------------------------------------------------------
-
-    installed:       Y
-    binary_path:     /software/hgi/envs/conda/team354/xl7/topiary/bin/makeblastdb
-    binary runs:     Y
-    version:         2.16.0+
-    minimum version: 2.0
-    passes:          Y
-
-----------------------------------------------------------------------
-Checking muscle
-----------------------------------------------------------------------
-
-    installed:       Y
-    binary_path:     /software/hgi/envs/conda/team354/xl7/topiary/bin/muscle
-    binary runs:     Y
-    version:         5.1.linux64
-    minimum version: 5.0
-    passes:          Y
-
-
--------------------------------------------------------------------
-Building initial topiary dataframe.
--------------------------------------------------------------------
-
-BLASTing against NCBI database nr
-Performing 9 BLAST queries against the NCBI nr database
-on 1 threads. Depending on the server load, this could
-take awhile. This is a good time to grab a cup of coffee.
-
-                                                            🔍         🔍 🔍       🔍 🔍 🔍     🔍 🔍 🔍 🔍   🔍 🔍 🔍 🔍 🔍                                                             🔍         🔍 🔍       🔍 🔍 🔍     🔍 🔍 🔍 🔍   🔍 🔍 🔍 🔍 🔍                                                             🔍         🔍 🔍       🔍 🔍 🔍     🔍 🔍 🔍 🔍   🔍 🔍 🔍 🔍 🔍                                                             🔍         🔍 🔍       🔍 🔍 🔍     🔍 🔍 🔍 🔍   🔍 🔍 🔍 🔍 🔍                                                             🔍         🔍 🔍       🔍 🔍 🔍     🔍 🔍 🔍 🔍   🔍 🔍 🔍 🔍 🔍                                                             🔍         🔍 🔍       🔍 🔍 🔍     🔍 🔍 🔍 🔍   🔍 🔍 🔍 🔍 🔍                                                             🔍         🔍 🔍       🔍 🔍 🔍     🔍 🔍 🔍 🔍   🔍 🔍 🔍 🔍 🔍                                                             🔍         🔍 🔍       🔍 🔍 🔍     🔍 🔍 🔍 🔍   🔍 🔍 🔍 🔍 🔍                                                             🔍         🔍 🔍       🔍 🔍 🔍     🔍 🔍 🔍 🔍   🔍 🔍 🔍 🔍 🔍                                                             🔍         🔍 🔍       🔍 🔍 🔍     🔍 🔍 🔍 🔍   🔍 🔍 🔍 🔍 🔍                                                             🔍         🔍 🔍       🔍 🔍 🔍     🔍 🔍 🔍 🔍   🔍 🔍 🔍 🔍 🔍                                                             🔍         🔍 🔍       🔍 🔍 🔍     🔍 🔍 🔍 🔍   🔍 🔍 🔍 🔍 🔍                                                             🔍         🔍 🔍       🔍 🔍 🔍     🔍 🔍 🔍 🔍   🔍 🔍 🔍 🔍 🔍                                                             🔍         🔍 🔍       🔍 🔍 🔍     🔍 🔍 🔍 🔍   🔍 🔍 🔍 🔍 🔍                                                             🔍         🔍 🔍       🔍 🔍 🔍     🔍 🔍 🔍 🔍   🔍 🔍 🔍 🔍 🔍                                                             🔍         🔍 🔍       🔍 🔍 🔍     🔍 🔍 🔍 🔍   🔍 🔍 🔍 🔍 🔍                                                             🔍         🔍 🔍       🔍 🔍 🔍     🔍 🔍 🔍 🔍   🔍 🔍 🔍 🔍 🔍                                                             🔍         🔍 🔍       🔍 🔍 🔍     🔍 🔍 🔍 🔍   🔍 🔍 🔍 🔍 🔍                                                             🔍         🔍 🔍       🔍 🔍 🔍     🔍 🔍 🔍 🔍   🔍 🔍 🔍 🔍 🔍                                                             🔍         🔍 🔍       🔍 🔍 🔍     🔍 🔍 🔍 🔍   🔍 🔍 🔍 🔍 🔍                                                             🔍         🔍 🔍       🔍 🔍 🔍     🔍 🔍 🔍 🔍   🔍 🔍 🔍 🔍 🔍                                                             🔍         🔍 🔍       🔍 🔍 🔍     🔍 🔍 🔍 🔍   🔍 🔍 🔍 🔍 🔍                                                             🔍         🔍 🔍       🔍 🔍 🔍     🔍 🔍 🔍 🔍   🔍 🔍 🔍 🔍 🔍                                                             🔍         🔍 🔍       🔍 🔍 🔍     🔍 🔍 🔍 🔍   🔍 🔍 🔍 🔍 🔍                                                             🔍         🔍 🔍       🔍 🔍 🔍     🔍 🔍 🔍 🔍   🔍 🔍 🔍 🔍 🔍                                                             🔍         🔍 🔍       🔍 🔍 🔍     🔍 🔍 🔍 🔍   🔍 🔍 🔍 🔍 🔍                                                             🔍         🔍 🔍       🔍 🔍 🔍     🔍 🔍 🔍 🔍   🔍 🔍 🔍 🔍 🔍                                                             🔍         🔍 🔍       🔍 🔍 🔍     🔍 🔍 🔍 🔍   🔍 🔍 🔍 🔍 🔍                                                             🔍         🔍 🔍       🔍 🔍 🔍     🔍 🔍 🔍 🔍   🔍 🔍 🔍 🔍 🔍                                                             🔍         🔍 🔍       🔍 🔍 🔍     🔍 🔍 🔍 🔍   🔍 🔍 🔍 🔍 🔍                                                             🔍         🔍 🔍       🔍 🔍 🔍     🔍 🔍 🔍 🔍   🔍 🔍 🔍 🔍 🔍                                                             🔍         🔍 🔍       🔍 🔍 🔍     🔍 🔍 🔍 🔍   🔍 🔍 🔍 🔍 🔍                                                             🔍         🔍 🔍       🔍 🔍 🔍     🔍 🔍 🔍 🔍   🔍 🔍 🔍 🔍 🔍                                                             🔍         🔍 🔍       🔍 🔍 🔍     🔍 🔍 🔍 🔍   🔍 🔍 🔍 🔍 🔍                                                             🔍         🔍 🔍       🔍 🔍 🔍     🔍 🔍 🔍 🔍   🔍 🔍 🔍 🔍 🔍                                                             🔍         🔍 🔍       🔍 🔍 🔍     🔍 🔍 🔍 🔍   🔍 🔍 🔍 🔍 🔍                                                             🔍         🔍 🔍       🔍 🔍 🔍     🔍 🔍 🔍 🔍   🔍 🔍 🔍 🔍 🔍                                                             🔍         🔍 🔍       🔍 🔍 🔍     🔍 🔍 🔍 🔍   🔍 🔍 🔍 🔍 🔍                                                             🔍         🔍 🔍       🔍 🔍 🔍     🔍 🔍 🔍 🔍   🔍 🔍 🔍 🔍 🔍                                                             🔍         🔍 🔍       🔍 🔍 🔍     🔍 🔍 🔍 🔍   🔍 🔍 🔍 🔍 🔍                                                             🔍         🔍 🔍       🔍 🔍 🔍     🔍 🔍 🔍 🔍   🔍 🔍 🔍 🔍 🔍                                                             🔍         🔍 🔍       🔍 🔍 🔍     🔍 🔍 🔍 🔍   🔍 🔍 🔍 🔍 🔍                                                             🔍         🔍 🔍       🔍 🔍 🔍     🔍 🔍 🔍 🔍   🔍 🔍 🔍 🔍 🔍                                                             🔍         🔍 🔍       🔍 🔍 🔍     🔍 🔍 🔍 🔍   🔍 🔍 🔍 🔍 🔍                                                             🔍         🔍 🔍       🔍 🔍 🔍     🔍 🔍 🔍 🔍   🔍 🔍 🔍 🔍 🔍                                                             🔍         🔍 🔍       🔍 🔍 🔍     🔍 🔍 🔍 🔍   🔍 🔍 🔍 🔍 🔍                                                             🔍         🔍 🔍       🔍 🔍 🔍     🔍 🔍 🔍 🔍   🔍 🔍 🔍 🔍 🔍                                                             🔍         🔍 🔍       🔍 🔍 🔍     🔍 🔍 🔍 🔍   🔍 🔍 🔍 🔍 🔍                                                             🔍         🔍 🔍       🔍 🔍 🔍     🔍 🔍 🔍 🔍   🔍 🔍 🔍 🔍 🔍                                                             🔍         🔍 🔍       🔍 🔍 🔍     🔍 🔍 🔍 🔍   🔍 🔍 🔍 🔍 🔍                                                             🔍         🔍 🔍       🔍 🔍 🔍     🔍 🔍 🔍 🔍   🔍 🔍 🔍 🔍 🔍                                                             🔍         🔍 🔍       🔍 🔍 🔍     🔍 🔍 🔍 🔍   🔍 🔍 🔍 🔍 🔍                                                             🔍         🔍 🔍       🔍 🔍 🔍     🔍 🔍 🔍 🔍   🔍 🔍 🔍 🔍 🔍                                                             🔍         🔍 🔍       🔍 🔍 🔍     🔍 🔍 🔍 🔍   🔍 🔍 🔍 🔍 🔍                                                             🔍         🔍 🔍       🔍 🔍 🔍     🔍 🔍 🔍 🔍   🔍 🔍 🔍 🔍 🔍                                                             🔍         🔍 🔍       🔍 🔍 🔍     🔍 🔍 🔍 🔍   🔍 🔍 🔍 🔍 🔍                                                             🔍         🔍 🔍       🔍 🔍 🔍     🔍 🔍 🔍 🔍   🔍 🔍 🔍 🔍 🔍                                                             🔍         🔍 🔍       🔍 🔍 🔍     🔍 🔍 🔍 🔍   🔍 🔍 🔍 🔍 🔍                                                             🔍         🔍 🔍       🔍 🔍 🔍     🔍 🔍 🔍 🔍   🔍 🔍 🔍 🔍 🔍                                                             🔍         🔍 🔍       🔍 🔍 🔍     🔍 🔍 🔍 🔍   🔍 🔍 🔍 🔍 🔍                                                             🔍         🔍 🔍       🔍 🔍 🔍     🔍 🔍 🔍 🔍   🔍 🔍 🔍 🔍 🔍                                                             🔍         🔍 🔍       🔍 🔍 🔍     🔍 🔍 🔍 🔍   🔍 🔍 🔍 🔍 🔍                                                             🔍         🔍 🔍       🔍 🔍 🔍     🔍 🔍 🔍 🔍   🔍 🔍 🔍 🔍 🔍                                                             🔍         🔍 🔍       BLAST query complete.
-                                                  
-Downloading 351 blocks of ~50 sequences... 
-Getting OTT species ids for all species.
-
--------------------------------------------------------------------
-Doing reciprocal blast.
--------------------------------------------------------------------
-
-Downloading Danio rerio proteome
-Downloading proteome for taxid '7955'
-Attempt 1 of 5.
-Downloading GCF_000002035.6_GRCz11_protein.faa.gz
-Downloading Gallus gallus proteome
-Downloading proteome for taxid '9031'
-Attempt 1 of 5.
-Downloading GCF_016699485.2_bGalGal1.mat.broiler.GRCg7b_protein.faa.gz
-Downloading Homo sapiens proteome
-Downloading proteome for taxid '9606'
-
-------------------------------------------------------------
-Sender: LSF System <lsfadmin@b11-hm-01>
-Subject: Job 268413: <#!/bin/bash;#BSUB -G team354;#BSUB -n 10;#BSUB -M 300000;#BSUB -R "select[mem>300000] rusage[mem=300000]";#BSUB -o /lustre/scratch126/gengen/projects/alpha-allostery-global/git-phylo-dms/00.inputs/02.src_topiary/topiary_src_090224_%J.out;#BSUB -e /lustre/scratch126/gengen/projects/alpha-allostery-global/git-phylo-dms/00.inputs/02.src_topiary/topiary_src_090224_%J.err;#BSUB -q hugemem; conda activate  /software/hgi/envs/conda/team354/xl7/topiary; cd /lustre/scratch126/gengen/projects/alpha-allostery-global/git-phylo-dms/00.inputs/02.src_topiary; topiary-seed-to-alignment /lustre/scratch126/gengen/projects/alpha-allostery-global/git-phylo-dms/00.inputs/02.src_topiary/seed-dataframe_src_tec_abl.csv --out_dir  /lustre/scratch126/gengen/projects/alpha-allostery-global/git-phylo-dms/00.inputs/02.src_topiary/seed_to_ali  > in cluster <farm22> Exited
-
-Job <#!/bin/bash;#BSUB -G team354;#BSUB -n 10;#BSUB -M 300000;#BSUB -R "select[mem>300000] rusage[mem=300000]";#BSUB -o /lustre/scratch126/gengen/projects/alpha-allostery-global/git-phylo-dms/00.inputs/02.src_topiary/topiary_src_090224_%J.out;#BSUB -e /lustre/scratch126/gengen/projects/alpha-allostery-global/git-phylo-dms/00.inputs/02.src_topiary/topiary_src_090224_%J.err;#BSUB -q hugemem; conda activate  /software/hgi/envs/conda/team354/xl7/topiary; cd /lustre/scratch126/gengen/projects/alpha-allostery-global/git-phylo-dms/00.inputs/02.src_topiary; topiary-seed-to-alignment /lustre/scratch126/gengen/projects/alpha-allostery-global/git-phylo-dms/00.inputs/02.src_topiary/seed-dataframe_src_tec_abl.csv --out_dir  /lustre/scratch126/gengen/projects/alpha-allostery-global/git-phylo-dms/00.inputs/02.src_topiary/seed_to_ali  > was submitted from host <farm22-head1> by user <xl7> in cluster <farm22> at Mon Sep  2 18:27:38 2024
-Job was executed on host(s) <10*b11-hm-01>, in queue <hugemem>, as user <xl7> in cluster <farm22> at Mon Sep  2 18:27:38 2024
-</nfs/users/nfs_x/xl7> was used as the home directory.
-</lustre/scratch126/gengen/projects/alpha-allostery-global/git-phylo-dms/00.inputs/02.src_topiary> was used as the working directory.
-Started at Mon Sep  2 18:27:38 2024
-Terminated at Mon Sep  2 18:39:52 2024
-Results reported at Mon Sep  2 18:39:52 2024
-
-Your job looked like:
-
-------------------------------------------------------------
-# LSBATCH: User input
-#!/bin/bash
-#BSUB -G team354
-#BSUB -n 10
-#BSUB -M 300000
-#BSUB -R "select[mem>300000] rusage[mem=300000]"
-#BSUB -o /lustre/scratch126/gengen/projects/alpha-allostery-global/git-phylo-dms/00.inputs/02.src_topiary/topiary_src_090224_%J.out
-#BSUB -e /lustre/scratch126/gengen/projects/alpha-allostery-global/git-phylo-dms/00.inputs/02.src_topiary/topiary_src_090224_%J.err
-#BSUB -q hugemem
-
-conda activate  /software/hgi/envs/conda/team354/xl7/topiary
-
-cd /lustre/scratch126/gengen/projects/alpha-allostery-global/git-phylo-dms/00.inputs/02.src_topiary
-
-topiary-seed-to-alignment /lustre/scratch126/gengen/projects/alpha-allostery-global/git-phylo-dms/00.inputs/02.src_topiary/seed-dataframe_src_tec_abl.csv --out_dir  /lustre/scratch126/gengen/projects/alpha-allostery-global/git-phylo-dms/00.inputs/02.src_topiary/seed_to_ali  
-------------------------------------------------------------
-
-Exited with exit code 1.
-
-Resource usage summary:
-
-    CPU time :                                   143.40 sec.
-    Max Memory :                                 5310 MB
-    Average Memory :                             928.75 MB
-    Total Requested Memory :                     300000.00 MB
-    Delta Memory :                               294690.00 MB
-    Max Swap :                                   -
-    Max Processes :                              261
-    Max Threads :                                523
-    Run time :                                   732 sec.
-    Turnaround time :                            734 sec.
-
-The output (if any) is above this job summary.
-
-
-
-PS:
-
-Read file </lustre/scratch126/gengen/projects/alpha-allostery-global/git-phylo-dms/00.inputs/02.src_topiary/topiary_src_090224_268413.err> for stderr output of this job.
-

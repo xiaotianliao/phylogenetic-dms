@@ -1,0 +1,99 @@
+
+CondaError: Run 'conda init' before 'conda activate'
+
+/software/hgi/envs/conda/team354/xl7/topiary/lib/python3.11/site-packages/Bio/Application/__init__.py:39: BiopythonDeprecationWarning: The Bio.Application modules and modules relying on it have been deprecated.
+
+Due to the on going maintenance burden of keeping command line application
+wrappers up to date, we have decided to deprecate and eventually remove these
+modules.
+
+We instead now recommend building your command line and invoking it directly
+with the subprocess module.
+  warnings.warn(
+  0%|          | 0/351 [00:00<?, ?it/s]  0%|          | 1/351 [00:02<15:18,  2.62s/it]  1%|▏         | 5/351 [00:03<03:15,  1.77it/s]  2%|▏         | 6/351 [00:03<02:47,  2.06it/s]  2%|▏         | 7/351 [00:04<03:51,  1.49it/s]  2%|▏         | 8/351 [00:05<03:08,  1.82it/s]  3%|▎         | 9/351 [00:09<08:31,  1.50s/it]  5%|▌         | 19/351 [00:17<05:23,  1.03it/s]  9%|▊         | 30/351 [00:19<02:46,  1.93it/s]  9%|▉         | 33/351 [00:33<06:40,  1.26s/it] 12%|█▏        | 41/351 [00:50<08:25,  1.63s/it] 13%|█▎        | 45/351 [00:55<07:44,  1.52s/it] 14%|█▎        | 48/351 [01:01<08:20,  1.65s/it] 14%|█▍        | 49/351 [01:04<08:37,  1.72s/it] 20%|██        | 71/351 [01:10<03:11,  1.46it/s] 26%|██▌       | 90/351 [01:16<02:08,  2.03it/s] 36%|███▌      | 127/351 [01:24<01:16,  2.94it/s] 43%|████▎     | 152/351 [01:34<01:11,  2.77it/s] 45%|████▌     | 158/351 [01:39<01:19,  2.42it/s] 47%|████▋     | 166/351 [01:43<01:20,  2.30it/s] 52%|█████▏    | 184/351 [01:44<00:50,  3.30it/s] 74%|███████▍  | 261/351 [01:45<00:09,  9.70it/s] 75%|███████▌  | 265/351 [01:50<00:13,  6.29it/s] 76%|███████▋  | 268/351 [01:50<00:12,  6.48it/s] 77%|███████▋  | 272/351 [01:51<00:12,  6.40it/s] 78%|███████▊  | 274/351 [01:53<00:15,  5.13it/s] 79%|███████▊  | 276/351 [01:54<00:16,  4.42it/s] 79%|███████▉  | 277/351 [01:54<00:17,  4.23it/s] 81%|████████  | 284/351 [01:55<00:12,  5.47it/s] 81%|████████  | 285/351 [01:56<00:13,  4.72it/s] 81%|████████▏ | 286/351 [01:57<00:23,  2.81it/s] 82%|████████▏ | 287/351 [01:58<00:23,  2.67it/s] 82%|████████▏ | 288/351 [01:59<00:30,  2.10it/s] 85%|████████▍ | 297/351 [01:59<00:10,  5.04it/s] 85%|████████▌ | 299/351 [02:01<00:15,  3.43it/s] 86%|████████▌ | 302/351 [02:01<00:12,  3.94it/s] 86%|████████▋ | 303/351 [02:02<00:12,  3.84it/s] 87%|████████▋ | 304/351 [02:02<00:12,  3.62it/s] 87%|████████▋ | 305/351 [02:03<00:14,  3.16it/s] 87%|████████▋ | 306/351 [02:04<00:24,  1.85it/s] 88%|████████▊ | 308/351 [02:06<00:28,  1.50it/s] 88%|████████▊ | 310/351 [02:07<00:23,  1.74it/s] 89%|████████▊ | 311/351 [02:08<00:25,  1.58it/s] 89%|████████▉ | 312/351 [02:09<00:34,  1.12it/s] 89%|████████▉ | 314/351 [02:10<00:25,  1.43it/s] 92%|█████████▏| 323/351 [02:11<00:07,  3.59it/s] 93%|█████████▎| 327/351 [02:12<00:05,  4.14it/s] 93%|█████████▎| 328/351 [02:12<00:05,  3.93it/s] 94%|█████████▎| 329/351 [02:13<00:06,  3.24it/s] 94%|█████████▍| 331/351 [02:13<00:06,  3.26it/s] 95%|█████████▍| 332/351 [02:14<00:06,  3.01it/s] 95%|█████████▍| 333/351 [02:15<00:06,  2.63it/s] 95%|█████████▌| 334/351 [02:15<00:05,  3.00it/s] 95%|█████████▌| 335/351 [02:15<00:05,  3.11it/s] 96%|█████████▌| 337/351 [02:16<00:04,  3.08it/s] 96%|█████████▋| 338/351 [02:16<00:03,  3.47it/s] 97%|█████████▋| 339/351 [02:16<00:04,  2.90it/s] 97%|█████████▋| 340/351 [02:17<00:04,  2.44it/s] 97%|█████████▋| 341/351 [02:17<00:04,  2.26it/s] 97%|█████████▋| 342/351 [02:18<00:03,  2.63it/s] 98%|█████████▊| 344/351 [02:18<00:02,  3.01it/s] 98%|█████████▊| 345/351 [02:19<00:02,  2.86it/s] 99%|█████████▊| 346/351 [02:19<00:01,  3.46it/s] 99%|█████████▉| 347/351 [02:20<00:01,  2.05it/s] 99%|█████████▉| 349/351 [02:21<00:00,  2.07it/s]100%|██████████| 351/351 [02:21<00:00,  2.79it/s]100%|██████████| 351/351 [02:21<00:00,  2.48it/s]
+
+Unknown/unrecognized query ids (skipped):
+ ott1033104
+ott4263168
+ott4942641
+ott7659998
+ott7933625
+ott838061 
+  0%|          | 0/16.7 [00:00<?, ?it/s]  0%|          | 0.0/16.7 [00:01<?, ?it/s]  0%|          | 0.0/16.7 [00:01<?, ?it/s]  0%|          | 0.0/16.7 [00:01<?, ?it/s]  0%|          | 0.0/16.7 [00:01<?, ?it/s]  0%|          | 0.0/16.7 [00:01<?, ?it/s]  0%|          | 0.0/16.7 [00:01<?, ?it/s]  0%|          | 0.0/16.7 [00:01<?, ?it/s]  0%|          | 0.0/16.7 [00:02<?, ?it/s]  0%|          | 0.0/16.7 [00:02<?, ?it/s]  0%|          | 0.0/16.7 [00:02<?, ?it/s]  0%|          | 0.0/16.7 [00:02<?, ?it/s]  0%|          | 0.0/16.7 [00:02<?, ?it/s]  0%|          | 0.0/16.7 [00:02<?, ?it/s]  0%|          | 0.0/16.7 [00:02<?, ?it/s]  0%|          | 0.0/16.7 [00:02<?, ?it/s]  0%|          | 0.0/16.7 [00:02<?, ?it/s]  0%|          | 0.0/16.7 [00:02<?, ?it/s] 25%|██▌       | 4.2/16.7 [00:03<00:08,  1.39it/s] 25%|██▌       | 4.2/16.7 [00:03<00:09,  1.35it/s] 25%|██▌       | 4.2/16.7 [00:03<00:09,  1.31it/s] 25%|██▌       | 4.2/16.7 [00:03<00:09,  1.27it/s] 25%|██▌       | 4.2/16.7 [00:03<00:10,  1.23it/s] 50%|█████     | 8.4/16.7 [00:03<00:03,  2.39it/s] 50%|█████     | 8.4/16.7 [00:03<00:03,  2.32it/s] 50%|█████     | 8.4/16.7 [00:03<00:03,  2.26it/s] 50%|█████     | 8.4/16.7 [00:03<00:03,  2.20it/s] 50%|█████     | 8.4/16.7 [00:03<00:03,  2.15it/s] 75%|███████▌  | 12.6/16.7 [00:04<00:01,  3.14it/s] 75%|███████▌  | 12.6/16.7 [00:04<00:01,  3.06it/s]100%|██████████| 16.7/16.7 [00:04<00:00,  3.96it/s]100%|██████████| 16.7/16.7 [00:04<00:00,  3.87it/s]
+  0%|          | 0/15.8 [00:00<?, ?it/s]  0%|          | 0.0/15.8 [00:00<?, ?it/s]  0%|          | 0.0/15.8 [00:00<?, ?it/s]  0%|          | 0.0/15.8 [00:01<?, ?it/s]  0%|          | 0.0/15.8 [00:01<?, ?it/s]  0%|          | 0.0/15.8 [00:01<?, ?it/s]  0%|          | 0.0/15.8 [00:01<?, ?it/s]  0%|          | 0.0/15.8 [00:01<?, ?it/s]  0%|          | 0.0/15.8 [00:01<?, ?it/s]  0%|          | 0.0/15.8 [00:01<?, ?it/s]  0%|          | 0.0/15.8 [00:01<?, ?it/s]  0%|          | 0.0/15.8 [00:01<?, ?it/s]  0%|          | 0.0/15.8 [00:01<?, ?it/s]  0%|          | 0.0/15.8 [00:02<?, ?it/s]  0%|          | 0.0/15.8 [00:02<?, ?it/s]  0%|          | 0.0/15.8 [00:02<?, ?it/s]  0%|          | 0.0/15.8 [00:02<?, ?it/s]  0%|          | 0.0/15.8 [00:02<?, ?it/s]  0%|          | 0.0/15.8 [00:02<?, ?it/s]  0%|          | 0.0/15.8 [00:02<?, ?it/s]  0%|          | 0.0/15.8 [00:02<?, ?it/s]  0%|          | 0.0/15.8 [00:02<?, ?it/s]  0%|          | 0.0/15.8 [00:02<?, ?it/s] 27%|██▋       | 4.2/15.8 [00:03<00:08,  1.40it/s] 27%|██▋       | 4.2/15.8 [00:03<00:08,  1.35it/s] 27%|██▋       | 4.2/15.8 [00:03<00:08,  1.31it/s] 27%|██▋       | 4.2/15.8 [00:03<00:09,  1.27it/s] 27%|██▋       | 4.2/15.8 [00:03<00:09,  1.23it/s] 53%|█████▎    | 8.4/15.8 [00:03<00:03,  2.39it/s] 53%|█████▎    | 8.4/15.8 [00:03<00:03,  2.33it/s] 53%|█████▎    | 8.4/15.8 [00:03<00:03,  2.26it/s] 53%|█████▎    | 8.4/15.8 [00:03<00:03,  2.20it/s] 53%|█████▎    | 8.4/15.8 [00:03<00:03,  2.15it/s] 53%|█████▎    | 8.4/15.8 [00:04<00:03,  2.09it/s] 80%|███████▉  | 12.6/15.8 [00:04<00:01,  3.06it/s]100%|██████████| 15.8/15.8 [00:04<00:00,  3.75it/s]100%|██████████| 15.8/15.8 [00:04<00:00,  3.66it/s]
+Traceback (most recent call last):
+  File "/software/hgi/envs/conda/team354/xl7/topiary/lib/python3.11/site-packages/topiary/ncbi/entrez/download.py", line 92, in ncbi_ftp_download
+    md5_dict[file_name]
+    ~~~~~~~~^^^^^^^^^^^
+KeyError: 'GCA_040451205.1_ASM4045120v1_protein.faa.gz'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/software/hgi/envs/conda/team354/xl7/topiary/lib/python3.11/site-packages/topiary/ncbi/entrez/proteome.py", line 217, in get_proteome
+    ncbi_ftp_download(genome_url,file_base="_protein.faa.gz")
+  File "/software/hgi/envs/conda/team354/xl7/topiary/lib/python3.11/site-packages/topiary/ncbi/entrez/download.py", line 96, in ncbi_ftp_download
+    raise FileNotFoundError(err)
+FileNotFoundError: The file 'GCA_040451205.1_ASM4045120v1_protein.faa.gz' is not present on the NCBI.
+Full path: ftp.ncbi.nlm.nih.gov/genomes/all/GCA/040/451/205/GCA_040451205.1_ASM4045120v1//genomes/all/GCA/040/451/205/GCA_040451205.1_ASM4045120v1/GCA_040451205.1_ASM4045120v1_protein.faa.gz
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/software/hgi/envs/conda/team354/xl7/topiary/lib/python3.11/site-packages/topiary/_private/interface.py", line 32, in wrapper
+    value = func(*args, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "/software/hgi/envs/conda/team354/xl7/topiary/lib/python3.11/site-packages/topiary/pipeline/seed_to_alignment.py", line 406, in seed_to_alignment
+    proteome_list.append(topiary.ncbi.get_proteome(taxid=this_taxid))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/software/hgi/envs/conda/team354/xl7/topiary/lib/python3.11/site-packages/topiary/ncbi/entrez/proteome.py", line 241, in get_proteome
+    raise RuntimeError(err)
+RuntimeError: 
+Could not download proteome GCA_040451205.1_ASM4045120v1_protein.faa.gz.
+This can happen if an assembly is in the NCBI database but
+does not have an associated _protein.tar.gz file. If you 
+are running this as part the seed_to_alignment pipeline,
+you have a couple of options. 1) You can replace the problematic
+species (taxid = 9606) in your seed dataset and start
+the pipeline again. 2) You can edit the 01_initial-dataframe.csv
+file, adding or editing the column 'recip_blast'. Set this to
+'FALSE' for every row *except* the rows with key_species = 'TRUE'.
+Set this to 'FALSE' for the problematic species. You
+can then restart the pipeline with the --restart flag. Topiary
+will not use this species for reciprocal BLAST, but will still
+treat it as a key species in other respects.
+
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/software/hgi/envs/conda/team354/xl7/topiary/lib/python3.11/site-packages/topiary/_private/wrap.py", line 185, in wrap_function
+    ret = fcn(**fcn_args.__dict__)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/software/hgi/envs/conda/team354/xl7/topiary/lib/python3.11/site-packages/topiary/_private/interface.py", line 38, in wrapper
+    raise WrappedFunctionException(err) from e
+topiary._private.interface.WrappedFunctionException: 
+
+Caught exception in function 'seed_to_alignment'. Returning to starting
+directory and cleaning up. Check error stack for cause of
+this error.
+
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/software/hgi/envs/conda/team354/xl7/topiary/bin/topiary-seed-to-alignment", line 26, in <module>
+    main()
+  File "/software/hgi/envs/conda/team354/xl7/topiary/bin/topiary-seed-to-alignment", line 21, in main
+    wrap_function(seed_to_alignment,
+  File "/software/hgi/envs/conda/team354/xl7/topiary/lib/python3.11/site-packages/topiary/_private/wrap.py", line 189, in wrap_function
+    raise RuntimeError(err) from e
+RuntimeError: 
+
+Function seed_to_alignment raised an error.
+
+To see command line help, run topiary-seed-to-alignment --help
+
+
