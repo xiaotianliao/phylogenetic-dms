@@ -1,0 +1,74 @@
+
+CondaError: Run 'conda init' before 'conda activate'
+
+/software/hgi/envs/conda/team354/xl7/topiary/lib/python3.11/site-packages/Bio/Application/__init__.py:39: BiopythonDeprecationWarning: The Bio.Application modules and modules relying on it have been deprecated.
+
+Due to the on going maintenance burden of keeping command line application
+wrappers up to date, we have decided to deprecate and eventually remove these
+modules.
+
+We instead now recommend building your command line and invoking it directly
+with the subprocess module.
+  warnings.warn(
+Traceback (most recent call last):
+  File "/software/hgi/envs/conda/team354/xl7/topiary/lib/python3.11/site-packages/topiary/_private/interface.py", line 32, in wrapper
+    value = func(*args, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "/software/hgi/envs/conda/team354/xl7/topiary/lib/python3.11/site-packages/topiary/pipeline/seed_to_alignment.py", line 371, in seed_to_alignment
+    out = topiary.df_from_seed(**kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/software/hgi/envs/conda/team354/xl7/topiary/lib/python3.11/site-packages/topiary/io/seed.py", line 362, in df_from_seed
+    tmp_blast_df = topiary.ncbi.ncbi_blast(seed_df.sequence,
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/software/hgi/envs/conda/team354/xl7/topiary/lib/python3.11/site-packages/topiary/ncbi/blast/ncbi.py", line 539, in ncbi_blast
+    all_hits = threads.thread_manager(kwargs_list,
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/software/hgi/envs/conda/team354/xl7/topiary/lib/python3.11/site-packages/topiary/_private/threads.py", line 125, in thread_manager
+    results.append(fcn(**kwargs))
+                   ^^^^^^^^^^^^^
+  File "/software/hgi/envs/conda/team354/xl7/topiary/lib/python3.11/site-packages/topiary/ncbi/blast/ncbi.py", line 378, in _ncbi_blast_thread_function
+    out_dfs, xml_files = read_blast_xml(tmp_file,do_cpu_check=True)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/software/hgi/envs/conda/team354/xl7/topiary/lib/python3.11/site-packages/topiary/ncbi/blast/read.py", line 239, in read_blast_xml
+    if check_for_cpu_limit(x):
+       ^^^^^^^^^^^^^^^^^^^^^^
+  File "/software/hgi/envs/conda/team354/xl7/topiary/lib/python3.11/site-packages/topiary/ncbi/blast/read.py", line 94, in check_for_cpu_limit
+    root = ET.fromstring(file_contents)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/software/hgi/envs/conda/team354/xl7/topiary/lib/python3.11/xml/etree/ElementTree.py", line 1351, in XML
+    return parser.close()
+           ^^^^^^^^^^^^^^
+xml.etree.ElementTree.ParseError: no element found: line 128783, column 110
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/software/hgi/envs/conda/team354/xl7/topiary/lib/python3.11/site-packages/topiary/_private/wrap.py", line 185, in wrap_function
+    ret = fcn(**fcn_args.__dict__)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/software/hgi/envs/conda/team354/xl7/topiary/lib/python3.11/site-packages/topiary/_private/interface.py", line 38, in wrapper
+    raise WrappedFunctionException(err) from e
+topiary._private.interface.WrappedFunctionException: 
+
+Caught exception in function 'seed_to_alignment'. Returning to starting
+directory and cleaning up. Check error stack for cause of
+this error.
+
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/software/hgi/envs/conda/team354/xl7/topiary/bin/topiary-seed-to-alignment", line 26, in <module>
+    main()
+  File "/software/hgi/envs/conda/team354/xl7/topiary/bin/topiary-seed-to-alignment", line 21, in main
+    wrap_function(seed_to_alignment,
+  File "/software/hgi/envs/conda/team354/xl7/topiary/lib/python3.11/site-packages/topiary/_private/wrap.py", line 189, in wrap_function
+    raise RuntimeError(err) from e
+RuntimeError: 
+
+Function seed_to_alignment raised an error.
+
+To see command line help, run topiary-seed-to-alignment --help
+
+
