@@ -1,0 +1,112 @@
+
+CondaError: Run 'conda init' before 'conda activate'
+
+/software/hgi/envs/conda/team354/xl7/topiary/lib/python3.11/site-packages/Bio/Application/__init__.py:39: BiopythonDeprecationWarning: The Bio.Application modules and modules relying on it have been deprecated.
+
+Due to the on going maintenance burden of keeping command line application
+wrappers up to date, we have decided to deprecate and eventually remove these
+modules.
+
+We instead now recommend building your command line and invoking it directly
+with the subprocess module.
+  warnings.warn(
+Traceback (most recent call last):
+  File "/software/hgi/envs/conda/team354/xl7/topiary/lib/python3.11/site-packages/topiary/_private/mpi/mpi.py", line 102, in check_mpi_configuration
+    get_hosts(num_threads)
+  File "/software/hgi/envs/conda/team354/xl7/topiary/lib/python3.11/site-packages/topiary/_private/mpi/mpi.py", line 37, in get_hosts
+    raise RuntimeError(err)
+RuntimeError: Could not determine hosts. _get_hosts.py script returned:
+
+stdout:
+
+
+
+stderr:
+
+--------------------------------------------------------------------------
+There are not enough slots available in the system to satisfy the 28
+slots that were requested by the application:
+
+  /software/hgi/envs/conda/team354/xl7/topiary/bin/python
+
+Either request fewer slots for your application, or make more slots
+available for use.
+
+A "slot" is the Open MPI term for an allocatable unit where we can
+launch a process.  The number of slots available are defined by the
+environment in which Open MPI processes are run:
+
+  1. Hostfile, via "slots=N" clauses (N defaults to number of
+     processor cores if not provided)
+  2. The --host command line parameter, via a ":N" suffix on the
+     hostname (N defaults to 1 if not provided)
+  3. Resource manager (e.g., SLURM, PBS/Torque, LSF, etc.)
+  4. If none of a hostfile, the --host command line parameter, or an
+     RM is present, Open MPI defaults to the number of processor cores
+
+In all the above cases, if you want Open MPI to default to the number
+of hardware threads instead of the number of processor cores, use the
+--use-hwthread-cpus option.
+
+Alternatively, you can use the --oversubscribe option to ignore the
+number of available slots when deciding the number of processes to
+launch.
+--------------------------------------------------------------------------
+
+
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/software/hgi/envs/conda/team354/xl7/topiary/lib/python3.11/site-packages/topiary/_private/interface.py", line 32, in wrapper
+    value = func(*args, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "/software/hgi/envs/conda/team354/xl7/topiary/lib/python3.11/site-packages/topiary/pipeline/alignment_to_ancestors.py", line 257, in alignment_to_ancestors
+    check_mpi_configuration(num_threads)
+  File "/software/hgi/envs/conda/team354/xl7/topiary/lib/python3.11/site-packages/topiary/_private/mpi/mpi.py", line 113, in check_mpi_configuration
+    raise RuntimeError(err) from error
+RuntimeError: 
+
+mpirun is not working. This could because you
+set num_threads to be more than the number of nodes you have
+allocated. If you did not set num_threads specifically, try
+setting it rather than having topiary try to figure out the
+number of processors. Another issue could be subtle problems
+with how processors are being requested via your job management
+software (i.e. SLURM, TORQUE, etc.). Maybe play with flags like
+--ntasks-per-node or talk to your cluster administrator.
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/software/hgi/envs/conda/team354/xl7/topiary/lib/python3.11/site-packages/topiary/_private/wrap.py", line 185, in wrap_function
+    ret = fcn(**fcn_args.__dict__)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/software/hgi/envs/conda/team354/xl7/topiary/lib/python3.11/site-packages/topiary/_private/interface.py", line 38, in wrapper
+    raise WrappedFunctionException(err) from e
+topiary._private.interface.WrappedFunctionException: 
+
+Caught exception in function 'alignment_to_ancestors'. Returning to starting
+directory and cleaning up. Check error stack for cause of
+this error.
+
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/software/hgi/envs/conda/team354/xl7/topiary/bin/topiary-alignment-to-ancestors", line 26, in <module>
+    main()
+  File "/software/hgi/envs/conda/team354/xl7/topiary/bin/topiary-alignment-to-ancestors", line 21, in main
+    wrap_function(alignment_to_ancestors,
+  File "/software/hgi/envs/conda/team354/xl7/topiary/lib/python3.11/site-packages/topiary/_private/wrap.py", line 189, in wrap_function
+    raise RuntimeError(err) from e
+RuntimeError: 
+
+Function alignment_to_ancestors raised an error.
+
+To see command line help, run topiary-alignment-to-ancestors --help
+
+
