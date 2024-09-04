@@ -5,7 +5,7 @@
 #BSUB -R "select[mem>300000] rusage[mem=300000]"
 #BSUB -o /lustre/scratch126/gengen/projects/alpha-allostery-global/git-phylo-dms/00.inputs/05.src_topiary_iqtree/00.log/src_topiary_iqtree_mf_090324_%J.out
 #BSUB -e /lustre/scratch126/gengen/projects/alpha-allostery-global/git-phylo-dms/00.inputs/05.src_topiary_iqtree/00.log/src_topiary_iqtree_mf_090324_%J.err
-#BSUB -q hugemem
+#BSUB -q normal
 
 conda activate /software/hgi/envs/conda/team354/xl7/asr
 
