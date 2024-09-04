@@ -1,8 +1,8 @@
 #!/bin/bash
 #BSUB -G team354
 #BSUB -n 10
-#BSUB -M 200000
-#BSUB -R "select[mem>200000] rusage[mem=200000]"
+#BSUB -M 100000
+#BSUB -R "select[mem>100000] rusage[mem=100000]"
 #BSUB -o /lustre/scratch126/gengen/projects/alpha-allostery-global/git-phylo-dms/00.inputs/04.dlg4_topiary/topiary_dlg4_090324_%J.out
 #BSUB -e /lustre/scratch126/gengen/projects/alpha-allostery-global/git-phylo-dms/00.inputs/04.dlg4_topiary/topiary_dlg4_090324_%J.err
 #BSUB -q yesterday
