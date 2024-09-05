@@ -1,0 +1,271 @@
+---
+title: "10.anc_src_mut_trajectory"
+output: html_document
+date: "2024-08-29"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(bio3d)
+library(tidyr)
+library(seqinr)
+library(ggplot2)
+library(reshape2)
+library(dplyr)
+library(ggExtra)
+library(RColorBrewer)
+library(cowplot)
+library(ggpubr)
+library(readr)
+```
+
+```{r}
+# Read the annotation CSV file
+anno <- read_csv('/Users/xl7/Documents/0.Projects/01.protein-seq-evo/01.inputs/00.supplements/src_toni/c-SRC_anno.csv')
+
+# Read the DDG file with whitespace delimiter
+df_ddg <- read_delim('/Users/xl7/Documents/0.Projects/01.protein-seq-evo/01.inputs/00.supplements/src_toni/Supplementary_table_2_activity_folding_ddGs.txt', delim = ' ')
+
+# Extract 'wt_aa', 'position', and 'mt_aa' from 'id'
+df_ddg <- df_ddg %>%
+  mutate(wt_aa = str_extract(id, '^[A-Za-z]+'),
+         position = str_extract(id, '\\d+'),
+         mt_aa = str_extract(id, '[A-Za-z]+$')) %>%
+  mutate(position = as.numeric(position))
+
+df_ddg_unique <- df_ddg %>%
+  distinct(position, .keep_all = TRUE) %>%
+  filter(!is.na(position)) %>%
+  arrange(position)
+
+df_sorted <- df_ddg %>% arrange(position)
+df_sorted
+```
+```{r}
+# Remove duplicate positions, keeping only the first occurrence
+df_sorted_unique <- df_sorted %>% distinct(position, .keep_all = TRUE)
+
+# Remove last row if needed
+df_sorted_unique <- df_sorted_unique[-nrow(df_sorted_unique), ]
+
+# Generate the sequence string by concatenating the wt_aa values
+sequence <- paste(df_sorted_unique$wt_aa, collapse = "")
+print(sequence)
+```
+
+### Original
+>SRC_toni
+ESLRLEVKLGQGCFGEVWMGTWNGTTRVAIKTLKPGTMSPEAFLQEAQVMKKLRHEKLVQLYAVVSEEPIYIVTEYMSKGSLLDFLKGETGKYLRLPQLVDMAAQIASGMAYVERMNYVHRDLRAANILVGENLVCKVADFGLARLIEDNEYTARQGAKFPIKWTAPEAALYGRFTIKSDVWSFGILLTELTTKGRVPYPGMVNREVLDQVERGYRMPCPPECPESLHDLMCQCWRKEPEERPTFEYLQAFLEDYFTSTEPQYQPGENL
+>4CSV|Wilson et al|ANC-AS.Gleevec|original seq from PDB fasta
+GPHDKWEIPRSEITLERKLGSGQFGEVYEGKWRNYNIEVAVKTLKEGTMSVEEFLQEAQIMKKLKHPNLVQLYGVCTKEPPIYIITEYMSHGSLLDYLRDCEGHTVNAQALLDMAAQVASGMAYLESQNFIHRDLAARNCLVGENNVVKVADFGLARLINEDEYTARAGAKFPIKWTAPEAISYNRFSIKSDVWAFGILLWEIFTYGQVPYPGMSGSEVIEQVERGYRMPRPQGCPEEIYELMLQCWNKSPEERPTFAETLHALETMFLPETGGG
+
+### Aligned
+>4CSV|Wilson
+GPHDKWEIPRSEITLERKLGSGQFGEVYEGKWRNYNIEVAVKTLKEGTMSVEEFLQEAQI
+MKKLKHPNLVQLYGVCTKEPPIYIITEYMSHGSLLDYLRDCEGHTVNAQALLDMAAQVAS
+GMAYLESQNFIHRDLAARNCLVGENNVVKVADFGLARLINEDEYTARAGAKFPIKWTAPE
+AISYNRFSIKSDVWAFGILLWEIFTYGQVPYPGMSGSEVIEQVERGYRMPRPQGCPEEIY
+ELMLQCWNKSPEERPTFAETLHALETMFLPETGG---G---
+>SRC_toni
+----------ESLRLEVKLGQGCFGEVWMGTWNGT-TRVAIKTLKPGTMSPEAFLQEAQV
+MKKLRHEKLVQLYAVVS-EEPIYIVTEYMSKGSLLDFLKGETGKYLRLPQLVDMAAQIAS
+GMAYVERMNYVHRDLRAANILVGENLVCKVADFGLARLIEDNEYTARQGAKFPIKWTAPE
+AALYGRFTIKSDVWSFGILLTELTTKGRVPYPGMVNREVLDQVERGYRMPCPPECPESLH
+DLMCQCWRKEPEERPTFEYLQAFLEDYFTSTEPQYQPGENL
+
+### Aligned + trimmed
+>4CSV|Wilson
+SEITLERKLGSGQFGEVYEGKWRNYNIEVAVKTLKEGTMSVEEFLQEAQIMKKLKHPNLVQLYGVCTKEPPIYIITEYMSHGSLLDYLRDCEGHTVNAQALLDMAAQVASGMAYLESQNFIHRDLAARNCLVGENNVVKVADFGLARLINEDEYTARAGAKFPIKWTAPEAISYNRFSIKSDVWAFGILLWEIFTYGQVPYPGMSGSEVIEQVERGYRMPRPQGCPEEIYELMLQCWNKSPEERPTFAETLHALETMFLPETGG---G---
+>SRC_toni
+ESLRLEVKLGQGCFGEVWMGTWNGT-TRVAIKTLKPGTMSPEAFLQEAQVMKKLRHEKLVQLYAVVS-EEPIYIVTEYMSKGSLLDFLKGETGKYLRLPQLVDMAAQIASGMAYVERMNYVHRDLRAANILVGENLVCKVADFGLARLIEDNEYTARQGAKFPIKWTAPEAALYGRFTIKSDVWSFGILLTELTTKGRVPYPGMVNREVLDQVERGYRMPCPPECPESLHDLMCQCWRKEPEERPTFEYLQAFLEDYFTSTEPQYQPGENL
+
+```{r}
+# Sample sequence data
+toni_src <- "ESLRLEVKLGQGCFGEVWMGTWNGT-TRVAIKTLKPGTMSPEAFLQEAQVMKKLRHEKLVQLYAVVS-EEPIYIVTEYMSKGSLLDFLKGETGKYLRLPQLVDMAAQIASGMAYVERMNYVHRDLRAANILVGENLVCKVADFGLARLIEDNEYTARQGAKFPIKWTAPEAALYGRFTIKSDVWSFGILLTELTTKGRVPYPGMVNREVLDQVERGYRMPCPPECPESLHDLMCQCWRKEPEERPTFEYLQAFLEDYFTSTEPQYQPGENL"
+anc_src <- "SEITLERKLGSGQFGEVYEGKWRNYNIEVAVKTLKEGTMSVEEFLQEAQIMKKLKHPNLVQLYGVCTKEPPIYIITEYMSHGSLLDYLRDCEGHTVNAQALLDMAAQVASGMAYLESQNFIHRDLAARNCLVGENNVVKVADFGLARLINEDEYTARAGAKFPIKWTAPEAISYNRFSIKSDVWAFGILLWEIFTYGQVPYPGMSGSEVIEQVERGYRMPRPQGCPEEIYELMLQCWNKSPEERPTFAETLHALETMFLPETGG---G---"
+
+# Compare the sequences
+mutations <- c()
+min_length <- min(nchar(toni_src), nchar(anc_src))
+
+for (i in 1:min_length) {
+  if (substr(toni_src, i, i) != substr(anc_src, i, i)) {
+    mutation <- paste0(substr(toni_src, i, i), i, substr(anc_src, i, i))
+    mutations <- c(mutations, mutation)
+  }
+}
+mutations
+length(mutations)
+```
+```{r}
+df_chunk1 <- df_sorted_unique[df_sorted_unique$position < 26,]
+df_chunk2 <- df_sorted_unique[df_sorted_unique$position >= 26 & df_sorted_unique$position <= 68, ]
+df_chunk3 <- df_sorted_unique[df_sorted_unique$position > 68, ]
+nrow(df_chunk1)
+nrow(df_chunk2)
+nrow(df_chunk3)
+25+43+201
+nrow(df_sorted_unique)
+```
+```{r}
+df_chunk1 <- df_sorted[df_sorted$position < 26,]
+df_chunk2 <- df_sorted[df_sorted$position >= 26 & df_sorted$position <= 68, ]
+df_chunk3 <- df_sorted[df_sorted$position > 68, ]
+
+df_chunk1$position_chunk <- df_chunk1$position 
+df_chunk2$position_chunk <- df_chunk2$position +1
+df_chunk3$position_chunk <- df_chunk3$position + 2
+```
+```{r}
+df_chunk1
+```
+```{r}
+df_chunk1 <- df_chunk1 %>% mutate(id = paste0(wt_aa, position_chunk, mt_aa))
+df_chunk2 <- df_chunk2 %>% mutate(id = paste0(wt_aa, position_chunk, mt_aa))
+df_chunk3 <- df_chunk3 %>% mutate(id = paste0(wt_aa, position_chunk, mt_aa))
+
+df_adj <- rbind(df_chunk1, df_chunk2, df_chunk3)
+df_adj
+```
+
+
+
+```{r}
+subset_df <- df_adj %>% filter(id %in% mutations)
+subset_df
+```
+
+```{r}
+intersect(subset_df$id,mutations)
+setdiff(mutations,subset_df$id)
+```
+```{r}
+max(abs(subset_df$`FL_folding_mean_kcal/mol`))
+max(abs(subset_df$`FL_activity_mean_kcal/mol`))
+```
+
+```{r}
+max(abs(subset_df$`KD_folding_mean_kcal/mol`))
+max(abs(subset_df$`KD_activity_mean_kcal/mol`))
+```
+
+
+```{r,fig.width=8, fig.height=6}
+# Scatter plot using ggplot2
+ggplot(subset_df, aes(x = position, y = `FL_folding_mean_kcal/mol`, color = `FL_activity_mean_kcal/mol`)) +
+  geom_point() +
+  geom_text(aes(label = id), hjust = 0, vjust = 1, size = 3) +
+  scale_color_gradient(low="blue",high="red") +
+  labs(title = "Scatter Plot of FL Folding Mean vs. Position",
+       x = "Position",
+       y = "FL Folding Mean (kcal/mol)",
+       color = "FL Activity Mean") +
+  theme_classic() +
+  theme(legend.position = "bottom")
+```
+
+```{r,fig.width=8, fig.height=6}
+# Scatter plot using ggplot2
+ggplot(subset_df, aes(x = position, y = `KD_folding_mean_kcal/mol`, color = `KD_activity_mean_kcal/mol`)) +
+  geom_point() +
+  geom_text(aes(label = id), hjust = 0, vjust = 1, size = 3) +
+  scale_color_gradient(low="blue",high="red") +
+  labs(title = "Scatter Plot of KD Folding Mean vs. Position",
+       x = "Position",
+       y = "KD Folding Mean (kcal/mol)",
+       color = "KD Activity Mean") +
+  theme_classic() +
+  theme(legend.position = "bottom")
+```
+```{r,fig.width=8, fig.height=4}
+# Scatter plot using ggplot2
+ggplot(subset_df, aes(x =  `KD_folding_mean_kcal/mol`, y = `KD_activity_mean_kcal/mol`)) +
+  geom_point() +
+  geom_text(aes(label = id), hjust = 0, vjust = 1, size = 3) +
+  scale_color_gradient(low="blue",high="red") +
+  labs(title = "Scatter Plot of  Folding Mean vs. Position",
+       x = "KD Folding Mean (kcal/mol)",
+       y = "KD Activity Mean (kcal/mol)"
+       ) +
+  theme_classic() +
+  theme(legend.position = "bottom")
+```
+```{r}
+subset_df_long <- subset_df %>%
+  mutate(type = ifelse(grepl("FL", measurement), "FL", "KD"),
+         axis = ifelse(grepl("activity", measurement), "Activity Mean", "Folding Mean"))
+```
+
+
+```{r}
+subset_df
+
+# Convert to a long format
+subset_df_long <- subset_df %>%
+   dplyr::select(id, `FL_activity_mean_kcal/mol`, `KD_activity_mean_kcal/mol`, `FL_folding_mean_kcal/mol`, `KD_folding_mean_kcal/mol`) %>%
+  pivot_longer(
+    cols = -id,  # Pivot all columns except 'id'
+    names_to = "measurement",
+    values_to = "value"
+  ) %>%
+  mutate(
+    type = ifelse(grepl("FL", measurement), "FL", "KD"),
+    axis = ifelse(grepl("activity", measurement), "Activity Mean", "Folding Mean")
+  )
+
+# Print the result
+subset_df_long
+```
+
+
+```{r}
+# Split the data into Activity and Folding datasets
+activity_data <- subset_df_long %>%
+  filter(axis == "Activity Mean") %>%
+  dplyr::select(id, type, Activity_Mean = value)
+
+folding_data <- subset_df_long %>%
+  filter(axis == "Folding Mean") %>%
+  dplyr::select(id, type, Folding_Mean = value)
+
+# Merge the datasets by 'id' and 'type'
+subset_df_merged <- activity_data %>%
+  full_join(folding_data, by = c("id", "type"))
+
+# View the merged data
+subset_df_merged
+```
+```{r,fig.width=6, fig.height=6}
+p <- ggplot(subset_df_merged) +
+  geom_point(aes(y = Folding_Mean, x = Activity_Mean, color = type), alpha = 0.6, shape = 16) +
+  geom_text(aes(y = Folding_Mean, x = Activity_Mean, label = id), hjust = 0, vjust = 1, size = 2) +
+  scale_color_brewer(palette = "Dark2") + 
+  theme_classic() +
+  theme(legend.position = "bottom") + 
+  labs(y = "Folding Mean", x = "Activity Mean") 
+ggMarginal(p, type = "density", groupColour = TRUE, groupFill = TRUE)
+```
+
+```{r}
+sum(subset_df$`FL_activity_mean_kcal/mol`)
+sum(subset_df$`FL_folding_mean_kcal/mol`)
+
+sum(subset_df$`KD_activity_mean_kcal/mol`)
+sum(subset_df$`KD_folding_mean_kcal/mol`)
+```
+
+
+
+
+
+
+
+
+
+
+
+
+```{r}
+
+```
+

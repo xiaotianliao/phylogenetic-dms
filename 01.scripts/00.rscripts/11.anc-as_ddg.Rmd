@@ -1,0 +1,1019 @@
+---
+title: "11.anc-as_ddg"
+output: html_document
+date: "2024-09-04"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(bio3d)
+library(tidyr)
+library(seqinr)
+library(ggplot2)
+library(reshape2)
+library(dplyr)
+library(ggExtra)
+library(RColorBrewer)
+library(cowplot)
+library(ggpubr)
+library(readr)
+```
+
+```{r}
+# Read the annotation CSV file
+anno <- read_csv('/Users/xl7/Documents/0.Projects/01.protein-seq-evo/01.inputs/00.supplements/src_toni/c-SRC_anno.csv')
+
+# Read the DDG file with whitespace delimiter
+df_ddg <- read_delim('/Users/xl7/Documents/0.Projects/01.protein-seq-evo/01.inputs/00.supplements/src_toni/Supplementary_table_2_activity_folding_ddGs.txt', delim = ' ')
+
+# Extract 'wt_aa', 'position', and 'mt_aa' from 'id'
+df_ddg <- df_ddg %>%
+  mutate(wt_aa = str_extract(id, '^[A-Za-z]+'),
+         position = str_extract(id, '\\d+'),
+         mt_aa = str_extract(id, '[A-Za-z]+$')) %>%
+  mutate(position = as.numeric(position))
+
+df_ddg_unique <- df_ddg %>%
+  distinct(position, .keep_all = TRUE) %>%
+  filter(!is.na(position)) %>%
+  arrange(position)
+
+df_sorted <- df_ddg %>% arrange(position)
+# Remove duplicate positions, keeping only the first occurrence
+df_sorted_unique <- df_sorted %>% distinct(position, .keep_all = TRUE)
+
+# Remove last row if needed
+df_sorted_unique <- df_sorted_unique[-nrow(df_sorted_unique), ]
+
+# Generate the sequence string by concatenating the wt_aa values
+sequence <- paste(df_sorted_unique$wt_aa, collapse = "")
+print(sequence)
+```
+### original
+>SRC Toni
+ESLRLEVKLGQGCFGEVWMGTWNGTTRVAIKTLKPGTMSPEAFLQEAQVMKKLRHEKLVQLYAVVSEEPIYIVTEYMSKGSLLDFLKGETGKYLRLPQLVDMAAQIASGMAYVERMNYVHRDLRAANILVGENLVCKVADFGLARLIEDNEYTARQGAKFPIKWTAPEAALYGRFTIKSDVWSFGILLTELTTKGRVPYPGMVNREVLDQVERGYRMPCPPECPESLHDLMCQCWRKEPEERPTFEYLQAFLEDYFTSTEPQYQPGENL
+>Node34
+DKWEIERTELTLKRKLGAGQFGEVWEGVWKNTTKPVAVKTLKEGTMSPKDFLEEAQIMKKLRHPNLVQLYGVCTREEPIYIVTEFMKHGSLLDYLRGKGRENLSSKPPVLMDMAAQVASGMAYLEAQNYIHRDLAARNCLVGENNIVKVADFGLARLIKDDEYTARAGAKFPIKWTAPEALAYNRFSTKSDVWAFGVLLWELVTYGRIPYPGVTNAEVLQQVERGYRMERPPGCPEEVYEIMLECWKKDPKDRPTFKSLQWKLED
+>Node35
+DQWEIPRSSLRLRRKLGAGQFGEVWEGIWNNTTKPVAVKTLKPGTMSPKDFLEEAQIMKKLRHPKLIQLYAVCTQEEPIYIVTELMKHGSLLDYLQGKGRRNL-SKLPQLIDMAAQVASGMAYLEAQNYIHRDLAARNILVGENNIVKVADFGLARLIKDDEYTAREGAKFPIKWTAPEAANYNRFTIKSDVWSFGILLTELVTYGRIPYPGMTNAEVLQQVERGYRMPCPPGCPEALYEIMLDCWKKDPQERPTFETLQWRLED
+>Node36
+DQWEIPRESLRLRRKLGAGQFGEVWEGIWNNTTKPVAVKTLKPGTMSPQAFLEEAQIMKKLRHPKLIQLYAVCTQEEPIYIVTELMKHGSLLDYLQGKGRRNL-SKLPQLIDMAAQVASGMAYLEAQNYIHRDLAARNILVGENNICKVADFGLARLIQDDEYTAREGAKFPIKWTAPEAALYNRFTIKSDVWSFGILLTELVTYGRIPYPGMTNAEVLQQVERGYRMPCPPGCPESLYQIMLDCWKKDPQERPTFETLQWRLED
+>Node37
+DQWEIPRESLRLRRKLGAGQFGEVWEGIWNNTTKPVAVKTLKPGTMSPQAFLEEAQIMKKLRHPKLIQLYAVCTQEEPIYIVTELMKHGSLLDYLQGGGGRNL-SKLPQLIDMAAQVASGMAYLEAQNYIHRDLAARNILVGENNICKVADFGLARLIQDDEYTAREGAKFPIKWTAPEAALYNRFTIKSDVWSFGILLTELVTYGRIPYPGMTNAEVLAQVERGYRMPCPPGCPEPLYQIMLDCWKKDPQERPTFETLQWRLED
+>Node38
+DQWEIPRESLRLRRKLGAGQFGEVWAGIWNNTTKPVAVKTLKPGTMSPQAFLEEAQIMKKLRHEKLIQLYAVCTQEEPIYIVTELMKHGSLLDYLQKGEGRHL-SKLPQLIDMAAQVASGMAYLEAQNYIHRDLAARNILVGENNICKVADFGLARLIQDDEYTAREGAKFPIKWTAPEAALYNRFTIKSDVWSFGILLTELVTHGRIPYPGMTNAEVLAQVERGYRMPCPPGCPDPLYQIMLDCWKKDAQERPTFEYLQYRLED
+>Node39
+DAWEIPRESLRLRRKLGAGQFGEVWAGIWNNTTKPVAVKTLKPGTMSPQAFLEEAQIMKKLRHEKLIQLYAVCTQEEPIYIVTELMKHGSLLDYLQKGEGRHL-SKLPQLIDMAAQIASGMAYLEKQNYIHRDLAARNILVGENNICKVADFGLARLIEDDEYTAREGAKFPIKWTAPEAALYNRFTIKSDVWSFGILLTELVTHGRIPYPGMTNAEVLAQVERGYRMPCPPGCPDPLYQIMLDCWKKDAQERPTFEYLQSVLED
+>Node40
+DAWEIPRESLRLTRKLGAGQFGEVWAGIWNNTTKQVAVKTLKPGTMSPQAFLEEAQIMKKLRHEKLVQLYAVCSEEEPIYIVTEFMKHGSLLDYLQKGEGRHL-SKLPQLIDMAAQIASGMAYLEKQNYIHRDLAARNILVGENYICKVADFGLARLIEDDEYTAREGAKFPIKWTAPEAALYNRFTIKSDVWSFGILLTELVTKGRIPYPGMTNAEVLAQVERGYRMPCPPGCPEPLYQIMLQCWKKDAEERPTFEYLQSVLED
+>Node41
+DAWEIPRESLRLEVKLGQGCFGEVWMGTWNGTTKRVAIKTLKPGTMSPEAFLQEAQVMKKLRHEKLVQLYAVVSEEEPIYIVTEFMNRGSLLDFLKGEMGKYL--RLPQLVDMAAQIASGMAYVERMNYVHRDLRAANILVGENLVCKVADFGLARLIEDNEYTARQGAKFPIKWTAPEAALYGRFTIKSDVWSFGILLTELTTKGRVPYPGMVNREVLDQVERGYRMPCPPECPESLHDLMLQCWRKDPEERPTFEYLQAFLED
+>Node42
+DAWEIPRESLRLEVKLGQGCFGEVWMGTWNGTTKRVAIKTLKPGTMSPEAFLQEAQVMKKLRHEKLVQLYAVVSEEEPIYIVTEYMNKGSLLDFLKGEMGKYL--RLPQLVDMAAQIASGMAYVERMNYVHRDLRAANILVGENLVCKVADFGLARLIEDNEYTARQGAKFPIKWTAPEAALYGRFTIKSDVWSFGILLTELTTKGRVPYPGMVNREVLDQVERGYRMPCPPECPESLHDLMCQCWRKDPEERPTFEYLQAFLED
+>Node43
+DAWEIPRESLRLEVKLGQGCFGEVWMGTWNGTTKRVAIKTLKPGTMSPEAFLQEAQVMKKLRHEKLVQLYAVVSEEEPIYIVTEYMSKGSLLDFLKGEMGKYL--RLPQLVDMAAQIASGMAYVERMNYVHRDLRAANILVGENLVCKVADFGLARLIEDNEYTARQGAKFPIKWTAPEAALYGRFTIKSDVWSFGILLTELTTKGRVPYPGMVNREVLDQVERGYRMPCPPECPESLHDLMCQCWRKDPEERPTFEYLQAFLED
+>Node44
+DAWEIPRESLRLEVKLGQGCFGEVWMGTWNGTTKRVAIKTLKPGTMSPEAFLQEAQVMKKLRHEKLVQLYAVVSEEEPIYIVTEYMSKGSLLDFLKGEMGKYL--RLPQLVDMAAQIASGMAYVERMNYVHRDLRAANILVGENLVCKVADFGLARLIEDNEYTARQGAKFPIKWTAPEAALYGRFTIKSDVWSFGILLTELTTKGRVPYPGMVNREVLDQVERGYRMPCPPECPESLHDLMCQCWRKDPEERPTFEYLQAFLED
+
+### Aligned with MUSCLE in AliView + trimmed
+>Node41
+ESLRLEVKLGQGCFGEVWMGTWNGTTKRVAIKTLKPGTMSPEAFLQEAQVMKKLRHEKLVQLYAVVSEEEPIYIVTEFMNRGSLLDFLKGEMGKYL--RLPQLVDMAAQIASGMAYVERMNYVHRDLRAANILVGENLVCKVADFGLARLIEDNEYTARQGAKFPIKWTAPEAALYGRFTIKSDVWSFGILLTELTTKGRVPYPGMVNREVLDQVERGYRMPCPPECPESLHDLMLQCWRKDPEERPTFEYLQAFLED
+>SRC Toni
+ESLRLEVKLGQGCFGEVWMGTWNGTTR-VAIKTLKPGTMSPEAFLQEAQVMKKLRHEKLVQLYAVVS-EEPIYIVTEYMSKGSLLDFLKGETGKYL--RLPQLVDMAAQIASGMAYVERMNYVHRDLRAANILVGENLVCKVADFGLARLIEDNEYTARQGAKFPIKWTAPEAALYGRFTIKSDVWSFGILLTELTTKGRVPYPGMVNREVLDQVERGYRMPCPPECPESLHDLMCQCWRKEPEERPTFEYLQAFLED
+>Node43
+ESLRLEVKLGQGCFGEVWMGTWNGTTKRVAIKTLKPGTMSPEAFLQEAQVMKKLRHEKLVQLYAVVSEEEPIYIVTEYMSKGSLLDFLKGEMGKYL--RLPQLVDMAAQIASGMAYVERMNYVHRDLRAANILVGENLVCKVADFGLARLIEDNEYTARQGAKFPIKWTAPEAALYGRFTIKSDVWSFGILLTELTTKGRVPYPGMVNREVLDQVERGYRMPCPPECPESLHDLMCQCWRKDPEERPTFEYLQAFLED
+>Node44
+ESLRLEVKLGQGCFGEVWMGTWNGTTKRVAIKTLKPGTMSPEAFLQEAQVMKKLRHEKLVQLYAVVSEEEPIYIVTEYMSKGSLLDFLKGEMGKYL--RLPQLVDMAAQIASGMAYVERMNYVHRDLRAANILVGENLVCKVADFGLARLIEDNEYTARQGAKFPIKWTAPEAALYGRFTIKSDVWSFGILLTELTTKGRVPYPGMVNREVLDQVERGYRMPCPPECPESLHDLMCQCWRKDPEERPTFEYLQAFLED
+>Node42
+ESLRLEVKLGQGCFGEVWMGTWNGTTKRVAIKTLKPGTMSPEAFLQEAQVMKKLRHEKLVQLYAVVSEEEPIYIVTEYMNKGSLLDFLKGEMGKYL--RLPQLVDMAAQIASGMAYVERMNYVHRDLRAANILVGENLVCKVADFGLARLIEDNEYTARQGAKFPIKWTAPEAALYGRFTIKSDVWSFGILLTELTTKGRVPYPGMVNREVLDQVERGYRMPCPPECPESLHDLMCQCWRKDPEERPTFEYLQAFLED
+>Node34
+TELTLKRKLGAGQFGEVWEGVWKNTTKPVAVKTLKEGTMSPKDFLEEAQIMKKLRHPNLVQLYGVCTREEPIYIVTEFMKHGSLLDYLRGKGRENLSSKPPVLMDMAAQVASGMAYLEAQNYIHRDLAARNCLVGENNIVKVADFGLARLIKDDEYTARAGAKFPIKWTAPEALAYNRFSTKSDVWAFGVLLWELVTYGRIPYPGVTNAEVLQQVERGYRMERPPGCPEEVYEIMLECWKKDPKDRPTFKSLQWKLED
+>Node40
+ESLRLTRKLGAGQFGEVWAGIWNNTTKQVAVKTLKPGTMSPQAFLEEAQIMKKLRHEKLVQLYAVCSEEEPIYIVTEFMKHGSLLDYLQKGEGRHL-SKLPQLIDMAAQIASGMAYLEKQNYIHRDLAARNILVGENYICKVADFGLARLIEDDEYTAREGAKFPIKWTAPEAALYNRFTIKSDVWSFGILLTELVTKGRIPYPGMTNAEVLAQVERGYRMPCPPGCPEPLYQIMLQCWKKDAEERPTFEYLQSVLED
+>Node38
+ESLRLRRKLGAGQFGEVWAGIWNNTTKPVAVKTLKPGTMSPQAFLEEAQIMKKLRHEKLIQLYAVCTQEEPIYIVTELMKHGSLLDYLQKGEGRHL-SKLPQLIDMAAQVASGMAYLEAQNYIHRDLAARNILVGENNICKVADFGLARLIQDDEYTAREGAKFPIKWTAPEAALYNRFTIKSDVWSFGILLTELVTHGRIPYPGMTNAEVLAQVERGYRMPCPPGCPDPLYQIMLDCWKKDAQERPTFEYLQYRLED
+>Node39
+ESLRLRRKLGAGQFGEVWAGIWNNTTKPVAVKTLKPGTMSPQAFLEEAQIMKKLRHEKLIQLYAVCTQEEPIYIVTELMKHGSLLDYLQKGEGRHL-SKLPQLIDMAAQIASGMAYLEKQNYIHRDLAARNILVGENNICKVADFGLARLIEDDEYTAREGAKFPIKWTAPEAALYNRFTIKSDVWSFGILLTELVTHGRIPYPGMTNAEVLAQVERGYRMPCPPGCPDPLYQIMLDCWKKDAQERPTFEYLQSVLED
+>Node35
+SSLRLRRKLGAGQFGEVWEGIWNNTTKPVAVKTLKPGTMSPKDFLEEAQIMKKLRHPKLIQLYAVCTQEEPIYIVTELMKHGSLLDYLQGKGRRNL-SKLPQLIDMAAQVASGMAYLEAQNYIHRDLAARNILVGENNIVKVADFGLARLIKDDEYTAREGAKFPIKWTAPEAANYNRFTIKSDVWSFGILLTELVTYGRIPYPGMTNAEVLQQVERGYRMPCPPGCPEALYEIMLDCWKKDPQERPTFETLQWRLED
+>Node36
+ESLRLRRKLGAGQFGEVWEGIWNNTTKPVAVKTLKPGTMSPQAFLEEAQIMKKLRHPKLIQLYAVCTQEEPIYIVTELMKHGSLLDYLQGKGRRNL-SKLPQLIDMAAQVASGMAYLEAQNYIHRDLAARNILVGENNICKVADFGLARLIQDDEYTAREGAKFPIKWTAPEAALYNRFTIKSDVWSFGILLTELVTYGRIPYPGMTNAEVLQQVERGYRMPCPPGCPESLYQIMLDCWKKDPQERPTFETLQWRLED
+>Node37
+ESLRLRRKLGAGQFGEVWEGIWNNTTKPVAVKTLKPGTMSPQAFLEEAQIMKKLRHPKLIQLYAVCTQEEPIYIVTELMKHGSLLDYLQGGGGRNL-SKLPQLIDMAAQVASGMAYLEAQNYIHRDLAARNILVGENNICKVADFGLARLIQDDEYTAREGAKFPIKWTAPEAALYNRFTIKSDVWSFGILLTELVTYGRIPYPGMTNAEVLAQVERGYRMPCPPGCPEPLYQIMLDCWKKDPQERPTFETLQWRLED
+
+### REMOVING INSERTION AND POS AT NODE34 AT INSERTION FOR EASIER INDEXING ### NEED TO FIX LATER!!!!
+>Node34
+TELTLKRKLGAGQFGEVWEGVWKNTTKVAVKTLKEGTMSPKDFLEEAQIMKKLRHPNLVQLYGVCTEEPIYIVTEFMKHGSLLDYLRGKGRENLKPPVLMDMAAQVASGMAYLEAQNYIHRDLAARNCLVGENNIVKVADFGLARLIKDDEYTARAGAKFPIKWTAPEALAYNRFSTKSDVWAFGVLLWELVTYGRIPYPGVTNAEVLQQVERGYRMERPPGCPEEVYEIMLECWKKDPKDRPTFKSLQWKLED
+>SRC Toni
+ESLRLEVKLGQGCFGEVWMGTWNGTTRVAIKTLKPGTMSPEAFLQEAQVMKKLRHEKLVQLYAVVSEEPIYIVTEYMSKGSLLDFLKGETGKYLRLPQLVDMAAQIASGMAYVERMNYVHRDLRAANILVGENLVCKVADFGLARLIEDNEYTARQGAKFPIKWTAPEAALYGRFTIKSDVWSFGILLTELTTKGRVPYPGMVNREVLDQVERGYRMPCPPECPESLHDLMCQCWRKEPEERPTFEYLQAFLED
+
+
+```{r}
+
+# Sample sequence data
+toni_src <- "ESLRLEVKLGQGCFGEVWMGTWNGTTRVAIKTLKPGTMSPEAFLQEAQVMKKLRHEKLVQLYAVVSEEPIYIVTEYMSKGSLLDFLKGETGKYLRLPQLVDMAAQIASGMAYVERMNYVHRDLRAANILVGENLVCKVADFGLARLIEDNEYTARQGAKFPIKWTAPEAALYGRFTIKSDVWSFGILLTELTTKGRVPYPGMVNREVLDQVERGYRMPCPPECPESLHDLMCQCWRKEPEERPTFEYLQAFLED"
+node34 <- "TELTLKRKLGAGQFGEVWEGVWKNTTKVAVKTLKEGTMSPKDFLEEAQIMKKLRHPNLVQLYGVCTEEPIYIVTEFMKHGSLLDYLRGKGRENLKPPVLMDMAAQVASGMAYLEAQNYIHRDLAARNCLVGENNIVKVADFGLARLIKDDEYTARAGAKFPIKWTAPEALAYNRFSTKSDVWAFGVLLWELVTYGRIPYPGVTNAEVLQQVERGYRMERPPGCPEEVYEIMLECWKKDPKDRPTFKSLQWKLED"
+
+# Compare the sequences
+mutations <- c()
+min_length <- min(nchar(toni_src), nchar(node34))  # Use node34 instead of anc_src
+
+for (i in 1:min_length) {
+  if (substr(toni_src, i, i) != substr(node34, i, i)) {  # Use node34 instead of anc_src
+    mutation <- paste0(substr(toni_src, i, i), i, substr(node34, i, i))
+    mutations <- c(mutations, mutation)
+  }
+}
+
+# Printing the results
+mutations
+length(mutations)
+nchar(node34)
+nchar(toni_src)
+```
+
+```{r}
+subset_df <- df_sorted %>% filter(id %in% mutations)
+subset_df
+intersect(subset_df$id,mutations)
+setdiff(mutations,subset_df$id)
+```
+
+```{r,fig.width=5, fig.height=5}
+# Scatter plot using ggplot2
+ggplot(subset_df, aes(x = position, y = `FL_folding_mean_kcal/mol`, color = `FL_activity_mean_kcal/mol`)) +
+  geom_point() +
+  geom_text(aes(label = id), hjust = 0, vjust = 1, size = 3) +
+  scale_color_gradient(low="blue",high="red") +
+  labs(title = "ANC-AS vs human SRC (84 sub)",
+       x = "Position",
+       y = "FL Folding Mean (kcal/mol)",
+       color = "FL Activity Mean") +
+  theme_classic() +
+  theme(legend.position = "bottom")
+```
+```{r,fig.width=5, fig.height=5}
+# Scatter plot using ggplot2
+ggplot(subset_df, aes(x = position, y = `KD_folding_mean_kcal/mol`, color = `KD_activity_mean_kcal/mol`)) +
+  geom_point() +
+  geom_text(aes(label = id), hjust = 0, vjust = 1, size = 3) +
+  scale_color_gradient(low="blue",high="red") +
+  labs(title = "ANC-AS vs human SRC  (84 sub)",
+       x = "Position",
+       y = "KD Folding Mean (kcal/mol)",
+       color = "KD Activity Mean") +
+  theme_classic() +
+  theme(legend.position = "bottom")
+```
+```{r}
+# Convert to a long format
+subset_df_long <- subset_df %>%
+   dplyr::select(id, `FL_activity_mean_kcal/mol`, `KD_activity_mean_kcal/mol`, `FL_folding_mean_kcal/mol`, `KD_folding_mean_kcal/mol`) %>%
+  pivot_longer(
+    cols = -id,  # Pivot all columns except 'id'
+    names_to = "measurement",
+    values_to = "value"
+  ) %>%
+  mutate(
+    type = ifelse(grepl("FL", measurement), "FL", "KD"),
+    axis = ifelse(grepl("activity", measurement), "Activity Mean", "Folding Mean")
+  )
+
+# Print the result
+subset_df_long
+```
+
+
+```{r}
+# Convert to a long format
+subset_df_long <- subset_df %>%
+   dplyr::select(id, `FL_activity_mean_kcal/mol`, `KD_activity_mean_kcal/mol`, `FL_folding_mean_kcal/mol`, `KD_folding_mean_kcal/mol`) %>%
+  pivot_longer(
+    cols = -id,  # Pivot all columns except 'id'
+    names_to = "measurement",
+    values_to = "value"
+  ) %>%
+  mutate(
+    type = ifelse(grepl("FL", measurement), "FL", "KD"),
+    axis = ifelse(grepl("activity", measurement), "Activity Mean", "Folding Mean")
+  )
+
+# Print the result
+subset_df_long
+# Split the data into Activity and Folding datasets
+activity_data <- subset_df_long %>%
+  filter(axis == "Activity Mean") %>%
+  dplyr::select(id, type, Activity_Mean = value)
+
+folding_data <- subset_df_long %>%
+  filter(axis == "Folding Mean") %>%
+  dplyr::select(id, type, Folding_Mean = value)
+
+# Merge the datasets by 'id' and 'type'
+subset_df_merged <- activity_data %>%
+  full_join(folding_data, by = c("id", "type"))
+
+# View the merged data
+subset_df_merged
+```
+```{r,fig.width=6, fig.height=6}
+p <- ggplot(subset_df_merged) +
+  geom_point(aes(y = Folding_Mean, x = Activity_Mean, color = type), alpha = 0.6, shape = 16) +
+  geom_text(aes(y = Folding_Mean, x = Activity_Mean, label = id), hjust = 0, vjust = 1, size = 3) +
+  scale_color_brewer(palette = "Dark2") + 
+  theme_classic() +
+  theme(legend.position = "bottom") + 
+  labs(y = "Folding Mean", x = "Activity Mean",title = "ANC-AS vs human SRC  (84 sub)",) 
+ggMarginal(p, type = "density", groupColour = TRUE, groupFill = TRUE)
+```
+
+```{r,fig.width=6, fig.height=6}
+subset_kd <- subset_df_merged[subset_df_merged$type=="KD",]
+
+p <- ggplot(subset_kd) +
+  geom_point(aes(y = Folding_Mean, x = Activity_Mean), color = "orange", alpha = 0.6, shape = 16) +  # Specify color directly
+  geom_text(aes(y = Folding_Mean, x = Activity_Mean, label = id), hjust = 0, vjust = 1, size = 3) +
+  theme_classic() +
+  theme(legend.position = "bottom") + 
+  labs(y = "KD Folding Mean", x = " KD Activity Mean",title = "ANC-AS vs human SRC",) 
+
+# Add marginal density plots
+ggMarginal(p, type = "density", fill = "orange", color = "orange", groupColour = FALSE, groupFill = FALSE)
+```
+```{r,fig.width=6, fig.height=6}
+subset_fl <- subset_df_merged[subset_df_merged$type=="FL",]
+
+p <- ggplot(subset_fl) +
+  geom_point(aes(y = Folding_Mean, x = Activity_Mean), color = "springgreen3", alpha = 0.6, shape = 16) +  # Specify color directly
+  geom_text(aes(y = Folding_Mean, x = Activity_Mean, label = id), hjust = 0, vjust = 1, size = 3) +
+  theme_classic() +
+  theme(legend.position = "bottom") + 
+  labs(y = "FL Folding Mean", x = " FL Activity Mean",title = "ANC-AS vs human SRC",) 
+
+# Add marginal density plots
+ggMarginal(p, type = "density", fill = "springgreen3", color = "springgreen3", groupColour = FALSE, groupFill = FALSE)
+```
+
+```{r}
+anc_as_fl_activity_sum <- sum(subset_df$`FL_activity_mean_kcal/mol`)
+anc_as_fl_fold_sum <- sum(subset_df$`FL_folding_mean_kcal/mol`)
+anc_as_fl_activity_sum
+anc_as_fl_fold_sum
+```
+
+
+
+
+##########################
+ANC-S1 vs SRC
+
+>Node35
+SSLRLRRKLGAGQFGEVWEGIWNNTTKPVAVKTLKPGTMSPKDFLEEAQIMKKLRHPKLIQLYAVCTQEEPIYIVTELMKHGSLLDYLQGKGRRNL-SKLPQLIDMAAQVASGMAYLEAQNYIHRDLAARNILVGENNIVKVADFGLARLIKDDEYTAREGAKFPIKWTAPEAANYNRFTIKSDVWSFGILLTELVTYGRIPYPGMTNAEVLQQVERGYRMPCPPGCPEALYEIMLDCWKKDPQERPTFETLQWRLED
+>SRC Toni
+ESLRLEVKLGQGCFGEVWMGTWNGTTR-VAIKTLKPGTMSPEAFLQEAQVMKKLRHEKLVQLYAVVS-EEPIYIVTEYMSKGSLLDFLKGETGKYL--RLPQLVDMAAQIASGMAYVERMNYVHRDLRAANILVGENLVCKVADFGLARLIEDNEYTARQGAKFPIKWTAPEAALYGRFTIKSDVWSFGILLTELTTKGRVPYPGMVNREVLDQVERGYRMPCPPECPESLHDLMCQCWRKEPEERPTFEYLQAFLED
+
+### REMOVING INSERTION AND POS AT NODE34 AT INSERTION FOR EASIER INDEXING ### NEED TO FIX LATER!!!!
+>Node35
+SSLRLRRKLGAGQFGEVWEGIWNNTTKVAVKTLKPGTMSPKDFLEEAQIMKKLRHPKLIQLYAVCTEEPIYIVTELMKHGSLLDYLQGKGRRNLKLPQLIDMAAQVASGMAYLEAQNYIHRDLAARNILVGENNIVKVADFGLARLIKDDEYTAREGAKFPIKWTAPEAANYNRFTIKSDVWSFGILLTELVTYGRIPYPGMTNAEVLQQVERGYRMPCPPGCPEALYEIMLDCWKKDPQERPTFETLQWRLED
+>SRC Toni
+ESLRLEVKLGQGCFGEVWMGTWNGTTRVAIKTLKPGTMSPEAFLQEAQVMKKLRHEKLVQLYAVVSEEPIYIVTEYMSKGSLLDFLKGETGKYLRLPQLVDMAAQIASGMAYVERMNYVHRDLRAANILVGENLVCKVADFGLARLIEDNEYTARQGAKFPIKWTAPEAALYGRFTIKSDVWSFGILLTELTTKGRVPYPGMVNREVLDQVERGYRMPCPPECPESLHDLMCQCWRKEPEERPTFEYLQAFLED
+
+
+```{r}
+# Sample sequence data
+toni_src <- "ESLRLEVKLGQGCFGEVWMGTWNGTTRVAIKTLKPGTMSPEAFLQEAQVMKKLRHEKLVQLYAVVSEEPIYIVTEYMSKGSLLDFLKGETGKYLRLPQLVDMAAQIASGMAYVERMNYVHRDLRAANILVGENLVCKVADFGLARLIEDNEYTARQGAKFPIKWTAPEAALYGRFTIKSDVWSFGILLTELTTKGRVPYPGMVNREVLDQVERGYRMPCPPECPESLHDLMCQCWRKEPEERPTFEYLQAFLED"
+anc <- "SSLRLRRKLGAGQFGEVWEGIWNNTTKVAVKTLKPGTMSPKDFLEEAQIMKKLRHPKLIQLYAVCTEEPIYIVTELMKHGSLLDYLQGKGRRNLKLPQLIDMAAQVASGMAYLEAQNYIHRDLAARNILVGENNIVKVADFGLARLIKDDEYTAREGAKFPIKWTAPEAANYNRFTIKSDVWSFGILLTELVTYGRIPYPGMTNAEVLQQVERGYRMPCPPGCPEALYEIMLDCWKKDPQERPTFETLQWRLED"
+
+# Compare the sequences
+mutations <- c()
+min_length <- min(nchar(toni_src), nchar(anc)) 
+
+for (i in 1:min_length) {
+  if (substr(toni_src, i, i) != substr(anc, i, i)) {  
+    mutation <- paste0(substr(toni_src, i, i), i, substr(anc, i, i))
+    mutations <- c(mutations, mutation)
+  }
+}
+
+# Printing the results
+mutations
+length(mutations)
+nchar(anc)
+nchar(toni_src)
+```
+
+
+```{r}
+subset_df <- df_sorted %>% filter(id %in% mutations)
+subset_df
+intersect(subset_df$id,mutations)
+setdiff(mutations,subset_df$id)
+```
+```{r,fig.width=5, fig.height=5}
+# Scatter plot using ggplot2
+ggplot(subset_df, aes(x = position, y = `KD_folding_mean_kcal/mol`, color = `KD_activity_mean_kcal/mol`)) +
+  geom_point() +
+  geom_text(aes(label = id), hjust = 0, vjust = 1, size = 3) +
+  scale_color_gradient(low="blue",high="red") +
+  labs(title = "ANC-S1 vs human SRC (64 sub)",
+       x = "Position",
+       y = "KD Folding Mean (kcal/mol)",
+       color = "KD Activity Mean") +
+  theme_classic() +
+  theme(legend.position = "bottom")
+```
+```{r,fig.width=5, fig.height=5}
+# Scatter plot using ggplot2
+ggplot(subset_df, aes(x = position, y = `FL_folding_mean_kcal/mol`, color = `FL_activity_mean_kcal/mol`)) +
+  geom_point() +
+  geom_text(aes(label = id), hjust = 0, vjust = 1, size = 3) +
+  scale_color_gradient(low="blue",high="red") +
+  labs(title = "ANC-S1 vs human SRC",
+       x = "Position",
+       y = "FL Folding Mean (kcal/mol)",
+       color = "FL Activity Mean") +
+  theme_classic() +
+  theme(legend.position = "bottom")
+```
+```{r}
+
+```
+
+
+```{r,fig.width=6, fig.height=6}
+# Convert to a long format
+subset_df_long <- subset_df %>%
+   dplyr::select(id, `FL_activity_mean_kcal/mol`, `KD_activity_mean_kcal/mol`, `FL_folding_mean_kcal/mol`, `KD_folding_mean_kcal/mol`) %>%
+  pivot_longer(
+    cols = -id,  # Pivot all columns except 'id'
+    names_to = "measurement",
+    values_to = "value"
+  ) %>%
+  mutate(
+    type = ifelse(grepl("FL", measurement), "FL", "KD"),
+    axis = ifelse(grepl("activity", measurement), "Activity Mean", "Folding Mean")
+  )
+
+# Print the result
+subset_df_long
+# Split the data into Activity and Folding datasets
+activity_data <- subset_df_long %>%
+  filter(axis == "Activity Mean") %>%
+  dplyr::select(id, type, Activity_Mean = value)
+
+folding_data <- subset_df_long %>%
+  filter(axis == "Folding Mean") %>%
+  dplyr::select(id, type, Folding_Mean = value)
+
+# Merge the datasets by 'id' and 'type'
+subset_df_merged <- activity_data %>%
+  full_join(folding_data, by = c("id", "type"))
+
+# View the merged data
+subset_df_merged
+p <- ggplot(subset_df_merged) +
+  geom_point(aes(y = Folding_Mean, x = Activity_Mean, color = type), alpha = 0.6, shape = 16) +
+  geom_text(aes(y = Folding_Mean, x = Activity_Mean, label = id), hjust = 0, vjust = 1, size = 3) +
+  scale_color_brewer(palette = "Dark2") + 
+  theme_classic() +
+  theme(legend.position = "bottom") + 
+  labs(y = "Folding Mean", x = "Activity Mean",title = "ANC-S1 vs human SRC (64 sub)",) 
+ggMarginal(p, type = "density", groupColour = TRUE, groupFill = TRUE)
+```
+```{r}
+anc_s1_fl_activity_sum <- sum(subset_df$`FL_activity_mean_kcal/mol`)
+anc_s1_fl_fold_sum <- sum(subset_df$`FL_folding_mean_kcal/mol`)
+anc_s1_fl_activity_sum
+anc_s1_fl_fold_sum
+```
+
+
+
+##########################
+ANC-S3 vs SRC
+
+>Node37
+ESLRLRRKLGAGQFGEVWEGIWNNTTKPVAVKTLKPGTMSPQAFLEEAQIMKKLRHPKLIQLYAVCTQEEPIYIVTELMKHGSLLDYLQGGGGRNL-SKLPQLIDMAAQVASGMAYLEAQNYIHRDLAARNILVGENNICKVADFGLARLIQDDEYTAREGAKFPIKWTAPEAALYNRFTIKSDVWSFGILLTELVTYGRIPYPGMTNAEVLAQVERGYRMPCPPGCPEPLYQIMLDCWKKDPQERPTFETLQWRLED
+
+>SRC Toni
+ESLRLEVKLGQGCFGEVWMGTWNGTTR-VAIKTLKPGTMSPEAFLQEAQVMKKLRHEKLVQLYAVVS-EEPIYIVTEYMSKGSLLDFLKGETGKYL--RLPQLVDMAAQIASGMAYVERMNYVHRDLRAANILVGENLVCKVADFGLARLIEDNEYTARQGAKFPIKWTAPEAALYGRFTIKSDVWSFGILLTELTTKGRVPYPGMVNREVLDQVERGYRMPCPPECPESLHDLMCQCWRKEPEERPTFEYLQAFLED
+
+### REMOVING INSERTION AND POS AT INSERTION FOR EASIER INDEXING ### NEED TO FIX LATER!!!!
+>Node37
+ESLRLRRKLGAGQFGEVWEGIWNNTTKVAVKTLKPGTMSPQAFLEEAQIMKKLRHPKLIQLYAVCTEEPIYIVTELMKHGSLLDYLQGGGGRNLKLPQLIDMAAQVASGMAYLEAQNYIHRDLAARNILVGENNICKVADFGLARLIQDDEYTAREGAKFPIKWTAPEAALYNRFTIKSDVWSFGILLTELVTYGRIPYPGMTNAEVLAQVERGYRMPCPPGCPEPLYQIMLDCWKKDPQERPTFETLQWRLED
+>SRC Toni
+ESLRLEVKLGQGCFGEVWMGTWNGTTRVAIKTLKPGTMSPEAFLQEAQVMKKLRHEKLVQLYAVVSEEPIYIVTEYMSKGSLLDFLKGETGKYLRLPQLVDMAAQIASGMAYVERMNYVHRDLRAANILVGENLVCKVADFGLARLIEDNEYTARQGAKFPIKWTAPEAALYGRFTIKSDVWSFGILLTELTTKGRVPYPGMVNREVLDQVERGYRMPCPPECPESLHDLMCQCWRKEPEERPTFEYLQAFLED
+
+```{r}
+# Sample sequence data
+toni_src <- "ESLRLEVKLGQGCFGEVWMGTWNGTTRVAIKTLKPGTMSPEAFLQEAQVMKKLRHEKLVQLYAVVSEEPIYIVTEYMSKGSLLDFLKGETGKYLRLPQLVDMAAQIASGMAYVERMNYVHRDLRAANILVGENLVCKVADFGLARLIEDNEYTARQGAKFPIKWTAPEAALYGRFTIKSDVWSFGILLTELTTKGRVPYPGMVNREVLDQVERGYRMPCPPECPESLHDLMCQCWRKEPEERPTFEYLQAFLED"
+anc <- "ESLRLRRKLGAGQFGEVWEGIWNNTTKVAVKTLKPGTMSPQAFLEEAQIMKKLRHPKLIQLYAVCTEEPIYIVTELMKHGSLLDYLQGGGGRNLKLPQLIDMAAQVASGMAYLEAQNYIHRDLAARNILVGENNICKVADFGLARLIQDDEYTAREGAKFPIKWTAPEAALYNRFTIKSDVWSFGILLTELVTYGRIPYPGMTNAEVLAQVERGYRMPCPPGCPEPLYQIMLDCWKKDPQERPTFETLQWRLED"
+
+# Compare the sequences
+mutations <- c()
+min_length <- min(nchar(toni_src), nchar(anc)) 
+
+for (i in 1:min_length) {
+  if (substr(toni_src, i, i) != substr(anc, i, i)) {  
+    mutation <- paste0(substr(toni_src, i, i), i, substr(anc, i, i))
+    mutations <- c(mutations, mutation)
+  }
+}
+
+# Printing the results
+mutations
+length(mutations)
+nchar(anc)
+nchar(toni_src)
+```
+
+```{r}
+subset_df <- df_sorted %>% filter(id %in% mutations)
+subset_df
+intersect(subset_df$id,mutations)
+setdiff(mutations,subset_df$id)
+```
+```{r,fig.width=5, fig.height=5}
+# Scatter plot using ggplot2
+ggplot(subset_df, aes(x = position, y = `KD_folding_mean_kcal/mol`, color = `KD_activity_mean_kcal/mol`)) +
+  geom_point() +
+  geom_text(aes(label = id), hjust = 0, vjust = 1, size = 3) +
+  scale_color_gradient(low="blue",high="red") +
+  labs(title = "ANC-S3 vs human SRC (59 sub)",
+       x = "Position",
+       y = "KD Folding Mean (kcal/mol)",
+       color = "KD Activity Mean") +
+  theme_classic() +
+  theme(legend.position = "bottom")
+```
+```{r,fig.width=6, fig.height=6}
+# Convert to a long format
+subset_df_long <- subset_df %>%
+   dplyr::select(id, `FL_activity_mean_kcal/mol`, `KD_activity_mean_kcal/mol`, `FL_folding_mean_kcal/mol`, `KD_folding_mean_kcal/mol`) %>%
+  pivot_longer(
+    cols = -id,  # Pivot all columns except 'id'
+    names_to = "measurement",
+    values_to = "value"
+  ) %>%
+  mutate(
+    type = ifelse(grepl("FL", measurement), "FL", "KD"),
+    axis = ifelse(grepl("activity", measurement), "Activity Mean", "Folding Mean")
+  )
+
+# Print the result
+subset_df_long
+# Split the data into Activity and Folding datasets
+activity_data <- subset_df_long %>%
+  filter(axis == "Activity Mean") %>%
+  dplyr::select(id, type, Activity_Mean = value)
+
+folding_data <- subset_df_long %>%
+  filter(axis == "Folding Mean") %>%
+  dplyr::select(id, type, Folding_Mean = value)
+
+# Merge the datasets by 'id' and 'type'
+subset_df_merged <- activity_data %>%
+  full_join(folding_data, by = c("id", "type"))
+
+# View the merged data
+subset_df_merged
+p <- ggplot(subset_df_merged) +
+  geom_point(aes(y = Folding_Mean, x = Activity_Mean, color = type), alpha = 0.6, shape = 16) +
+  geom_text(aes(y = Folding_Mean, x = Activity_Mean, label = id), hjust = 0, vjust = 1, size = 3) +
+  scale_color_brewer(palette = "Dark2") + 
+  theme_classic() +
+  theme(legend.position = "bottom") + 
+  labs(y = "Folding Mean", x = "Activity Mean",title = "ANC-S3 vs human SRC (59 sub)",) 
+ggMarginal(p, type = "density", groupColour = TRUE, groupFill = TRUE)
+```
+
+
+```{r}
+anc_s3_fl_activity_sum <- sum(subset_df$`FL_activity_mean_kcal/mol`)
+anc_s3_fl_fold_sum <- sum(subset_df$`FL_folding_mean_kcal/mol`)
+anc_s3_fl_activity_sum
+anc_s3_fl_fold_sum
+```
+
+##########################
+ANC-S5 vs SRC
+
+>Node39
+ESLRLRRKLGAGQFGEVWAGIWNNTTKPVAVKTLKPGTMSPQAFLEEAQIMKKLRHEKLIQLYAVCTQEEPIYIVTELMKHGSLLDYLQKGEGRHL-SKLPQLIDMAAQIASGMAYLEKQNYIHRDLAARNILVGENNICKVADFGLARLIEDDEYTAREGAKFPIKWTAPEAALYNRFTIKSDVWSFGILLTELVTHGRIPYPGMTNAEVLAQVERGYRMPCPPGCPDPLYQIMLDCWKKDAQERPTFEYLQSVLED
+>SRC Toni
+ESLRLEVKLGQGCFGEVWMGTWNGTTR-VAIKTLKPGTMSPEAFLQEAQVMKKLRHEKLVQLYAVVS-EEPIYIVTEYMSKGSLLDFLKGETGKYL--RLPQLVDMAAQIASGMAYVERMNYVHRDLRAANILVGENLVCKVADFGLARLIEDNEYTARQGAKFPIKWTAPEAALYGRFTIKSDVWSFGILLTELTTKGRVPYPGMVNREVLDQVERGYRMPCPPECPESLHDLMCQCWRKEPEERPTFEYLQAFLED
+
+### REMOVING INSERTION AND POS AT INSERTION FOR EASIER INDEXING ### NEED TO FIX LATER!!!!
+>Node39
+ESLRLRRKLGAGQFGEVWAGIWNNTTKVAVKTLKPGTMSPQAFLEEAQIMKKLRHEKLIQLYAVCTEEPIYIVTELMKHGSLLDYLQKGEGRHLKLPQLIDMAAQIASGMAYLEKQNYIHRDLAARNILVGENNICKVADFGLARLIEDDEYTAREGAKFPIKWTAPEAALYNRFTIKSDVWSFGILLTELVTHGRIPYPGMTNAEVLAQVERGYRMPCPPGCPDPLYQIMLDCWKKDAQERPTFEYLQSVLED
+>SRC Toni
+ESLRLEVKLGQGCFGEVWMGTWNGTTRVAIKTLKPGTMSPEAFLQEAQVMKKLRHEKLVQLYAVVSEEPIYIVTEYMSKGSLLDFLKGETGKYLRLPQLVDMAAQIASGMAYVERMNYVHRDLRAANILVGENLVCKVADFGLARLIEDNEYTARQGAKFPIKWTAPEAALYGRFTIKSDVWSFGILLTELTTKGRVPYPGMVNREVLDQVERGYRMPCPPECPESLHDLMCQCWRKEPEERPTFEYLQAFLED
+
+
+```{r}
+# Sample sequence data
+toni_src <- "ESLRLEVKLGQGCFGEVWMGTWNGTTRVAIKTLKPGTMSPEAFLQEAQVMKKLRHEKLVQLYAVVSEEPIYIVTEYMSKGSLLDFLKGETGKYLRLPQLVDMAAQIASGMAYVERMNYVHRDLRAANILVGENLVCKVADFGLARLIEDNEYTARQGAKFPIKWTAPEAALYGRFTIKSDVWSFGILLTELTTKGRVPYPGMVNREVLDQVERGYRMPCPPECPESLHDLMCQCWRKEPEERPTFEYLQAFLED"
+anc <- "ESLRLRRKLGAGQFGEVWAGIWNNTTKVAVKTLKPGTMSPQAFLEEAQIMKKLRHEKLIQLYAVCTEEPIYIVTELMKHGSLLDYLQKGEGRHLKLPQLIDMAAQIASGMAYLEKQNYIHRDLAARNILVGENNICKVADFGLARLIEDDEYTAREGAKFPIKWTAPEAALYNRFTIKSDVWSFGILLTELVTHGRIPYPGMTNAEVLAQVERGYRMPCPPGCPDPLYQIMLDCWKKDAQERPTFEYLQSVLED"
+
+# Compare the sequences
+mutations <- c()
+min_length <- min(nchar(toni_src), nchar(anc)) 
+
+for (i in 1:min_length) {
+  if (substr(toni_src, i, i) != substr(anc, i, i)) {  
+    mutation <- paste0(substr(toni_src, i, i), i, substr(anc, i, i))
+    mutations <- c(mutations, mutation)
+  }
+}
+
+# Printing the results
+mutations
+length(mutations)
+nchar(anc)
+nchar(toni_src)
+```
+
+```{r}
+subset_df <- df_sorted %>% filter(id %in% mutations)
+subset_df
+intersect(subset_df$id,mutations)
+setdiff(mutations,subset_df$id)
+```
+```{r,fig.width=5, fig.height=5}
+# Scatter plot using ggplot2
+ggplot(subset_df, aes(x = position, y = `KD_folding_mean_kcal/mol`, color = `KD_activity_mean_kcal/mol`)) +
+  geom_point() +
+  geom_text(aes(label = id), hjust = 0, vjust = 1, size = 3) +
+  scale_color_gradient(low="blue",high="red") +
+  labs(title = "ANC-S5 vs human SRC (58 sub)",
+       x = "Position",
+       y = "KD Folding Mean (kcal/mol)",
+       color = "KD Activity Mean") +
+  theme_classic() +
+  theme(legend.position = "bottom")
+```
+```{r,fig.width=6, fig.height=6}
+# Convert to a long format
+subset_df_long <- subset_df %>%
+   dplyr::select(id, `FL_activity_mean_kcal/mol`, `KD_activity_mean_kcal/mol`, `FL_folding_mean_kcal/mol`, `KD_folding_mean_kcal/mol`) %>%
+  pivot_longer(
+    cols = -id,  # Pivot all columns except 'id'
+    names_to = "measurement",
+    values_to = "value"
+  ) %>%
+  mutate(
+    type = ifelse(grepl("FL", measurement), "FL", "KD"),
+    axis = ifelse(grepl("activity", measurement), "Activity Mean", "Folding Mean")
+  )
+
+# Print the result
+subset_df_long
+# Split the data into Activity and Folding datasets
+activity_data <- subset_df_long %>%
+  filter(axis == "Activity Mean") %>%
+  dplyr::select(id, type, Activity_Mean = value)
+
+folding_data <- subset_df_long %>%
+  filter(axis == "Folding Mean") %>%
+  dplyr::select(id, type, Folding_Mean = value)
+
+# Merge the datasets by 'id' and 'type'
+subset_df_merged <- activity_data %>%
+  full_join(folding_data, by = c("id", "type"))
+
+# View the merged data
+subset_df_merged
+p <- ggplot(subset_df_merged) +
+  geom_point(aes(y = Folding_Mean, x = Activity_Mean, color = type), alpha = 0.6, shape = 16) +
+  geom_text(aes(y = Folding_Mean, x = Activity_Mean, label = id), hjust = 0, vjust = 1, size = 3) +
+  scale_color_brewer(palette = "Dark2") + 
+  theme_classic() +
+  theme(legend.position = "bottom") + 
+  labs(y = "Folding Mean", x = "Activity Mean",title = "ANC-S5 vs human SRC (58 sub)",) 
+ggMarginal(p, type = "density", groupColour = TRUE, groupFill = TRUE)
+```
+```{r}
+anc_s5_fl_activity_sum <- sum(subset_df$`FL_activity_mean_kcal/mol`)
+anc_s5_fl_fold_sum <- sum(subset_df$`FL_folding_mean_kcal/mol`)
+anc_s5_fl_activity_sum
+anc_s5_fl_fold_sum
+```
+
+
+##########################
+ANC-S8 vs SRC
+
+>Node42
+ESLRLEVKLGQGCFGEVWMGTWNGTTKRVAIKTLKPGTMSPEAFLQEAQVMKKLRHEKLVQLYAVVSEEEPIYIVTEYMNKGSLLDFLKGEMGKYL--RLPQLVDMAAQIASGMAYVERMNYVHRDLRAANILVGENLVCKVADFGLARLIEDNEYTARQGAKFPIKWTAPEAALYGRFTIKSDVWSFGILLTELTTKGRVPYPGMVNREVLDQVERGYRMPCPPECPESLHDLMCQCWRKDPEERPTFEYLQAFLED
+>SRC Toni
+ESLRLEVKLGQGCFGEVWMGTWNGTTR-VAIKTLKPGTMSPEAFLQEAQVMKKLRHEKLVQLYAVVS-EEPIYIVTEYMSKGSLLDFLKGETGKYL--RLPQLVDMAAQIASGMAYVERMNYVHRDLRAANILVGENLVCKVADFGLARLIEDNEYTARQGAKFPIKWTAPEAALYGRFTIKSDVWSFGILLTELTTKGRVPYPGMVNREVLDQVERGYRMPCPPECPESLHDLMCQCWRKEPEERPTFEYLQAFLED
+
+### REMOVING INSERTION AND POS AT INSERTION FOR EASIER INDEXING ### NEED TO FIX LATER!!!!
+>Node42
+ESLRLEVKLGQGCFGEVWMGTWNGTTKVAIKTLKPGTMSPEAFLQEAQVMKKLRHEKLVQLYAVVSEEPIYIVTEYMNKGSLLDFLKGEMGKYLRLPQLVDMAAQIASGMAYVERMNYVHRDLRAANILVGENLVCKVADFGLARLIEDNEYTARQGAKFPIKWTAPEAALYGRFTIKSDVWSFGILLTELTTKGRVPYPGMVNREVLDQVERGYRMPCPPECPESLHDLMCQCWRKDPEERPTFEYLQAFLED
+>SRC Toni
+ESLRLEVKLGQGCFGEVWMGTWNGTTRVAIKTLKPGTMSPEAFLQEAQVMKKLRHEKLVQLYAVVSEEPIYIVTEYMSKGSLLDFLKGETGKYLRLPQLVDMAAQIASGMAYVERMNYVHRDLRAANILVGENLVCKVADFGLARLIEDNEYTARQGAKFPIKWTAPEAALYGRFTIKSDVWSFGILLTELTTKGRVPYPGMVNREVLDQVERGYRMPCPPECPESLHDLMCQCWRKEPEERPTFEYLQAFLED
+
+
+```{r}
+# Sample sequence data
+toni_src <- "ESLRLEVKLGQGCFGEVWMGTWNGTTRVAIKTLKPGTMSPEAFLQEAQVMKKLRHEKLVQLYAVVSEEPIYIVTEYMSKGSLLDFLKGETGKYLRLPQLVDMAAQIASGMAYVERMNYVHRDLRAANILVGENLVCKVADFGLARLIEDNEYTARQGAKFPIKWTAPEAALYGRFTIKSDVWSFGILLTELTTKGRVPYPGMVNREVLDQVERGYRMPCPPECPESLHDLMCQCWRKEPEERPTFEYLQAFLED"
+anc <- "ESLRLEVKLGQGCFGEVWMGTWNGTTKVAIKTLKPGTMSPEAFLQEAQVMKKLRHEKLVQLYAVVSEEPIYIVTEYMNKGSLLDFLKGEMGKYLRLPQLVDMAAQIASGMAYVERMNYVHRDLRAANILVGENLVCKVADFGLARLIEDNEYTARQGAKFPIKWTAPEAALYGRFTIKSDVWSFGILLTELTTKGRVPYPGMVNREVLDQVERGYRMPCPPECPESLHDLMCQCWRKDPEERPTFEYLQAFLED"
+
+# Compare the sequences
+mutations <- c()
+min_length <- min(nchar(toni_src), nchar(anc)) 
+
+for (i in 1:min_length) {
+  if (substr(toni_src, i, i) != substr(anc, i, i)) {  
+    mutation <- paste0(substr(toni_src, i, i), i, substr(anc, i, i))
+    mutations <- c(mutations, mutation)
+  }
+}
+
+# Printing the results
+mutations
+length(mutations)
+nchar(anc)
+nchar(toni_src)
+```
+
+```{r}
+subset_df <- df_sorted %>% filter(id %in% mutations)
+subset_df
+intersect(subset_df$id,mutations)
+setdiff(mutations,subset_df$id)
+```
+```{r,fig.width=5, fig.height=5}
+# Scatter plot using ggplot2
+ggplot(subset_df, aes(x = position, y = `KD_folding_mean_kcal/mol`, color = `KD_activity_mean_kcal/mol`)) +
+  geom_point() +
+  geom_text(aes(label = id), hjust = 0, vjust = 1, size = 3) +
+  scale_color_gradient(low="blue",high="red") +
+  labs(title = "ANC-S8 vs human SRC (4 sub)",
+       x = "Position",
+       y = "KD Folding Mean (kcal/mol)",
+       color = "KD Activity Mean") +
+  theme_classic() +
+  theme(legend.position = "bottom")
+```
+```{r,fig.width=6, fig.height=6}
+# Convert to a long format
+subset_df_long <- subset_df %>%
+   dplyr::select(id, `FL_activity_mean_kcal/mol`, `KD_activity_mean_kcal/mol`, `FL_folding_mean_kcal/mol`, `KD_folding_mean_kcal/mol`) %>%
+  pivot_longer(
+    cols = -id,  # Pivot all columns except 'id'
+    names_to = "measurement",
+    values_to = "value"
+  ) %>%
+  mutate(
+    type = ifelse(grepl("FL", measurement), "FL", "KD"),
+    axis = ifelse(grepl("activity", measurement), "Activity Mean", "Folding Mean")
+  )
+
+# Print the result
+subset_df_long
+# Split the data into Activity and Folding datasets
+activity_data <- subset_df_long %>%
+  filter(axis == "Activity Mean") %>%
+  dplyr::select(id, type, Activity_Mean = value)
+
+folding_data <- subset_df_long %>%
+  filter(axis == "Folding Mean") %>%
+  dplyr::select(id, type, Folding_Mean = value)
+
+# Merge the datasets by 'id' and 'type'
+subset_df_merged <- activity_data %>%
+  full_join(folding_data, by = c("id", "type"))
+
+# View the merged data
+subset_df_merged
+p <- ggplot(subset_df_merged) +
+  geom_point(aes(y = Folding_Mean, x = Activity_Mean, color = type), alpha = 0.6, shape = 16) +
+  geom_text(aes(y = Folding_Mean, x = Activity_Mean, label = id), hjust = 0, vjust = 1, size = 3) +
+  scale_color_brewer(palette = "Dark2") + 
+  theme_classic() +
+  theme(legend.position = "bottom") + 
+  labs(y = "Folding Mean", x = "Activity Mean",title = "ANC-S8 vs human SRC (4 sub)",) 
+ggMarginal(p, type = "density", groupColour = TRUE, groupFill = TRUE)
+```
+
+```{r}
+anc_s8_fl_activity_sum <- sum(subset_df$`FL_activity_mean_kcal/mol`)
+anc_s8_fl_fold_sum <- sum(subset_df$`FL_folding_mean_kcal/mol`)
+anc_s8_fl_activity_sum
+anc_s8_fl_fold_sum
+```
+
+##########################
+ANC-S6 vs SRC
+
+>Node40
+ESLRLTRKLGAGQFGEVWAGIWNNTTKQVAVKTLKPGTMSPQAFLEEAQIMKKLRHEKLVQLYAVCSEEEPIYIVTEFMKHGSLLDYLQKGEGRHL-SKLPQLIDMAAQIASGMAYLEKQNYIHRDLAARNILVGENYICKVADFGLARLIEDDEYTAREGAKFPIKWTAPEAALYNRFTIKSDVWSFGILLTELVTKGRIPYPGMTNAEVLAQVERGYRMPCPPGCPEPLYQIMLQCWKKDAEERPTFEYLQSVLED
+>SRC Toni
+ESLRLEVKLGQGCFGEVWMGTWNGTTR-VAIKTLKPGTMSPEAFLQEAQVMKKLRHEKLVQLYAVVS-EEPIYIVTEYMSKGSLLDFLKGETGKYL--RLPQLVDMAAQIASGMAYVERMNYVHRDLRAANILVGENLVCKVADFGLARLIEDNEYTARQGAKFPIKWTAPEAALYGRFTIKSDVWSFGILLTELTTKGRVPYPGMVNREVLDQVERGYRMPCPPECPESLHDLMCQCWRKEPEERPTFEYLQAFLED
+
+### REMOVING INSERTION AND POS AT INSERTION FOR EASIER INDEXING ### NEED TO FIX LATER!!!!
+>Node40
+ESLRLTRKLGAGQFGEVWAGIWNNTTKVAVKTLKPGTMSPQAFLEEAQIMKKLRHEKLVQLYAVCSEEPIYIVTEFMKHGSLLDYLQKGEGRHLKLPQLIDMAAQIASGMAYLEKQNYIHRDLAARNILVGENYICKVADFGLARLIEDDEYTAREGAKFPIKWTAPEAALYNRFTIKSDVWSFGILLTELVTKGRIPYPGMTNAEVLAQVERGYRMPCPPGCPEPLYQIMLQCWKKDAEERPTFEYLQSVLED
+>SRC Toni
+ESLRLEVKLGQGCFGEVWMGTWNGTTRVAIKTLKPGTMSPEAFLQEAQVMKKLRHEKLVQLYAVVSEEPIYIVTEYMSKGSLLDFLKGETGKYLRLPQLVDMAAQIASGMAYVERMNYVHRDLRAANILVGENLVCKVADFGLARLIEDNEYTARQGAKFPIKWTAPEAALYGRFTIKSDVWSFGILLTELTTKGRVPYPGMVNREVLDQVERGYRMPCPPECPESLHDLMCQCWRKEPEERPTFEYLQAFLED
+
+
+```{r}
+# Sample sequence data
+toni_src <- "ESLRLEVKLGQGCFGEVWMGTWNGTTRVAIKTLKPGTMSPEAFLQEAQVMKKLRHEKLVQLYAVVSEEPIYIVTEYMSKGSLLDFLKGETGKYLRLPQLVDMAAQIASGMAYVERMNYVHRDLRAANILVGENLVCKVADFGLARLIEDNEYTARQGAKFPIKWTAPEAALYGRFTIKSDVWSFGILLTELTTKGRVPYPGMVNREVLDQVERGYRMPCPPECPESLHDLMCQCWRKEPEERPTFEYLQAFLED"
+anc <- "ESLRLTRKLGAGQFGEVWAGIWNNTTKVAVKTLKPGTMSPQAFLEEAQIMKKLRHEKLVQLYAVCSEEPIYIVTEFMKHGSLLDYLQKGEGRHLKLPQLIDMAAQIASGMAYLEKQNYIHRDLAARNILVGENYICKVADFGLARLIEDDEYTAREGAKFPIKWTAPEAALYNRFTIKSDVWSFGILLTELVTKGRIPYPGMTNAEVLAQVERGYRMPCPPGCPEPLYQIMLQCWKKDAEERPTFEYLQSVLED"
+
+# Compare the sequences
+mutations <- c()
+min_length <- min(nchar(toni_src), nchar(anc)) 
+
+for (i in 1:min_length) {
+  if (substr(toni_src, i, i) != substr(anc, i, i)) {  
+    mutation <- paste0(substr(toni_src, i, i), i, substr(anc, i, i))
+    mutations <- c(mutations, mutation)
+  }
+}
+
+# Printing the results
+mutations
+length(mutations)
+nchar(anc)
+nchar(toni_src)
+```
+
+```{r}
+subset_df <- df_sorted %>% filter(id %in% mutations)
+subset_df
+intersect(subset_df$id,mutations)
+setdiff(mutations,subset_df$id)
+```
+```{r,fig.width=5, fig.height=5}
+# Scatter plot using ggplot2
+ggplot(subset_df, aes(x = position, y = `KD_folding_mean_kcal/mol`, color = `KD_activity_mean_kcal/mol`)) +
+  geom_point() +
+  geom_text(aes(label = id), hjust = 0, vjust = 1, size = 3) +
+  scale_color_gradient(low="blue",high="red") +
+  labs(title = "ANC-S6 vs human SRC (52 sub)",
+       x = "Position",
+       y = "KD Folding Mean (kcal/mol)",
+       color = "KD Activity Mean") +
+  theme_classic() +
+  theme(legend.position = "bottom")
+```
+```{r,fig.width=6, fig.height=6}
+# Convert to a long format
+subset_df_long <- subset_df %>%
+   dplyr::select(id, `FL_activity_mean_kcal/mol`, `KD_activity_mean_kcal/mol`, `FL_folding_mean_kcal/mol`, `KD_folding_mean_kcal/mol`) %>%
+  pivot_longer(
+    cols = -id,  # Pivot all columns except 'id'
+    names_to = "measurement",
+    values_to = "value"
+  ) %>%
+  mutate(
+    type = ifelse(grepl("FL", measurement), "FL", "KD"),
+    axis = ifelse(grepl("activity", measurement), "Activity Mean", "Folding Mean")
+  )
+
+# Print the result
+subset_df_long
+# Split the data into Activity and Folding datasets
+activity_data <- subset_df_long %>%
+  filter(axis == "Activity Mean") %>%
+  dplyr::select(id, type, Activity_Mean = value)
+
+folding_data <- subset_df_long %>%
+  filter(axis == "Folding Mean") %>%
+  dplyr::select(id, type, Folding_Mean = value)
+
+# Merge the datasets by 'id' and 'type'
+subset_df_merged <- activity_data %>%
+  full_join(folding_data, by = c("id", "type"))
+
+# View the merged data
+subset_df_merged
+p <- ggplot(subset_df_merged) +
+  geom_point(aes(y = Folding_Mean, x = Activity_Mean, color = type), alpha = 0.6, shape = 16) +
+  geom_text(aes(y = Folding_Mean, x = Activity_Mean, label = id), hjust = 0, vjust = 1, size = 3) +
+  scale_color_brewer(palette = "Dark2") + 
+  theme_classic() +
+  theme(legend.position = "bottom") + 
+  labs(y = "Folding Mean", x = "Activity Mean",title = "ANC-S6 vs human SRC (52 sub)",) 
+ggMarginal(p, type = "density", groupColour = TRUE, groupFill = TRUE)
+```
+```{r}
+anc_s6_fl_activity_sum <- sum(subset_df$`FL_activity_mean_kcal/mol`)
+anc_s6_fl_fold_sum <- sum(subset_df$`FL_folding_mean_kcal/mol`)
+anc_s6_fl_activity_sum
+anc_s6_fl_fold_sum
+```
+
+##########################
+ANC-S7 vs SRC
+
+>Node41
+ESLRLEVKLGQGCFGEVWMGTWNGTTKRVAIKTLKPGTMSPEAFLQEAQVMKKLRHEKLVQLYAVVSEEEPIYIVTEFMNRGSLLDFLKGEMGKYL--RLPQLVDMAAQIASGMAYVERMNYVHRDLRAANILVGENLVCKVADFGLARLIEDNEYTARQGAKFPIKWTAPEAALYGRFTIKSDVWSFGILLTELTTKGRVPYPGMVNREVLDQVERGYRMPCPPECPESLHDLMLQCWRKDPEERPTFEYLQAFLED
+>SRC Toni
+ESLRLEVKLGQGCFGEVWMGTWNGTTR-VAIKTLKPGTMSPEAFLQEAQVMKKLRHEKLVQLYAVVS-EEPIYIVTEYMSKGSLLDFLKGETGKYL--RLPQLVDMAAQIASGMAYVERMNYVHRDLRAANILVGENLVCKVADFGLARLIEDNEYTARQGAKFPIKWTAPEAALYGRFTIKSDVWSFGILLTELTTKGRVPYPGMVNREVLDQVERGYRMPCPPECPESLHDLMCQCWRKEPEERPTFEYLQAFLED
+
+### REMOVING INSERTION AND POS AT INSERTION FOR EASIER INDEXING ### NEED TO FIX LATER!!!!
+>Node41
+ESLRLEVKLGQGCFGEVWMGTWNGTTKVAIKTLKPGTMSPEAFLQEAQVMKKLRHEKLVQLYAVVSEEPIYIVTEFMNRGSLLDFLKGEMGKYLRLPQLVDMAAQIASGMAYVERMNYVHRDLRAANILVGENLVCKVADFGLARLIEDNEYTARQGAKFPIKWTAPEAALYGRFTIKSDVWSFGILLTELTTKGRVPYPGMVNREVLDQVERGYRMPCPPECPESLHDLMLQCWRKDPEERPTFEYLQAFLED
+>SRC Toni
+ESLRLEVKLGQGCFGEVWMGTWNGTTRVAIKTLKPGTMSPEAFLQEAQVMKKLRHEKLVQLYAVVSEEPIYIVTEYMSKGSLLDFLKGETGKYLRLPQLVDMAAQIASGMAYVERMNYVHRDLRAANILVGENLVCKVADFGLARLIEDNEYTARQGAKFPIKWTAPEAALYGRFTIKSDVWSFGILLTELTTKGRVPYPGMVNREVLDQVERGYRMPCPPECPESLHDLMCQCWRKEPEERPTFEYLQAFLED
+
+
+```{r}
+# Sample sequence data
+toni_src <- "ESLRLEVKLGQGCFGEVWMGTWNGTTRVAIKTLKPGTMSPEAFLQEAQVMKKLRHEKLVQLYAVVSEEPIYIVTEYMSKGSLLDFLKGETGKYLRLPQLVDMAAQIASGMAYVERMNYVHRDLRAANILVGENLVCKVADFGLARLIEDNEYTARQGAKFPIKWTAPEAALYGRFTIKSDVWSFGILLTELTTKGRVPYPGMVNREVLDQVERGYRMPCPPECPESLHDLMCQCWRKEPEERPTFEYLQAFLED"
+anc <- "ESLRLEVKLGQGCFGEVWMGTWNGTTKVAIKTLKPGTMSPEAFLQEAQVMKKLRHEKLVQLYAVVSEEPIYIVTEFMNRGSLLDFLKGEMGKYLRLPQLVDMAAQIASGMAYVERMNYVHRDLRAANILVGENLVCKVADFGLARLIEDNEYTARQGAKFPIKWTAPEAALYGRFTIKSDVWSFGILLTELTTKGRVPYPGMVNREVLDQVERGYRMPCPPECPESLHDLMLQCWRKDPEERPTFEYLQAFLED"
+
+# Compare the sequences
+mutations <- c()
+min_length <- min(nchar(toni_src), nchar(anc)) 
+
+for (i in 1:min_length) {
+  if (substr(toni_src, i, i) != substr(anc, i, i)) {  
+    mutation <- paste0(substr(toni_src, i, i), i, substr(anc, i, i))
+    mutations <- c(mutations, mutation)
+  }
+}
+
+# Printing the results
+mutations
+length(mutations)
+nchar(anc)
+nchar(toni_src)
+```
+
+```{r}
+subset_df <- df_sorted %>% filter(id %in% mutations)
+subset_df
+intersect(subset_df$id,mutations)
+setdiff(mutations,subset_df$id)
+```
+```{r,fig.width=5, fig.height=5}
+# Scatter plot using ggplot2
+ggplot(subset_df, aes(x = position, y = `KD_folding_mean_kcal/mol`, color = `KD_activity_mean_kcal/mol`)) +
+  geom_point() +
+  geom_text(aes(label = id), hjust = 0, vjust = 1, size = 3) +
+  scale_color_gradient(low="blue",high="red") +
+  labs(title = "ANC-S7 vs human SRC (7 sub)",
+       x = "Position",
+       y = "KD Folding Mean (kcal/mol)",
+       color = "KD Activity Mean") +
+  theme_classic() +
+  theme(legend.position = "bottom")
+```
+```{r,fig.width=6, fig.height=6}
+# Convert to a long format
+subset_df_long <- subset_df %>%
+   dplyr::select(id, `FL_activity_mean_kcal/mol`, `KD_activity_mean_kcal/mol`, `FL_folding_mean_kcal/mol`, `KD_folding_mean_kcal/mol`) %>%
+  pivot_longer(
+    cols = -id,  # Pivot all columns except 'id'
+    names_to = "measurement",
+    values_to = "value"
+  ) %>%
+  mutate(
+    type = ifelse(grepl("FL", measurement), "FL", "KD"),
+    axis = ifelse(grepl("activity", measurement), "Activity Mean", "Folding Mean")
+  )
+
+# Print the result
+subset_df_long
+# Split the data into Activity and Folding datasets
+activity_data <- subset_df_long %>%
+  filter(axis == "Activity Mean") %>%
+  dplyr::select(id, type, Activity_Mean = value)
+
+folding_data <- subset_df_long %>%
+  filter(axis == "Folding Mean") %>%
+  dplyr::select(id, type, Folding_Mean = value)
+
+# Merge the datasets by 'id' and 'type'
+subset_df_merged <- activity_data %>%
+  full_join(folding_data, by = c("id", "type"))
+
+# View the merged data
+subset_df_merged
+p <- ggplot(subset_df_merged) +
+  geom_point(aes(y = Folding_Mean, x = Activity_Mean, color = type), alpha = 0.6, shape = 16) +
+  geom_text(aes(y = Folding_Mean, x = Activity_Mean, label = id), hjust = 0, vjust = 1, size = 3) +
+  scale_color_brewer(palette = "Dark2") + 
+  theme_classic() +
+  theme(legend.position = "bottom") + 
+  labs(y = "Folding Mean", x = "Activity Mean",title = "ANC-S7 vs human SRC (7 sub)",) 
+ggMarginal(p, type = "density", groupColour = TRUE, groupFill = TRUE)
+```
+```{r}
+anc_s7_fl_activity_sum <- sum(subset_df$`FL_activity_mean_kcal/mol`)
+anc_s7_fl_fold_sum <- sum(subset_df$`FL_folding_mean_kcal/mol`)
+anc_s7_fl_activity_sum
+anc_s7_fl_fold_sum
+```
+
+```{r}
+anc_as_fl_fold_sum
+anc_s1_fl_fold_sum
+anc_s3_fl_fold_sum
+anc_s5_fl_fold_sum
+anc_s7_fl_fold_sum
+anc_s8_fl_fold_sum
+```
+```{r}
+anc_as_fl_activity_sum
+anc_s1_fl_activity_sum
+anc_s3_fl_activity_sum
+anc_s5_fl_activity_sum
+anc_s7_fl_activity_sum
+anc_s8_fl_activity_sum
+df_sorted
+```
+
+```{r,fig.width=14, fig.height=4}
+# ANC-AS -> SRC: 84
+# ANC-S1 -> SRC: 64
+# ANC-S3 -> SRC: 59
+# ANC-S5 -> SRC: 58
+# ANC-S6 -> SRC: 52
+# ANC-S7 -> SRC: 7
+# ANC-S8 -> SRC: 4
+dist <- c(4,7,52,58,59,64,84)
+x_labels <- c("ANC-S8", "ANC-S7", "ANC-S6", "ANC-S5", "ANC-S3", "ANC-S1", "ANC-AS")
+
+activity <- c(anc_s8_fl_activity_sum, anc_s7_fl_activity_sum, anc_s6_fl_activity_sum, 
+              anc_s5_fl_activity_sum, anc_s3_fl_activity_sum, anc_s1_fl_activity_sum, anc_as_fl_activity_sum)
+folding <- c(anc_s8_fl_fold_sum, anc_s7_fl_fold_sum, anc_s6_fl_fold_sum, 
+             anc_s5_fl_fold_sum, anc_s3_fl_fold_sum, anc_s1_fl_fold_sum, anc_as_fl_fold_sum)
+
+# Combine into a data frame
+data <- data.frame(dist, x_labels, activity, folding)
+# Reshape the data to long format
+data_long <- data %>%
+  pivot_longer(cols = c("activity", "folding"), 
+               names_to = "type", 
+               values_to = "value")
+
+# Plot
+ggplot(data_long, aes(x = dist, y = value, color = type, shape = type)) +
+  geom_point(size = 3) +                                      # Use size to make points more visible
+  geom_line(aes(group = type), linetype = "dashed", color = "grey") +  # Dashed grey line connecting points
+  scale_x_continuous(breaks = dist, labels = x_labels) +      # Custom x-axis labels
+  theme_classic() +
+  labs(x = "Mutational distance from human SRC (# of substitutions)", y = "Cumulative ddG", title = "Activity and Folding vs Distance", color = "", shape = "") +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))    # Rotate x-axis labels for better readability  
+
+```
+
+
+
+##########################
+ANC-AS vs WILSON AS
+
+>Node34
+DKWEIERTELTLKRKLGAGQFGEVWEGVWKNTTKPVAVKTLKEGTMSPKDFLEEAQIMKKLRHPNLVQLYGVCTREEPIYIVTEFMKHGSLLDYLRGKGRENLSSKPPVLMDMAAQVASGMAYLEAQNYIHRDLAARNCLVGENNIVKVADFGLARLIKDDEYTARAGAKFPIKWTAPEALAYNRFSTKSDVWAFGVLLWELVTYGRIPYPGVTNAEVLQQVERGYRMERPPGCPEEVYEIMLECWKKDPKDRPTFKSLQWKLED
+>WILSON
+GPHDKWEIPRSEITLERKLGSGQFGEVYEGKWRNYNIEVAVKTLKEGTMSVEEFLQEAQIMKKLKHPNLVQLYGVCTKEPPIYIITEYMSHGSLLDYLRDCEGHTVNAQALLDMAAQVASGMAYLESQNFIHRDLAARNCLVGENNVVKVADFGLARLINEDEYTARAGAKFPIKWTAPEAISYNRFSIKSDVWAFGILLWEIFTYGQVPYPGMSGSEVIEQVERGYRMPRPQGCPEEIYELMLQCWNKSPEERPTFAETLHALETMFLPETGGG
+
+### REMOVING INSERTION AND POS AT INSERTION FOR EASIER INDEXING ### NEED TO FIX LATER!!!!
+>Node34
+DKWEIERTELTLKRKLGAGQFGEVWEGVWKNTTKPVAVKTLKEGTMSPKDFLEEAQIMKKLRHPNLVQLYGVCTREEPIYIVTEFMKHGSLLDYLRGRENLSSKPPVLMDMAAQVASGMAYLEAQNYIHRDLAARNCLVGENNIVKVADFGLARLIKDDEYTARAGAKFPIKWTAPEALAYNRFSTKSDVWAFGVLLWELVTYGRIPYPGVTNAEVLQQVERGYRMERPPGCPEEVYEIMLECWKKDPKDRPTFKSLQWKLED
+>WILSON
+DKWEIPRSEITLERKLGSGQFGEVYEGKWRNYNIEVAVKTLKEGTMSVEEFLQEAQIMKKLKHPNLVQLYGVCTKEPPIYIITEYMSHGSLLDYLRDCEGHTVNAQALLDMAAQVASGMAYLESQNFIHRDLAARNCLVGENNVVKVADFGLARLINEDEYTARAGAKFPIKWTAPEAISYNRFSIKSDVWAFGILLWEIFTYGQVPYPGMSGSEVIEQVERGYRMPRPQGCPEEIYELMLQCWNKSPEERPTFAETLHALET
+
+
+
+```{r}
+# Sample sequence data
+toni_src <- "DKWEIPRSEITLERKLGSGQFGEVYEGKWRNYNIEVAVKTLKEGTMSVEEFLQEAQIMKKLKHPNLVQLYGVCTKEPPIYIITEYMSHGSLLDYLRDCEGHTVNAQALLDMAAQVASGMAYLESQNFIHRDLAARNCLVGENNVVKVADFGLARLINEDEYTARAGAKFPIKWTAPEAISYNRFSIKSDVWAFGILLWEIFTYGQVPYPGMSGSEVIEQVERGYRMPRPQGCPEEIYELMLQCWNKSPEERPTFAETLHALET"
+anc <- "DKWEIERTELTLKRKLGAGQFGEVWEGVWKNTTKPVAVKTLKEGTMSPKDFLEEAQIMKKLRHPNLVQLYGVCTREEPIYIVTEFMKHGSLLDYLRGRENLSSKPPVLMDMAAQVASGMAYLEAQNYIHRDLAARNCLVGENNIVKVADFGLARLIKDDEYTARAGAKFPIKWTAPEALAYNRFSTKSDVWAFGVLLWELVTYGRIPYPGVTNAEVLQQVERGYRMERPPGCPEEVYEIMLECWKKDPKDRPTFKSLQWKLED"
+
+# Compare the sequences
+mutations <- c()
+min_length <- min(nchar(toni_src), nchar(anc)) 
+
+for (i in 1:min_length) {
+  if (substr(toni_src, i, i) != substr(anc, i, i)) {  
+    mutation <- paste0(substr(toni_src, i, i), i, substr(anc, i, i))
+    mutations <- c(mutations, mutation)
+  }
+}
+
+# Printing the results
+mutations
+length(mutations)
+nchar(anc)
+nchar(toni_src)
+```
+
+
+
+
+
+
+
+
+
+
+
