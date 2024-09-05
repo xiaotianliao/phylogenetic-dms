@@ -1,0 +1,705 @@
+IQ-TREE multicore version 2.3.6 for Linux x86 64-bit built Aug  4 2024
+Developed by Bui Quang Minh, Nguyen Lam Tung, Olga Chernomor, Heiko Schmidt,
+Dominik Schrempf, Michael Woodhams, Ly Trong Nhan, Thomas Wong
+
+Host:    node-13-10 (AVX2, FMA3, 2015 GB RAM)
+Command: iqtree2 -s /lustre/scratch126/gengen/projects/alpha-allostery-global/git-phylo-dms/00.inputs/04.dlg4_topiary/seed_to_ali/07_alignment_trimmed.fasta -m Q.plant+R6 -asr -nt AUTO -pre /lustre/scratch126/gengen/projects/alpha-allostery-global/git-phylo-dms/00.inputs/04.dlg4_topiary/02.out_asr/dlg_topiary_asr/dlg_topiary_asr
+Seed:    263745 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Wed Sep  4 11:49:22 2024
+Kernel:  AVX+FMA - auto-detect threads (20 CPU cores detected)
+
+Reading alignment file /lustre/scratch126/gengen/projects/alpha-allostery-global/git-phylo-dms/00.inputs/04.dlg4_topiary/seed_to_ali/07_alignment_trimmed.fasta ... Fasta format detected
+Reading fasta file: done in 0.00698695 secs using 4.909% CPU
+Alignment most likely contains protein sequences
+Alignment has 518 sequences with 204 columns, 196 distinct patterns
+153 parsimony-informative, 23 singleton sites, 28 constant sites
+                              Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 7.3819e-05 secs using 1.666e+04% CPU
+   1  wxpgPcOUjC|Opisthocomus        44.12%    failed      0.33%
+   2  ATIyLSUpGC|Knipowitschia       42.65%    passed     74.64%
+   3  qWSYzNqoeG|Dissostichus        44.12%    passed     96.48%
+   4  YehluKeusf|Lampris             44.12%    passed     97.92%
+   5  OaJHCZEcCC|Merluccius          44.12%    passed     92.46%
+   6  DMOZtPBOFD|Syngnathus          44.12%    passed     91.42%
+   7  NNhNTPUIJb|Dunckerocampus      44.12%    passed     88.67%
+   8  ZYyJtqYDsM|Myripristis         44.12%    passed     97.12%
+   9  FtXgnTzkXr|Channa              44.12%    passed     87.75%
+  10  TsBPAaRHTZ|Takifugu            44.12%    passed     83.56%
+  11  RrPHhrAYRE|Thalassophryne      44.12%    passed     87.15%
+  12  JyipaytGkI|Scomber             44.12%    passed     87.67%
+  13  OSyBwDZAjG|Anoplopoma          44.12%    passed     87.67%
+  14  DtOoZwdPCT|Oreochromis         44.12%    passed     87.67%
+  15  CHKBYdPRwq|Parambassis         44.12%    passed     89.65%
+  16  jJItEXwBHd|Chelmon             44.12%    passed     88.42%
+  17  UJEynJcrIe|Taeniopygia         44.12%    passed     97.43%
+  18  lgrEScwmtT|Grus                44.12%    passed     99.94%
+  19  SMQSLmYGvr|Colius              44.12%    passed     99.61%
+  20  jTFlnYMdbI|Danio               44.12%    passed     99.68%
+  21  FxDYAPdDXa|Misgurnus           44.12%    passed     99.99%
+  22  VwJMuQaGWT|Huso                43.63%    passed     99.97%
+  23  ZwBokuCNEl|Alligator           44.12%    passed     99.98%
+  24  bdXPElhyEw|Bufo                44.12%    passed     99.99%
+  25  FCIKMtampn|Triplophysa         44.12%    passed     99.93%
+  26  POaRkErZXp|Nyctereutes         44.12%    passed     99.96%
+  27  UfgHbtyKpP|Talpa               44.12%    passed     99.96%
+  28  VDHLTSEXkO|Ornithorhynchus     44.12%    passed     99.98%
+  29  YmwkcOhmSa|Sarcophilus         44.12%    passed     99.98%
+  30  yYnNgIwpxV|Homo                44.12%    passed     99.95%
+  31  DzJdmoZRtd|Camelus             44.12%    passed     99.95%
+  32  cTayxzLnHn|Elephas             44.12%    passed     99.95%
+  33  MGpJOrxbaS|Tupaia              44.12%    passed     99.95%
+  34  arJJVMDWNN|Myotis              44.12%    passed     99.95%
+  35  eZZtFoFMZb|Camelus             44.12%    passed     99.95%
+  36  XYFhGiqDvm|Myotis              44.12%    passed     99.95%
+  37  vwnPPqExdF|Emydura             44.12%    passed     99.81%
+  38  gaftYdbqgc|Crotalus            44.12%    passed     99.99%
+  39  oElphthWby|Sinocyclocheilus    44.12%    passed     99.96%
+  40  emJXgvMuTk|Cirrhinus           44.12%    passed     99.98%
+  41  zIIniOZwlf|Chanos              44.12%    passed     99.98%
+  42  VAQUhrbpaE|Oncorhynchus        44.12%    passed     98.78%
+  43  TgdaCkgyAq|Erpetoichthys       43.63%    passed     99.99%
+  44  eKYVGrybTo|Latimeria           44.12%    passed    100.00%
+  45  zKDfZwBznz|Protopterus         44.12%    passed     99.92%
+  46  rsDzkFlvZI|Dasyatis            44.12%    passed     99.98%
+  47  DmvRPmyrjb|Brienomyrus         35.78%    passed     86.22%
+  48  uYtSUUrMrW|Colossoma           44.12%    passed     99.85%
+  49  wpYlWBIOgr|Danio               44.12%    passed     99.85%
+  50  dqvACwIUhh|Triplophysa         44.12%    passed     99.94%
+  51  PbfVuzsivo|Cirrhinus           44.12%    passed     99.94%
+  52  yMVQXZnEPt|Scleropages         44.12%    passed     99.95%
+  53  MupiegGBFS|Silurus             44.12%    passed     99.85%
+  54  bjluuomleh|Anguilla            44.12%    passed     99.15%
+  55  ibmMQbTqbY|Silurus             44.12%    passed     99.96%
+  56  XCxOfwWylE|Colossoma           44.12%    passed     99.76%
+  57  GHQqpAYAaj|Lampris             44.12%    passed     99.81%
+  58  xidTrxrube|Oncorhynchus        44.12%    passed     99.98%
+  59  JNydEWruWL|Engraulis           44.12%    passed     99.91%
+  60  SFWsygFkJg|Chanos              44.12%    passed     99.96%
+  61  tIlDRGLoOe|Conger              44.12%    passed     99.96%
+  62  dmfPAljSFL|Engraulis           44.12%    passed     99.98%
+  63  HsQvCcbQwc|Lota                44.12%    passed     99.76%
+  64  qwTPQnYlpN|Thalassophryne      44.12%    passed     99.76%
+  65  dqtWmxEBVE|Girardinichthys     44.12%    passed     99.91%
+  66  nNopWkbhCi|Hippocampus         44.12%    passed     99.76%
+  67  ccvHonAMtJ|Scomber             44.12%    passed     99.76%
+  68  lpWqpKJNnE|Lucifuga            44.12%    passed     99.76%
+  69  nWnLVxNbcT|Knipowitschia       44.12%    passed     99.76%
+  70  uODjgcNrki|Anoplopoma          44.12%    passed     99.76%
+  71  PNeeZkJVWm|Pleuronectes        44.12%    passed     99.76%
+  72  tJQZKgeCAn|Gouania             27.94%    failed      3.04%
+  73  zwuThdrTwx|Myripristis         44.12%    passed     99.76%
+  74  HEZqavsSYv|Notolabrus          44.12%    passed     99.23%
+  75  lMXeLjSEcW|Bombina             44.12%    passed     99.48%
+  76  LhGDGTxdXr|Xenopus             44.12%    passed     99.89%
+  77  DRysfEtJKH|Ahaetulla           44.12%    passed    100.00%
+  78  ZzhKQBWxMb|Electrophorus       44.12%    passed     99.88%
+  79  FrJvqNYfvH|Hemicordylus        44.12%    passed     99.90%
+  80  dKCxNDFKab|Rhinatrema          44.12%    passed    100.00%
+  81  TlKLNTLWlc|Scleropages         44.12%    passed     99.94%
+  82  BLlVfjgSKT|Triplophysa         44.12%    passed     99.63%
+  83  MPYjwvQMfM|Mus                 44.12%    passed     99.91%
+  84  ufdHnHymaz|Scyliorhinus        44.12%    passed     99.99%
+  85  ImcptWILpN|Chiloscyllium       44.12%    passed     99.84%
+  86  QoMUULlovC|Danio               44.12%    passed     99.95%
+  87  MDijUUEUUP|Danio               44.12%    passed     99.95%
+  88  urwitlxyve|Heteronotia         44.12%    passed     99.99%
+  89  MDAgWbSFfU|Platysternon        44.12%    passed    100.00%
+  90  avEANcNGud|Turnix              44.12%    passed    100.00%
+  91  eEsslnGBXx|Nyctibius           44.12%    passed    100.00%
+  92  prpOAZJHpX|Chunga              44.12%    passed    100.00%
+  93  XRhVVBRcmr|Haliaeetus          44.12%    passed    100.00%
+  94  vVRPdUfUjc|Bucco               44.12%    passed    100.00%
+  95  HzCJGEEdSt|Scytalopus          44.12%    passed    100.00%
+  96  RoWBjYGQqH|Pterocnemia         44.12%    passed    100.00%
+  97  RTpoUOeCur|Ardeotis            44.12%    passed    100.00%
+  98  gZNmAXEfGy|Regulus             44.12%    passed    100.00%
+  99  EVEWkJBwug|Opisthocomus        44.12%    passed    100.00%
+ 100  KcjnRwZeiV|Grus                44.12%    passed    100.00%
+ 101  jxPTypbXiB|Falco               44.12%    passed    100.00%
+ 102  jiQhlhpUEz|Strigops            44.12%    passed    100.00%
+ 103  jAXryjWBUb|Latimeria           37.25%    passed     99.89%
+ 104  psKlsTHsIJ|Oncorhynchus        44.12%    passed     99.92%
+ 105  qgEOVPJkqO|Megalops            44.12%    passed     83.06%
+ 106  mChoSeLkhf|Megalops            44.12%    passed     83.06%
+ 107  orIvKpERZc|Erpetoichthys       44.12%    passed     99.81%
+ 108  BXWQziueGi|Chanos              44.12%    passed    100.00%
+ 109  pirDWPkkQP|Hoplias             44.12%    passed     99.94%
+ 110  zzquPKUoBl|Coregonus           44.12%    passed     99.91%
+ 111  VJsCRrmMWC|Denticeps           44.12%    passed     99.97%
+ 112  fuyKkWPIeb|Polyodon            44.12%    passed     99.92%
+ 113  nwGaltTqMQ|Pangasianodon       44.12%    passed     99.96%
+ 114  qrGatzLnau|Acipenser           44.12%    passed     99.98%
+ 115  YhJGAHRZgO|Pygocentrus         44.12%    passed     99.98%
+ 116  vmyybGnbAn|Amia                37.25%    passed     99.92%
+ 117  RHSbCsxJiC|Sarcophilus         44.12%    passed    100.00%
+ 118  hclrUXmlbZ|Tachyglossus        44.12%    passed    100.00%
+ 119  OiXIyQjwqQ|Manis               44.12%    passed    100.00%
+ 120  CpQlqtBcsk|Homo                44.12%    passed     99.99%
+ 121  DGItIHagKk|Orycteropus         44.12%    passed     99.99%
+ 122  AXfAzklbRJ|Leptonychotes       44.12%    passed    100.00%
+ 123  QNjBfQjfdx|Sorex               44.12%    passed    100.00%
+ 124  szdFALdDbD|Molossus            44.12%    passed    100.00%
+ 125  rLcrlXgNOo|Budorcas            44.12%    passed    100.00%
+ 126  xhExYNsXGO|Tachyglossus        44.12%    passed     99.85%
+ 127  XAxHVkgUhy|Callorhinchus       44.12%    passed     99.19%
+ 128  LPrvvfuzlf|Leucoraja           44.12%    passed     99.67%
+ 129  jGuZjbeOQm|Rhincodon           44.12%    passed     99.85%
+ 130  qUZQzkXect|Scleropages         44.12%    passed     99.81%
+ 131  trohMPzuFu|Microcaecilia       44.12%    passed     99.50%
+ 132  iXqLvCSKoq|Calypte             44.12%    passed     99.86%
+ 133  ENJigRgTGn|Paramormyrops       44.12%    passed     99.70%
+ 134  mFBpOJQmWI|Herpetotheres       44.12%    passed     99.92%
+ 135  fHEIRkVKdX|Tiliqua             44.12%    passed     99.90%
+ 136  iBwCZrWABZ|Lerista             44.12%    passed     99.92%
+ 137  VHJDmRVFPz|Oceanites           44.12%    passed     99.97%
+ 138  AJmpUJAJQx|Rhineura            44.12%    passed     99.89%
+ 139  cOnwRUzxva|Pogona              44.12%    passed     99.91%
+ 140  fpmwvKXyBJ|Eublepharis         44.12%    passed     99.91%
+ 141  WmaiVnXsgD|Alligator           44.12%    passed     99.74%
+ 142  HesvcYsrMB|Chelydra            44.12%    passed     99.91%
+ 143  yJShndtueo|Aquila              44.12%    passed     99.93%
+ 144  HUkuGuMyvt|Chunga              44.12%    passed     99.95%
+ 145  gzwUGnNxDT|Odontophorus        44.12%    passed     99.95%
+ 146  ukYFkMNmrM|Grus                44.12%    passed     99.95%
+ 147  kJqajXfXHg|Rostratula          44.12%    passed     99.95%
+ 148  OEmcLwklYl|Rissa               44.12%    passed     99.95%
+ 149  fTWBtQxZgN|Picoides            44.12%    passed     99.84%
+ 150  daJCfyubbL|Amazona             44.12%    passed     99.98%
+ 151  naiDCPWOoD|Urocolius           44.12%    passed     99.95%
+ 152  ZmLsacGZWG|Cygnus              44.12%    passed     99.97%
+ 153  qXOzskvmNI|Orthonyx            44.12%    passed     99.89%
+ 154  GKCEuyLtxP|Vidua               44.12%    passed     99.88%
+ 155  CbEYKbZfXz|Vidua               44.12%    passed     99.88%
+ 156  bRxUdZPekC|Menura              44.12%    passed     99.95%
+ 157  PuEacoOVPG|Onychorhynchus      44.12%    passed     99.95%
+ 158  DhtwHWQwoC|Dicaeum             44.12%    passed     99.95%
+ 159  YUOHpDydZr|Chaetorhynchus      44.12%    passed     99.95%
+ 160  OrufFVjWvP|Prunella            44.12%    passed     99.95%
+ 161  qEQivuhsQB|Acrocephalus        44.12%    passed     99.95%
+ 162  xrUrcumPMI|Malurus             44.12%    passed     99.95%
+ 163  kbYSYzxYzD|Notiomystis         44.12%    passed     99.95%
+ 164  OqggzoxrMJ|Melanocharis        44.12%    passed     99.95%
+ 165  MwYhPvHxmE|Chaetops            44.12%    passed     99.95%
+ 166  NoTyrxXnwJ|Columba             44.12%    passed     99.95%
+ 167  DxHTYCFDuz|Cnemophilus         44.12%    passed     99.95%
+ 168  ytHZDrYoOY|Peucedramus         44.12%    passed     99.95%
+ 169  bNoJduJVMA|Ptilonorhynchus     44.12%    passed     99.95%
+ 170  KFkIMkUapp|Drymodes            44.12%    passed     99.95%
+ 171  BMUftokLIv|Patagioenas         44.12%    passed     99.95%
+ 172  lRDsErRYpl|Myiozetetes         44.12%    passed     99.95%
+ 173  GJdJMINQHq|Cyanistes           44.12%    passed     99.95%
+ 174  sFxCgZyIUK|Malurus             44.12%    passed     99.95%
+ 175  HSGfMBZyuv|Zonotrichia         44.12%    passed     99.95%
+ 176  dHDWhBVzGX|Polypterus          44.12%    passed     99.95%
+ 177  gCGEYURSfZ|Electrophorus       44.12%    passed     99.70%
+ 178  vsxFtYTdEw|Tachysurus          29.90%    passed     98.17%
+ 179  QMvSlCRftS|Chanos              44.12%    passed     99.83%
+ 180  rLGlxVqFEK|Colossoma           44.12%    passed     99.83%
+ 181  LXEmiZyCWO|Denticeps           44.12%    passed     99.83%
+ 182  sVFNeBIGWt|Denticeps           44.12%    passed     99.83%
+ 183  KlxlmLcXqS|Seriola             44.12%    passed     99.83%
+ 184  HqPsyjXsCh|Archocentrus        44.12%    passed     99.70%
+ 185  UKZsoYjrxI|Oreochromis         44.12%    passed     99.70%
+ 186  kVLbSCDkmP|Sander              44.12%    passed     99.57%
+ 187  bNmuuMFoEW|Periophthalmus      44.12%    passed     99.57%
+ 188  lxFikgqkCp|Mugilogobius        44.12%    passed     99.57%
+ 189  FzdKgIIOQg|Etheostoma          44.12%    passed     99.57%
+ 190  gQNAoeGxAg|Fundulus            44.12%    passed     99.85%
+ 191  VoTvtaXgvp|Melanotaenia        44.12%    passed     99.85%
+ 192  gIOSSfmCTd|Pimephales          44.12%    passed     99.72%
+ 193  puMlijqJoI|Danio               44.12%    passed     99.72%
+ 194  YbUOOzbKrE|Triplophysa         44.12%    passed     99.72%
+ 195  wKLlpUgjte|Paramisgurnus       44.12%    passed     99.72%
+ 196  qUtTXzDgZQ|Pimephales          44.12%    passed     99.72%
+ 197  NKYhKNVmzb|Coregonus           37.75%    passed     98.96%
+ 198  aWWZpmRBym|Esox                37.75%    passed     98.99%
+ 199  CzpRXcekZG|Gadus               37.75%    passed     99.39%
+ 200  gZwKzcCivN|Thunnus             44.12%    passed     99.72%
+ 201  LpUREXeRip|Epinephelus         44.12%    passed     99.72%
+ 202  lcAyeTIAkR|Myripristis         44.12%    passed     99.72%
+ 203  XlMUZtvqek|Salarias            44.12%    passed     99.72%
+ 204  zOWnPqRKQL|Anarrhichthys       44.12%    passed     99.72%
+ 205  XqwHYaQQIq|Eleginops           44.12%    passed     99.72%
+ 206  zzQtdhEnCS|Anguilla            44.12%    passed     99.72%
+ 207  GsUjdxsRBm|Monopterus          44.12%    passed     99.72%
+ 208  eKUTnHXlxr|Nerophis            44.12%    passed     99.72%
+ 209  ixKROLpojw|Hypomesus           44.12%    passed     99.72%
+ 210  UmWKhAJxVI|Hippoglossus        44.12%    passed     99.72%
+ 211  PzeyeQYjKt|Labrus              44.12%    passed     99.72%
+ 212  PRUMjLBCLn|Conger              44.12%    passed     99.72%
+ 213  ezEidGCkXs|Channa              44.12%    passed     99.72%
+ 214  qNQlRYWmuX|Pungitius           44.12%    passed     99.72%
+ 215  wUbraTUfap|Sebastes            44.12%    passed     99.72%
+ 216  XQtzJgdrCC|Plectropomus        44.12%    passed     99.72%
+ 217  deiRPHcnze|Siniperca           44.12%    passed     99.72%
+ 218  QwxZCXNFJz|Dunckerocampus      44.12%    passed     99.72%
+ 219  jBKFqJAUiC|Acanthochromis      44.12%    passed     99.72%
+ 220  gvWDVDcqvr|Cheilinus           44.12%    passed     99.72%
+ 221  ABsRZyLLlg|Thalassophryne      44.12%    passed     99.58%
+ 222  gSkpOFVJTg|Latimeria           44.12%    passed     99.98%
+ 223  uztGzYPZul|Acipenser           42.16%    passed     99.67%
+ 224  TWqmPRIimS|Amia                37.75%    passed     99.33%
+ 225  rbDtJSLITr|Polyodon            44.12%    passed     99.94%
+ 226  mjOWivwfcA|Xenopus             44.12%    passed     99.67%
+ 227  CEUuDNEwAB|Bufo                44.12%    passed     99.92%
+ 228  NYPqxhaQFe|Engystomops         44.12%    passed     99.92%
+ 229  nwpPfhCIKF|Homo                44.12%    passed     99.86%
+ 230  XEdmLnLUYV|Cynocephalus        44.12%    passed     99.86%
+ 231  NIGQbjjvnb|Equus               44.12%    passed     99.86%
+ 232  urdyfedqMq|Castor              44.12%    passed     99.86%
+ 233  yZofsNLrrc|Rattus              44.12%    passed     99.86%
+ 234  IMqUAmWDHa|Rhinolophus         44.12%    passed     99.86%
+ 235  UdPIzRAThP|Camelus             44.12%    passed     99.86%
+ 236  rxZRHDVqNy|Sus                 44.12%    passed     99.86%
+ 237  grtmmjUcQZ|Talpa               44.12%    passed     99.86%
+ 238  krQRtiEGOb|Echinops            44.12%    passed     99.86%
+ 239  UtMbWLlbPz|Manis               44.12%    passed     99.86%
+ 240  FoUfSKNfxa|Ictidomys           44.12%    passed     99.86%
+ 241  OhsMxtbDVQ|Nannospalax         44.12%    passed     99.86%
+ 242  iewFozIYkH|Jaculus             44.12%    passed     99.86%
+ 243  DuBiecgjVB|Cavia               44.12%    passed     99.86%
+ 244  nYHAXwcxYC|Oryctolagus         44.12%    passed     99.86%
+ 245  nceLoUsqhH|Cricetulus          44.12%    passed     99.86%
+ 246  zarJXXjlXA|Bos                 44.12%    passed     99.86%
+ 247  FGWWMyTAUb|Otolemur            44.12%    passed     99.86%
+ 248  MYBZVUqdMV|Gulo                44.12%    passed     99.86%
+ 249  JJuOWxDjbS|Diceros             44.12%    passed     99.86%
+ 250  glBRuktqnd|Orcinus             44.12%    passed     99.86%
+ 251  qzkojrsmJm|Halichoerus         44.12%    passed     99.86%
+ 252  cdtCTxKJKu|Panthera            44.12%    passed     99.72%
+ 253  zGuzSyJNtP|Pterocnemia         44.12%    passed     99.91%
+ 254  WoBHlYVhnP|Phascolarctos       44.12%    passed     99.78%
+ 255  jlkbFDUZMR|Protopterus         18.63%    passed     18.10%
+ 256  gyAtThYSaa|Kryptolebias        44.12%    passed     98.56%
+ 257  wQyDDeVXXc|Carcharodon         19.61%    failed      0.00%
+ 258  pqeXetPbqC|Heptranchias        44.12%    passed     99.28%
+ 259  ONjGpszpSP|Cololabis           34.31%    passed     69.73%
+ 260  FFXCxrOYHp|Latimeria           44.12%    passed     98.25%
+ 261  ehslqVUJdo|Homo                 7.35%    failed      0.92%
+ 262  GMoDClyZnF|Homo                32.84%    passed     61.55%
+ 263  TicaPUcLnh|Pleurodeles         18.63%    passed      7.99%
+ 264  PiNxucmnDW|Geotrypetes         18.63%    failed      0.45%
+ 265  fqtYtkaPCW|Chelydra            32.84%    passed     82.21%
+ 266  EPjCUCzTFN|Tiliqua             32.84%    passed     92.96%
+ 267  ONsbnZZdoB|Opisthocomus        18.63%    failed      4.47%
+ 268  IkLaNeDNWM|Alligator            7.35%    failed      0.80%
+ 269  XfIqlNhCEX|Sclerurus            7.35%    failed      0.71%
+ 270  qQkpXjjnrz|Apteryx              7.35%    failed      0.82%
+ 271  GmQggYudJI|Orthonyx             7.35%    failed      0.82%
+ 272  FtixWolsEM|Ptilonorhynchus      7.35%    failed      0.82%
+ 273  mnRBYrpuwh|Malurus              7.35%    failed      0.82%
+ 274  hEftbJUFnE|Vireo                7.35%    failed      0.82%
+ 275  XKtpHVsSwG|Indicator            7.35%    failed      0.82%
+ 276  mFiVcBgeGe|Chunga               7.35%    failed      0.82%
+ 277  DsBKwYWKZL|Caloenas             7.35%    failed      0.82%
+ 278  RCZcjExQCK|Probosciger          7.35%    failed      0.82%
+ 279  sCuHVhUnoa|Rhynochetos          7.35%    failed      0.82%
+ 280  DsBkyARkxI|Pomatorhinus         7.35%    failed      0.95%
+ 281  KiJEGftrir|Odontophorus         7.35%    failed      1.13%
+ 282  gKEVJIBXtY|Caloenas            32.84%    passed     81.12%
+ 283  CELwPnXQIx|Poecile             32.84%    passed     81.12%
+ 284  YXaOXSpXQd|Eleutherodactylus    7.35%    passed     25.55%
+ 285  QXFnzPLpTD|Bombina             44.12%    passed     99.20%
+ 286  RbawpuQucg|Hyla                18.63%    passed     29.25%
+ 287  PSlZLvuuYl|Gouania             26.96%    passed     90.87%
+ 288  HyqKvYxDYc|Oryzias             36.76%    passed     99.85%
+ 289  ojdlhULZpz|Oreochromis         18.63%    passed     77.32%
+ 290  iYQWMUkQiD|Pungitius           19.12%    passed     36.83%
+ 291  vyvpWVfIGy|Anguilla            23.04%    passed     35.91%
+ 292  ULWmzYoIxf|Lota                44.12%    passed     96.74%
+ 293  efgXFzznOX|Gadus               30.39%    passed     59.35%
+ 294  GPhilhmEVr|Salvelinus          34.31%    passed     87.06%
+ 295  UUDYLzpWHs|Danio               34.31%    passed     93.78%
+ 296  qehGXqMTxv|Chanos              44.12%    passed     99.73%
+ 297  ejIMjLRzEU|Amia                44.12%    passed     99.73%
+ 298  veEjRQhhhZ|Myripristis         32.84%    passed     95.87%
+ 299  AxIfEqLTbp|Lampris             44.12%    passed     99.16%
+ 300  uEpEkMObuo|Pleuronectes        36.76%    passed     95.51%
+ 301  TIxVoPyeMH|Melanotaenia        30.39%    passed     65.70%
+ 302  LSzAfxTNyl|Denticeps           54.41%    passed     99.93%
+ 303  zpycNArCoR|Gadus               53.92%    passed     59.66%
+ 304  MMfSVklQTS|Lota                53.92%    passed     88.49%
+ 305  xsowCsucWH|Merluccius          53.92%    passed     83.14%
+ 306  wWhbJiQmdi|Merluccius          53.92%    passed     82.03%
+ 307  vLrwzrAYdf|Nerophis            53.92%    passed     75.32%
+ 308  yriEBossAd|Nerophis            53.92%    passed     48.31%
+ 309  ptmjRheura|Doryrhamphus        53.92%    passed     71.70%
+ 310  ouGydyLZAK|Syngnathoides       53.92%    passed     87.19%
+ 311  oSTHyNhLwP|Phyllopteryx        53.92%    passed     92.90%
+ 312  FJrexhwdzF|Hippocampus         53.92%    passed     93.46%
+ 313  kvYrUGnMbg|Syngnathus          53.92%    passed     76.34%
+ 314  PqpZyNAwzO|Myripristis         53.92%    passed     96.45%
+ 315  vtpjaucyOq|Betta               53.92%    passed     66.30%
+ 316  fQFMtiArWX|Gouania             53.92%    failed      0.56%
+ 317  BnbwVvAGmv|Thalassophryne      53.92%    passed     57.10%
+ 318  DiiQBWVJgg|Oryzias             53.92%    passed     28.81%
+ 319  faaiaCexvh|Synchiropus         53.92%    passed     50.23%
+ 320  eeCTNWpyuJ|Notolabrus          53.92%    passed     10.45%
+ 321  JgPfwhhhMe|Takifugu            53.92%    passed     91.41%
+ 322  gMLgaRdxRd|Labrus              53.92%    passed     76.37%
+ 323  ZypbZObihB|Knipowitschia       53.92%    passed     48.08%
+ 324  QbbaEGndmx|Periophthalmus      53.92%    passed     62.46%
+ 325  zWsqVxYMwL|Anabas              53.92%    passed     30.17%
+ 326  UUZtKSATPJ|Menidia             53.92%    passed     46.56%
+ 327  sDDsKtpJNt|Austrofundulus      53.92%    passed     21.67%
+ 328  LpNogsRHRK|Oreochromis         53.92%    passed     79.36%
+ 329  WapYtbgEft|Amphiprion          53.92%    passed     33.29%
+ 330  gqbNfIbQme|Cheilinus           53.92%    passed     15.85%
+ 331  IGYVrWebYn|Gasterosteus        53.92%    passed     90.35%
+ 332  nSFLbiNYlq|Stegastes           53.92%    passed     69.27%
+ 333  CKpcvQwrMi|Sphaeramia          53.92%    passed     82.10%
+ 334  ZOIJojBlYl|Solea               54.41%    passed     69.77%
+ 335  OKRnqnINnB|Centropristis       53.92%    passed     10.34%
+ 336  VKGiCSQIGM|Salarias            53.92%    passed     31.51%
+ 337  FYyuGGoyCb|Acanthopagrus       53.92%    passed     21.41%
+ 338  svcLFAhuvw|Mugil               53.92%    passed     36.16%
+ 339  efGIvclRVv|Chelmon             53.92%    passed     44.05%
+ 340  LaPxHzdBdr|Epinephelus         53.92%    passed     48.20%
+ 341  sDjaxmFrFr|Mastacembelus       53.92%    passed     69.90%
+ 342  NpoNQMzDTd|Scophthalmus        53.92%    passed     71.24%
+ 343  RtIZUQfQIP|Echeneis            53.92%    passed     48.85%
+ 344  vqckeEAUrH|Caranx              53.92%    passed     72.13%
+ 345  JFPkopdVZK|Lates               53.92%    passed     55.96%
+ 346  ALfGKJjrxE|Xiphias             53.92%    passed     52.37%
+ 347  AxJsidbHna|Parambassis         53.92%    passed     22.53%
+ 348  OFJebSKyFF|Scomber             53.92%    passed     54.93%
+ 349  VFSMnmJXAk|Thunnus             53.92%    passed     63.18%
+ 350  aBSYNCtHaW|Cyclopterus         53.92%    passed     57.81%
+ 351  vXspuuiHWJ|Sebastes            53.92%    passed     54.11%
+ 352  PtMGAnjhbY|Anoplopoma          53.92%    passed     51.94%
+ 353  UnxzPTgJul|Eleginops           53.92%    passed     64.16%
+ 354  lyDPHZkyix|Cottoperca          54.41%    passed     68.36%
+ 355  YMNuCcmWXM|Etheostoma          53.92%    passed     59.63%
+ 356  wIwrgxUWrN|Larimichthys        53.92%    passed     23.16%
+ 357  UERFDuKJvG|Micropterus         53.92%    passed     57.52%
+ 358  jXUyuXxLQD|Anguilla            54.41%    passed     34.66%
+ 359  djyNGQiDCF|Conger              54.41%    passed     48.01%
+ 360  MQZwwVnzII|Amia                54.90%    passed     96.01%
+ 361  SqaAUVQJIu|Megalops            54.41%    failed      0.00%
+ 362  GXrYMNKaeB|Trichomycterus      54.41%    passed     87.43%
+ 363  szhaljnMqO|Pangasianodon       54.41%    passed     54.10%
+ 364  jaBMgTzLTr|Tachysurus          54.41%    passed     21.13%
+ 365  AMgeIxjjMD|Denticeps           54.41%    passed     68.78%
+ 366  wcelRJkUIt|Betta               54.41%    passed     71.10%
+ 367  qPgUfcqHmy|Electrophorus       54.41%    passed     88.28%
+ 368  zjTDYlaNMj|Oncorhynchus        54.41%    passed     89.27%
+ 369  rrJZwALraN|Rhincodon           54.41%    passed     90.72%
+ 370  UwqBfkljyP|Misgurnus           54.41%    passed     64.43%
+ 371  AMEKsbXREU|Nerophis            54.41%    passed     90.70%
+ 372  DVHpZqfCZG|Dunckerocampus      54.41%    passed     75.83%
+ 373  ZwumQOJHdF|Doryrhamphus        54.41%    passed     79.90%
+ 374  utVnSExbQo|Syngnathus          54.41%    passed     88.03%
+ 375  xKRxKxfzkM|Syngnathoides       54.41%    passed     61.83%
+ 376  BXuFASRRYV|Channa              54.41%    passed     95.34%
+ 377  JxmClcHOhI|Channa              54.41%    passed     82.08%
+ 378  xkuHfpmvzV|Hoplias             54.41%    passed     62.12%
+ 379  ThwVFIekAk|Engraulis           54.41%    passed     86.91%
+ 380  iVmigKtGHW|Lucifuga            54.41%    passed     93.51%
+ 381  kWPgwSmLzW|Ctenopharyngodon    54.41%    passed     61.38%
+ 382  wuMgadLktk|Myxocyprinus        54.41%    passed     74.38%
+ 383  GMOogtHiPe|Triplophysa         54.41%    passed     73.99%
+ 384  bJmZRVEepB|Danio               54.41%    passed     71.72%
+ 385  yqDhcfySXu|Myxocyprinus        54.41%    passed     64.01%
+ 386  AokZZMrkyF|Sinocyclocheilus    54.41%    passed     40.46%
+ 387  XLOCAEqEVw|Monopterus          54.41%    passed     90.16%
+ 388  hDfUjXQrOI|Cololabis           54.41%    passed     84.80%
+ 389  PDhmakcZxm|Anabas              54.41%    passed     81.58%
+ 390  qDuUxrdLDR|Cynoglossus         54.41%    passed     89.08%
+ 391  WOiqRCRVkY|Merluccius          54.41%    passed     57.09%
+ 392  puErcOBDlt|Gadus               54.41%    passed     65.15%
+ 393  iYJkZLrwrk|Boleophthalmus      54.41%    passed     92.25%
+ 394  FkCjRJuPER|Synchiropus         54.41%    passed     91.61%
+ 395  zWDPrZicAg|Maylandia           54.41%    passed     74.08%
+ 396  RrIioanGds|Thalassophryne      54.41%    passed     91.29%
+ 397  DoHBdYndSW|Archocentrus        54.41%    passed     96.22%
+ 398  UPmxbmdATS|Pleuronectes        54.41%    passed     79.36%
+ 399  XihIrMzYUZ|Scophthalmus        54.41%    passed     79.45%
+ 400  OoeUGablxW|Sphaeramia          54.41%    passed     91.85%
+ 401  ZpGanyZCNq|Anoplopoma          54.41%    passed     88.91%
+ 402  miGZKwdcpq|Lampris             54.41%    passed     75.18%
+ 403  MGhzKiSISz|Melanotaenia        54.41%    passed     94.30%
+ 404  hAZkkePOrp|Dissostichus        54.41%    passed     89.77%
+ 405  iOOtclUjIS|Dissostichus        54.41%    passed     89.77%
+ 406  lxnQrtLPlA|Myripristis         54.41%    passed     93.10%
+ 407  uaRcUTfWcQ|Gouania             54.41%    passed     69.07%
+ 408  pGEjeRyLxq|Amphiprion          54.41%    passed     86.72%
+ 409  WGpuwJWZiP|Perca               54.41%    passed     58.98%
+ 410  DUvAHYCwDh|Xyrichtys           54.41%    passed     86.15%
+ 411  eAxaFwmHVL|Dicentrarchus       54.41%    passed     81.57%
+ 412  ZkWbRDcgec|Mastacembelus       54.41%    passed     93.57%
+ 413  aNWbAyhgYk|Plectropomus        54.41%    passed     88.05%
+ 414  VtkBMGgbNF|Scomber             54.41%    passed     92.05%
+ 415  lbhQdPDpUP|Thunnus             54.41%    passed     92.05%
+ 416  PblYuugntw|Collichthys         54.41%    passed     90.67%
+ 417  BXCJgeZnMI|Siniperca           54.41%    passed     90.91%
+ 418  esTtkSfOTl|Protopterus         54.41%    passed     61.40%
+ 419  dZBwPXFXTB|Chanos              54.41%    passed     90.63%
+ 420  lvapPEDhVb|Oncorhynchus        54.41%    passed     75.90%
+ 421  SXZQUXLjkH|Latimeria           54.41%    passed     73.67%
+ 422  pQdpdTTzTY|Latimeria           54.41%    passed     73.67%
+ 423  ThydlHtIwV|Chelydra            54.41%    passed     68.71%
+ 424  eOjHiYqfnR|Coturnix            54.41%    passed     94.31%
+ 425  YCMaNfRMgD|Cnemophilus         54.41%    passed     84.39%
+ 426  XKEvkrGvDU|Orthonyx            54.41%    passed     92.30%
+ 427  tJrmIFflQs|Centropus           54.41%    passed     95.52%
+ 428  OiNqLJgfeZ|Alligator           54.41%    passed     95.52%
+ 429  TYLbPeMhwF|Formicarius         54.41%    passed     95.52%
+ 430  qNMqmkpais|Heliornis           54.41%    passed     95.12%
+ 431  ibsFJKYJvW|Nothoprocta         54.41%    passed     95.20%
+ 432  lwAEhrLPxl|Turnix              54.41%    passed     92.84%
+ 433  oVBpBXtGtL|Melopsittacus       54.41%    passed     95.52%
+ 434  cpZxjfbcUI|Indicator           54.41%    passed     95.52%
+ 435  HzzPSKExBA|Gavia               54.41%    passed     94.94%
+ 436  bNvBgFeuBm|Malurus             54.41%    passed     94.77%
+ 437  GJwwjRaQdr|Corvus              54.41%    passed     90.95%
+ 438  fLVauwDyHf|Opisthocomus        54.41%    passed     94.66%
+ 439  fTMlOAimmJ|Gymnogyps           54.41%    passed     90.95%
+ 440  dwjfmCpcoG|Vidua               54.41%    passed     94.17%
+ 441  OkKSFIZNlK|Ammodramus          54.41%    passed     94.17%
+ 442  hlzGDliEws|Prinia              54.41%    passed     94.17%
+ 443  PDmbnLiwgq|Cinclus             54.41%    passed     94.17%
+ 444  ZstwSnBqbI|Falco               54.41%    passed     94.17%
+ 445  VQtsZzeCJr|Antrostomus         54.41%    passed     94.17%
+ 446  VAVticCRFs|Sphaerodactylus     54.90%    passed     91.24%
+ 447  AOkkYGBIBw|Podarcis            54.41%    passed     89.61%
+ 448  XoaHcwMWus|Python              54.41%    passed     94.20%
+ 449  TowpqtcoRd|Heterocephalus      54.41%    passed     96.32%
+ 450  CQdMzibcUc|Mus                 54.41%    passed     85.24%
+ 451  xsgKOCJOKc|Mesoplodon          54.41%    passed     94.87%
+ 452  xryLzCoxMS|Gracilinanus        54.41%    passed     83.43%
+ 453  JOxasJSbvP|Tachyglossus        54.41%    passed     95.52%
+ 454  yLGnaklVEG|Jaculus             54.41%    passed     89.96%
+ 455  YvGNtYrYSe|Talpa               54.41%    passed     82.56%
+ 456  OkMhABCiQl|Nannospalax         54.41%    passed     84.12%
+ 457  WynvbQLjFN|Homo                54.41%    passed     91.91%
+ 458  WzRddjPsEO|Sigmodon            54.41%    passed     91.93%
+ 459  anjQDWPymK|Castor              54.41%    passed     84.07%
+ 460  VDHfeqYHUY|Eptesicus           54.41%    passed     85.88%
+ 461  mFcOWGEyly|Puma                54.41%    passed     84.20%
+ 462  pFXRCJIzYV|Vicugna             54.41%    passed     78.88%
+ 463  SYHixnXZGs|Equus               54.41%    passed     94.92%
+ 464  yiDyiKQwqw|Propithecus         54.41%    passed     92.84%
+ 465  XfddPheKUm|Diceros             54.41%    passed     92.84%
+ 466  RXVbAUKgOx|Tupaia              54.41%    passed     92.05%
+ 467  XBcoGIqEYb|Cynocephalus        54.41%    passed     89.52%
+ 468  lMKDDlUreN|Marmota             54.41%    passed     90.35%
+ 469  FfjntNnlNo|Ochotona            54.41%    passed     88.34%
+ 470  ntPHoZImtF|Nyctereutes         54.41%    passed     90.16%
+ 471  jusxucKvHe|Phacochoerus        54.41%    passed     90.16%
+ 472  rEtaQFGiCl|Otolemur            54.41%    passed     90.16%
+ 473  iLnRDSNSeB|Scleropages         54.41%    passed     77.61%
+ 474  qOlCljTxOp|Esox                54.41%    passed     58.11%
+ 475  ayKlbSaEFf|Polyodon            54.41%    passed     80.49%
+ 476  wrVXCibhsq|Polyodon            54.41%    passed     89.50%
+ 477  AegqrqaGiL|Paramormyrops       54.41%    passed     55.52%
+ 478  xHrOEdjPlA|Gymnothorax         54.41%    passed     79.98%
+ 479  zmoLStzvUB|Polypterus          54.41%    passed     96.99%
+ 480  xniMuVTZfC|Conger              54.41%    passed     87.27%
+ 481  axFTgRZYUv|Lepisosteus         54.41%    passed     84.94%
+ 482  miatsPWCrQ|Atractosteus        54.41%    passed     81.35%
+ 483  ogdIgCefjy|Pelobates           54.41%    passed     81.96%
+ 484  FUWVJGOmnN|Microcaecilia       54.41%    passed     97.27%
+ 485  eYjBcLGRuK|Pleurodeles         54.41%    passed     79.85%
+ 486  urfLjaqzmy|Bufo                54.41%    passed     87.37%
+ 487  uBrMUhihfB|Bombina             54.41%    passed     89.40%
+ 488  KzkrdKPXKl|Xenopus             54.41%    passed     83.58%
+ 489  YtXPgBDZNy|Umbra               54.41%    passed     68.15%
+ 490  NOYBFVrXEM|Esox                54.41%    passed     71.17%
+ 491  mRWOJBgiso|Dallia              54.41%    passed     76.83%
+ 492  egwsBZKghV|Osmerus             54.41%    passed     89.55%
+ 493  aeZUnkzUSH|Scleropages         54.41%    passed     95.07%
+ 494  MYLFQOnPPv|Triplophysa         54.41%    passed     86.25%
+ 495  DdJJisOJak|Salvelinus          53.43%    passed     69.07%
+ 496  WTpELElayt|Pimephales          54.41%    passed     68.68%
+ 497  wEekRaOdmx|Chanodichthys       54.41%    passed     57.08%
+ 498  hwiiclsjaD|Pseudorasbora       54.41%    passed     60.72%
+ 499  CLtjdmZLZM|Cyprinus            54.41%    passed     52.97%
+ 500  nieOSCMjQY|Onychostoma         54.41%    passed     39.08%
+ 501  ilvlBVfGLA|Labeo               54.41%    passed     67.66%
+ 502  aLeJZewqKP|Cirrhinus           54.41%    passed     42.76%
+ 503  wBuMiksKge|Misgurnus           54.41%    passed     54.86%
+ 504  TvopYAaCEx|Myxocyprinus        54.41%    passed     69.73%
+ 505  hGVnEKzMrG|Engraulis           54.41%    passed     94.39%
+ 506  sLeJuFfHXj|Clupea              54.41%    passed     72.71%
+ 507  IoEXtozcYe|Alosa               54.41%    passed     83.08%
+ 508  DpKpWkYUbt|Chanos              54.90%    passed     93.27%
+ 509  NsVaouJkRX|Silurus             54.41%    passed     13.57%
+ 510  qrMXrqPuje|Hoplias             54.90%    passed     61.43%
+ 511  zrWrWgvRUo|Astyanax            54.41%    passed     85.39%
+ 512  SmtTEjGqcW|Colossoma           54.41%    passed     77.05%
+ 513  gleKkqrajU|Trichomycterus      54.41%    passed     82.51%
+ 514  MagBAZtbEG|Neoarius            54.41%    failed      0.00%
+ 515  kuDawMBdOW|Ictalurus           54.41%    passed     93.43%
+ 516  HAZMZjxJUm|Pangasius           54.41%    passed     93.74%
+ 517  AzDwnUAyuO|Hemibagrus          54.41%    passed     72.65%
+ 518  KBJAHAJnqQ|Tachysurus          54.41%    passed     83.70%
+WARNING: 217 sequences contain more than 50% gaps/ambiguity
+****  TOTAL                          46.35%  23 sequences failed composition chi2 test (p-value<5%; df=19)
+
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 0.162 seconds
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+
+NOTE: 103 MB RAM (0 GB) is required!
+Measuring multi-threading efficiency up to 20 CPU cores
+Increase to 10 rounds for branch lengths
+5 trees examined
+Threads: 1 / Time: 20.606 sec / Speedup: 1.000 / Efficiency: 100% / LogL: -52546
+Threads: 2 / Time: 11.604 sec / Speedup: 1.776 / Efficiency: 89% / LogL: -52546
+Threads: 3 / Time: 8.693 sec / Speedup: 2.370 / Efficiency: 79% / LogL: -52546
+Threads: 4 / Time: 7.530 sec / Speedup: 2.737 / Efficiency: 68% / LogL: -52546
+Threads: 5 / Time: 7.431 sec / Speedup: 2.773 / Efficiency: 55% / LogL: -52546
+Threads: 6 / Time: 7.757 sec / Speedup: 2.656 / Efficiency: 44% / LogL: -52546
+BEST NUMBER OF THREADS: 4
+
+Estimate model parameters (epsilon = 0.100)
+1. Initial log-likelihood: -12455.737
+2. Current log-likelihood: -11982.853
+3. Current log-likelihood: -11961.968
+4. Current log-likelihood: -11958.014
+5. Current log-likelihood: -11953.056
+6. Current log-likelihood: -11928.498
+7. Current log-likelihood: -11916.922
+8. Current log-likelihood: -11913.888
+9. Current log-likelihood: -11911.930
+10. Current log-likelihood: -11910.773
+11. Current log-likelihood: -11910.047
+12. Current log-likelihood: -11909.617
+13. Current log-likelihood: -11909.380
+14. Current log-likelihood: -11909.272
+Optimal log-likelihood: -11909.185
+Site proportion and rates:  (0.267,0.068) (0.205,0.221) (0.002,0.278) (0.181,0.546) (0.077,1.038) (0.268,2.824)
+Parameters optimization took 14 rounds (29.671 sec)
+Wrote distance file to... 
+Computing ML distances based on estimated model parameters...
+Calculating distance matrix: done in 19.4161 secs using 400% CPU
+Computing ML distances took 19.420173 sec (of wall-clock time) 77.663005 sec (of CPU time)
+WARNING: Some pairwise ML distances are too long (saturated)
+Setting up auxiliary I and S matrices: done in 0.00307084 secs using 458.5% CPU
+Computing RapidNJ tree took 0.332442 sec (of wall-clock time) 0.615776 sec (of CPU time)
+Log-likelihood of RapidNJ tree: -13148.950
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Generating 98 parsimony trees... 15.877 second
+Computing log-likelihood of 98 initial trees ... 19.434 seconds
+Current best score: -11909.185
+
+Do NNI search on 20 best initial trees
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 1: -11828.192
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 2: -11769.887
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 4: -11752.384
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 5: -11743.225
+Iteration 10 / LogL: -11779.211 / Time: 0h:5m:19s
+Iteration 20 / LogL: -11766.628 / Time: 0h:8m:25s
+Finish initializing candidate tree set (20)
+Current best tree score: -11743.225 / CPU time: 389.517
+Number of iterations: 20
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 27: -11727.265
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 30: -11715.285
+Iteration 30 / LogL: -11715.285 / Time: 0h:10m:12s (0h:35m:11s left)
+Iteration 40 / LogL: -11722.339 / Time: 0h:11m:24s (0h:26m:19s left)
+Iteration 50 / LogL: -11722.863 / Time: 0h:12m:38s (0h:20m:38s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 52: -11709.724
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 57: -11705.855
+Iteration 60 / LogL: -11721.557 / Time: 0h:14m:16s (0h:23m:27s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 65: -11702.581
+Iteration 70 / LogL: -11727.257 / Time: 0h:15m:35s (0h:21m:27s left)
+Iteration 80 / LogL: -11705.406 / Time: 0h:16m:51s (0h:18m:8s left)
+Iteration 90 / LogL: -11720.149 / Time: 0h:18m:0s (0h:15m:10s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 99: -11701.198
+Iteration 100 / LogL: -11703.938 / Time: 0h:19m:23s (0h:19m:22s left)
+Iteration 110 / LogL: -11720.679 / Time: 0h:20m:49s (0h:17m:0s left)
+Iteration 120 / LogL: -11707.217 / Time: 0h:22m:7s (0h:14m:41s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 125: -11697.250
+Iteration 130 / LogL: -11705.629 / Time: 0h:23m:32s (0h:17m:19s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 132: -11694.348
+Iteration 140 / LogL: -11786.837 / Time: 0h:25m:3s (0h:16m:34s left)
+Iteration 150 / LogL: -11701.293 / Time: 0h:26m:24s (0h:14m:32s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 156: -11692.077
+Iteration 160 / LogL: -11715.862 / Time: 0h:27m:55s (0h:16m:51s left)
+Iteration 170 / LogL: -11710.005 / Time: 0h:29m:14s (0h:14m:52s left)
+Iteration 180 / LogL: -11802.754 / Time: 0h:30m:25s (0h:12m:55s left)
+Iteration 190 / LogL: -11743.407 / Time: 0h:31m:44s (0h:11m:4s left)
+Iteration 200 / LogL: -11705.309 / Time: 0h:33m:3s (0h:9m:18s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 205: -11691.140
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 207: -11687.385
+Iteration 210 / LogL: -11696.395 / Time: 0h:35m:2s (0h:16m:15s left)
+Iteration 220 / LogL: -11701.658 / Time: 0h:36m:29s (0h:14m:29s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 228: -11684.958
+Iteration 230 / LogL: -11712.281 / Time: 0h:38m:17s (0h:16m:23s left)
+Iteration 240 / LogL: -11703.204 / Time: 0h:40m:4s (0h:14m:45s left)
+Iteration 250 / LogL: -11699.524 / Time: 0h:41m:34s (0h:13m:1s left)
+Iteration 260 / LogL: -11693.922 / Time: 0h:42m:52s (0h:11m:15s left)
+Iteration 270 / LogL: -11697.063 / Time: 0h:44m:18s (0h:9m:33s left)
+Iteration 280 / LogL: -11691.778 / Time: 0h:45m:44s (0h:7m:52s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 288: -11684.294
+Iteration 290 / LogL: -11693.144 / Time: 0h:47m:17s (0h:16m:1s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 300: -11683.429
+Iteration 300 / LogL: -11683.429 / Time: 0h:48m:40s (0h:16m:16s left)
+Iteration 310 / LogL: -11706.458 / Time: 0h:50m:5s (0h:14m:35s left)
+Iteration 320 / LogL: -11704.751 / Time: 0h:51m:41s (0h:12m:57s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 327: -11682.525
+Iteration 330 / LogL: -11707.641 / Time: 0h:53m:3s (0h:15m:38s left)
+Iteration 340 / LogL: -11691.225 / Time: 0h:54m:19s (0h:13m:56s left)
+Iteration 350 / LogL: -11700.653 / Time: 0h:55m:32s (0h:12m:15s left)
+Iteration 360 / LogL: -11690.448 / Time: 0h:56m:46s (0h:10m:35s left)
+Iteration 370 / LogL: -11699.424 / Time: 0h:58m:22s (0h:9m:1s left)
+Iteration 380 / LogL: -11868.657 / Time: 0h:59m:52s (0h:7m:25s left)
+Iteration 390 / LogL: -11706.559 / Time: 1h:1m:14s (0h:5m:49s left)
+Iteration 400 / LogL: -11688.697 / Time: 1h:2m:52s (0h:4m:15s left)
+Iteration 410 / LogL: -11701.605 / Time: 1h:4m:25s (0h:2m:40s left)
+Iteration 420 / LogL: -11691.300 / Time: 1h:5m:57s (0h:1m:6s left)
+TREE SEARCH COMPLETED AFTER 428 ITERATIONS / Time: 1h:7m:24s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.010)
+1. Initial log-likelihood: -11682.525
+2. Current log-likelihood: -11682.513
+3. Current log-likelihood: -11682.499
+4. Current log-likelihood: -11682.488
+Optimal log-likelihood: -11682.475
+Site proportion and rates:  (0.125,0.018) (0.162,0.067) (0.179,0.136) (0.174,0.346) (0.063,0.672) (0.299,2.881)
+Parameters optimization took 4 rounds (7.963 sec)
+BEST SCORE FOUND : -11682.475
+Ancestral state probabilities printed to /lustre/scratch126/gengen/projects/alpha-allostery-global/git-phylo-dms/00.inputs/04.dlg4_topiary/02.out_asr/dlg_topiary_asr/dlg_topiary_asr.state
+Total tree length: 118.281
+
+Total number of iterations: 428
+CPU time used for tree search: 15555.239 sec (4h:19m:15s)
+Wall-clock time used for tree search: 3928.417 sec (1h:5m:28s)
+Total CPU time used: 15985.066 sec (4h:26m:25s)
+Total wall-clock time used: 4054.684 sec (1h:7m:34s)
+
+Analysis results written to: 
+  IQ-TREE report:                /lustre/scratch126/gengen/projects/alpha-allostery-global/git-phylo-dms/00.inputs/04.dlg4_topiary/02.out_asr/dlg_topiary_asr/dlg_topiary_asr.iqtree
+  Maximum-likelihood tree:       /lustre/scratch126/gengen/projects/alpha-allostery-global/git-phylo-dms/00.inputs/04.dlg4_topiary/02.out_asr/dlg_topiary_asr/dlg_topiary_asr.treefile
+  Likelihood distances:          /lustre/scratch126/gengen/projects/alpha-allostery-global/git-phylo-dms/00.inputs/04.dlg4_topiary/02.out_asr/dlg_topiary_asr/dlg_topiary_asr.mldist
+  Ancestral state:               /lustre/scratch126/gengen/projects/alpha-allostery-global/git-phylo-dms/00.inputs/04.dlg4_topiary/02.out_asr/dlg_topiary_asr/dlg_topiary_asr.state
+  Screen log file:               /lustre/scratch126/gengen/projects/alpha-allostery-global/git-phylo-dms/00.inputs/04.dlg4_topiary/02.out_asr/dlg_topiary_asr/dlg_topiary_asr.log
+
+Date and Time: Wed Sep  4 12:56:57 2024
