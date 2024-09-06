@@ -417,6 +417,8 @@ tec_tips <- grep("TEC", midpoint_tree$tip.label, value = TRUE)
 src_tips <- grep("SRC", midpoint_tree$tip.label, value = TRUE)
 abl_tips <- grep("ABL", midpoint_tree$tip.label, value = TRUE)
 
+grep("elegans", midpoint_tree$tip.label, value = TRUE)
+
 # Get the nodes for each clade
 tec_node <- find_clade_node(midpoint_tree, tec_tips)
 src_node <- find_clade_node(midpoint_tree, src_tips)
