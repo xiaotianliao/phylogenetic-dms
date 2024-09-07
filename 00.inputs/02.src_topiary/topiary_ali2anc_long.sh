@@ -14,5 +14,5 @@ conda activate  /software/hgi/envs/conda/team354/xl7/topiary
 
 cd /lustre/scratch126/gengen/projects/alpha-allostery-global/git-phylo-dms/00.inputs/02.src_topiary
 
-topiary-alignment-to-ancestors /lustre/scratch126/gengen/projects/alpha-allostery-global/git-phylo-dms/00.inputs/02.src_topiary/seed_to_ali/final_dataframe_10.csv --out_dir /lustre/scratch126/gengen/projects/alpha-allostery-global/git-phylo-dms/00.inputs/02.src_topiary/ali_to_anc_week --num_threads 10
+topiary-alignment-to-ancestors /lustre/scratch126/gengen/projects/alpha-allostery-global/git-phylo-dms/00.inputs/02.src_topiary/seed_to_ali/final_dataframe_10_excel_resaved.csv --out_dir /lustre/scratch126/gengen/projects/alpha-allostery-global/git-phylo-dms/00.inputs/02.src_topiary/ali_to_anc --num_threads 10
 
