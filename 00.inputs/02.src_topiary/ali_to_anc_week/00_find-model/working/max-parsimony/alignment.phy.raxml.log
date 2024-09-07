@@ -1,0 +1,75 @@
+
+RAxML-NG v. 1.2.2 released on 11.04.2024 by The Exelixis Lab.
+Developed by: Alexey M. Kozlov and Alexandros Stamatakis.
+Contributors: Diego Darriba, Tomas Flouri, Benoit Morel, Sarah Lutteropp, Ben Bettisworth, Julia Haag, Anastasis Togkousidis.
+Latest version: https://github.com/amkozlov/raxml-ng
+Questions/problems/suggestions? Please visit: https://groups.google.com/forum/#!forum/raxml
+
+System: AMD EPYC 7713 64-Core Processor, 128 cores, 2015 GB RAM (allocated: 100 physical cores)
+
+RAxML-NG was called at 07-Sep-2024 11:59:57 as follows:
+
+/software/hgi/envs/conda/team354/xl7/topiary/bin/raxml-ng --start --msa alignment.phy --model LG --seed 3159608899 --threads 10 --tree pars{1}
+
+Analysis options:
+  run mode: Starting tree generation
+  start tree(s): parsimony (1)
+  random seed: 3159608899
+  SIMD kernels: AVX2
+  parallelization: coarse-grained (auto), PTHREADS (10 threads), thread pinning: OFF
+
+[00:00:00] Reading alignment from file: alignment.phy
+[00:00:00] Loaded alignment with 469 taxa and 494 sites
+
+WARNING: Sequences RWjPNNOwoA and AcGVCmYRAe are exactly identical!
+WARNING: Sequences RWjPNNOwoA and HGMBNeoSRf are exactly identical!
+WARNING: Sequences aEWFlmmkRx and FJlHZRAech are exactly identical!
+WARNING: Sequences aEWFlmmkRx and PjrKFkoTJW are exactly identical!
+WARNING: Sequences aEWFlmmkRx and RIZRTtwIbZ are exactly identical!
+WARNING: Sequences yAeclotHgD and HYqyWYYllq are exactly identical!
+WARNING: Sequences yAeclotHgD and SGXOmVqJdI are exactly identical!
+WARNING: Sequences yAeclotHgD and ruNOMFzfbW are exactly identical!
+WARNING: Sequences yAeclotHgD and mgfbnrsaqk are exactly identical!
+WARNING: Sequences yAeclotHgD and fVcjwXYrSo are exactly identical!
+WARNING: Sequences yAeclotHgD and ARxtPvCwRs are exactly identical!
+WARNING: Sequences yAeclotHgD and tVYNvxirRH are exactly identical!
+WARNING: Sequences yAeclotHgD and kTbshfrTFr are exactly identical!
+WARNING: Sequences yAeclotHgD and lAhFyCaHhw are exactly identical!
+WARNING: Sequences yAeclotHgD and lVSpEhxxrY are exactly identical!
+WARNING: Sequences GVdinLCwRb and WxozCwLmHK are exactly identical!
+WARNING: Sequences cCVOQZjVPU and nYgYpSiEee are exactly identical!
+WARNING: Sequences wuRCFvRBvq and CgDXpfgQAU are exactly identical!
+WARNING: Sequences wuRCFvRBvq and jFDKMxbecU are exactly identical!
+WARNING: Sequences cOFHJAYSyO and kgARxlPZVK are exactly identical!
+WARNING: Sequences vhtOFFFkFW and HHHYIuPDuD are exactly identical!
+WARNING: Sequences DmMidyXKTE and AlUZrCvuqA are exactly identical!
+WARNING: Sequences WLWUhWUBcM and QkyQvniPYT are exactly identical!
+WARNING: Sequences WLWUhWUBcM and iWVgelljJZ are exactly identical!
+WARNING: Duplicate sequences found: 24
+
+NOTE: Reduced alignment (with duplicates and gap-only sites/taxa removed) 
+NOTE: was saved to: /lustre/scratch126/gengen/projects/alpha-allostery-global/git-phylo-dms/00.inputs/02.src_topiary/ali_to_anc_week/00_find-model/working/max-parsimony/alignment.phy.raxml.reduced.phy
+
+Alignment comprises 1 partitions and 468 patterns
+
+Partition 0: noname
+Model: LG
+Alignment sites / patterns: 494 / 468
+Gaps: 10.04 %
+Invariant sites: 11.54 %
+
+
+NOTE: Binary MSA file created: alignment.phy.raxml.rba
+
+[00:00:00] Generating 1 parsimony starting tree(s) with 469 taxa
+Parallel parsimony with 10 threads
+
+All starting trees saved to: /lustre/scratch126/gengen/projects/alpha-allostery-global/git-phylo-dms/00.inputs/02.src_topiary/ali_to_anc_week/00_find-model/working/max-parsimony/alignment.phy.raxml.startTree
+
+
+Execution log saved to: /lustre/scratch126/gengen/projects/alpha-allostery-global/git-phylo-dms/00.inputs/02.src_topiary/ali_to_anc_week/00_find-model/working/max-parsimony/alignment.phy.raxml.log
+
+Analysis started: 07-Sep-2024 11:59:57 / finished: 07-Sep-2024 11:59:57
+
+Elapsed time: 0.144 seconds
+

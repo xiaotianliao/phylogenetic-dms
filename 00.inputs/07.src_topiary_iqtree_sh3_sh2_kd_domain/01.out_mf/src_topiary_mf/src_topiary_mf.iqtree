@@ -1,0 +1,1238 @@
+IQ-TREE 2.3.6 built Aug  4 2024
+
+Input file name: /lustre/scratch126/gengen/projects/alpha-allostery-global/git-phylo-dms/00.inputs/02.src_topiary/seed_to_ali/10_aligned_cleaned_trimed_sh3_sh2_kd.fasta
+Type of analysis: ModelFinder + tree reconstruction
+Random seed number: 535365
+
+REFERENCES
+----------
+
+To cite IQ-TREE please use:
+
+Bui Quang Minh, Heiko A. Schmidt, Olga Chernomor, Dominik Schrempf,
+Michael D. Woodhams, Arndt von Haeseler, and Robert Lanfear (2020)
+IQ-TREE 2: New models and efficient methods for phylogenetic inference
+in the genomic era. Mol. Biol. Evol., in press.
+https://doi.org/10.1093/molbev/msaa015
+
+To cite ModelFinder please use: 
+
+Subha Kalyaanamoorthy, Bui Quang Minh, Thomas KF Wong, Arndt von Haeseler,
+and Lars S Jermiin (2017) ModelFinder: Fast model selection for
+accurate phylogenetic estimates. Nature Methods, 14:587–589.
+https://doi.org/10.1038/nmeth.4285
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 469 sequences with 496 amino-acid sites
+Number of constant sites: 59 (= 11.8952% of all sites)
+Number of invariant (constant or ambiguous constant) sites: 59 (= 11.8952% of all sites)
+Number of parsimony informative sites: 414
+Number of distinct site patterns: 469
+
+ModelFinder
+-----------
+
+Best-fit model according to BIC: Q.insect+R8
+
+List of models sorted by BIC scores: 
+
+Model                  LogL         AIC      w-AIC        AICc     w-AICc         BIC      w-BIC
+Q.insect+R8      -78633.096  159108.191 +    0.999 1857432.191 -        0  162982.448 +    0.948
+Q.insect+R7      -78642.275  159122.550 - 0.000761 1850082.550 -        0  162988.394 -   0.0485
+Q.insect+I+R7    -78641.744  159123.488 - 0.000476 1853763.488 -        0  162993.538 -   0.0037
+Q.plant+R8       -78724.983  159291.966 - 1.24e-40 1857615.966 -        0  163166.223 - 1.18e-40
+Q.plant+R7       -78733.695  159305.389 - 1.51e-43 1850265.389 -        0  163171.232 - 9.61e-42
+Q.plant+I+R7     -78734.448  159308.896 - 2.61e-44 1853948.896 -        0  163178.945 - 2.03e-43
+Q.plant+F+R7     -78815.646  159507.291 - 2.17e-87 1921071.291 -        0  163453.059 - 6.09e-103
+Q.plant+F+R8     -78810.762  159501.524 - 3.88e-86 1928581.524 -        0  163455.705 - 1.62e-103
+Q.plant+F+I+R7   -78817.644  159513.287 - 1.08e-88 1924833.287 -        0  163463.262 - 3.71e-105
+Q.insect+F+R7    -78855.860  159587.721 - 7.43e-105 1921151.721 -        0  163533.489 - 2.09e-120
+Q.insect+F+R8    -78851.269  159582.538 - 9.92e-104 1928662.538 -        0  163536.719 - 4.15e-121
+Q.insect+F+I+R7  -78856.347  159590.693 - 1.68e-105 1924910.693 -        0  163540.668 - 5.76e-122
+Q.yeast+R8       -79219.941  160281.882 - 1.37e-255 1858605.882 -        0  164156.138 - 1.3e-255
+Q.yeast+R7       -79226.249  160290.497 - 1.84e-257 1851250.497 -        0  164156.340 - 1.17e-255
+Q.yeast+I+R7     -79225.280  160290.559 - 1.78e-257 1854930.559 -        0  164160.609 - 1.39e-256
+Q.yeast+F+R7     -79183.359  160242.717 - 4.37e-247 1921806.717 -        0  164188.485 - 1.23e-262
+Q.yeast+F+R8     -79180.184  160240.367 - 1.41e-246 1929320.367 -        0  164194.549 - 5.92e-264
+Q.yeast+F+I+R7   -79184.647  160247.295 - 4.43e-248 1925567.295 -        0  164197.270 - 1.52e-264
+JTT+I+R7         -79272.017  160384.033 - 8.99e-278 1855024.033 -        0  164254.083 - 6.99e-277
+JTT+R7           -79275.417  160388.834 - 8.15e-279 1851348.834 -        0  164254.677 - 5.19e-277
+JTT+R8           -79271.087  160384.173 - 8.38e-278 1858708.173 -        0  164258.430 - 7.96e-278
+JTTDCMut+R8      -79271.352  160384.704 - 6.43e-278 1858708.704 -        0  164258.960 - 6.1e-278
+JTTDCMut+R7      -79279.523  160397.047 - 1.34e-280 1851357.047 -        0  164262.890 - 8.55e-279
+JTTDCMut+I+R7    -79276.715  160393.430 - 8.19e-280 1855033.430 -        0  164263.480 - 6.37e-279
+JTTDCMut+F+R8    -79301.706  160483.413 - 2.37e-299 1929563.413 -        0  164437.594 - 9.9e-317
+JTTDCMut+F+R7    -79308.816  160493.632 - 1.43e-301 1922057.632 -        0  164439.400 - 4.01e-317
+JTT+F+R7         -79308.816  160493.632 - 1.43e-301 1922057.632 -        0  164439.400 - 4.01e-317
+JTT+F+I+R7       -79306.070  160490.140 - 8.19e-301 1925810.140 -        0  164440.115 - 2.81e-317
+JTTDCMut+F+I+R7  -79306.679  160491.357 - 4.45e-301 1925811.357 -        0  164441.332 - 1.53e-317
+JTT+F+R8         -79304.377  160488.755 - 1.64e-300 1929568.755 -        0  164442.936 - 6.85e-318
+LG+R8            -79514.348  160870.696 -        0 1859194.696 -        0  164744.952 -        0
+LG+R7            -79521.243  160880.486 -        0 1851840.486 -        0  164746.329 -        0
+LG+I+R7          -79522.026  160884.052 -        0 1855524.052 -        0  164754.101 -        0
+LG+I+R8          -79516.273  160876.546 -        0 1862888.546 -        0  164755.009 -        0
+Q.pfam+R8        -79529.464  160900.928 -        0 1859224.928 -        0  164775.184 -        0
+Q.pfam+R7        -79537.672  160913.345 -        0 1851873.345 -        0  164779.188 -        0
+Q.pfam+I+R7      -79537.325  160914.650 -        0 1855554.650 -        0  164784.700 -        0
+LG+R6            -79548.104  160930.209 -        0 1844542.209 -        0  164787.639 -        0
+LG+I+R6          -79547.883  160931.765 -        0 1848215.765 -        0  164793.402 -        0
+LG+I+R5          -79586.843  161005.686 -        0 1840949.686 -        0  164858.909 -        0
+Q.mammal+R8      -79583.231  161008.461 -        0 1859332.461 -        0  164882.718 -        0
+Q.mammal+R7      -79596.103  161030.205 -        0 1851990.205 -        0  164896.049 -        0
+LG+F+R7          -79539.992  160955.985 -        0 1922519.985 -        0  164901.753 -        0
+Q.mammal+I+R7    -79597.165  161034.330 -        0 1855674.330 -        0  164904.380 -        0
+LG+F+R8          -79535.667  160951.335 -        0 1930031.335 -        0  164905.516 -        0
+LG+F+I+R7        -79540.327  160958.655 -        0 1926278.655 -        0  164908.630 -        0
+Q.pfam+F+R8      -79540.277  160960.554 -        0 1930040.554 -        0  164914.735 -        0
+Q.pfam+F+R7      -79548.014  160972.027 -        0 1922536.027 -        0  164917.795 -        0
+Q.pfam+F+I+R7    -79548.861  160975.722 -        0 1926295.722 -        0  164925.696 -        0
+LG+R5            -79624.729  161079.458 -        0 1837359.458 -        0  164928.475 -        0
+LG+I+R4          -79699.040  161226.081 -        0 1833846.081 -        0  165070.891 -        0
+LG+I+G4          -79725.377  161268.755 -        0 1815648.755 -        0  165092.532 -        0
+LG+R4            -79770.636  161367.272 -        0 1830331.272 -        0  165207.876 -        0
+LG+G4            -79824.885  161465.769 -        0 1812209.769 +        1  165285.340 -        0
+Q.mammal+F+R8    -79771.131  161422.262 -        0 1930502.262 -        0  165376.444 -        0
+Q.mammal+F+R7    -79783.459  161442.918 -        0 1923006.918 -        0  165388.686 -        0
+Q.mammal+F+I+R7  -79784.326  161446.652 -        0 1926766.652 -        0  165396.627 -        0
+LG+I+R3          -79983.149  161790.299 -        0 1827102.299 -        0  165626.696 -        0
+Q.bird+R8        -80092.801  162027.603 -        0 1860351.603 -        0  165901.859 -        0
+Q.bird+R7        -80107.011  162052.022 -        0 1853012.022 -        0  165917.865 -        0
+Q.bird+I+R7      -80108.110  162056.220 -        0 1856696.220 -        0  165926.269 -        0
+LG+R3            -80166.733  162155.466 -        0 1823819.466 -        0  165987.657 -        0
+WAG+I+R7         -80139.627  162119.255 -        0 1856759.255 -        0  165989.305 -        0
+WAG+R8           -80137.085  162116.169 -        0 1860440.169 -        0  165990.426 -        0
+WAG+R7           -80147.864  162133.728 -        0 1853093.728 -        0  165999.571 -        0
+mtInv+F+R8       -80202.170  162284.340 -        0 1931364.340 -        0  166238.521 -        0
+mtInv+F+I+R7     -80207.391  162292.782 -        0 1927612.782 -        0  166242.756 -        0
+mtInv+F+R7       -80216.579  162309.157 -        0 1923873.157 -        0  166254.926 -        0
+rtREV+F+R8       -80212.133  162304.267 -        0 1931384.267 -        0  166258.448 -        0
+rtREV+F+R7       -80220.156  162316.311 -        0 1923880.311 -        0  166262.079 -        0
+rtREV+F+I+R7     -80219.318  162316.635 -        0 1927636.635 -        0  166266.610 -        0
+WAG+F+I+R7       -80245.909  162369.818 -        0 1927689.818 -        0  166319.793 -        0
+WAG+F+R8         -80244.284  162368.567 -        0 1931448.567 -        0  166322.749 -        0
+Dayhoff+F+I+R7   -80248.298  162374.596 -        0 1927694.596 -        0  166324.571 -        0
+Dayhoff+F+R7     -80251.637  162379.274 -        0 1923943.274 -        0  166325.042 -        0
+WAG+F+R7         -80252.204  162380.408 -        0 1923944.408 -        0  166326.176 -        0
+Dayhoff+F+R8     -80246.467  162372.934 -        0 1931452.934 -        0  166327.115 -        0
+DCMut+F+I+R7     -80256.774  162391.549 -        0 1927711.549 -        0  166341.523 -        0
+DCMut+F+R8       -80253.816  162387.633 -        0 1931467.633 -        0  166341.814 -        0
+DCMut+F+R7       -80260.226  162396.452 -        0 1923960.452 -        0  166342.220 -        0
+Q.bird+F+R8      -80255.447  162390.894 -        0 1931470.894 -        0  166345.075 -        0
+Q.bird+F+R7      -80267.985  162411.970 -        0 1923975.970 -        0  166357.738 -        0
+Q.bird+F+I+R7    -80269.399  162416.797 -        0 1927736.797 -        0  166366.772 -        0
+VT+R8            -80397.436  162636.872 -        0 1860960.872 -        0  166511.129 -        0
+VT+I+R7          -80401.428  162642.856 -        0 1857282.856 -        0  166512.906 -        0
+VT+R7            -80404.630  162647.261 -        0 1853607.261 -        0  166513.104 -        0
+Dayhoff+I+R7     -80407.176  162654.351 -        0 1857294.351 -        0  166524.401 -        0
+Dayhoff+R7       -80411.927  162661.855 -        0 1853621.855 -        0  166527.698 -        0
+Dayhoff+R8       -80407.462  162656.924 -        0 1860980.924 -        0  166531.181 -        0
+DCMut+I+R7       -80416.414  162672.828 -        0 1857312.828 -        0  166542.877 -        0
+DCMut+R7         -80421.219  162680.439 -        0 1853640.439 -        0  166546.282 -        0
+DCMut+R8         -80415.362  162672.725 -        0 1860996.725 -        0  166546.981 -        0
+mtZOA+F+R8       -80429.928  162739.856 -        0 1931819.856 -        0  166694.038 -        0
+mtMet+F+R8       -80437.927  162755.854 -        0 1931835.854 -        0  166710.035 -        0
+mtZOA+F+I+R7     -80441.218  162760.436 -        0 1928080.436 -        0  166710.411 -        0
+mtZOA+F+R7       -80444.826  162765.652 -        0 1924329.652 -        0  166711.420 -        0
+mtMet+F+I+R7     -80445.361  162768.722 -        0 1928088.722 -        0  166718.697 -        0
+mtMet+F+R7       -80452.401  162780.801 -        0 1924344.801 -        0  166726.569 -        0
+VT+F+R8          -80533.234  162946.468 -        0 1932026.468 -        0  166900.650 -        0
+VT+F+I+R7        -80536.899  162951.798 -        0 1928271.798 -        0  166901.772 -        0
+VT+F+R7          -80540.179  162956.357 -        0 1924520.357 -        0  166902.126 -        0
+rtREV+R8         -80593.554  163029.108 -        0 1861353.108 -        0  166903.364 -        0
+rtREV+R7         -80603.006  163044.012 -        0 1854004.012 -        0  166909.855 -        0
+rtREV+I+R7       -80602.063  163044.125 -        0 1857684.125 -        0  166914.175 -        0
+LG+I+R2          -80758.517  163337.034 -        0 1821357.034 -        0  167165.018 -        0
+cpREV+R8         -80823.457  163488.914 -        0 1861812.914 -        0  167363.170 -        0
+cpREV+I+R7       -80831.651  163503.302 -        0 1858143.302 -        0  167373.352 -        0
+cpREV+R7         -80835.474  163508.947 -        0 1854468.947 -        0  167374.791 -        0
+cpREV+F+R8       -80982.035  163844.070 -        0 1932924.070 -        0  167798.251 -        0
+cpREV+F+I+R7     -80988.452  163854.905 -        0 1929174.905 -        0  167804.879 -        0
+cpREV+F+R7       -80995.049  163866.098 -        0 1925430.098 -        0  167811.866 -        0
+HIVb+F+R8        -80997.260  163874.520 -        0 1932954.520 -        0  167828.701 -        0
+HIVb+F+I+R7      -81003.327  163884.653 -        0 1929204.653 -        0  167834.628 -        0
+HIVb+F+R7        -81008.833  163893.666 -        0 1925457.666 -        0  167839.434 -        0
+LG+R2            -81111.288  164040.575 -        0 1818420.575 -        0  167864.353 -        0
+mtREV+F+R8       -81056.926  163993.852 -        0 1933073.852 -        0  167948.034 -        0
+mtREV+F+R7       -81063.133  164002.267 -        0 1925566.267 -        0  167948.035 -        0
+mtREV+F+I+R7     -81064.122  164006.243 -        0 1929326.243 -        0  167956.218 -        0
+HIVb+R8          -81259.325  164360.649 -        0 1862684.649 -        0  168234.905 -        0
+HIVb+I+R7        -81264.302  164368.604 -        0 1859008.604 -        0  168238.653 -        0
+HIVb+R7          -81270.628  164379.256 -        0 1855339.256 -        0  168245.100 -        0
+FLU+F+R8         -81311.420  164502.840 -        0 1933582.840 -        0  168457.021 -        0
+FLU+R8           -81372.663  164587.327 -        0 1862911.327 -        0  168461.583 -        0
+FLU+F+R7         -81327.165  164530.329 -        0 1926094.329 -        0  168476.097 -        0
+FLU+I+R7         -81384.611  164609.221 -        0 1859249.221 -        0  168479.271 -        0
+FLU+F+I+R7       -81325.907  164529.814 -        0 1929849.814 -        0  168479.788 -        0
+FLU+R7           -81388.176  164614.352 -        0 1855574.352 -        0  168480.195 -        0
+PMB+R8           -81557.458  164956.915 -        0 1863280.915 -        0  168831.172 -        0
+PMB+R7           -81570.385  164978.771 -        0 1855938.771 -        0  168844.614 -        0
+PMB+I+R7         -81570.737  164981.474 -        0 1859621.474 -        0  168851.524 -        0
+Blosum62+R8      -81670.175  165182.351 -        0 1863506.351 -        0  169056.607 -        0
+Blosum62+R7      -81685.376  165208.751 -        0 1856168.751 -        0  169074.594 -        0
+Blosum62+I+R7    -81684.807  165209.614 -        0 1859849.614 -        0  169079.664 -        0
+mtZOA+R8         -81720.590  165283.179 -        0 1863607.180 -        0  169157.436 -        0
+mtZOA+I+R7       -81735.587  165311.174 -        0 1859951.174 -        0  169181.224 -        0
+mtZOA+R7         -81745.264  165328.527 -        0 1856288.527 -        0  169194.371 -        0
+mtVer+F+R8       -81758.679  165397.358 -        0 1934477.358 -        0  169351.540 -        0
+mtVer+F+I+R7     -81764.729  165407.458 -        0 1930727.458 -        0  169357.433 -        0
+mtVer+F+R7       -81779.142  165434.284 -        0 1926998.284 -        0  169380.052 -        0
+PMB+F+R8         -81845.710  165571.419 -        0 1934651.419 -        0  169525.601 -        0
+PMB+F+R7         -81857.850  165591.700 -        0 1927155.700 -        0  169537.468 -        0
+PMB+F+I+R7       -81856.763  165591.527 -        0 1930911.527 -        0  169541.501 -        0
+mtART+F+R8       -81923.047  165726.095 -        0 1934806.095 -        0  169680.276 -        0
+mtART+F+I+R7     -81942.070  165762.139 -        0 1931082.139 -        0  169712.114 -        0
+mtART+F+R7       -81949.819  165775.638 -        0 1927339.638 -        0  169721.406 -        0
+Blosum62+F+R8    -82013.524  165907.047 -        0 1934987.047 -        0  169861.229 -        0
+Blosum62+F+R7    -82027.653  165931.307 -        0 1927495.307 -        0  169877.075 -        0
+Blosum62+F+I+R7  -82026.136  165930.273 -        0 1931250.273 -        0  169880.248 -        0
+FLAVI+R8         -82333.541  166509.082 -        0 1864833.082 -        0  170383.338 -        0
+FLAVI+I+R7       -82340.493  166520.987 -        0 1861160.987 -        0  170391.036 -        0
+FLAVI+R7         -82355.317  166548.633 -        0 1857508.633 -        0  170414.477 -        0
+FLAVI+F+R8       -82311.815  166503.630 -        0 1935583.630 -        0  170457.812 -        0
+FLAVI+F+I+R7     -82320.723  166519.445 -        0 1931839.445 -        0  170469.420 -        0
+FLAVI+F+R7       -82330.923  166537.845 -        0 1928101.845 -        0  170483.614 -        0
+mtMet+R8         -82419.552  166681.103 -        0 1865005.103 -        0  170555.360 -        0
+mtMet+I+R7       -82431.022  166702.045 -        0 1861342.045 -        0  170572.094 -        0
+mtMet+R7         -82438.998  166715.996 -        0 1857675.996 -        0  170581.839 -        0
+mtMAM+F+R8       -82575.140  167030.279 -        0 1936110.279 -        0  170984.460 -        0
+mtMAM+F+I+R7     -82584.484  167046.969 -        0 1932366.969 -        0  170996.944 -        0
+mtMAM+F+R7       -82607.152  167090.303 -        0 1928654.303 -        0  171036.071 -        0
+mtInv+R8         -82895.316  167632.632 -        0 1865956.632 -        0  171506.888 -        0
+mtInv+I+R7       -82910.973  167661.947 -        0 1862301.947 -        0  171531.997 -        0
+mtInv+R7         -82922.053  167682.106 -        0 1858642.106 -        0  171547.950 -        0
+mtREV+R8         -83086.874  168015.749 -        0 1866339.749 -        0  171890.005 -        0
+mtREV+I+R7       -83105.331  168050.661 -        0 1862690.661 -        0  171920.711 -        0
+mtREV+R7         -83110.263  168058.526 -        0 1859018.526 -        0  171924.370 -        0
+mtVer+R8         -83229.983  168301.966 -        0 1866625.966 -        0  172176.223 -        0
+mtVer+I+R7       -83236.396  168312.792 -        0 1862952.792 -        0  172182.842 -        0
+mtVer+R7         -83247.890  168333.780 -        0 1859293.780 -        0  172199.623 -        0
+mtART+R8         -83984.324  169810.648 -        0 1868134.648 -        0  173684.905 -        0
+mtART+I+R7       -83998.907  169837.814 -        0 1864477.814 -        0  173707.864 -        0
+mtART+R7         -84015.576  169869.151 -        0 1860829.151 -        0  173734.994 -        0
+LG+I             -84643.862  171103.724 -        0 1821847.724 -        0  174923.295 -        0
+mtMAM+R8         -84607.381  171056.763 -        0 1869380.763 -        0  174931.019 -        0
+mtMAM+I+R7       -84625.089  171090.178 -        0 1865730.178 -        0  174960.228 -        0
+mtMAM+R7         -84645.806  171129.613 -        0 1862089.613 -        0  174995.456 -        0
+HIVw+F+R8        -84928.040  171736.080 -        0 1940816.080 -        0  175690.261 -        0
+HIVw+F+I+R7      -84935.716  171749.433 -        0 1937069.433 -        0  175699.408 -        0
+HIVw+F+R7        -84949.311  171774.621 -        0 1933338.621 -        0  175720.390 -        0
+HIVw+I+R7        -85673.631  173187.263 -        0 1867827.263 -        0  177057.313 -        0
+HIVw+R8          -85672.521  173187.041 -        0 1871511.041 -        0  177061.298 -        0
+HIVw+R7          -85685.956  173209.912 -        0 1864169.912 -        0  177075.755 -        0
+LG               -85742.541  173299.083 -        0 1820411.083 -        0  177114.447 -        0
+
+AIC, w-AIC   : Akaike information criterion scores and weights.
+AICc, w-AICc : Corrected AIC scores and weights.
+BIC, w-BIC   : Bayesian information criterion scores and weights.
+
+Plus signs denote the 95% confidence sets.
+Minus signs denote significant exclusion.
+
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: Q.insect+R8
+
+State frequencies: (model)
+
+Model of rate heterogeneity: FreeRate with 8 categories
+Site proportion and rates:  (0.1566,0.0197) (0.1479,0.1833) (0.1602,0.4125) (0.1220,0.7186) (0.1415,1.1111) (0.1022,1.6643) (0.1026,2.3519) (0.0670,3.6946)
+
+ Category  Relative_rate  Proportion
+  1         0.0197         0.1566
+  2         0.1833         0.1479
+  3         0.4125         0.1602
+  4         0.7186         0.1220
+  5         1.1111         0.1415
+  6         1.6643         0.1022
+  7         2.3519         0.1026
+  8         3.6946         0.0670
+
+TREE USED FOR ModelFinder
+-------------------------
+
+Log-likelihood of the tree: -78631.6958 (s.e. 3174.2363)
+Unconstrained log-likelihood (without tree): -3027.5265
+Number of free parameters (#branches + #model parameters): 921
+Akaike information criterion (AIC) score: 159105.3917
+Corrected Akaike information criterion (AICc) score: 1857429.3917
+Bayesian information criterion (BIC) score: 162979.6481
+
+**************************** WARNING ****************************
+Number of parameters (K, model parameters and branch lengths): 921
+Sample size (n, alignment length): 496
+
+Given that K>=n, the parameter estimates might be inaccurate.
+Thus, phylogenetic estimates should be interpreted with caution.
+
+Ideally, it is desirable that n >> K. When selecting optimal models,
+1. use AIC or BIC if n > 40K;
+2. use AICc or BIC if 40K >= n > K;
+3. be extremely cautious if n <= K
+
+To improve the situation (3), consider the following options:
+  1. Increase the sample size (n)
+  2. Decrease the number of parameters (K) to be estimated. If
+     possible:
+     a. Remove the least important sequences from the alignment
+     b. Specify some of the parameter values for the substitution
+        model (e.g., the nucleotide or amino acid frequencies)
+     c. Specify some of the parameter values for the rates-across-
+        sites model (e.g., the shape parameter for the discrete
+        Gamma distribution, the proportion of invariable sites, or
+        the rates of change for different rate categories under
+        the FreeRate model)
+
+Reference:
+Burnham KR, Anderson DR (2002). Model Selection and Multimodel
+Inference: A Practical Information-Theoretic Approach. Springer,
+New York.
+************************ END OF WARNING ***********************
+
+Total tree length (sum of branch lengths): 46.4311
+Sum of internal branch lengths: 18.3334 (39.4853% of tree length)
+
+WARNING: 48 near-zero internal branches (<0.0020) should be treated with caution
+         Such branches are denoted by '**' in the figure below
+
+NOTE: Tree is UNROOTED although outgroup taxon 'FsZTSPKlEN|Lineus' is drawn at root
+
++-------------FsZTSPKlEN|Lineus
+|
+|     +------gtFLaGuGbO|Priapulus
+|  +--|
+|  |  |  +--XKDJaQieoU|Centruroides
+|  |  +--|
+|  |     |  +-----BJmMnKGhgf|Amphibalanus
+|  |     +--|
+|  |        |  +----oEPVjLbriw|Daphnia
+|  |        +--|
+|  |           |              +--WrMuNEyfoD|Parnassius
+|  |           |           +--|
+|  |           |           |  +--rAdwdpmqrt|Galleria
+|  |           |        +--|
+|  |           |        |  |  +--DIvVxgZhZR|Cydia
+|  |           |        |  +--|
+|  |           |        |     +--QmQCIQQkeH|Pieris
+|  |           |     +--|
+|  |           |     |  |     +--hyEpgkYOpJ|Amyelois
+|  |           |     |  |  +--|
+|  |           |     |  |  |  +--CtsCZaPxqx|Hyposmocoma
+|  |           |     |  +--|
+|  |           |     |     |     +--EZicsFAHVk|Manduca
+|  |           |     |     |  +--|
+|  |           |     |     |  |  +--UogHgvZmvy|Bombyx
+|  |           |     |     +--|
+|  |           |     |        +--mEfOWKCvMf|Pectinophora
+|  |           |  +--|
+|  |           |  |  +--ZJqsQUMqYW|Danaus
+|  |           +--|
+|  |              |           +--dBIbVxioyF|Rhopalosiphum
+|  |              |        +--|
+|  |              |        |  +--RnxjAFtsRK|Macrosteles
+|  |              |     +--|
+|  |              |     |  +--PwJnIMkHec|Bemisia
+|  |              |  +--|
+|  |              |  |  |        +--EbBGDYmcof|Gryllus
+|  |              |  |  |     +--|
+|  |              |  |  |     |  |           +--kFIcGobfdP|Popillia
+|  |              |  |  |     |  |        +--|
+|  |              |  |  |     |  |        |  +--nVzgUkRcFe|Onthophagus
+|  |              |  |  |     |  |     +--|
+|  |              |  |  |     |  |     |  +--cXbRXwhgQv|Nicrophorus
+|  |              |  |  |     |  |  +--|
+|  |              |  |  |     |  |  |  |  +--ALNcOfikWy|Agrilus
+|  |              |  |  |     |  |  |  +--|
+|  |              |  |  |     |  |  |     |  +--eQoLpMKnUK|Photinus
+|  |              |  |  |     |  |  |     +--|
+|  |              |  |  |     |  |  |        +--TyXEoeKQPz|Ignelater
+|  |              |  |  |     |  +--|
+|  |              |  |  |     |     |        +--ZAUNNWmREn|Ceutorhynchus
+|  |              |  |  |     |     |     +--|
+|  |              |  |  |     |     |     |  +--CsXJXkBBBv|Sitophilus
+|  |              |  |  |     |     |  +--|
+|  |              |  |  |     |     |  |  +--VugSJdKzvB|Cylas
+|  |              |  |  |     |     +--|
+|  |              |  |  |     |        |  +--tbqyZVxWOQ|Aethina
+|  |              |  |  |     |        +--|
+|  |              |  |  |     |           +--udKcKAQlDL|Tribolium
+|  |              |  |  |  +--|
+|  |              |  |  |  |  +--XmyMLNisjt|Zootermopsis
+|  |              |  |  +--|
+|  |              |  |     |  +--OtAqWpuQvS|Anabrus
+|  |              |  |     +--|
+|  |              |  |        +--WVlYBdTCfG|Bacillus
+|  |              +--|
+|  |                 |     +--MPiBhjNlXY|Nesidiocoris
+|  |                 |  +--|
+|  |                 |  |  +--oJJLWhyPhp|Cimex
+|  |                 +--|
+|  |                    +--rQuLQuRKpo|Rhynocoris
++--|
+|  |                                              +--HNAxJnTrKC|Acropora
+|  |                                           +--|
+|  |                                           |  |  +--euLCveivGc|Pocillopora
+|  |                                           |  +--|
+|  |                                           |     +--YKasFBdNeq|Stylophora
+|  |                                        +--|
+|  |                                        |  |  +--wmIiUoILdw|Porites
+|  |                                        |  +--|
+|  |                                        |     +--ZJJAnwxCXw|Orbicella
+|  |                                     +--|
+|  |                                     |  |  +--QwESURCNFu|Actinia
+|  |                                     |  +--|
+|  |                                     |     +--dXeGeQRqYa|Nematostella
+|  |                                  +--|
+|  |                                  |  |                 +--vtSPfDuHpr|Holothuria
+|  |                                  |  |              +--|
+|  |                                  |  |              |  +--SodlqMHUMm|Apostichopus
+|  |                                  |  |           +--|
+|  |                                  |  |           |  |  +--MsINtRptIq|Lytechinus
+|  |                                  |  |           |  +--|
+|  |                                  |  |           |     +--cHanWhAHXM|Strongylocentrotus
+|  |                                  |  |        +--|
+|  |                                  |  |        |  |  +--vmkhUzyIcd|Patiria
+|  |                                  |  |        |  +--|
+|  |                                  |  |        |     +--ZHsqwlCCVy|Asterias
+|  |                                  |  |     +--|
+|  |                                  |  |     |  +--HHOOCyQqoV|Saccoglossus
+|  |                                  |  |  +--|
+|  |                                  |  |  |  |     +--sSTYUMAeKz|Lingula
+|  |                                  |  |  |  |  +--|
+|  |                                  |  |  |  |  |  |                    +--nKMELdelvS|Biomphalaria
+|  |                                  |  |  |  |  |  |                 +--|
+|  |                                  |  |  |  |  |  |                 |  +--KGUUKGEbyT|Physa
+|  |                                  |  |  |  |  |  |              +--|
+|  |                                  |  |  |  |  |  |              |  +--KyltisCzTz|Pomacea
+|  |                                  |  |  |  |  |  |           +--|
+|  |                                  |  |  |  |  |  |           |  |  +--lIelLPGcKJ|Ylistrum
+|  |                                  |  |  |  |  |  |           |  +--|
+|  |                                  |  |  |  |  |  |           |     +--uJcWRwvgOq|Saccostrea
+|  |                                  |  |  |  |  |  |        +--|
+|  |                                  |  |  |  |  |  |        |  |     +--PiQtsKinzj|Mya
+|  |                                  |  |  |  |  |  |        |  |  +--|
+|  |                                  |  |  |  |  |  |        |  |  |  +--IEjaWqxkal|Ruditapes
+|  |                                  |  |  |  |  |  |        |  +--|
+|  |                                  |  |  |  |  |  |        |     +--yFDxesRRkl|Dreissena
+|  |                                  |  |  |  |  |  |     +--|
+|  |                                  |  |  |  |  |  |     |  |  +--wLbkHbjASc|Patella
+|  |                                  |  |  |  |  |  |     |  +--|
+|  |                                  |  |  |  |  |  |     |     |  +--dFtVlNAYrh|Gigantopelta
+|  |                                  |  |  |  |  |  |     |     +--|
+|  |                                  |  |  |  |  |  |     |        +--QgyqBPeXme|Haliotis
+|  |                                  |  |  |  |  |  |  +--|
+|  |                                  |  |  |  |  |  |  |  +--FHGYhvbZAJ|Liolophura
+|  |                                  |  |  |  |  |  +--|
+|  |                                  |  |  |  |  |     +--iAIvsmnKqf|Octopus
+|  |                                  |  |  |  +--|
+|  |                                  |  |  |     |           +---dzxXnHdbLe|Galendromus
+|  |                                  |  |  |     |        +--|
+|  |                                  |  |  |     |        |  +--GsqSmPWrJJ|Cordylochernes
+|  |                                  |  |  |     |     +--|
+|  |                                  |  |  |     |     |  |  +--DduaDNARUo|Ixodes
+|  |                                  |  |  |     |     |  +--|
+|  |                                  |  |  |     |     |     +--HgjnuoHSWE|Dermacentor
+|  |                                  |  |  |     |  +--|
+|  |                                  |  |  |     |  |  |  +--gJqNQnpxyA|Uloborus
+|  |                                  |  |  |     |  |  +--|
+|  |                                  |  |  |     |  |     +--KdCdVAJhbR|Stegodyphus
+|  |                                  |  |  |     +--|
+|  |                                  |  |  |        |     +--aVushdIKOk|Cydia
+|  |                                  |  |  |        |  +--|
+|  |                                  |  |  |        |  |  |     +--NalhyOtwYH|Pectinophora
+|  |                                  |  |  |        |  |  |  +--|
+|  |                                  |  |  |        |  |  |  |  +--tgdaDywsIp|Spodoptera
+|  |                                  |  |  |        |  |  +--|
+|  |                                  |  |  |        |  |     +--kHiQMWMaDt|Aricia
+|  |                                  |  |  |        +--|
+|  |                                  |  |  |           |     +**cCVOQZjVPU|Ctenocephalides
+|  |                                  |  |  |           |  +--|
+|  |                                  |  |  |           |  |  +**nYgYpSiEee|Ctenocephalides
+|  |                                  |  |  |           +--|
+|  |                                  |  |  |              |              +--fhJsfxpdrV|Cloeon
+|  |                                  |  |  |              |           +--|
+|  |                                  |  |  |              |           |  +**zMTEXIegZH|Neocloeon
+|  |                                  |  |  |              |        +--|
+|  |                                  |  |  |              |        |  |                 +--jJIoADHMCE|Nesidiocoris
+|  |                                  |  |  |              |        |  |              +--|
+|  |                                  |  |  |              |        |  |              |  +--deuYiZPRVK|Nezara
+|  |                                  |  |  |              |        |  |           +--|
+|  |                                  |  |  |              |        |  |           |  +--RNbXPYcCpO|Bacillus
+|  |                                  |  |  |              |        |  |        +--|
+|  |                                  |  |  |              |        |  |        |  +**yWFYmQcMtT|Homalodisca
+|  |                                  |  |  |              |        |  |     +--|
+|  |                                  |  |  |              |        |  |     |  +--cLEggCzCOR|Bemisia
+|  |                                  |  |  |              |        |  |  +--|
+|  |                                  |  |  |              |        |  |  |  +--RQCadhUqeR|Nilaparvata
+|  |                                  |  |  |              |        |  +--|
+|  |                                  |  |  |              |        |     |  +--LMCAhbcwex|Parthenolecanium
+|  |                                  |  |  |              |        |     +--|
+|  |                                  |  |  |              |        |        +--ajUjrWbRcm|Planococcus
+|  |                                  |  |  |              |     +--|
+|  |                                  |  |  |              |     |  |     +--HmoTiBcadJ|Diaphorina
+|  |                                  |  |  |              |     |  |  +--|
+|  |                                  |  |  |              |     |  |  |  |  +**emIZwJtJCX|Macrosiphum
+|  |                                  |  |  |              |     |  |  |  +--|
+|  |                                  |  |  |              |     |  |  |     +--gGIzOKeIwS|Daktulosphaira
+|  |                                  |  |  |              |     |  +--|
+|  |                                  |  |  |              |     |     |  +--TCBryYRChr|Polyplax
+|  |                                  |  |  |              |     |     +--|
+|  |                                  |  |  |              |     |        +--SbLIIkXjyZ|Pediculus
+|  |                                  |  |  |              |  +--|
+|  |                                  |  |  |              |  |  +--alUyhDUOad|Nicrophorus
+|  |                                  |  |  |              +--|
+|  |                                  |  |  |                 |        +--ogkKYRQmrF|Neodiprion
+|  |                                  |  |  |                 |     +--|
+|  |                                  |  |  |                 |     |  |  +--eDsXTItiKJ|Eretmocerus
+|  |                                  |  |  |                 |     |  +--|
+|  |                                  |  |  |                 |     |     +--swXgbQkSDv|Nasonia
+|  |                                  |  |  |                 |  +**|
+|  |                                  |  |  |                 |  |  |     +--daMcqNmHVC|Chelonus
+|  |                                  |  |  |                 |  |  |  +--|
+|  |                                  |  |  |                 |  |  |  |  +--oqnOgpZpjt|Diachasma
+|  |                                  |  |  |                 |  |  +--|
+|  |                                  |  |  |                 |  |     |        +--CSUtSSIuhF|Prorops
+|  |                                  |  |  |                 |  |     |     +--|
+|  |                                  |  |  |                 |  |     |     |  +--kbuprtArKR|Melipona
+|  |                                  |  |  |                 |  |     |  +--|
+|  |                                  |  |  |                 |  |     |  |  +--spVSfUqVqU|Orussus
+|  |                                  |  |  |                 |  |     +--|
+|  |                                  |  |  |                 |  |        +--vKlPwQElPs|Ampulex
+|  |                                  |  |  |                 +--|
+|  |                                  |  |  |                    +**FTZEoSYHAb|Cephus
+|  |                                  |  +--|
+|  |                                  |     |  +--ftvQzruOwR|Branchiostoma
+|  |                                  |     +--|
+|  |                                  |        |        +--PJQOSprcEU|Petromyzon
+|  |                                  |        |     +--|
+|  |                                  |        |     |  +--TKfZpzPHVx|Petromyzon
+|  |                                  |        |  +--|
+|  |                                  |        |  |  |  +--kAKLuxyWgF|Callorhinchus
+|  |                                  |        |  |  +--|
+|  |                                  |        |  |     |        +--tQampOqIvw|Protopterus
+|  |                                  |        |  |     |     +--|
+|  |                                  |        |  |     |     |  +--tKMYRUNKEK|Latimeria
+|  |                                  |        |  |     |  +--|
+|  |                                  |        |  |     |  |  |        +--hCBVgkNLSW|Ornithorhynchus
+|  |                                  |        |  |     |  |  |     +**|
+|  |                                  |        |  |     |  |  |     |  +--ZLgBxhGosP|Platysternon
+|  |                                  |        |  |     |  |  |  +--|
+|  |                                  |        |  |     |  |  |  |  |     +--VxNiASiKOi|Alligator
+|  |                                  |        |  |     |  |  |  |  |  +--|
+|  |                                  |        |  |     |  |  |  |  |  |  |  +**BPeGLNhgQi|Tiliqua
+|  |                                  |        |  |     |  |  |  |  |  |  +--|
+|  |                                  |        |  |     |  |  |  |  |  |     +--mHRToARrvn|Euleptes
+|  |                                  |        |  |     |  |  |  |  +--|
+|  |                                  |        |  |     |  |  |  |     |        +**VwCzEFvVnQ|Molossus
+|  |                                  |        |  |     |  |  |  |     |     +--|
+|  |                                  |        |  |     |  |  |  |     |     |  +--AvUuuqiHRc|Rattus
+|  |                                  |        |  |     |  |  |  |     |  +--|
+|  |                                  |        |  |     |  |  |  |     |  |  +**lEhdWDHQvF|Orycteropus
+|  |                                  |        |  |     |  |  |  |     +--|
+|  |                                  |        |  |     |  |  |  |        +**FNXcwRFPnt|Gracilinanus
+|  |                                  |        |  |     |  |  +**|
+|  |                                  |        |  |     |  |     |  +--faQguLlryg|Erpetoichthys
+|  |                                  |        |  |     |  |     +--|
+|  |                                  |        |  |     |  |        |     +**WxozCwLmHK|Polyodon
+|  |                                  |        |  |     |  |        |  +--|
+|  |                                  |        |  |     |  |        |  |  +**GVdinLCwRb|Acipenser
+|  |                                  |        |  |     |  |        +--|
+|  |                                  |        |  |     |  |           |           +--nxnxYZxMRp|Gadus
+|  |                                  |        |  |     |  |           |        +--|
+|  |                                  |        |  |     |  |           |        |  +--MEkEKTcVnj|Thunnus
+|  |                                  |        |  |     |  |           |     +**|
+|  |                                  |        |  |     |  |           |     |  |              +--RCSKgvkCOL|Scleropages
+|  |                                  |        |  |     |  |           |     |  |           +**|
+|  |                                  |        |  |     |  |           |     |  |           |  +--lBHJxjPCLe|Scleropages
+|  |                                  |        |  |     |  |           |     |  |        +--|
+|  |                                  |        |  |     |  |           |     |  |        |  +--qhnxNabpLX|Atractosteus
+|  |                                  |        |  |     |  |           |     |  |     +**|
+|  |                                  |        |  |     |  |           |     |  |     |  +**WLWUhWUBcM|Megalops
+|  |                                  |        |  |     |  |           |     |  |  +--|
+|  |                                  |        |  |     |  |           |     |  |  |  +**iWVgelljJZ|Anguilla
+|  |                                  |        |  |     |  |           |     |  +--|
+|  |                                  |        |  |     |  |           |     |     +--XfAJTkGJYb|Oncorhynchus
+|  |                                  |        |  |     |  |           |  +**|
+|  |                                  |        |  |     |  |           |  |  +--ursNIDLjIE|Paramormyrops
+|  |                                  |        |  |     |  |           +--|
+|  |                                  |        |  |     |  |              +--xEpLbEQGEA|Trichomycterus
+|  |                                  |        |  |     +--|
+|  |                                  |        |  |        |     +--IPjYSjpPin|Pelobates
+|  |                                  |        |  |        |  +--|
+|  |                                  |        |  |        |  |  |  +--itgzlgzfRH|Ascaphus
+|  |                                  |        |  |        |  |  +**|
+|  |                                  |        |  |        |  |     +--BbuwHMKVvM|Xenopus
+|  |                                  |        |  |        +--|
+|  |                                  |        |  |           |  +--zFMeTsQGOz|Geotrypetes
+|  |                                  |        |  |           +**|
+|  |                                  |        |  |              +--NzxVWQBgFM|Pleurodeles
+|  |                                  |        +--|
+|  |                                  |           |                                            +--CaLEJvHHfC|Megalops
+|  |                                  |           |                                         +--|
+|  |                                  |           |                                         |  |  +--simBLjKpaj|Aldrovandia
+|  |                                  |           |                                         |  +--|
+|  |                                  |           |                                         |     |           +--ipOMBJpnVC|Gymnothorax
+|  |                                  |           |                                         |     |        +**|
+|  |                                  |           |                                         |     |        |  +--CDVuvYBSWn|Anguilla
+|  |                                  |           |                                         |     |     +--|
+|  |                                  |           |                                         |     |     |  +--YNRUnoUHUr|Synaphobranchus
+|  |                                  |           |                                         |     |  +--|
+|  |                                  |           |                                         |     |  |  +--pLwIiSJjWB|Conger
+|  |                                  |           |                                         |     +--|
+|  |                                  |           |                                         |        +--anMVeWcHPH|Albula
+|  |                                  |           |                                      +**|
+|  |                                  |           |                                      |  |  +--AmktbkMSRv|Conger
+|  |                                  |           |                                      |  +--|
+|  |                                  |           |                                      |     |  +--yabeBZzLKc|Gymnothorax
+|  |                                  |           |                                      |     +--|
+|  |                                  |           |                                      |        +**gFAXsnUJyy|Albula
+|  |                                  |           |                                   +--|
+|  |                                  |           |                                   |  +--NqedEkUmvl|Megalops
+|  |                                  |           |                                +**|
+|  |                                  |           |                                |  +--lfRUfBXkyD|Chanos
+|  |                                  |           |                             +--|
+|  |                                  |           |                             |  |  +--cOUThLFnku|Muraenolepis
+|  |                                  |           |                             |  +--|
+|  |                                  |           |                             |     +--eYVQBtbHJE|Lampris
+|  |                                  |           |                          +--|
+|  |                                  |           |                          |  +--GjmuZkMFrY|Anguilla
+|  |                                  |           |                       +--|
+|  |                                  |           |                       |  |  +--CmPFCckzvx|Osmerus
+|  |                                  |           |                       |  +**|
+|  |                                  |           |                       |     +--kBBiDmfHUG|Salvelinus
+|  |                                  |           |                    +--|
+|  |                                  |           |                    |  +--MtfrQsWoRP|Paramormyrops
+|  |                                  |           |                 +--|
+|  |                                  |           |                 |  |           +--ENgBghAZno|Scleropages
+|  |                                  |           |                 |  |        +**|
+|  |                                  |           |                 |  |        |  +--EfXuwmTcLe|Polyodon
+|  |                                  |           |                 |  |     +--|
+|  |                                  |           |                 |  |     |  |  +--NkHpXRMoqh|Engraulis
+|  |                                  |           |                 |  |     |  +--|
+|  |                                  |           |                 |  |     |     +--HdaRuNQmgM|Clupea
+|  |                                  |           |                 |  |  +--|
+|  |                                  |           |                 |  |  |  +--CFxmFLegVS|Denticeps
+|  |                                  |           |                 |  +--|
+|  |                                  |           |                 |     +--SsAFTRKlFB|Danio
+|  |                                  |           |              +**|
+|  |                                  |           |              |  |     +--FjygZorMQm|Brienomyrus
+|  |                                  |           |              |  |  +--|
+|  |                                  |           |              |  |  |  +--cAKORgebSH|Scleropages
+|  |                                  |           |              |  +--|
+|  |                                  |           |              |     +--YsMAqJvQEt|Atractosteus
+|  |                                  |           |           +--|
+|  |                                  |           |           |  +--uBPootHclX|Amia
+|  |                                  |           |        +--|
+|  |                                  |           |        |  |           +**DmMidyXKTE|Chiloscyllium
+|  |                                  |           |        |  |        +--|
+|  |                                  |           |        |  |        |  +**AlUZrCvuqA|Heptranchias
+|  |                                  |           |        |  |     +--|
+|  |                                  |           |        |  |     |  +--mDWOkyrBCZ|Callorhinchus
+|  |                                  |           |        |  |  +--|
+|  |                                  |           |        |  |  |  +**xgxWROHtvc|Pristis
+|  |                                  |           |        |  +--|
+|  |                                  |           |        |     +--IfSXHjXAgB|Latimeria
+|  |                                  |           |     +**|
+|  |                                  |           |     |  +--MDCagLeSrU|Polypterus
+|  |                                  |           |  +--|
+|  |                                  |           |  |  |                                   +--hWkLNbbnyh|Bombina
+|  |                                  |           |  |  |                                +--|
+|  |                                  |           |  |  |                                |  +--UamxjpMZEK|Pseudophryne
+|  |                                  |           |  |  |                             +**|
+|  |                                  |           |  |  |                             |  +--jncYQCYuNv|Bufo
+|  |                                  |           |  |  |                          +**|
+|  |                                  |           |  |  |                          |  |     +--GGXhyMGUsJ|Spea
+|  |                                  |           |  |  |                          |  |  +--|
+|  |                                  |           |  |  |                          |  |  |  +--lvYgiJajeH|Pelobates
+|  |                                  |           |  |  |                          |  +**|
+|  |                                  |           |  |  |                          |     |  +--pfXspRTDkQ|Ascaphus
+|  |                                  |           |  |  |                          |     +--|
+|  |                                  |           |  |  |                          |        +**iJJtoELTVf|Hymenochirus
+|  |                                  |           |  |  |                       +--|
+|  |                                  |           |  |  |                       |  |  +--zxcWepKWci|Xenopus
+|  |                                  |           |  |  |                       |  +--|
+|  |                                  |           |  |  |                       |     +**gArxVZTzQD|Rana
+|  |                                  |           |  |  |                    +**|
+|  |                                  |           |  |  |                    |  +--xJNEXVjXKt|Hemicordylus
+|  |                                  |           |  |  |                 +**|
+|  |                                  |           |  |  |                 |  |  +**vhtOFFFkFW|Heteronotia
+|  |                                  |           |  |  |                 |  +**|
+|  |                                  |           |  |  |                 |     +**HHHYIuPDuD|Pogona
+|  |                                  |           |  |  |              +--|
+|  |                                  |           |  |  |              |  +--OzBzYMJUep|Rhineura
+|  |                                  |           |  |  |           +**|
+|  |                                  |           |  |  |           |  |  +--IHxLSzjYDZ|Tachyglossus
+|  |                                  |           |  |  |           |  +--|
+|  |                                  |           |  |  |           |     |  +--uBDRBoMzVz|Trichosurus
+|  |                                  |           |  |  |           |     +**|
+|  |                                  |           |  |  |           |        +--xUKOuXipGQ|Odontophorus
+|  |                                  |           |  |  |        +**|
+|  |                                  |           |  |  |        |  +**kgARxlPZVK|Platysternon
+|  |                                  |           |  |  |     +**|
+|  |                                  |           |  |  |     |  +**cOFHJAYSyO|Alligator
+|  |                                  |           |  |  |  +--|
+|  |                                  |           |  |  |  |  |  +**jFDKMxbecU|Eudromia
+|  |                                  |           |  |  |  |  +--|
+|  |                                  |           |  |  |  |     +**wuRCFvRBvq|Myiagra
+|  |                                  |           |  |  +--|
+|  |                                  |           |  |     |     +--kDdGYZLqCo|Pleurodeles
+|  |                                  |           |  |     |  +--|
+|  |                                  |           |  |     |  |  |     +--ioJLiZbROa|Erinaceus
+|  |                                  |           |  |     |  |  |  +**|
+|  |                                  |           |  |     |  |  |  |  +**aEWFlmmkRx|Homo
+|  |                                  |           |  |     |  |  +--|
+|  |                                  |           |  |     |  |     +**FJlHZRAech|Orycteropus
+|  |                                  |           |  |     +**|
+|  |                                  |           |  |        |  +--IRXCqdkljh|Geotrypetes
+|  |                                  |           |  |        +--|
+|  |                                  |           |  |           +**AEfwFoXpKe|Rhinatrema
+|  |                                  |           +--|
+|  |                                  |              +--kNsLHVwFOC|Protopterus
+|  |                  +---------------|
+|  |                  |               |   +-------FJLbjSPhcs|Rhopilema
+|  |                  |               +---|
+|  |                  |                   |      +---frfilaRjbZ|Clytia
+|  |                  |                   |   +--|
+|  |                  |                   |   |  +--DakEOeZrNF|Hydractinia
+|  |                  |                   +---|
+|  |                  |                       +--BEQuHGMREs|Hydra
+|  +------------------|
+|                     |              +--------GJeVEpiMoq|Oscarella
+|                     +--------------|
+|                                    |        +------BbwRArzAcw|Sycon
+|                                    |     +--|
+|                                    |     |  |  +--xcHYJAzfzK|Parthenolecanium
+|                                    |     |  +--|
+|                                    |     |     |  +--ZRohTINQSA|Lingula
+|                                    |     |     +--|
+|                                    |     |        |  +--AGvXZgGBtq|Lineus
+|                                    |     |        +--|
+|                                    |     |           |  +--wTMUeevdEZ|Owenia
+|                                    |     |           +--|
+|                                    |     |              +--NlepuccEIh|Lamellibrachia
+|                                    |  +--|
+|                                    |  |  |  +----ZykZmQFWuC|Ephydatia
+|                                    |  |  +--|
+|                                    |  |     +----CCYuQvdbHc|Dysidea
+|                                    +--|
+|                                       |                                                                                        +--AeRTQsmrZm|Scleropages
+|                                       |                                                                                     +--|
+|                                       |                                                                                     |  +--qkBtMyQNpl|Brienomyrus
+|                                       |                                                                                  +--|
+|                                       |                                                                                  |  +--kAZySGXBQN|Xiphophorus
+|                                       |                                                                               +--|
+|                                       |                                                                               |  |                                      +--oNOGYGHTQw|Nothobranchius
+|                                       |                                                                               |  |                                   +**|
+|                                       |                                                                               |  |                                   |  +--ULrjZPEzlr|Micropterus
+|                                       |                                                                               |  |                                +--|
+|                                       |                                                                               |  |                                |  +--kkYdtPQLmh|Lucifuga
+|                                       |                                                                               |  |                             +--|
+|                                       |                                                                               |  |                             |  +**hRYdBLBLiI|Amphiprion
+|                                       |                                                                               |  |                          +**|
+|                                       |                                                                               |  |                          |  +--yjsqjEZoLS|Scophthalmus
+|                                       |                                                                               |  |                       +--|
+|                                       |                                                                               |  |                       |  +--KrIWeQzTgi|Thalassophryne
+|                                       |                                                                               |  |                    +**|
+|                                       |                                                                               |  |                    |  +--PAFqKKBuky|Archocentrus
+|                                       |                                                                               |  |                 +**|
+|                                       |                                                                               |  |                 |  +--RIXbwOaiPr|Larimichthys
+|                                       |                                                                               |  |              +--|
+|                                       |                                                                               |  |              |  +--JMCXEwZYbf|Epinephelus
+|                                       |                                                                               |  |           +--|
+|                                       |                                                                               |  |           |  +--dDQWedKHtt|Lampris
+|                                       |                                                                               |  |        +--|
+|                                       |                                                                               |  |        |  +--HrULLggdCp|Gadus
+|                                       |                                                                               |  |     +--|
+|                                       |                                                                               |  |     |  |     +--lZVeUHlASy|Electrophorus
+|                                       |                                                                               |  |     |  |  +--|
+|                                       |                                                                               |  |     |  |  |  +--LQMrHPrFIY|Neoarius
+|                                       |                                                                               |  |     |  +--|
+|                                       |                                                                               |  |     |     +--BUHsVXuHBO|Chanos
+|                                       |                                                                               |  |  +--|
+|                                       |                                                                               |  |  |  +--MfMWNGjLjP|Sardina
+|                                       |                                                                               |  +--|
+|                                       |                                                                               |     +--PMGNDBQWcR|Anguilla
+|                                       |                                                                            +--|
+|                                       |                                                                            |  +--dWAqKoNeMW|Atractosteus
+|                                       |                                                                         +**|
+|                                       |                                                                         |  |     +--AWWmrDsPCS|Dallia
+|                                       |                                                                         |  |  +--|
+|                                       |                                                                         |  |  |  +--UiFmeUQadN|Oncorhynchus
+|                                       |                                                                         |  +--|
+|                                       |                                                                         |     +--DZqiwaizeP|Oncorhynchus
+|                                       |                                                                      +--|
+|                                       |                                                                      |  |     +--nEangzEWRE|Gymnothorax
+|                                       |                                                                      |  |  +--|
+|                                       |                                                                      |  |  |  +--qExKFaeGZA|Paramormyrops
+|                                       |                                                                      |  +--|
+|                                       |                                                                      |     +--ZzLSqGwClH|Astyanax
+|                                       |                                                                   +--|
+|                                       |                                                                   |  +**TdsPYKRmjy|Myripristis
+|                                       |                                                                +--|
+|                                       |                                                                |  +--LplxsSrJbL|Lampris
+|                                       |                                                             +--|
+|                                       |                                                             |  |              +--NaeBWESNWe|Nerophis
+|                                       |                                                             |  |           +--|
+|                                       |                                                             |  |           |  +--GdpYVAWjLG|Knipowitschia
+|                                       |                                                             |  |        +--|
+|                                       |                                                             |  |        |  +--OnkmJYPdyy|Parambassis
+|                                       |                                                             |  |     +--|
+|                                       |                                                             |  |     |  +--ZMqvjIKvQm|Melanotaenia
+|                                       |                                                             |  |  +--|
+|                                       |                                                             |  |  |  +**QsYcTMGQky|Plectropomus
+|                                       |                                                             |  +--|
+|                                       |                                                             |     |        +--tZzcBACoAy|Gadus
+|                                       |                                                             |     |     +--|
+|                                       |                                                             |     |     |  |  +--WSNBavUJBO|Pleuronectes
+|                                       |                                                             |     |     |  +--|
+|                                       |                                                             |     |     |     +--tySroThLag|Dissostichus
+|                                       |                                                             |     |  +**|
+|                                       |                                                             |     |  |  +--dLKeTbhqug|Micropterus
+|                                       |                                                             |     +--|
+|                                       |                                                             |        |        +--aWnxqgegTn|Betta
+|                                       |                                                             |        |     +--|
+|                                       |                                                             |        |     |  +--KqsWouqUSv|Thalassophryne
+|                                       |                                                             |        |  +--|
+|                                       |                                                             |        |  |  +--UUwloFYVqs|Oreochromis
+|                                       |                                                             |        +--|
+|                                       |                                                             |           |  +**aAdmToyfKK|Thunnus
+|                                       |                                                             |           +**|
+|                                       |                                                             |              +--PZOdfgBWTC|Scomber
+|                                       |                                                          +--|
+|                                       |                                                          |  |     +--XaXsUWTkxD|Triplophysa
+|                                       |                                                          |  |  +--|
+|                                       |                                                          |  |  |  +--OMtrKBKgWt|Danio
+|                                       |                                                          |  +--|
+|                                       |                                                          |     +--nyJhkBrjiy|Denticeps
+|                                       |                                                       +**|
+|                                       |                                                       |  +--BPuovoEXpC|Chanos
+|                                       |                                                    +--|
+|                                       |                                                    |  +--jWDHSWHnnP|Bagarius
+|                                       |                                                 +--|
+|                                       |                                                 |  |  +--fbdSDoQMhL|Austrofundulus
+|                                       |                                                 |  +--|
+|                                       |                                                 |     +--RuHneaqwQr|Nematolebias
+|                                       |                                              +--|
+|                                       |                                              |  |  +--tBJwOxnpAK|Polyodon
+|                                       |                                              |  +**|
+|                                       |                                              |     +--toJtUmAnWq|Polypterus
+|                                       |                                           +--|
+|                                       |                                           |  +--vPLHcLmiJP|Heptranchias
+|                                       |                                        +--|
+|                                       |                                        |  +--lsFXhnJLmo|Varanus
+|                                       |                                     +**|
+|                                       |                                     |  |              +--vlCLHKXUnM|Monodon
+|                                       |                                     |  |           +--|
+|                                       |                                     |  |           |  +**FgwpYHCgPp|Talpa
+|                                       |                                     |  |        +**|
+|                                       |                                     |  |        |  |  +**HGMBNeoSRf|Eptesicus
+|                                       |                                     |  |        |  +**|
+|                                       |                                     |  |        |     +**AcGVCmYRAe|Manis
+|                                       |                                     |  |     +--|
+|                                       |                                     |  |     |  +--rJXRFxWZOQ|Trichechus
+|                                       |                                     |  |  +--|
+|                                       |                                     |  |  |  +**LmVcntlwiT|Heliornis
+|                                       |                                     |  +**|
+|                                       |                                     |     |     +--sCSqGonZYs|Alligator
+|                                       |                                     |     |  +--|
+|                                       |                                     |     |  |  |  +--FKJRjwqRcM|Vombatus
+|                                       |                                     |     |  |  +**|
+|                                       |                                     |     |  |     +--AJUOYqPHYI|Terrapene
+|                                       |                                     |     +**|
+|                                       |                                     |        +--cNQOICfMpL|Acanthisitta
+|                                       |                                  +**|
+|                                       |                                  |  +**tVYNvxirRH|Dasyornis
+|                                       |                               +**|
+|                                       |                               |  +**SGXOmVqJdI|Haliaeetus
+|                                       |                            +**|
+|                                       |                            |  +--nVwTIEtejS|Chunga
+|                                       |                         +**|
+|                                       |                         |  +--tADRMUJSUs|Melanocharis
+|                                       |                      +--|
+|                                       |                      |  +--ahRWKOEkHT|Poecile
+|                                       |                   +--|
+|                                       |                   |  +--lZYZeaiSlf|Latimeria
+|                                       |                +--|
+|                                       |                |  +--LRppIyKlCm|Protopterus
+|                                       |        +-------|
+|                                       |        |       +--ydDKZFfYgK|Xenopus
+|                                       |     +--|
+|                                       |     |  |  +---UakjwmudIe|Rhopilema
+|                                       |     |  +--|
+|                                       |     |     |  +--pRaZPBYNdC|Hydra
+|                                       |     |     +--|
+|                                       |     |        |     +--zxyJBMMYwF|Hydractinia
+|                                       |     |        |  +--|
+|                                       |     |        |  |  +--QAdioKLipL|Hydractinia
+|                                       |     |        +--|
+|                                       |     |           +--rYHPogklDD|Clytia
+|                                       |  +--|
+|                                       |  |  |  +------GtcgFDNwBv|Dendronephthya
+|                                       |  |  +--|
+|                                       |  |     |     +--uZWbxHWPig|Acropora
+|                                       |  |     |  +--|
+|                                       |  |     |  |  |  +--QdwXoHWfEp|Stylophora
+|                                       |  |     |  |  +--|
+|                                       |  |     |  |     +--CYdjfHRqcs|Orbicella
+|                                       |  |     +--|
+|                                       |  |        |  +--tWCWCsWGNH|Actinia
+|                                       |  |        +--|
+|                                       |  |           +--ShKLZALvVx|Nematostella
+|                                       +--|
+|                                          |        +--WuyDyROzNK|Amphimedon
+|                                          |     +--|
+|                                          |     |  +--HASAJGiJdj|Gigantopelta
+|                                          |  +--|
+|                                          |  |  |  +--cAalMEcZkv|Dysidea
+|                                          |  |  +--|
+|                                          |  |     |  +--bsHrrqXzLb|Ephydatia
+|                                          |  |     +--|
+|                                          |  |        +--nJGQNEkfqU|Halichondria
+|                                          +--|
+|                                             |  +---ZIsoTsHyYg|Sycon
+|                                             +--|
+|                                                +--CCZgYRAnYq|Sycon
+|
+|              +----------------XchqRqCxdh|Eptatretus
+|         +----|
+|         |    +---------lMyRnTENoG|Petromyzon
+|      +--|
+|      |  |                 +---------xJIXtVvweK|Nothobranchius
+|      |  |              +--|
+|      |  |              |  |              +---HELpFSNkCD|Coregonus
+|      |  |              |  |           +--|
+|      |  |              |  |           |  |                 +--RBAmPjSism|Anguilla
+|      |  |              |  |           |  |              +--|
+|      |  |              |  |           |  |              |  +--gDcirUPADl|Gymnothorax
+|      |  |              |  |           |  |           +--|
+|      |  |              |  |           |  |           |  +--UbMgqYbZIK|Conger
+|      |  |              |  |           |  |        +--|
+|      |  |              |  |           |  |        |  +--wwqEkfbgoV|Synaphobranchus
+|      |  |              |  |           |  |     +--|
+|      |  |              |  |           |  |     |  +--fJznYXXzFr|Aldrovandia
+|      |  |              |  |           |  |  +--|
+|      |  |              |  |           |  |  |  +--ZZeeeAQGwq|Albula
+|      |  |              |  |           |  +--|
+|      |  |              |  |           |     +--SzwMjUCLGO|Megalops
+|      |  |              |  |        +--|
+|      |  |              |  |        |  +--mkiIrLsnbu|Scleropages
+|      |  |              |  |     +--|
+|      |  |              |  |     |  |  +--FokFnoLiUt|Amia
+|      |  |              |  |     |  +--|
+|      |  |              |  |     |     +--AsgqPwtfdz|Lepisosteus
+|      |  |              |  |  +--|
+|      |  |              |  |  |  +--ebBjFAeDiE|Huso
+|      |  |              |  +--|
+|      |  |              |     +--iVqvGCFdmm|Erpetoichthys
+|      |  |           +--|
+|      |  |           |  |                 +--GNYgHMmxrx|Hymenochirus
+|      |  |           |  |              +--|
+|      |  |           |  |              |  +--wmvqUdzXaH|Xenopus
+|      |  |           |  |           +--|
+|      |  |           |  |           |  |  +--AWeXzPAkuh|Spea
+|      |  |           |  |           |  +--|
+|      |  |           |  |           |     +--fIRQlZysSu|Pelobates
+|      |  |           |  |        +--|
+|      |  |           |  |        |  |  +--tsckLjolNz|Engystomops
+|      |  |           |  |        |  +--|
+|      |  |           |  |        |     +--XGosRabsrM|Nanorana
+|      |  |           |  |     +--|
+|      |  |           |  |     |  +--xvnqXEBbuK|Pleurodeles
+|      |  |           |  |  +--|
+|      |  |           |  |  |  +--IIlUtnPxnH|Geotrypetes
+|      |  |           |  +--|
+|      |  |           |     |        +--nLtkCBPdil|Pelodiscus
+|      |  |           |     |     +--|
+|      |  |           |     |     |  |  +--xctXzOcuoJ|Pterocnemia
+|      |  |           |     |     |  +--|
+|      |  |           |     |     |     +--pPpSFFfytq|Berghia
+|      |  |           |     |  +--|
+|      |  |           |     |  |  |  +--QRdVzFJhJl|Euleptes
+|      |  |           |     |  |  +--|
+|      |  |           |     |  |     +--njDOzEJrla|Tiliqua
+|      |  |           |     +--|
+|      |  |           |        |     +--jYynejgppE|Tachyglossus
+|      |  |           |        |  +--|
+|      |  |           |        |  |  |  +--RpmAqCghci|Homo
+|      |  |           |        |  |  +--|
+|      |  |           |        |  |     +--ZbeQAGoiMw|Sorex
+|      |  |           |        +--|
+|      |  |           |           +--xnIaTeXnth|Gracilinanus
+|      |  |        +--|
+|      |  |        |  +--xwbUKfhKgu|Latimeria
+|      |  |     +--|
+|      |  |     |  |  +--nPqrlRQAqI|Callorhinchus
+|      |  |     |  +--|
+|      |  |     |     |  +--krBlZLfuPp|Heterodontus
+|      |  |     |     +--|
+|      |  |     |        |  +--abZRebsZuU|Dasyatis
+|      |  |     |        +--|
+|      |  |     |           +--YQDjjiMqbP|Amblyraja
+|      |  |  +--|
+|      |  |  |  |                 +--wmadmvJAbJ|Geotrypetes
+|      |  |  |  |              +--|
+|      |  |  |  |              |  +--fMBpPVNzDY|Rhinatrema
+|      |  |  |  |           +--|
+|      |  |  |  |           |  |        +--rpBglcbccH|Echinops
+|      |  |  |  |           |  |     +--|
+|      |  |  |  |           |  |     |  +--kXuduTPOMY|Trichechus
+|      |  |  |  |           |  |  +--|
+|      |  |  |  |           |  |  |  +--hvaULsuzKO|Choloepus
+|      |  |  |  |           |  +--|
+|      |  |  |  |           |     |  +--majfkpPYIA|Monodelphis
+|      |  |  |  |           |     +--|
+|      |  |  |  |           |        +--ClZGhCBcRm|Trichosurus
+|      |  |  |  |        +--|
+|      |  |  |  |        |  +--pVuWOCDTOE|Latimeria
+|      |  |  |  |     +--|
+|      |  |  |  |     |  +-----vDuQKFNEWn|Protopterus
+|      |  |  |  |  +--|
+|      |  |  |  |  |  |  +--WdJVyQbktc|Polyodon
+|      |  |  |  |  |  +--|
+|      |  |  |  |  |     |  +--CkPDeuhxKs|Polypterus
+|      |  |  |  |  |     +--|
+|      |  |  |  |  |        |     +--QnmnuXDOSO|Amia
+|      |  |  |  |  |        |  +--|
+|      |  |  |  |  |        |  |  +--aeeqENtjXg|Lepisosteus
+|      |  |  |  |  |        +--|
+|      |  |  |  |  |           |  +---wPPaQEcukj|Scleropages
+|      |  |  |  |  |           +--|
+|      |  |  |  |  |              |           +--sTzgnFNwqI|Synaphobranchus
+|      |  |  |  |  |              |        +--|
+|      |  |  |  |  |              |        |  +--FcCqlhapds|Anguilla
+|      |  |  |  |  |              |     +--|
+|      |  |  |  |  |              |     |  +--XAjSBDwGGw|Gymnothorax
+|      |  |  |  |  |              |  +--|
+|      |  |  |  |  |              |  |  +--nXCgmIDRfN|Aldrovandia
+|      |  |  |  |  |              +--|
+|      |  |  |  |  |                 +--crYGgqMjhE|Megalops
+|      |  |  |  +--|
+|      |  |  |     |  +--fsrtRGDbBm|Callorhinchus
+|      |  |  |     +--|
+|      |  |  |        |  +--bnVMraVLWk|Carcharodon
+|      |  |  |        +--|
+|      |  |  |           +--CObPGWXZnj|Leucoraja
+|      |  +--|
+|      |     |                                      +--------mhnnkEsvZN|Gadus
+|      |     |                                   +--|
+|      |     |                                   |  +---sZsQPXGqxx|Osmerus
+|      |     |                               +---|
+|      |     |                               |   |  +-----OsunYycnjz|Denticeps
+|      |     |                               |   +--|
+|      |     |                               |      +----LYkzMEGsIM|Engraulis
+|      |     |                            +--|
+|      |     |                            |  |        +--LYVZzGXTYQ|Synaphobranchus
+|      |     |                            |  |     +--|
+|      |     |                            |  |     |  |  +--PRnWlsJkym|Gymnothorax
+|      |     |                            |  |     |  +--|
+|      |     |                            |  |     |     +--ibSUWwwOoP|Conger
+|      |     |                            |  |  +--|
+|      |     |                            |  |  |  +--QWOCnlKJSY|Anguilla
+|      |     |                            |  +--|
+|      |     |                            |     +--HvuhvCqlcp|Albula
+|      |     |                         +--|
+|      |     |                         |  +--qIAJkULQRV|Megalops
+|      |     |                      +--|
+|      |     |                      |  +--YsuXgUftTq|Scleropages
+|      |     |                   +--|
+|      |     |                   |  +---hgyRJxpFqv|Atractosteus
+|      |     |                +--|
+|      |     |                |  +--dcQfkYuVqh|Amia
+|      |     |             +--|
+|      |     |             |  +--UdZeZahffN|Acipenser
+|      |     |         +---|
+|      |     |         |   +--UzDHTMTAAo|Erpetoichthys
+|      |     |      +--|
+|      |     |      |  |  +-----CESFHHZIxS|Callorhinchus
+|      |     |      |  +--|
+|      |     |      |     |  +--leSNjlGhBa|Carcharodon
+|      |     |      |     +--|
+|      |     |      |        |  +--bojMIPiiWd|Pristis
+|      |     |      |        +--|
+|      |     |      |           +--bojCllbYdi|Mobula
+|      |     |   +--|
+|      |     |   |  |                          +---gFpaaLnLUf|Spea
+|      |     |   |  |                       +--|
+|      |     |   |  |                       |  +--jBNkkOSBAG|Pelobates
+|      |     |   |  |                    +--|
+|      |     |   |  |                    |  |  +--vXiVbtYZcW|Hyla
+|      |     |   |  |                    |  +--|
+|      |     |   |  |                    |     |  +--IMVIxIoUZF|Rana
+|      |     |   |  |                    |     +--|
+|      |     |   |  |                    |        +--NdLsdWunZg|Pseudophryne
+|      |     |   |  |                 +--|
+|      |     |   |  |                 |  +---zwTVeXOspJ|Bombina
+|      |     |   |  |           +-----|
+|      |     |   |  |           |     |  +--IEVuqHRMsc|Xenopus
+|      |     |   |  |           |     +--|
+|      |     |   |  |           |        +--aiLSraXPLv|Hymenochirus
+|      |     |   |  |        +--|
+|      |     |   |  |        |  +---jPBaWrZkJX|Pleurodeles
+|      |     |   |  |     +--|
+|      |     |   |  |     |  +--kLBNwQjjYX|Rhinatrema
+|      |     |   |  |  +--|
+|      |     |   |  |  |  |     +--VoGDjSGZCa|Tachyglossus
+|      |     |   |  |  |  |  +--|
+|      |     |   |  |  |  |  |  |  +--OGPABxSmmT|Elephas
+|      |     |   |  |  |  |  |  +--|
+|      |     |   |  |  |  |  |     +--BiQHgUzOaA|Antechinus
+|      |     |   |  |  |  +--|
+|      |     |   |  |  |     |     +--NEFhUhyHzr|Eublepharis
+|      |     |   |  |  |     |  +--|
+|      |     |   |  |  |     |  |  +--ANGAUiOAIW|Sphaerodactylus
+|      |     |   |  |  |     +--|
+|      |     |   |  |  |        |  +--EXdlmGHgiP|Emydura
+|      |     |   |  |  |        +--|
+|      |     |   |  |  |           +--RAikvtugkp|Berghia
+|      |     |   |  +--|
+|      |     |   |     +--PbOIwJZBqg|Latimeria
+|      |     +---|
+|      |         +--------TBOKFllXec|Protopterus
++------|
+       |              +---acqiOJwkwG|Raja
+       |           +--|
+       |           |  +--FSlnniahyk|Pristis
+       |        +--|
+       |        |  +--TZxGAtRniV|Heterodontus
+       |   +----|
+       |   |    +--vWHUSlklYz|Heptranchias
+       +---|
+           |                 +--bVXpKePZES|Ascaphus
+           |              +--|
+           |              |  |                 +--DsiuqkJdFF|Nanorana
+           |              |  |              +--|
+           |              |  |              |  +--RFYucZYNxQ|Rana
+           |              |  |           +--|
+           |              |  |           |  +--PKSSZhXiHe|Eleutherodactylus
+           |              |  |        +--|
+           |              |  |        |  +--ZhKJmnBvuB|Pseudophryne
+           |              |  |     +--|
+           |              |  |     |  |  +--RyUplERqOc|Spea
+           |              |  |     |  +--|
+           |              |  |     |     +--IcDCupaOKS|Pelobates
+           |              |  |  +--|
+           |              |  |  |  |  +--CxBexPxDQt|Hymenochirus
+           |              |  |  |  +--|
+           |              |  |  |     +--IaiwhxVOUF|Xenopus
+           |              |  +--|
+           |              |     +--KYgWuRKkZT|Bombina
+           |           +--|
+           |           |  +--tGNHPxuYwU|Pleurodeles
+           |        +--|
+           |        |  |        +--CThBbgxMqG|Eublepharis
+           |        |  |     +--|
+           |        |  |     |  |  +--KduqoPNekv|Lacerta
+           |        |  |     |  +--|
+           |        |  |     |     +--fbUvwvPJXo|Varanus
+           |        |  |  +--|
+           |        |  |  |  |     +--yZpRimCZGG|Emydura
+           |        |  |  |  |  +--|
+           |        |  |  |  |  |  |  +--nwfhXPDvZr|Chelydra
+           |        |  |  |  |  |  +--|
+           |        |  |  |  |  |     +--vlwIqXVzNF|Chelonia
+           |        |  |  |  +--|
+           |        |  |  |     |  +--QPDgVGIkFv|Alligator
+           |        |  |  |     +--|
+           |        |  |  |        |  +--SCXqmaHRyQ|Gallus
+           |        |  |  |        +--|
+           |        |  |  |           |  +--erKIafvbTN|Origma
+           |        |  |  |           +--|
+           |        |  |  |              +--tOgOwBEsXb|Berghia
+           |        |  +--|
+           |        |     |  +--SIqoibguTk|Tachyglossus
+           |        |     +--|
+           |        |        |  +--xFebzNvgTI|Dromiciops
+           |        |        +--|
+           |        |           |  +--rHruojyAKS|Dipodomys
+           |        |           +--|
+           |        |              |  +--nPSevTIFKH|Puma
+           |        |              +--|
+           |        |                 +--MQvgvgsJRb|Odocoileus
+           |     +--|
+           |     |  +--GZAfkOvZCs|Rhinatrema
+           |  +--|
+           |  |  +---iJeEettDFc|Latimeria
+           +--|
+              |     +------lhAEoqZpzv|Polypterus
+              |  +--|
+              |  |  |        +----zEZTJTAAUZ|Triplophysa
+              |  |  |     +--|
+              |  |  |     |  |        +---aUqVDyASSq|Megalops
+              |  |  |     |  |     +--|
+              |  |  |     |  |     |  |        +--qDWvfvHGcZ|Gymnothorax
+              |  |  |     |  |     |  |     +--|
+              |  |  |     |  |     |  |     |  +--lryxprXcoL|Anguilla
+              |  |  |     |  |     |  |  +--|
+              |  |  |     |  |     |  |  |  +--nAULuXUIcE|Synaphobranchus
+              |  |  |     |  |     |  +--|
+              |  |  |     |  |     |     +--ClWLgGUByv|Conger
+              |  |  |     |  |  +--|
+              |  |  |     |  |  |  |     +--sMtxBSxOHY|Chanos
+              |  |  |     |  |  |  |  +--|
+              |  |  |     |  |  |  |  |  |        +--WEJVibwJyF|Muraenolepis
+              |  |  |     |  |  |  |  |  |     +--|
+              |  |  |     |  |  |  |  |  |     |  |  +--mGdBxvxZei|Lampris
+              |  |  |     |  |  |  |  |  |     |  +--|
+              |  |  |     |  |  |  |  |  |     |     +--RolGQZUDIs|Myripristis
+              |  |  |     |  |  |  |  |  |  +--|
+              |  |  |     |  |  |  |  |  |  |  |  +--vCJyNWzbeh|Oncorhynchus
+              |  |  |     |  |  |  |  |  |  |  +--|
+              |  |  |     |  |  |  |  |  |  |     +--CbDzSeoZLi|Esox
+              |  |  |     |  |  |  |  |  +--|
+              |  |  |     |  |  |  |  |     +--FnkGoxKDuz|Hypomesus
+              |  |  |     |  |  |  +--|
+              |  |  |     |  |  |     |  +--UomiJesGjf|Aldrovandia
+              |  |  |     |  |  |     +--|
+              |  |  |     |  |  |        |     +--JMhzAmgYYs|Albula
+              |  |  |     |  |  |        |  +--|
+              |  |  |     |  |  |        |  |  +--vfMCHtChlM|Megalops
+              |  |  |     |  |  |        +--|
+              |  |  |     |  |  |           |  +--OmgqnrwKoz|Anguilla
+              |  |  |     |  |  |           +--|
+              |  |  |     |  |  |              +--anKUZulYUK|Conger
+              |  |  |     |  +**|
+              |  |  |     |     |  +--sNtcFIXrHq|Paramormyrops
+              |  |  |     |     +--|
+              |  |  |     |        +--pdgOkIOUOp|Scleropages
+              |  |  |  +--|
+              |  |  |  |  |  +--iFKYZRxiRX|Scleropages
+              |  |  |  |  +--|
+              |  |  |  |     +--rNksZFzfGV|Brienomyrus
+              |  |  +--|
+              |  |     |     +--tZRAiqrRvO|Alosa
+              |  |     |  +--|
+              |  |     |  |  +--iKdUGUqHBg|Clupea
+              |  |     +--|
+              |  |        +--jdMGyLvyaf|Denticeps
+              +--|
+                 +---fDHKcOsKrS|Acipenser
+
+Tree in newick format:
+
+(FsZTSPKlEN|Lineus:0.5727355789,((gtFLaGuGbO|Priapulus:0.3183501265,(XKDJaQieoU|Centruroides:0.1420774407,(BJmMnKGhgf|Amphibalanus:0.2502186837,(oEPVjLbriw|Daphnia:0.2020483099,(((((WrMuNEyfoD|Parnassius:0.1123161084,rAdwdpmqrt|Galleria:0.0635253761):0.0190266565,(DIvVxgZhZR|Cydia:0.0697729609,QmQCIQQkeH|Pieris:0.0267389327):0.0060352579):0.0092066056,((hyEpgkYOpJ|Amyelois:0.0863976280,CtsCZaPxqx|Hyposmocoma:0.0458630481):0.0046920167,((EZicsFAHVk|Manduca:0.0439943065,UogHgvZmvy|Bombyx:0.0305822631):0.0307807177,mEfOWKCvMf|Pectinophora:0.0410391627):0.0101152009):0.0044960312):0.0093437882,ZJqsQUMqYW|Danaus:0.0369435918):0.1191531986,((((dBIbVxioyF|Rhopalosiphum:0.0859817362,RnxjAFtsRK|Macrosteles:0.0244004582):0.0091934403,PwJnIMkHec|Bemisia:0.0218634883):0.0150593092,(((EbBGDYmcof|Gryllus:0.0552768586,((((kFIcGobfdP|Popillia:0.0754565607,nVzgUkRcFe|Onthophagus:0.0654210297):0.0182270722,cXbRXwhgQv|Nicrophorus:0.0411301419):0.0150121764,(ALNcOfikWy|Agrilus:0.0427552374,(eQoLpMKnUK|Photinus:0.0282718983,TyXEoeKQPz|Ignelater:0.0214776723):0.0227615095):0.0280621333):0.0112700545,(((ZAUNNWmREn|Ceutorhynchus:0.0562739987,CsXJXkBBBv|Sitophilus:0.0270636027):0.0089254507,VugSJdKzvB|Cylas:0.0403068429):0.0150714461,(tbqyZVxWOQ|Aethina:0.0730817875,udKcKAQlDL|Tribolium:0.0044533841):0.0084816987):0.0329048445):0.0838397917):0.0153650553,XmyMLNisjt|Zootermopsis:0.0221261114):0.0097561159,(OtAqWpuQvS|Anabrus:0.0406744020,WVlYBdTCfG|Bacillus:0.0298346596):0.0092942468):0.0225737462):0.0170697302,((MPiBhjNlXY|Nesidiocoris:0.0439529300,oJJLWhyPhp|Cimex:0.0285877565):0.0118458273,rQuLQuRKpo|Rhynocoris:0.0315420324):0.0368599142):0.0566096404):0.0686494563):0.0402580710):0.1594266214):0.1219008623):0.1313350586,((((((HNAxJnTrKC|Acropora:0.1016363961,(euLCveivGc|Pocillopora:0.0066977551,YKasFBdNeq|Stylophora:0.0136094775):0.0364605212):0.0087754567,(wmIiUoILdw|Porites:0.0701643552,ZJJAnwxCXw|Orbicella:0.0327977997):0.0047395568):0.1232063631,(QwESURCNFu|Actinia:0.0762654829,dXeGeQRqYa|Nematostella:0.1037573510):0.0556712063):0.1413633181,((((((vtSPfDuHpr|Holothuria:0.0265489343,SodlqMHUMm|Apostichopus:0.0348674391):0.1548748849,(MsINtRptIq|Lytechinus:0.0046379328,cHanWhAHXM|Strongylocentrotus:0.0108958453):0.1241146997):0.0235357909,(vmkhUzyIcd|Patiria:0.0590009134,ZHsqwlCCVy|Asterias:0.0511186323):0.0832283687):0.1542489972,HHOOCyQqoV|Saccoglossus:0.1133982831):0.0930511661,((sSTYUMAeKz|Lingula:0.1285066486,(((((((nKMELdelvS|Biomphalaria:0.0263903185,KGUUKGEbyT|Physa:0.0085954178):0.0871103781,KyltisCzTz|Pomacea:0.0422821427):0.0502790043,(lIelLPGcKJ|Ylistrum:0.0450431629,uJcWRwvgOq|Saccostrea:0.0453871047):0.0238930732):0.0075569239,((PiQtsKinzj|Mya:0.0633118381,IEjaWqxkal|Ruditapes:0.0223024675):0.0137590966,yFDxesRRkl|Dreissena:0.0196590130):0.0527163515):0.0180159697,(wLbkHbjASc|Patella:0.0523638039,(dFtVlNAYrh|Gigantopelta:0.0647681570,QgyqBPeXme|Haliotis:0.0255382892):0.0272477670):0.0254984992):0.0150942762,FHGYhvbZAJ|Liolophura:0.0493255390):0.0167349529,iAIvsmnKqf|Octopus:0.0443250729):0.0531151443):0.0838708806,((((dzxXnHdbLe|Galendromus:0.1762015829,GsqSmPWrJJ|Cordylochernes:0.1043547189):0.0204596941,(DduaDNARUo|Ixodes:0.0149250218,HgjnuoHSWE|Dermacentor:0.0087419516):0.0622343718):0.0155803653,(gJqNQnpxyA|Uloborus:0.0145198969,KdCdVAJhbR|Stegodyphus:0.0084883932):0.1127578425):0.0233037938,((aVushdIKOk|Cydia:0.0472581031,((NalhyOtwYH|Pectinophora:0.0385535728,tgdaDywsIp|Spodoptera:0.0177806186):0.0113810396,kHiQMWMaDt|Aricia:0.0126139524):0.0189375804):0.0580136921,((cCVOQZjVPU|Ctenocephalides:0.0000027035,nYgYpSiEee|Ctenocephalides:0.0000027035):0.0666449020,(((((fhJsfxpdrV|Cloeon:0.0025395600,zMTEXIegZH|Neocloeon:0.0000027035):0.0643359577,((((((jJIoADHMCE|Nesidiocoris:0.0193242405,deuYiZPRVK|Nezara:0.0248531214):0.0249348530,RNbXPYcCpO|Bacillus:0.0304331609):0.0084892361,yWFYmQcMtT|Homalodisca:0.0000022422):0.0026248933,cLEggCzCOR|Bemisia:0.0207942763):0.0042800053,RQCadhUqeR|Nilaparvata:0.0296722134):0.0083520161,(LMCAhbcwex|Parthenolecanium:0.0263748393,ajUjrWbRcm|Planococcus:0.0108388459):0.0233579882):0.0087078547):0.0026529241,((HmoTiBcadJ|Diaphorina:0.0401569191,(emIZwJtJCX|Macrosiphum:0.0013859032,gGIzOKeIwS|Daktulosphaira:0.0220915666):0.0360078977):0.0220692956,(TCBryYRChr|Polyplax:0.0051660062,SbLIIkXjyZ|Pediculus:0.0076272741):0.0342780083):0.0060036128):0.0059748061,alUyhDUOad|Nicrophorus:0.0467847098):0.0070248067,(((ogkKYRQmrF|Neodiprion:0.0180924819,(eDsXTItiKJ|Eretmocerus:0.0050541394,swXgbQkSDv|Nasonia:0.0025193247):0.0102294807):0.0050649837,((daMcqNmHVC|Chelonus:0.0201239058,oqnOgpZpjt|Diachasma:0.0030487582):0.0041529473,(((CSUtSSIuhF|Prorops:0.0160037956,kbuprtArKR|Melipona:0.0101535100):0.0024612407,spVSfUqVqU|Orussus:0.0050278779):0.0025993891,vKlPwQElPs|Ampulex:0.0054964580):0.0033651837):0.0049964691):0.0000028102,FTZEoSYHAb|Cephus:0.0000027035):0.0327933101):0.0123550669):0.0158979299):0.0441027153):0.0467467223):0.1075718635):0.0134262972,(ftvQzruOwR|Branchiostoma:0.1397692205,(((PJQOSprcEU|Petromyzon:0.1055026743,TKfZpzPHVx|Petromyzon:0.0686982221):0.0304908738,(kAKLuxyWgF|Callorhinchus:0.0340502090,(((tQampOqIvw|Protopterus:0.0371050783,tKMYRUNKEK|Latimeria:0.0032054673):0.0071178525,(((hCBVgkNLSW|Ornithorhynchus:0.0155076206,ZLgBxhGosP|Platysternon:0.0077742668):0.0000030572,((VxNiASiKOi|Alligator:0.0065009231,(BPeGLNhgQi|Tiliqua:0.0000028052,mHRToARrvn|Euleptes:0.0076810259):0.0076050615):0.0038808729,(((VwCzEFvVnQ|Molossus:0.0004616265,AvUuuqiHRc|Rattus:0.0021688719):0.0049764787,lEhdWDHQvF|Orycteropus:0.0000027035):0.0050911625,FNXcwRFPnt|Gracilinanus:0.0000027035):0.0025777789):0.0050731851):0.0128440110,(faQguLlryg|Erpetoichthys:0.0177870775,((WxozCwLmHK|Polyodon:0.0000027035,GVdinLCwRb|Acipenser:0.0000027035):0.0181413733,((((nxnxYZxMRp|Gadus:0.0155694848,MEkEKTcVnj|Thunnus:0.0050933470):0.0051523257,(((((RCSKgvkCOL|Scleropages:0.0128036591,lBHJxjPCLe|Scleropages:0.0076390149):0.0000027033,qhnxNabpLX|Atractosteus:0.0051391052):0.0025508590,WLWUhWUBcM|Megalops:0.0000027035):0.0000027033,iWVgelljJZ|Anguilla:0.0000027035):0.0025513142,XfAJTkGJYb|Oncorhynchus:0.0077225219):0.0025513604):0.0000024386,ursNIDLjIE|Paramormyrops:0.0076514564):0.0000027033,xEpLbEQGEA|Trichomycterus:0.0025490339):0.0026626883):0.0030850922):0.0075450129):0.0000027011):0.0025180519,((IPjYSjpPin|Pelobates:0.0129044549,(itgzlgzfRH|Ascaphus:0.0076528256,BbuwHMKVvM|Xenopus:0.0025369556):0.0000020598):0.0173827456,(zFMeTsQGOz|Geotrypetes:0.0147506598,NzxVWQBgFM|Pleurodeles:0.0134444694):0.0000026113):0.0110916876):0.0031562310):0.0370424865):0.0220763774,(((((((((((((((CaLEJvHHfC|Megalops:0.0559467431,(simBLjKpaj|Aldrovandia:0.0130748537,((((ipOMBJpnVC|Gymnothorax:0.0154159685,CDVuvYBSWn|Anguilla:0.0103810094):0.0000022778,YNRUnoUHUr|Synaphobranchus:0.0050803494):0.0025301006,pLwIiSJjWB|Conger:0.0025478958):0.0049873564,anMVeWcHPH|Albula:0.0079065354):0.0023540999):0.0121350479):0.0203932988,(AmktbkMSRv|Conger:0.0077727815,(yabeBZzLKc|Gymnothorax:0.0051231453,gFAXsnUJyy|Albula:0.0000027035):0.0025820993):0.0025484101):0.0000027033,NqedEkUmvl|Megalops:0.0025623340):0.0025621882,lfRUfBXkyD|Chanos:0.0051414105):0.0000027033,(cOUThLFnku|Muraenolepis:0.0104314367,eYVQBtbHJE|Lampris:0.0025776442):0.0025720700):0.0025614620,GjmuZkMFrY|Anguilla:0.0051248233):0.0025607272,(CmPFCckzvx|Osmerus:0.0211378678,kBBiDmfHUG|Salvelinus:0.0102832236):0.0000027033):0.0025560450,MtfrQsWoRP|Paramormyrops:0.0025665680):0.0025734257,((((ENgBghAZno|Scleropages:0.0154829352,EfXuwmTcLe|Polyodon:0.0157952439):0.0000027033,(NkHpXRMoqh|Engraulis:0.0051660723,HdaRuNQmgM|Clupea:0.0051181485):0.0051635419):0.0051503041,CFxmFLegVS|Denticeps:0.0155399607):0.0025546571,SsAFTRKlFB|Danio:0.0077210793):0.0025600176):0.0025765518,((FjygZorMQm|Brienomyrus:0.0133171648,cAKORgebSH|Scleropages:0.0131079802):0.0024724765,YsMAqJvQEt|Atractosteus:0.0025690103):0.0025628107):0.0000027033,uBPootHclX|Amia:0.0051500535):0.0102580673,((((DmMidyXKTE|Chiloscyllium:0.0000027035,AlUZrCvuqA|Heptranchias:0.0000027035):0.0025659333,mDWOkyrBCZ|Callorhinchus:0.0025668753):0.0025742280,xgxWROHtvc|Pristis:0.0000028172):0.0155190195,IfSXHjXAgB|Latimeria:0.0052227251):0.0026173225):0.0051544455,MDCagLeSrU|Polypterus:0.0261602690):0.0000027012,((((((((((((hWkLNbbnyh|Bombina:0.0185251941,UamxjpMZEK|Pseudophryne:0.0025570156):0.0025657347,jncYQCYuNv|Bufo:0.0102970523):0.0000028078,((GGXhyMGUsJ|Spea:0.0025783891,lvYgiJajeH|Pelobates:0.0025754305):0.0077556594,(pfXspRTDkQ|Ascaphus:0.0077678428,iJJtoELTVf|Hymenochirus:0.0000027035):0.0025575066):0.0000028171):0.0000027033,(zxcWepKWci|Xenopus:0.0051388345,gArxVZTzQD|Rana:0.0000027035):0.0025569403):0.0209139830,xJNEXVjXKt|Hemicordylus:0.0051211577):0.0000027033,(vhtOFFFkFW|Heteronotia:0.0000027035,HHHYIuPDuD|Pogona:0.0000027035):0.0000027033):0.0000027033,OzBzYMJUep|Rhineura:0.0051262589):0.0025508936,(IHxLSzjYDZ|Tachyglossus:0.0025565231,(uBDRBoMzVz|Trichosurus:0.0025514687,xUKOuXipGQ|Odontophorus:0.0025530841):0.0000027033):0.0025540447):0.0000027033,kgARxlPZVK|Platysternon:0.0000027035):0.0000027033,cOFHJAYSyO|Alligator:0.0000027035):0.0000027033,(jFDKMxbecU|Eudromia:0.0000027035,wuRCFvRBvq|Myiagra:0.0000027035):0.0025538788):0.0025677938,((kDdGYZLqCo|Pleurodeles:0.0182270593,((ioJLiZbROa|Erinaceus:0.0051248935,aEWFlmmkRx|Homo:0.0000027035):0.0000027033,FJlHZRAech|Orycteropus:0.0000027035):0.0051032014):0.0025742992,(IRXCqdkljh|Geotrypetes:0.0025600278,AEfwFoXpKe|Rhinatrema:0.0000027035):0.0158590346):0.0000025503):0.0052679608):0.0107962258,kNsLHVwFOC|Protopterus:0.0513049221):0.0183835547):0.1134853702):0.0225154478):0.0554551170):0.1413938224,(FJLbjSPhcs|Rhopilema:0.3367567563,((frfilaRjbZ|Clytia:0.1770692552,DakEOeZrNF|Hydractinia:0.0657698387):0.0681209052,BEQuHGMREs|Hydra:0.1045051896):0.1872539911):0.1985493869):0.6518452787,(GJeVEpiMoq|Oscarella:0.3868282739,(((BbwRArzAcw|Sycon:0.3129954670,(xcHYJAzfzK|Parthenolecanium:0.1299346622,(ZRohTINQSA|Lingula:0.0653927840,(AGvXZgGBtq|Lineus:0.0650135131,(wTMUeevdEZ|Owenia:0.0748918617,NlepuccEIh|Lamellibrachia:0.0573262592):0.0166083007):0.0217174113):0.0757283894):0.1407613411):0.0700028243,(ZykZmQFWuC|Ephydatia:0.2081130430,CCYuQvdbHc|Dysidea:0.2139674481):0.1073464942):0.0446764940,((((((((((((((((((((((((((((AeRTQsmrZm|Scleropages:0.0493783790,qkBtMyQNpl|Brienomyrus:0.0576007886):0.0433072345,kAZySGXBQN|Xiphophorus:0.1078366975):0.0078195375,(((((((((((((oNOGYGHTQw|Nothobranchius:0.1150718393,ULrjZPEzlr|Micropterus:0.0031876523):0.0017721377,kkYdtPQLmh|Lucifuga:0.0049416666):0.0024669613,hRYdBLBLiI|Amphiprion:0.0000027035):0.0024652585,yjsqjEZoLS|Scophthalmus:0.0050639810):0.0000020776,KrIWeQzTgi|Thalassophryne:0.0074317422):0.0024613215,PAFqKKBuky|Archocentrus:0.0049482948):0.0000028033,RIXbwOaiPr|Larimichthys:0.0099207440):0.0000028021,JMCXEwZYbf|Epinephelus:0.0099020865):0.0121077301,dDQWedKHtt|Lampris:0.0233960099):0.0029532333,HrULLggdCp|Gadus:0.0175103420):0.0244404350,((lZVeUHlASy|Electrophorus:0.0616509328,LQMrHPrFIY|Neoarius:0.0262696897):0.0253738997,BUHsVXuHBO|Chanos:0.0284506659):0.0132811669):0.0058505172,MfMWNGjLjP|Sardina:0.0472228537):0.0178398850,PMGNDBQWcR|Anguilla:0.0512191280):0.0095712266):0.0125883994,dWAqKoNeMW|Atractosteus:0.0233611104):0.0080482337,((AWWmrDsPCS|Dallia:0.0346887027,UiFmeUQadN|Oncorhynchus:0.0271466696):0.0067548176,DZqiwaizeP|Oncorhynchus:0.0378825415):0.0173624232):0.0000024006,((nEangzEWRE|Gymnothorax:0.0499971745,qExKFaeGZA|Paramormyrops:0.0304706099):0.0050276061,ZzLSqGwClH|Astyanax:0.0192780385):0.0058852933):0.0048419480,TdsPYKRmjy|Myripristis:0.0000027013):0.0025802873,LplxsSrJbL|Lampris:0.0077496724):0.0025212922,(((((NaeBWESNWe|Nerophis:0.0644022002,GdpYVAWjLG|Knipowitschia:0.0113069751):0.0081325814,OnkmJYPdyy|Parambassis:0.0058770691):0.0049761703,ZMqvjIKvQm|Melanotaenia:0.0111699402):0.0055491773,QsYcTMGQky|Plectropomus:0.0000027035):0.0023776975,(((tZzcBACoAy|Gadus:0.0279377532,(WSNBavUJBO|Pleuronectes:0.0164925984,tySroThLag|Dissostichus:0.0109078274):0.0024027410):0.0079559235,dLKeTbhqug|Micropterus:0.0103273791):0.0000027033,(((aWnxqgegTn|Betta:0.0269145313,KqsWouqUSv|Thalassophryne:0.0124200861):0.0047765822,UUwloFYVqs|Oreochromis:0.0243519202):0.0020298655,(aAdmToyfKK|Thunnus:0.0000027035,PZOdfgBWTC|Scomber:0.0025381268):0.0000027033):0.0047224280):0.0023490625):0.0081175319):0.0109061545,((XaXsUWTkxD|Triplophysa:0.0955182755,OMtrKBKgWt|Danio:0.0107874530):0.0034532913,nyJhkBrjiy|Denticeps:0.0687031845):0.0086521142):0.0028211521,BPuovoEXpC|Chanos:0.0256734305):0.0016258788,jWDHSWHnnP|Bagarius:0.0317088385):0.0086991312,(fbdSDoQMhL|Austrofundulus:0.0434352670,RuHneaqwQr|Nematolebias:0.0227600115):0.0688412901):0.0264078866,(tBJwOxnpAK|Polyodon:0.0616972085,toJtUmAnWq|Polypterus:0.0330144895):0.0018265682):0.0466713384,vPLHcLmiJP|Heptranchias:0.0410512580):0.0358909162,lsFXhnJLmo|Varanus:0.0143337760):0.0069558607,(((((vlCLHKXUnM|Monodon:0.0076802224,FgwpYHCgPp|Talpa:0.0000027035):0.0025555858,(HGMBNeoSRf|Eptesicus:0.0000027035,AcGVCmYRAe|Manis:0.0000027035):0.0000027033):0.0000024309,rJXRFxWZOQ|Trichechus:0.0024719038):0.0099436557,LmVcntlwiT|Heliornis:0.0000027035):0.0024708629,((sCSqGonZYs|Alligator:0.0049326053,(FKJRjwqRcM|Vombatus:0.0050919856,AJUOYqPHYI|Terrapene:0.0050998418):0.0000027033):0.0024663744,cNQOICfMpL|Acanthisitta:0.0074269809):0.0000027033):0.0000027033):0.0000027033,tVYNvxirRH|Dasyornis:0.0000027035):0.0000027033,SGXOmVqJdI|Haliaeetus:0.0000027035):0.0000027033,nVwTIEtejS|Chunga:0.0025525746):0.0000027033,tADRMUJSUs|Melanocharis:0.0025503375):0.0000027012,ahRWKOEkHT|Poecile:0.0025499770):0.0102774060,lZYZeaiSlf|Latimeria:0.0434805102):0.0028364582,LRppIyKlCm|Protopterus:0.0391015768):0.0197415104,ydDKZFfYgK|Xenopus:0.0427668694):0.3601710711,(UakjwmudIe|Rhopilema:0.1871940506,(pRaZPBYNdC|Hydra:0.0907175274,((zxyJBMMYwF|Hydractinia:0.1381880456,QAdioKLipL|Hydractinia:0.0577929475):0.0497352477,rYHPogklDD|Clytia:0.0810158874):0.0278999517):0.0668643970):0.1441295136):0.0338007297,(GtcgFDNwBv|Dendronephthya:0.2834368208,((uZWbxHWPig|Acropora:0.0724767639,(QdwXoHWfEp|Stylophora:0.0825402667,CYdjfHRqcs|Orbicella:0.0441951439):0.0291338082):0.1170540566,(tWCWCsWGNH|Actinia:0.0802521513,ShKLZALvVx|Nematostella:0.1164189432):0.0562860306):0.0644476941):0.0602086195):0.0453737654,(((WuyDyROzNK|Amphimedon:0.0818291536,HASAJGiJdj|Gigantopelta:0.1606063155):0.0628707453,(cAalMEcZkv|Dysidea:0.1257741333,(bsHrrqXzLb|Ephydatia:0.1225335180,nJGQNEkfqU|Halichondria:0.1061763479):0.0188439727):0.0530411816):0.1551878210,(ZIsoTsHyYg|Sycon:0.1813238850,CCZgYRAnYq|Sycon:0.1455359173):0.1275877542):0.0419510525):0.1034262177):0.0271528032):0.6074593161):0.7988503572):0.0414116188,(((XchqRqCxdh|Eptatretus:0.7014139511,lMyRnTENoG|Petromyzon:0.4168476910):0.2169168574,((((((xJIXtVvweK|Nothobranchius:0.4313590409,(((((HELpFSNkCD|Coregonus:0.1840361914,((((((RBAmPjSism|Anguilla:0.1101939134,gDcirUPADl|Gymnothorax:0.0895975399):0.0136634564,UbMgqYbZIK|Conger:0.0470955137):0.0116115770,wwqEkfbgoV|Synaphobranchus:0.0672411545):0.0263933863,fJznYXXzFr|Aldrovandia:0.0473353457):0.0083435635,ZZeeeAQGwq|Albula:0.0610791365):0.0113924342,SzwMjUCLGO|Megalops:0.0298035616):0.0286913917):0.0121309040,mkiIrLsnbu|Scleropages:0.1211854965):0.0631544954,(FokFnoLiUt|Amia:0.0622593209,AsgqPwtfdz|Lepisosteus:0.0604323729):0.0173760848):0.0502182313,ebBjFAeDiE|Huso:0.1015402801):0.0270456122,iVqvGCFdmm|Erpetoichthys:0.0930421228):0.0706422695):0.0471497768,((((((GNYgHMmxrx|Hymenochirus:0.1249657705,wmvqUdzXaH|Xenopus:0.1023620639):0.0165351443,(AWeXzPAkuh|Spea:0.0981776812,fIRQlZysSu|Pelobates:0.0645958601):0.0551747826):0.0309936336,(tsckLjolNz|Engystomops:0.1266202616,XGosRabsrM|Nanorana:0.0663563264):0.0277789096):0.1029986696,xvnqXEBbuK|Pleurodeles:0.1386309017):0.0280608766,IIlUtnPxnH|Geotrypetes:0.1135485219):0.0458761933,(((nLtkCBPdil|Pelodiscus:0.0365493840,(xctXzOcuoJ|Pterocnemia:0.0079670957,pPpSFFfytq|Berghia:0.0477499992):0.0425262449):0.0038592199,(QRdVzFJhJl|Euleptes:0.0457009188,njDOzEJrla|Tiliqua:0.0421619501):0.0490463199):0.0434442744,((jYynejgppE|Tachyglossus:0.1066364519,(RpmAqCghci|Homo:0.0252006918,ZbeQAGoiMw|Sorex:0.0192583776):0.0293377305):0.0097574516,xnIaTeXnth|Gracilinanus:0.0405085804):0.0838378489):0.0445707400):0.0705786101):0.0238886003,xwbUKfhKgu|Latimeria:0.1228998252):0.0441691754,(nPqrlRQAqI|Callorhinchus:0.0895772032,(krBlZLfuPp|Heterodontus:0.0345529009,(abZRebsZuU|Dasyatis:0.0592646923,YQDjjiMqbP|Amblyraja:0.0524808770):0.0695103534):0.0420665998):0.0929351586):0.0870116023,((((((wmadmvJAbJ|Geotrypetes:0.1091611188,fMBpPVNzDY|Rhinatrema:0.0648151542):0.1140399095,(((rpBglcbccH|Echinops:0.0917716356,kXuduTPOMY|Trichechus:0.0393508989):0.0237502013,hvaULsuzKO|Choloepus:0.0608516369):0.0513514998,(majfkpPYIA|Monodelphis:0.0957125398,ClZGhCBcRm|Trichosurus:0.0570944207):0.0849428591):0.1558315936):0.0791010340,pVuWOCDTOE|Latimeria:0.1484628826):0.0279578073,vDuQKFNEWn|Protopterus:0.2529380186):0.0280914125,(WdJVyQbktc|Polyodon:0.1116773712,(CkPDeuhxKs|Polypterus:0.1431711373,((QnmnuXDOSO|Amia:0.1070677665,aeeqENtjXg|Lepisosteus:0.1115316724):0.0387986103,(wPPaQEcukj|Scleropages:0.1773069771,((((sTzgnFNwqI|Synaphobranchus:0.0737671845,FcCqlhapds|Anguilla:0.0667282271):0.0101893504,XAjSBDwGGw|Gymnothorax:0.0671175933):0.0124182841,nXCgmIDRfN|Aldrovandia:0.0709447514):0.0156160455,crYGgqMjhE|Megalops:0.0407751895):0.0334396593):0.0832928257):0.0412131896):0.0328116158):0.1224289304):0.0628964109,(fsrtRGDbBm|Callorhinchus:0.1356414211,(bnVMraVLWk|Carcharodon:0.0605154920,CObPGWXZnj|Leucoraja:0.0556373181):0.0599588208):0.1037315286):0.0704433629):0.0921802215,((((((((((((mhnnkEsvZN|Gadus:0.3951069987,sZsQPXGqxx|Osmerus:0.1814203752):0.0583521238,(OsunYycnjz|Denticeps:0.2647805912,LYkzMEGsIM|Engraulis:0.2261690391):0.1061678371):0.1668197446,(((LYVZzGXTYQ|Synaphobranchus:0.0684589805,(PRnWlsJkym|Gymnothorax:0.0789033593,ibSUWwwOoP|Conger:0.0632178708):0.0148236708):0.0194541947,QWOCnlKJSY|Anguilla:0.0387528005):0.0661905755,HvuhvCqlcp|Albula:0.0743118088):0.0423196218):0.0219433180,qIAJkULQRV|Megalops:0.0587763604):0.0473314732,YsuXgUftTq|Scleropages:0.1356097697):0.0890125863,hgyRJxpFqv|Atractosteus:0.1707346786):0.0152663364,dcQfkYuVqh|Amia:0.0964230774):0.0354517846,UdZeZahffN|Acipenser:0.0921343606):0.0513607316,UzDHTMTAAo|Erpetoichthys:0.1592233283):0.1747645199,(CESFHHZIxS|Callorhinchus:0.2468062829,(leSNjlGhBa|Carcharodon:0.1274829646,(bojMIPiiWd|Pristis:0.0393486670,bojCllbYdi|Mobula:0.1080047659):0.0755592250):0.0616637893):0.1359263547):0.0423919733,((((((((gFpaaLnLUf|Spea:0.1812503008,jBNkkOSBAG|Pelobates:0.1387981645):0.0517148181,(vXiVbtYZcW|Hyla:0.1239750446,(IMVIxIoUZF|Rana:0.1369970433,NdLsdWunZg|Pseudophryne:0.0843630243):0.0401912374):0.0328058557):0.0414138796,zwTVeXOspJ|Bombina:0.1620122542):0.0285833092,(IEVuqHRMsc|Xenopus:0.0668596453,aiLSraXPLv|Hymenochirus:0.1013436906):0.0676131528):0.2456491027,jPBaWrZkJX|Pleurodeles:0.1946594024):0.0388045270,kLBNwQjjYX|Rhinatrema:0.1184690993):0.0364723496,((VoGDjSGZCa|Tachyglossus:0.0790411147,(OGPABxSmmT|Elephas:0.0519848156,BiQHgUzOaA|Antechinus:0.0684769611):0.0430191175):0.0957693733,((NEFhUhyHzr|Eublepharis:0.0292349583,ANGAUiOAIW|Sphaerodactylus:0.1035687870):0.1563939010,(EXdlmGHgiP|Emydura:0.0437041293,RAikvtugkp|Berghia:0.1297122134):0.0355446852):0.0724461319):0.0362933902):0.1058597208,PbOIwJZBqg|Latimeria:0.1456202418):0.0298724897):0.0888911958,TBOKFllXec|Protopterus:0.3841837620):0.1972976472):0.0777332069):0.0893527967,((((acqiOJwkwG|Raja:0.1644365903,FSlnniahyk|Pristis:0.0213940661):0.0564593350,TZxGAtRniV|Heterodontus:0.0588798752):0.0314722675,vWHUSlklYz|Heptranchias:0.0726227773):0.2163216260,((((((bVXpKePZES|Ascaphus:0.1315439251,((((((DsiuqkJdFF|Nanorana:0.0753902304,RFYucZYNxQ|Rana:0.0555349575):0.0657498553,PKSSZhXiHe|Eleutherodactylus:0.0647993667):0.0227164633,ZhKJmnBvuB|Pseudophryne:0.0751517556):0.0371043337,(RyUplERqOc|Spea:0.0704242153,IcDCupaOKS|Pelobates:0.0747743250):0.0219835380):0.0173606518,(CxBexPxDQt|Hymenochirus:0.0681945307,IaiwhxVOUF|Xenopus:0.0895904458):0.0316225889):0.0191914542,KYgWuRKkZT|Bombina:0.0609430803):0.0251009087):0.1523198046,tGNHPxuYwU|Pleurodeles:0.1557568725):0.0705590112,(((CThBbgxMqG|Eublepharis:0.0638336175,(KduqoPNekv|Lacerta:0.0651112325,fbUvwvPJXo|Varanus:0.0643059480):0.0289709413):0.1099108251,((yZpRimCZGG|Emydura:0.0311141949,(nwfhXPDvZr|Chelydra:0.0102210995,vlwIqXVzNF|Chelonia:0.0130596221):0.0285159472):0.0266756573,(QPDgVGIkFv|Alligator:0.0451979763,(SCXqmaHRyQ|Gallus:0.0309136460,(erKIafvbTN|Origma:0.0053242468,tOgOwBEsXb|Berghia:0.0047811749):0.0278914670):0.0425565229):0.0208192640):0.0064130850):0.0413239010,(SIqoibguTk|Tachyglossus:0.0441835123,(xFebzNvgTI|Dromiciops:0.0455510542,(rHruojyAKS|Dipodomys:0.0161733830,(nPSevTIFKH|Puma:0.0100815631,MQvgvgsJRb|Odocoileus:0.0074706976):0.0069305677):0.0125590302):0.0139612709):0.0580357588):0.0382433372):0.0082574400,GZAfkOvZCs|Rhinatrema:0.0944499880):0.0894808915,iJeEettDFc|Latimeria:0.1786402655):0.1059260029,((lhAEoqZpzv|Polypterus:0.2938758752,(((zEZTJTAAUZ|Triplophysa:0.2136015519,(((aUqVDyASSq|Megalops:0.1643382721,(((qDWvfvHGcZ|Gymnothorax:0.1136985255,lryxprXcoL|Anguilla:0.0389360127):0.0169270592,nAULuXUIcE|Synaphobranchus:0.0737455917):0.0149614129,ClWLgGUByv|Conger:0.0932108632):0.0710714045):0.0363566310,((sMtxBSxOHY|Chanos:0.0976263690,(((WEJVibwJyF|Muraenolepis:0.1191075373,(mGdBxvxZei|Lampris:0.0708046463,RolGQZUDIs|Myripristis:0.0432250324):0.0085108353):0.0375998813,(vCJyNWzbeh|Oncorhynchus:0.0266169745,CbDzSeoZLi|Esox:0.0595211890):0.0345208190):0.0081183803,FnkGoxKDuz|Hypomesus:0.0805455818):0.0215964180):0.0183026350,(UomiJesGjf|Aldrovandia:0.0628185200,((JMhzAmgYYs|Albula:0.0476726065,vfMCHtChlM|Megalops:0.0673668345):0.0104016810,(OmgqnrwKoz|Anguilla:0.0549710491,anKUZulYUK|Conger:0.0785943931):0.0321525595):0.0086639725):0.0284912335):0.0156805225):0.0047637647,(sNtcFIXrHq|Paramormyrops:0.1155267787,pdgOkIOUOp|Scleropages:0.0836249666):0.0406155508):0.0000028829):0.0296533939,(iFKYZRxiRX|Scleropages:0.1063854305,rNksZFzfGV|Brienomyrus:0.1313245189):0.0772485108):0.0173447552,((tZRAiqrRvO|Alosa:0.0629894394,iKdUGUqHBg|Clupea:0.0366388015):0.0990963588,jdMGyLvyaf|Denticeps:0.0921303931):0.0362994632):0.0713419943):0.0262454904,fDHKcOsKrS|Acipenser:0.1645364248):0.1584777683):0.1250964089):0.1912552108):0.2848970258);
+
+ALISIM COMMAND
+--------------
+To simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis, you can use the following command:
+
+--alisim simulated_MSA -t /lustre/scratch126/gengen/projects/alpha-allostery-global/git-phylo-dms/00.inputs/07.src_topiary_iqtree_sh3_sh2_kd_domain/01.out_mf/src_topiary_mf/src_topiary_mf.treefile -m "Q.insect+R8{0.156624,0.0197428,0.147864,0.183321,0.160224,0.4125,0.122002,0.718585,0.141542,1.11106,0.102172,1.66425,0.102604,2.35194,0.066969,3.69456}" --length 496
+
+To mimic the alignment used to produce this analysis, i.e. simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis *and* copying the same gap positions as the original alignment, you can use the following command:
+
+iqtree -s /lustre/scratch126/gengen/projects/alpha-allostery-global/git-phylo-dms/00.inputs/02.src_topiary/seed_to_ali/10_aligned_cleaned_trimed_sh3_sh2_kd.fasta --alisim mimicked_MSA
+
+To simulate any number of alignments in either of the two commandlines above, use the --num-alignments options, for example mimic 100 alignments you would use the command line:
+
+iqtree -s /lustre/scratch126/gengen/projects/alpha-allostery-global/git-phylo-dms/00.inputs/02.src_topiary/seed_to_ali/10_aligned_cleaned_trimed_sh3_sh2_kd.fasta --alisim mimicked_MSA --num-alignments 100
+
+For more information on using AliSim, please visit: www.iqtree.org/doc/AliSim
+
+TIME STAMP
+----------
+
+Date and time: Fri Sep  6 17:33:55 2024
+Total CPU time used: 28526.1 seconds (7h:55m:26s)
+Total wall-clock time used: 5743.18 seconds (1h:35m:43s)
+

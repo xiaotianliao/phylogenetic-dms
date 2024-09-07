@@ -1,0 +1,1060 @@
+IQ-TREE 2.3.6 built Aug  4 2024
+
+Input file name: /lustre/scratch126/gengen/projects/alpha-allostery-global/git-phylo-dms/00.inputs/02.src_topiary/seed_to_ali/10_aligned_cleaned_trimed_sh3_sh2_kd.fasta
+Type of analysis: tree reconstruction
+Random seed number: 828769
+
+REFERENCES
+----------
+
+To cite IQ-TREE please use:
+
+Bui Quang Minh, Heiko A. Schmidt, Olga Chernomor, Dominik Schrempf,
+Michael D. Woodhams, Arndt von Haeseler, and Robert Lanfear (2020)
+IQ-TREE 2: New models and efficient methods for phylogenetic inference
+in the genomic era. Mol. Biol. Evol., in press.
+https://doi.org/10.1093/molbev/msaa015
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 469 sequences with 496 amino-acid sites
+Number of constant sites: 59 (= 11.8952% of all sites)
+Number of invariant (constant or ambiguous constant) sites: 59 (= 11.8952% of all sites)
+Number of parsimony informative sites: 414
+Number of distinct site patterns: 469
+
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: Q.insect+R8
+
+State frequencies: (model)
+
+Model of rate heterogeneity: FreeRate with 8 categories
+Site proportion and rates:  (0.1628,0.0246) (0.1438,0.1884) (0.1604,0.4114) (0.1223,0.7264) (0.1320,1.1098) (0.0998,1.5976) (0.1082,2.3004) (0.0707,3.6653)
+
+ Category  Relative_rate  Proportion
+  1         0.0246         0.1628
+  2         0.1884         0.1438
+  3         0.4114         0.1604
+  4         0.7264         0.1223
+  5         1.1098         0.1320
+  6         1.5976         0.0998
+  7         2.3004         0.1082
+  8         3.6653         0.0707
+
+MAXIMUM LIKELIHOOD TREE
+-----------------------
+
+Log-likelihood of the tree: -78516.0296 (s.e. 3173.9387)
+Unconstrained log-likelihood (without tree): -3027.5265
+Number of free parameters (#branches + #model parameters): 949
+Akaike information criterion (AIC) score: 158930.0591
+Corrected Akaike information criterion (AICc) score: 1962030.0591
+Bayesian information criterion (BIC) score: 162922.0997
+
+**************************** WARNING ****************************
+Number of parameters (K, model parameters and branch lengths): 949
+Sample size (n, alignment length): 496
+
+Given that K>=n, the parameter estimates might be inaccurate.
+Thus, phylogenetic estimates should be interpreted with caution.
+
+Ideally, it is desirable that n >> K. When selecting optimal models,
+1. use AIC or BIC if n > 40K;
+2. use AICc or BIC if 40K >= n > K;
+3. be extremely cautious if n <= K
+
+To improve the situation (3), consider the following options:
+  1. Increase the sample size (n)
+  2. Decrease the number of parameters (K) to be estimated. If
+     possible:
+     a. Remove the least important sequences from the alignment
+     b. Specify some of the parameter values for the substitution
+        model (e.g., the nucleotide or amino acid frequencies)
+     c. Specify some of the parameter values for the rates-across-
+        sites model (e.g., the shape parameter for the discrete
+        Gamma distribution, the proportion of invariable sites, or
+        the rates of change for different rate categories under
+        the FreeRate model)
+
+Reference:
+Burnham KR, Anderson DR (2002). Model Selection and Multimodel
+Inference: A Practical Information-Theoretic Approach. Springer,
+New York.
+************************ END OF WARNING ***********************
+
+Total tree length (sum of branch lengths): 46.4608
+Sum of internal branch lengths: 18.2539 (39.2888% of tree length)
+
+WARNING: 61 near-zero internal branches (<0.0020) should be treated with caution
+         Such branches are denoted by '**' in the figure below
+
+NOTE: Tree is UNROOTED although outgroup taxon 'FsZTSPKlEN|Lineus' is drawn at root
+
++-------------FsZTSPKlEN|Lineus
+| (Node1)
+|  +------gtFLaGuGbO|Priapulus
++--| (Node2)
+|  |  +--XKDJaQieoU|Centruroides
+|  +--| (Node3)
+|     |  +-----BJmMnKGhgf|Amphibalanus
+|     +--| (Node4)
+|        |     +----oEPVjLbriw|Daphnia
+|        |  +--| (Node6)
+|        |  |  |           +--dBIbVxioyF|Rhopalosiphum
+|        |  |  |        +--| (Node10)
+|        |  |  |        |  +--RnxjAFtsRK|Macrosteles
+|        |  |  |     +--| (Node9)
+|        |  |  |     |  +--PwJnIMkHec|Bemisia
+|        |  |  |  +--| (Node8)
+|        |  |  |  |  |  +--MPiBhjNlXY|Nesidiocoris
+|        |  |  |  |  +--| (Node11)
+|        |  |  |  |     |  +--oJJLWhyPhp|Cimex
+|        |  |  |  |     +--| (Node12)
+|        |  |  |  |        +--rQuLQuRKpo|Rhynocoris
+|        |  |  +--| (Node7)
+|        |  |     |        +--EbBGDYmcof|Gryllus
+|        |  |     |     +--| (Node15)
+|        |  |     |     |  |           +--kFIcGobfdP|Popillia
+|        |  |     |     |  |        +--| (Node19)
+|        |  |     |     |  |        |  +--nVzgUkRcFe|Onthophagus
+|        |  |     |     |  |     +--| (Node18)
+|        |  |     |     |  |     |  +--cXbRXwhgQv|Nicrophorus
+|        |  |     |     |  |  +--| (Node17)
+|        |  |     |     |  |  |  |  +--ALNcOfikWy|Agrilus
+|        |  |     |     |  |  |  +--| (Node20)
+|        |  |     |     |  |  |     |  +--eQoLpMKnUK|Photinus
+|        |  |     |     |  |  |     +--| (Node21)
+|        |  |     |     |  |  |        +--TyXEoeKQPz|Ignelater
+|        |  |     |     |  +--| (Node16)
+|        |  |     |     |     |        +--ZAUNNWmREn|Ceutorhynchus
+|        |  |     |     |     |     +--| (Node24)
+|        |  |     |     |     |     |  +--CsXJXkBBBv|Sitophilus
+|        |  |     |     |     |  +--| (Node23)
+|        |  |     |     |     |  |  +--VugSJdKzvB|Cylas
+|        |  |     |     |     +--| (Node22)
+|        |  |     |     |        |  +--tbqyZVxWOQ|Aethina
+|        |  |     |     |        +--| (Node25)
+|        |  |     |     |           +--udKcKAQlDL|Tribolium
+|        |  |     |  +--| (Node14)
+|        |  |     |  |  +--XmyMLNisjt|Zootermopsis
+|        |  |     +--| (Node13)
+|        |  |        |  +--OtAqWpuQvS|Anabrus
+|        |  |        +--| (Node26)
+|        |  |           +--WVlYBdTCfG|Bacillus
+|        +--| (Node5)
+|           |              +--WrMuNEyfoD|Parnassius
+|           |           +--| (Node31)
+|           |           |  +--rAdwdpmqrt|Galleria
+|           |        +--| (Node30)
+|           |        |  |  +--DIvVxgZhZR|Cydia
+|           |        |  +--| (Node32)
+|           |        |     +--QmQCIQQkeH|Pieris
+|           |     +--| (Node29)
+|           |     |  |        +--EZicsFAHVk|Manduca
+|           |     |  |     +--| (Node35)
+|           |     |  |     |  +--UogHgvZmvy|Bombyx
+|           |     |  |  +--| (Node34)
+|           |     |  |  |  +--mEfOWKCvMf|Pectinophora
+|           |     |  +--| (Node33)
+|           |     |     +--CtsCZaPxqx|Hyposmocoma
+|           |  +--| (Node28)
+|           |  |  +--hyEpgkYOpJ|Amyelois
+|           +--| (Node27)
+|              +--ZJqsQUMqYW|Danaus
+|
+|                +----------------XchqRqCxdh|Eptatretus
+|           +----| (Node39)
+|           |    +---------lMyRnTENoG|Petromyzon
+|        +--| (Node38)
+|        |  |                 +---------xJIXtVvweK|Nothobranchius
+|        |  |              +--| (Node45)
+|        |  |              |  |              +---HELpFSNkCD|Coregonus
+|        |  |              |  |           +--| (Node50)
+|        |  |              |  |           |  |              +--RBAmPjSism|Anguilla
+|        |  |              |  |           |  |           +--| (Node55)
+|        |  |              |  |           |  |           |  +--gDcirUPADl|Gymnothorax
+|        |  |              |  |           |  |        +--| (Node54)
+|        |  |              |  |           |  |        |  +--UbMgqYbZIK|Conger
+|        |  |              |  |           |  |     +--| (Node53)
+|        |  |              |  |           |  |     |  +--wwqEkfbgoV|Synaphobranchus
+|        |  |              |  |           |  |  +--| (Node52)
+|        |  |              |  |           |  |  |  |  +--ZZeeeAQGwq|Albula
+|        |  |              |  |           |  |  |  +--| (Node56)
+|        |  |              |  |           |  |  |     +--fJznYXXzFr|Aldrovandia
+|        |  |              |  |           |  +--| (Node51)
+|        |  |              |  |           |     +--SzwMjUCLGO|Megalops
+|        |  |              |  |        +--| (Node49)
+|        |  |              |  |        |  +--mkiIrLsnbu|Scleropages
+|        |  |              |  |     +--| (Node48)
+|        |  |              |  |     |  |  +--FokFnoLiUt|Amia
+|        |  |              |  |     |  +--| (Node57)
+|        |  |              |  |     |     +--AsgqPwtfdz|Lepisosteus
+|        |  |              |  |  +--| (Node47)
+|        |  |              |  |  |  +--ebBjFAeDiE|Huso
+|        |  |              |  +--| (Node46)
+|        |  |              |     +--iVqvGCFdmm|Erpetoichthys
+|        |  |           +--| (Node44)
+|        |  |           |  |                 +--GNYgHMmxrx|Hymenochirus
+|        |  |           |  |              +--| (Node63)
+|        |  |           |  |              |  +--wmvqUdzXaH|Xenopus
+|        |  |           |  |           +--| (Node62)
+|        |  |           |  |           |  |  +--AWeXzPAkuh|Spea
+|        |  |           |  |           |  +--| (Node64)
+|        |  |           |  |           |     +--fIRQlZysSu|Pelobates
+|        |  |           |  |        +--| (Node61)
+|        |  |           |  |        |  |  +--tsckLjolNz|Engystomops
+|        |  |           |  |        |  +--| (Node65)
+|        |  |           |  |        |     +--XGosRabsrM|Nanorana
+|        |  |           |  |     +--| (Node60)
+|        |  |           |  |     |  +--xvnqXEBbuK|Pleurodeles
+|        |  |           |  |  +--| (Node59)
+|        |  |           |  |  |  +--IIlUtnPxnH|Geotrypetes
+|        |  |           |  +--| (Node58)
+|        |  |           |     |        +--nLtkCBPdil|Pelodiscus
+|        |  |           |     |     +--| (Node68)
+|        |  |           |     |     |  |  +--xctXzOcuoJ|Pterocnemia
+|        |  |           |     |     |  +--| (Node69)
+|        |  |           |     |     |     +--pPpSFFfytq|Berghia
+|        |  |           |     |  +--| (Node67)
+|        |  |           |     |  |  |  +--QRdVzFJhJl|Euleptes
+|        |  |           |     |  |  +--| (Node70)
+|        |  |           |     |  |     +--njDOzEJrla|Tiliqua
+|        |  |           |     +--| (Node66)
+|        |  |           |        |     +--jYynejgppE|Tachyglossus
+|        |  |           |        |  +--| (Node72)
+|        |  |           |        |  |  |  +--RpmAqCghci|Homo
+|        |  |           |        |  |  +--| (Node73)
+|        |  |           |        |  |     +--ZbeQAGoiMw|Sorex
+|        |  |           |        +--| (Node71)
+|        |  |           |           +--xnIaTeXnth|Gracilinanus
+|        |  |        +--| (Node43)
+|        |  |        |  +--xwbUKfhKgu|Latimeria
+|        |  |     +--| (Node42)
+|        |  |     |  |  +--nPqrlRQAqI|Callorhinchus
+|        |  |     |  +--| (Node74)
+|        |  |     |     |  +--krBlZLfuPp|Heterodontus
+|        |  |     |     +--| (Node75)
+|        |  |     |        |  +--abZRebsZuU|Dasyatis
+|        |  |     |        +--| (Node76)
+|        |  |     |           +--YQDjjiMqbP|Amblyraja
+|        |  |  +--| (Node41)
+|        |  |  |  |                 +--wmadmvJAbJ|Geotrypetes
+|        |  |  |  |              +--| (Node82)
+|        |  |  |  |              |  +--fMBpPVNzDY|Rhinatrema
+|        |  |  |  |           +--| (Node81)
+|        |  |  |  |           |  |        +--rpBglcbccH|Echinops
+|        |  |  |  |           |  |     +--| (Node85)
+|        |  |  |  |           |  |     |  +--kXuduTPOMY|Trichechus
+|        |  |  |  |           |  |  +--| (Node84)
+|        |  |  |  |           |  |  |  +--hvaULsuzKO|Choloepus
+|        |  |  |  |           |  +--| (Node83)
+|        |  |  |  |           |     |  +--majfkpPYIA|Monodelphis
+|        |  |  |  |           |     +--| (Node86)
+|        |  |  |  |           |        +--ClZGhCBcRm|Trichosurus
+|        |  |  |  |        +--| (Node80)
+|        |  |  |  |        |  +--pVuWOCDTOE|Latimeria
+|        |  |  |  |     +--| (Node79)
+|        |  |  |  |     |  +-----vDuQKFNEWn|Protopterus
+|        |  |  |  |  +--| (Node78)
+|        |  |  |  |  |  |  +--WdJVyQbktc|Polyodon
+|        |  |  |  |  |  +--| (Node87)
+|        |  |  |  |  |     |  +--CkPDeuhxKs|Polypterus
+|        |  |  |  |  |     +--| (Node88)
+|        |  |  |  |  |        |     +--QnmnuXDOSO|Amia
+|        |  |  |  |  |        |  +--| (Node90)
+|        |  |  |  |  |        |  |  +--aeeqENtjXg|Lepisosteus
+|        |  |  |  |  |        +--| (Node89)
+|        |  |  |  |  |           |  +---wPPaQEcukj|Scleropages
+|        |  |  |  |  |           +--| (Node91)
+|        |  |  |  |  |              |           +--sTzgnFNwqI|Synaphobranchus
+|        |  |  |  |  |              |        +--| (Node95)
+|        |  |  |  |  |              |        |  +--FcCqlhapds|Anguilla
+|        |  |  |  |  |              |     +--| (Node94)
+|        |  |  |  |  |              |     |  +--XAjSBDwGGw|Gymnothorax
+|        |  |  |  |  |              |  +--| (Node93)
+|        |  |  |  |  |              |  |  +--nXCgmIDRfN|Aldrovandia
+|        |  |  |  |  |              +--| (Node92)
+|        |  |  |  |  |                 +--crYGgqMjhE|Megalops
+|        |  |  |  +--| (Node77)
+|        |  |  |     |  +--fsrtRGDbBm|Callorhinchus
+|        |  |  |     +--| (Node96)
+|        |  |  |        |  +--bnVMraVLWk|Carcharodon
+|        |  |  |        +--| (Node97)
+|        |  |  |           +--CObPGWXZnj|Leucoraja
+|        |  +--| (Node40)
+|        |     |                                    +--------mhnnkEsvZN|Gadus
+|        |     |                                 +--| (Node108)
+|        |     |                                 |  +---sZsQPXGqxx|Osmerus
+|        |     |                             +---| (Node107)
+|        |     |                             |   |  +-----OsunYycnjz|Denticeps
+|        |     |                             |   +--| (Node109)
+|        |     |                             |      +----LYkzMEGsIM|Engraulis
+|        |     |                          +--| (Node106)
+|        |     |                          |  |        +--LYVZzGXTYQ|Synaphobranchus
+|        |     |                          |  |     +--| (Node112)
+|        |     |                          |  |     |  |  +--PRnWlsJkym|Gymnothorax
+|        |     |                          |  |     |  +--| (Node113)
+|        |     |                          |  |     |     +--ibSUWwwOoP|Conger
+|        |     |                          |  |  +--| (Node111)
+|        |     |                          |  |  |  +--QWOCnlKJSY|Anguilla
+|        |     |                          |  +--| (Node110)
+|        |     |                          |     +--HvuhvCqlcp|Albula
+|        |     |                       +--| (Node105)
+|        |     |                       |  +--qIAJkULQRV|Megalops
+|        |     |                    +--| (Node104)
+|        |     |                    |  +--YsuXgUftTq|Scleropages
+|        |     |                 +--| (Node103)
+|        |     |                 |  +---hgyRJxpFqv|Atractosteus
+|        |     |              +--| (Node102)
+|        |     |              |  +--dcQfkYuVqh|Amia
+|        |     |           +--| (Node101)
+|        |     |           |  +--UdZeZahffN|Acipenser
+|        |     |       +---| (Node100)
+|        |     |       |   +--UzDHTMTAAo|Erpetoichthys
+|        |     |    +--| (Node99)
+|        |     |    |  |     +---------TBOKFllXec|Protopterus
+|        |     |    |  |  +--| (Node115)
+|        |     |    |  |  |  |                       +---gFpaaLnLUf|Spea
+|        |     |    |  |  |  |                    +--| (Node122)
+|        |     |    |  |  |  |                    |  +--jBNkkOSBAG|Pelobates
+|        |     |    |  |  |  |                 +--| (Node121)
+|        |     |    |  |  |  |                 |  |  +--vXiVbtYZcW|Hyla
+|        |     |    |  |  |  |                 |  +--| (Node123)
+|        |     |    |  |  |  |                 |     |  +--IMVIxIoUZF|Rana
+|        |     |    |  |  |  |                 |     +--| (Node124)
+|        |     |    |  |  |  |                 |        +--NdLsdWunZg|Pseudophryne
+|        |     |    |  |  |  |              +--| (Node120)
+|        |     |    |  |  |  |              |  +--zwTVeXOspJ|Bombina
+|        |     |    |  |  |  |        +-----| (Node119)
+|        |     |    |  |  |  |        |     |  +--IEVuqHRMsc|Xenopus
+|        |     |    |  |  |  |        |     +--| (Node125)
+|        |     |    |  |  |  |        |        +--aiLSraXPLv|Hymenochirus
+|        |     |    |  |  |  |     +--| (Node118)
+|        |     |    |  |  |  |     |  +---jPBaWrZkJX|Pleurodeles
+|        |     |    |  |  |  |  +--| (Node117)
+|        |     |    |  |  |  |  |  +--kLBNwQjjYX|Rhinatrema
+|        |     |    |  |  |  +--| (Node116)
+|        |     |    |  |  |     |     +--VoGDjSGZCa|Tachyglossus
+|        |     |    |  |  |     |  +--| (Node127)
+|        |     |    |  |  |     |  |  |  +--OGPABxSmmT|Elephas
+|        |     |    |  |  |     |  |  +--| (Node128)
+|        |     |    |  |  |     |  |     +--BiQHgUzOaA|Antechinus
+|        |     |    |  |  |     +--| (Node126)
+|        |     |    |  |  |        |     +--NEFhUhyHzr|Eublepharis
+|        |     |    |  |  |        |  +--| (Node130)
+|        |     |    |  |  |        |  |  +--ANGAUiOAIW|Sphaerodactylus
+|        |     |    |  |  |        +--| (Node129)
+|        |     |    |  |  |           |  +--EXdlmGHgiP|Emydura
+|        |     |    |  |  |           +--| (Node131)
+|        |     |    |  |  |              +--RAikvtugkp|Berghia
+|        |     |    |  +--| (Node114)
+|        |     |    |     +--PbOIwJZBqg|Latimeria
+|        |     +----| (Node98)
+|        |          |  +-----CESFHHZIxS|Callorhinchus
+|        |          +--| (Node132)
+|        |             |  +--leSNjlGhBa|Carcharodon
+|        |             +--| (Node133)
+|        |                |  +--bojMIPiiWd|Pristis
+|        |                +--| (Node134)
+|        |                   +--bojCllbYdi|Mobula
+|  +-----| (Node37)
+|  |     |              +---acqiOJwkwG|Raja
+|  |     |           +--| (Node138)
+|  |     |           |  +--FSlnniahyk|Pristis
+|  |     |        +--| (Node137)
+|  |     |        |  +--TZxGAtRniV|Heterodontus
+|  |     |   +----| (Node136)
+|  |     |   |    +--vWHUSlklYz|Heptranchias
+|  |     +---| (Node135)
+|  |         |                 +--bVXpKePZES|Ascaphus
+|  |         |              +--| (Node144)
+|  |         |              |  |                 +--DsiuqkJdFF|Nanorana
+|  |         |              |  |              +--| (Node150)
+|  |         |              |  |              |  +--RFYucZYNxQ|Rana
+|  |         |              |  |           +--| (Node149)
+|  |         |              |  |           |  +--PKSSZhXiHe|Eleutherodactylus
+|  |         |              |  |        +--| (Node148)
+|  |         |              |  |        |  +--ZhKJmnBvuB|Pseudophryne
+|  |         |              |  |     +--| (Node147)
+|  |         |              |  |     |  |  +--RyUplERqOc|Spea
+|  |         |              |  |     |  +--| (Node151)
+|  |         |              |  |     |     +--IcDCupaOKS|Pelobates
+|  |         |              |  |  +--| (Node146)
+|  |         |              |  |  |  |  +--CxBexPxDQt|Hymenochirus
+|  |         |              |  |  |  +--| (Node152)
+|  |         |              |  |  |     +--IaiwhxVOUF|Xenopus
+|  |         |              |  +--| (Node145)
+|  |         |              |     +--KYgWuRKkZT|Bombina
+|  |         |           +--| (Node143)
+|  |         |           |  +--tGNHPxuYwU|Pleurodeles
+|  |         |        +--| (Node142)
+|  |         |        |  |        +--CThBbgxMqG|Eublepharis
+|  |         |        |  |     +--| (Node155)
+|  |         |        |  |     |  |  +--KduqoPNekv|Lacerta
+|  |         |        |  |     |  +--| (Node156)
+|  |         |        |  |     |     +--fbUvwvPJXo|Varanus
+|  |         |        |  |  +--| (Node154)
+|  |         |        |  |  |  |     +--yZpRimCZGG|Emydura
+|  |         |        |  |  |  |  +--| (Node158)
+|  |         |        |  |  |  |  |  |  +--nwfhXPDvZr|Chelydra
+|  |         |        |  |  |  |  |  +--| (Node159)
+|  |         |        |  |  |  |  |     +--vlwIqXVzNF|Chelonia
+|  |         |        |  |  |  +--| (Node157)
+|  |         |        |  |  |     |  +--QPDgVGIkFv|Alligator
+|  |         |        |  |  |     +--| (Node160)
+|  |         |        |  |  |        |  +--SCXqmaHRyQ|Gallus
+|  |         |        |  |  |        +--| (Node161)
+|  |         |        |  |  |           |  +--erKIafvbTN|Origma
+|  |         |        |  |  |           +--| (Node162)
+|  |         |        |  |  |              +--tOgOwBEsXb|Berghia
+|  |         |        |  +--| (Node153)
+|  |         |        |     |  +--SIqoibguTk|Tachyglossus
+|  |         |        |     +--| (Node163)
+|  |         |        |        |  +--xFebzNvgTI|Dromiciops
+|  |         |        |        +--| (Node164)
+|  |         |        |           |  +--rHruojyAKS|Dipodomys
+|  |         |        |           +--| (Node165)
+|  |         |        |              |  +--nPSevTIFKH|Puma
+|  |         |        |              +--| (Node166)
+|  |         |        |                 +--MQvgvgsJRb|Odocoileus
+|  |         |     +--| (Node141)
+|  |         |     |  +--GZAfkOvZCs|Rhinatrema
+|  |         |  +--| (Node140)
+|  |         |  |  +---iJeEettDFc|Latimeria
+|  |         +--| (Node139)
+|  |            |     +------lhAEoqZpzv|Polypterus
+|  |            |  +--| (Node168)
+|  |            |  |  |                 +---zEZTJTAAUZ|Triplophysa
+|  |            |  |  |              +--| (Node174)
+|  |            |  |  |              |  +--sMtxBSxOHY|Chanos
+|  |            |  |  |           +--| (Node173)
+|  |            |  |  |           |  |        +--WEJVibwJyF|Muraenolepis
+|  |            |  |  |           |  |     +--| (Node177)
+|  |            |  |  |           |  |     |  |  +--mGdBxvxZei|Lampris
+|  |            |  |  |           |  |     |  +--| (Node178)
+|  |            |  |  |           |  |     |     +--RolGQZUDIs|Myripristis
+|  |            |  |  |           |  |  +--| (Node176)
+|  |            |  |  |           |  |  |  |  +--vCJyNWzbeh|Oncorhynchus
+|  |            |  |  |           |  |  |  +--| (Node179)
+|  |            |  |  |           |  |  |     +--CbDzSeoZLi|Esox
+|  |            |  |  |           |  +--| (Node175)
+|  |            |  |  |           |     +--FnkGoxKDuz|Hypomesus
+|  |            |  |  |        +--| (Node172)
+|  |            |  |  |        |  |     +--sNtcFIXrHq|Paramormyrops
+|  |            |  |  |        |  |  +--| (Node181)
+|  |            |  |  |        |  |  |  +--pdgOkIOUOp|Scleropages
+|  |            |  |  |        |  +--| (Node180)
+|  |            |  |  |        |     |        +--UomiJesGjf|Aldrovandia
+|  |            |  |  |        |     |     +--| (Node184)
+|  |            |  |  |        |     |     |  +--JMhzAmgYYs|Albula
+|  |            |  |  |        |     |  +--| (Node183)
+|  |            |  |  |        |     |  |  |  +--OmgqnrwKoz|Anguilla
+|  |            |  |  |        |     |  |  +--| (Node185)
+|  |            |  |  |        |     |  |     +--anKUZulYUK|Conger
+|  |            |  |  |        |     +--| (Node182)
+|  |            |  |  |        |        +--vfMCHtChlM|Megalops
+|  |            |  |  |     +--| (Node171)
+|  |            |  |  |     |  |  +--aUqVDyASSq|Megalops
+|  |            |  |  |     |  +--| (Node186)
+|  |            |  |  |     |     |        +--qDWvfvHGcZ|Gymnothorax
+|  |            |  |  |     |     |     +--| (Node189)
+|  |            |  |  |     |     |     |  +--lryxprXcoL|Anguilla
+|  |            |  |  |     |     |  +--| (Node188)
+|  |            |  |  |     |     |  |  +--nAULuXUIcE|Synaphobranchus
+|  |            |  |  |     |     +--| (Node187)
+|  |            |  |  |     |        +--ClWLgGUByv|Conger
+|  |            |  |  |  +--| (Node170)
+|  |            |  |  |  |  |  +--iFKYZRxiRX|Scleropages
+|  |            |  |  |  |  +--| (Node190)
+|  |            |  |  |  |     +--rNksZFzfGV|Brienomyrus
+|  |            |  |  +--| (Node169)
+|  |            |  |     |     +--tZRAiqrRvO|Alosa
+|  |            |  |     |  +--| (Node192)
+|  |            |  |     |  |  +--iKdUGUqHBg|Clupea
+|  |            |  |     +--| (Node191)
+|  |            |  |        +--jdMGyLvyaf|Denticeps
+|  |            +--| (Node167)
+|  |               +---fDHKcOsKrS|Acipenser
++--| (Node36)
+   |                                                      +--HNAxJnTrKC|Acropora
+   |                                                   +--| (Node200)
+   |                                                   |  |  +--euLCveivGc|Pocillopora
+   |                                                   |  +--| (Node201)
+   |                                                   |     +--YKasFBdNeq|Stylophora
+   |                                                +--| (Node199)
+   |                                                |  +--ZJJAnwxCXw|Orbicella
+   |                                             +--| (Node198)
+   |                                             |  +--wmIiUoILdw|Porites
+   |                                          +--| (Node197)
+   |                                          |  |  +--QwESURCNFu|Actinia
+   |                                          |  +--| (Node202)
+   |                                          |     +--dXeGeQRqYa|Nematostella
+   |                                       +--| (Node196)
+   |                                       |  |       +-------FJLbjSPhcs|Rhopilema
+   |                                       |  +-------| (Node203)
+   |                                       |          |      +---frfilaRjbZ|Clytia
+   |                                       |          |   +--| (Node205)
+   |                                       |          |   |  +--DakEOeZrNF|Hydractinia
+   |                                       |          +---| (Node204)
+   |                                       |              +--BEQuHGMREs|Hydra
+   |                                    +--| (Node195)
+   |                                    |  |              +--vtSPfDuHpr|Holothuria
+   |                                    |  |           +--| (Node210)
+   |                                    |  |           |  +--SodlqMHUMm|Apostichopus
+   |                                    |  |        +--| (Node209)
+   |                                    |  |        |  |  +--MsINtRptIq|Lytechinus
+   |                                    |  |        |  +--| (Node211)
+   |                                    |  |        |     +--cHanWhAHXM|Strongylocentrotus
+   |                                    |  |     +--| (Node208)
+   |                                    |  |     |  |  +--vmkhUzyIcd|Patiria
+   |                                    |  |     |  +--| (Node212)
+   |                                    |  |     |     +--ZHsqwlCCVy|Asterias
+   |                                    |  |  +--| (Node207)
+   |                                    |  |  |  +--HHOOCyQqoV|Saccoglossus
+   |                                    |  +--| (Node206)
+   |                                    |     |  +--ftvQzruOwR|Branchiostoma
+   |                                    |     +--| (Node213)
+   |                                    |        |        +--PJQOSprcEU|Petromyzon
+   |                                    |        |     +--| (Node216)
+   |                                    |        |     |  +--TKfZpzPHVx|Petromyzon
+   |                                    |        |  +--| (Node215)
+   |                                    |        |  |  |  +--kAKLuxyWgF|Callorhinchus
+   |                                    |        |  |  +--| (Node217)
+   |                                    |        |  |     |        +--tQampOqIvw|Protopterus
+   |                                    |        |  |     |     +--| (Node220)
+   |                                    |        |  |     |     |  +--tKMYRUNKEK|Latimeria
+   |                                    |        |  |     |  +**| (Node219)
+   |                                    |        |  |     |  |  |              +--IPjYSjpPin|Pelobates
+   |                                    |        |  |     |  |  |           +**| (Node225)
+   |                                    |        |  |     |  |  |           |  +--BbuwHMKVvM|Xenopus
+   |                                    |        |  |     |  |  |        +--| (Node224)
+   |                                    |        |  |     |  |  |        |  +--itgzlgzfRH|Ascaphus
+   |                                    |        |  |     |  |  |     +--| (Node223)
+   |                                    |        |  |     |  |  |     |  +--zFMeTsQGOz|Geotrypetes
+   |                                    |        |  |     |  |  |  +--| (Node222)
+   |                                    |        |  |     |  |  |  |  +--NzxVWQBgFM|Pleurodeles
+   |                                    |        |  |     |  |  +--| (Node221)
+   |                                    |        |  |     |  |     |     +--hCBVgkNLSW|Ornithorhynchus
+   |                                    |        |  |     |  |     |  +**| (Node227)
+   |                                    |        |  |     |  |     |  |  +--ZLgBxhGosP|Platysternon
+   |                                    |        |  |     |  |     +--| (Node226)
+   |                                    |        |  |     |  |        |     +--VxNiASiKOi|Alligator
+   |                                    |        |  |     |  |        |  +--| (Node229)
+   |                                    |        |  |     |  |        |  |  |  +**BPeGLNhgQi|Tiliqua
+   |                                    |        |  |     |  |        |  |  +--| (Node230)
+   |                                    |        |  |     |  |        |  |     +--mHRToARrvn|Euleptes
+   |                                    |        |  |     |  |        +--| (Node228)
+   |                                    |        |  |     |  |           |        +**VwCzEFvVnQ|Molossus
+   |                                    |        |  |     |  |           |     +--| (Node233)
+   |                                    |        |  |     |  |           |     |  +--AvUuuqiHRc|Rattus
+   |                                    |        |  |     |  |           |  +--| (Node232)
+   |                                    |        |  |     |  |           |  |  +**lEhdWDHQvF|Orycteropus
+   |                                    |        |  |     |  |           +--| (Node231)
+   |                                    |        |  |     |  |              +**FNXcwRFPnt|Gracilinanus
+   |                                    |        |  |     +--| (Node218)
+   |                                    |        |  |        |                    +--faQguLlryg|Erpetoichthys
+   |                                    |        |  |        |                 +--| (Node240)
+   |                                    |        |  |        |                 |  +--RCSKgvkCOL|Scleropages
+   |                                    |        |  |        |              +**| (Node239)
+   |                                    |        |  |        |              |  +--lBHJxjPCLe|Scleropages
+   |                                    |        |  |        |           +--| (Node238)
+   |                                    |        |  |        |           |  |     +--nxnxYZxMRp|Gadus
+   |                                    |        |  |        |           |  |  +--| (Node242)
+   |                                    |        |  |        |           |  |  |  +--MEkEKTcVnj|Thunnus
+   |                                    |        |  |        |           |  +**| (Node241)
+   |                                    |        |  |        |           |     +--qhnxNabpLX|Atractosteus
+   |                                    |        |  |        |        +**| (Node237)
+   |                                    |        |  |        |        |  |     +**iWVgelljJZ|Anguilla
+   |                                    |        |  |        |        |  |  +**| (Node244)
+   |                                    |        |  |        |        |  |  |  +**WLWUhWUBcM|Megalops
+   |                                    |        |  |        |        |  +**| (Node243)
+   |                                    |        |  |        |        |     +**QkyQvniPYT|Aldrovandia
+   |                                    |        |  |        |     +--| (Node236)
+   |                                    |        |  |        |     |  |  +**WxozCwLmHK|Polyodon
+   |                                    |        |  |        |     |  +--| (Node245)
+   |                                    |        |  |        |     |     +**GVdinLCwRb|Acipenser
+   |                                    |        |  |        |  +**| (Node235)
+   |                                    |        |  |        |  |  +--XfAJTkGJYb|Oncorhynchus
+   |                                    |        |  |        +--| (Node234)
+   |                                    |        |  |           |  +--ursNIDLjIE|Paramormyrops
+   |                                    |        |  |           +--| (Node246)
+   |                                    |        |  |              +--xEpLbEQGEA|Trichomycterus
+   |                                    |        +--| (Node214)
+   |                                    |           |                                      +--CaLEJvHHfC|Megalops
+   |                                    |           |                                   +--| (Node259)
+   |                                    |           |                                   |  |  +--simBLjKpaj|Aldrovandia
+   |                                    |           |                                   |  +--| (Node260)
+   |                                    |           |                                   |     |           +--ipOMBJpnVC|Gymnothorax
+   |                                    |           |                                   |     |        +**| (Node264)
+   |                                    |           |                                   |     |        |  +--CDVuvYBSWn|Anguilla
+   |                                    |           |                                   |     |     +--| (Node263)
+   |                                    |           |                                   |     |     |  +--YNRUnoUHUr|Synaphobranchus
+   |                                    |           |                                   |     |  +--| (Node262)
+   |                                    |           |                                   |     |  |  +--pLwIiSJjWB|Conger
+   |                                    |           |                                   |     +--| (Node261)
+   |                                    |           |                                   |        +--anMVeWcHPH|Albula
+   |                                    |           |                                +**| (Node258)
+   |                                    |           |                                |  +--cOUThLFnku|Muraenolepis
+   |                                    |           |                             +--| (Node257)
+   |                                    |           |                             |  |     +--ENgBghAZno|Scleropages
+   |                                    |           |                             |  |  +**| (Node266)
+   |                                    |           |                             |  |  |  +--EfXuwmTcLe|Polyodon
+   |                                    |           |                             |  +--| (Node265)
+   |                                    |           |                             |     |  +--NkHpXRMoqh|Engraulis
+   |                                    |           |                             |     +--| (Node267)
+   |                                    |           |                             |        +--HdaRuNQmgM|Clupea
+   |                                    |           |                          +**| (Node256)
+   |                                    |           |                          |  |  +--CFxmFLegVS|Denticeps
+   |                                    |           |                          |  +--| (Node268)
+   |                                    |           |                          |     +--lfRUfBXkyD|Chanos
+   |                                    |           |                       +--| (Node255)
+   |                                    |           |                       |  |     +--AmktbkMSRv|Conger
+   |                                    |           |                       |  |  +--| (Node270)
+   |                                    |           |                       |  |  |  |  +--yabeBZzLKc|Gymnothorax
+   |                                    |           |                       |  |  |  +**| (Node271)
+   |                                    |           |                       |  |  |     +**gFAXsnUJyy|Albula
+   |                                    |           |                       |  +--| (Node269)
+   |                                    |           |                       |     +--GjmuZkMFrY|Anguilla
+   |                                    |           |                    +**| (Node254)
+   |                                    |           |                    |  +--eYVQBtbHJE|Lampris
+   |                                    |           |                 +**| (Node253)
+   |                                    |           |                 |  |  +--SsAFTRKlFB|Danio
+   |                                    |           |                 |  +--| (Node272)
+   |                                    |           |                 |     +**NqedEkUmvl|Megalops
+   |                                    |           |              +--| (Node252)
+   |                                    |           |              |  |     +--CmPFCckzvx|Osmerus
+   |                                    |           |              |  |  +**| (Node274)
+   |                                    |           |              |  |  |  +--kBBiDmfHUG|Salvelinus
+   |                                    |           |              |  +--| (Node273)
+   |                                    |           |              |     +--MtfrQsWoRP|Paramormyrops
+   |                                    |           |           +--| (Node251)
+   |                                    |           |           |  |        +--FjygZorMQm|Brienomyrus
+   |                                    |           |           |  |     +--| (Node277)
+   |                                    |           |           |  |     |  +--cAKORgebSH|Scleropages
+   |                                    |           |           |  |  +--| (Node276)
+   |                                    |           |           |  |  |  +--YsMAqJvQEt|Atractosteus
+   |                                    |           |           |  +**| (Node275)
+   |                                    |           |           |     +--uBPootHclX|Amia
+   |                                    |           |        +--| (Node250)
+   |                                    |           |        |  |        +**DmMidyXKTE|Chiloscyllium
+   |                                    |           |        |  |     +**| (Node280)
+   |                                    |           |        |  |     |  +**AlUZrCvuqA|Heptranchias
+   |                                    |           |        |  |  +--| (Node279)
+   |                                    |           |        |  |  |  |  +--mDWOkyrBCZ|Callorhinchus
+   |                                    |           |        |  |  |  +--| (Node281)
+   |                                    |           |        |  |  |     +--xgxWROHtvc|Pristis
+   |                                    |           |        |  +--| (Node278)
+   |                                    |           |        |     +--IfSXHjXAgB|Latimeria
+   |                                    |           |     +**| (Node249)
+   |                                    |           |     |  |              +--hWkLNbbnyh|Bombina
+   |                                    |           |     |  |           +--| (Node286)
+   |                                    |           |     |  |           |  |     +--jncYQCYuNv|Bufo
+   |                                    |           |     |  |           |  |  +--| (Node288)
+   |                                    |           |     |  |           |  |  |  |        +--GGXhyMGUsJ|Spea
+   |                                    |           |     |  |           |  |  |  |     +--| (Node291)
+   |                                    |           |     |  |           |  |  |  |     |  +--lvYgiJajeH|Pelobates
+   |                                    |           |     |  |           |  |  |  |  +**| (Node290)
+   |                                    |           |     |  |           |  |  |  |  |  |  +--pfXspRTDkQ|Ascaphus
+   |                                    |           |     |  |           |  |  |  |  |  +--| (Node292)
+   |                                    |           |     |  |           |  |  |  |  |     +**iJJtoELTVf|Hymenochirus
+   |                                    |           |     |  |           |  |  |  +**| (Node289)
+   |                                    |           |     |  |           |  |  |     |  +--zxcWepKWci|Xenopus
+   |                                    |           |     |  |           |  |  |     +--| (Node293)
+   |                                    |           |     |  |           |  |  |        +**gArxVZTzQD|Rana
+   |                                    |           |     |  |           |  +--| (Node287)
+   |                                    |           |     |  |           |     +--UamxjpMZEK|Pseudophryne
+   |                                    |           |     |  |        +--| (Node285)
+   |                                    |           |     |  |        |  +--kDdGYZLqCo|Pleurodeles
+   |                                    |           |     |  |     +--| (Node284)
+   |                                    |           |     |  |     |  |  +--ioJLiZbROa|Erinaceus
+   |                                    |           |     |  |     |  +--| (Node294)
+   |                                    |           |     |  |     |     |        +**FJlHZRAech|Orycteropus
+   |                                    |           |     |  |     |     |     +**| (Node297)
+   |                                    |           |     |  |     |     |     |  +**aEWFlmmkRx|Homo
+   |                                    |           |     |  |     |     |  +**| (Node296)
+   |                                    |           |     |  |     |     |  |  +**RIZRTtwIbZ|Puma
+   |                                    |           |     |  |     |     +**| (Node295)
+   |                                    |           |     |  |     |        +**PjrKFkoTJW|Tupaia
+   |                                    |           |     |  |  +**| (Node283)
+   |                                    |           |     |  |  |  |  +--IRXCqdkljh|Geotrypetes
+   |                                    |           |     |  |  |  +--| (Node298)
+   |                                    |           |     |  |  |     +**AEfwFoXpKe|Rhinatrema
+   |                                    |           |     |  +--| (Node282)
+   |                                    |           |     |     |           +--IHxLSzjYDZ|Tachyglossus
+   |                                    |           |     |     |        +--| (Node302)
+   |                                    |           |     |     |        |  +--uBDRBoMzVz|Trichosurus
+   |                                    |           |     |     |     +**| (Node301)
+   |                                    |           |     |     |     |  |  +--xUKOuXipGQ|Odontophorus
+   |                                    |           |     |     |     |  +--| (Node303)
+   |                                    |           |     |     |     |     |     +**jFDKMxbecU|Eudromia
+   |                                    |           |     |     |     |     |  +**| (Node305)
+   |                                    |           |     |     |     |     |  |  +**CgDXpfgQAU|Berghia
+   |                                    |           |     |     |     |     +**| (Node304)
+   |                                    |           |     |     |     |        +**wuRCFvRBvq|Myiagra
+   |                                    |           |     |     |  +**| (Node300)
+   |                                    |           |     |     |  |  |  +**cOFHJAYSyO|Alligator
+   |                                    |           |     |     |  |  +**| (Node306)
+   |                                    |           |     |     |  |     +**kgARxlPZVK|Platysternon
+   |                                    |           |     |     +--| (Node299)
+   |                                    |           |     |        |     +--OzBzYMJUep|Rhineura
+   |                                    |           |     |        |  +**| (Node308)
+   |                                    |           |     |        |  |  |  +**vhtOFFFkFW|Heteronotia
+   |                                    |           |     |        |  |  +**| (Node309)
+   |                                    |           |     |        |  |     +**HHHYIuPDuD|Pogona
+   |                                    |           |     |        +--| (Node307)
+   |                                    |           |     |           +--xJNEXVjXKt|Hemicordylus
+   |                                    |           |  +--| (Node248)
+   |                                    |           |  |  +--MDCagLeSrU|Polypterus
+   |                                    |           +--| (Node247)
+   |                                    |              +--kNsLHVwFOC|Protopterus
+   |                   +----------------| (Node194)
+   |                   |                |     +--sSTYUMAeKz|Lingula
+   |                   |                |  +--| (Node311)
+   |                   |                |  |  |        +--nKMELdelvS|Biomphalaria
+   |                   |                |  |  |     +--| (Node314)
+   |                   |                |  |  |     |  +--KGUUKGEbyT|Physa
+   |                   |                |  |  |  +--| (Node313)
+   |                   |                |  |  |  |  +--KyltisCzTz|Pomacea
+   |                   |                |  |  +--| (Node312)
+   |                   |                |  |     |                 +--PiQtsKinzj|Mya
+   |                   |                |  |     |              +--| (Node320)
+   |                   |                |  |     |              |  +--IEjaWqxkal|Ruditapes
+   |                   |                |  |     |           +--| (Node319)
+   |                   |                |  |     |           |  +--yFDxesRRkl|Dreissena
+   |                   |                |  |     |        +--| (Node318)
+   |                   |                |  |     |        |  |  +--lIelLPGcKJ|Ylistrum
+   |                   |                |  |     |        |  +--| (Node321)
+   |                   |                |  |     |        |     +--uJcWRwvgOq|Saccostrea
+   |                   |                |  |     |     +--| (Node317)
+   |                   |                |  |     |     |  |  +--wLbkHbjASc|Patella
+   |                   |                |  |     |     |  +--| (Node322)
+   |                   |                |  |     |     |     |  +--dFtVlNAYrh|Gigantopelta
+   |                   |                |  |     |     |     +--| (Node323)
+   |                   |                |  |     |     |        +--QgyqBPeXme|Haliotis
+   |                   |                |  |     |  +--| (Node316)
+   |                   |                |  |     |  |  +--FHGYhvbZAJ|Liolophura
+   |                   |                |  |     +--| (Node315)
+   |                   |                |  |        +--iAIvsmnKqf|Octopus
+   |                   |                +--| (Node310)
+   |                   |                   |           +---dzxXnHdbLe|Galendromus
+   |                   |                   |        +--| (Node327)
+   |                   |                   |        |  |  +--DduaDNARUo|Ixodes
+   |                   |                   |        |  +--| (Node328)
+   |                   |                   |        |     +--HgjnuoHSWE|Dermacentor
+   |                   |                   |     +--| (Node326)
+   |                   |                   |     |  |  +--gJqNQnpxyA|Uloborus
+   |                   |                   |     |  +--| (Node329)
+   |                   |                   |     |     +--KdCdVAJhbR|Stegodyphus
+   |                   |                   |  +--| (Node325)
+   |                   |                   |  |  +--GsqSmPWrJJ|Cordylochernes
+   |                   |                   +--| (Node324)
+   |                   |                      |                 +--aVushdIKOk|Cydia
+   |                   |                      |              +--| (Node335)
+   |                   |                      |              |  |     +--NalhyOtwYH|Pectinophora
+   |                   |                      |              |  |  +--| (Node337)
+   |                   |                      |              |  |  |  +--tgdaDywsIp|Spodoptera
+   |                   |                      |              |  +--| (Node336)
+   |                   |                      |              |     +--kHiQMWMaDt|Aricia
+   |                   |                      |           +--| (Node334)
+   |                   |                      |           |  |  +**cCVOQZjVPU|Ctenocephalides
+   |                   |                      |           |  +--| (Node338)
+   |                   |                      |           |     +**nYgYpSiEee|Ctenocephalides
+   |                   |                      |        +--| (Node333)
+   |                   |                      |        |  |           +--ogkKYRQmrF|Neodiprion
+   |                   |                      |        |  |        +--| (Node342)
+   |                   |                      |        |  |        |  |        +--CSUtSSIuhF|Prorops
+   |                   |                      |        |  |        |  |     +--| (Node345)
+   |                   |                      |        |  |        |  |     |  +--vKlPwQElPs|Ampulex
+   |                   |                      |        |  |        |  |  +--| (Node344)
+   |                   |                      |        |  |        |  |  |  +--spVSfUqVqU|Orussus
+   |                   |                      |        |  |        |  +**| (Node343)
+   |                   |                      |        |  |        |     +--kbuprtArKR|Melipona
+   |                   |                      |        |  |     +--| (Node341)
+   |                   |                      |        |  |     |  |  +--daMcqNmHVC|Chelonus
+   |                   |                      |        |  |     |  +--| (Node346)
+   |                   |                      |        |  |     |     +--oqnOgpZpjt|Diachasma
+   |                   |                      |        |  |  +--| (Node340)
+   |                   |                      |        |  |  |  +**FTZEoSYHAb|Cephus
+   |                   |                      |        |  +--| (Node339)
+   |                   |                      |        |     |  +--eDsXTItiKJ|Eretmocerus
+   |                   |                      |        |     +--| (Node347)
+   |                   |                      |        |        +--swXgbQkSDv|Nasonia
+   |                   |                      |     +--| (Node332)
+   |                   |                      |     |  +--alUyhDUOad|Nicrophorus
+   |                   |                      |  +--| (Node331)
+   |                   |                      |  |  |        +--HmoTiBcadJ|Diaphorina
+   |                   |                      |  |  |     +--| (Node350)
+   |                   |                      |  |  |     |  |  +**emIZwJtJCX|Macrosiphum
+   |                   |                      |  |  |     |  +--| (Node351)
+   |                   |                      |  |  |     |     +--gGIzOKeIwS|Daktulosphaira
+   |                   |                      |  |  |  +--| (Node349)
+   |                   |                      |  |  |  |  |  +--TCBryYRChr|Polyplax
+   |                   |                      |  |  |  |  +--| (Node352)
+   |                   |                      |  |  |  |     +--SbLIIkXjyZ|Pediculus
+   |                   |                      |  |  +--| (Node348)
+   |                   |                      |  |     |                 +--jJIoADHMCE|Nesidiocoris
+   |                   |                      |  |     |              +--| (Node358)
+   |                   |                      |  |     |              |  +--deuYiZPRVK|Nezara
+   |                   |                      |  |     |           +--| (Node357)
+   |                   |                      |  |     |           |  +--RNbXPYcCpO|Bacillus
+   |                   |                      |  |     |        +--| (Node356)
+   |                   |                      |  |     |        |  +**yWFYmQcMtT|Homalodisca
+   |                   |                      |  |     |     +--| (Node355)
+   |                   |                      |  |     |     |  +--cLEggCzCOR|Bemisia
+   |                   |                      |  |     |  +--| (Node354)
+   |                   |                      |  |     |  |  +--RQCadhUqeR|Nilaparvata
+   |                   |                      |  |     +--| (Node353)
+   |                   |                      |  |        |  +--LMCAhbcwex|Parthenolecanium
+   |                   |                      |  |        +--| (Node359)
+   |                   |                      |  |           +--ajUjrWbRcm|Planococcus
+   |                   |                      +--| (Node330)
+   |                   |                         |  +--fhJsfxpdrV|Cloeon
+   |                   |                         +--| (Node360)
+   |                   |                            +**zMTEXIegZH|Neocloeon
+   +-------------------| (Node193)
+                       |                     +---------GJeVEpiMoq|Oscarella
+                       |                  +--| (Node364)
+                       |                  |  |     +------BbwRArzAcw|Sycon
+                       |                  |  |  +--| (Node366)
+                       |                  |  |  |  |  +--xcHYJAzfzK|Parthenolecanium
+                       |                  |  |  |  +--| (Node367)
+                       |                  |  |  |     |  +--ZRohTINQSA|Lingula
+                       |                  |  |  |     +--| (Node368)
+                       |                  |  |  |        |  +--AGvXZgGBtq|Lineus
+                       |                  |  |  |        +--| (Node369)
+                       |                  |  |  |           |  +--wTMUeevdEZ|Owenia
+                       |                  |  |  |           +--| (Node370)
+                       |                  |  |  |              +--NlepuccEIh|Lamellibrachia
+                       |                  |  +--| (Node365)
+                       |                  |     |  +----ZykZmQFWuC|Ephydatia
+                       |                  |     +--| (Node371)
+                       |                  |        +----CCYuQvdbHc|Dysidea
+                       |               +--| (Node363)
+                       |               |  |                                           +--AeRTQsmrZm|Scleropages
+                       |               |  |                                        +--| (Node384)
+                       |               |  |                                        |  +--qkBtMyQNpl|Brienomyrus
+                       |               |  |                                     +--| (Node383)
+                       |               |  |                                     |  +--kAZySGXBQN|Xiphophorus
+                       |               |  |                                  +--| (Node382)
+                       |               |  |                                  |  +--PMGNDBQWcR|Anguilla
+                       |               |  |                               +--| (Node381)
+                       |               |  |                               |  +--nEangzEWRE|Gymnothorax
+                       |               |  |                            +**| (Node380)
+                       |               |  |                            |  |              +--oNOGYGHTQw|Nothobranchius
+                       |               |  |                            |  |           +--| (Node389)
+                       |               |  |                            |  |           |  |              +--RIXbwOaiPr|Larimichthys
+                       |               |  |                            |  |           |  |           +--| (Node394)
+                       |               |  |                            |  |           |  |           |  +--PAFqKKBuky|Archocentrus
+                       |               |  |                            |  |           |  |        +--| (Node393)
+                       |               |  |                            |  |           |  |        |  +--KrIWeQzTgi|Thalassophryne
+                       |               |  |                            |  |           |  |     +**| (Node392)
+                       |               |  |                            |  |           |  |     |  |     +--JMCXEwZYbf|Epinephelus
+                       |               |  |                            |  |           |  |     |  |  +**| (Node396)
+                       |               |  |                            |  |           |  |     |  |  |  +--ULrjZPEzlr|Micropterus
+                       |               |  |                            |  |           |  |     |  +--| (Node395)
+                       |               |  |                            |  |           |  |     |     +--yjsqjEZoLS|Scophthalmus
+                       |               |  |                            |  |           |  |  +**| (Node391)
+                       |               |  |                            |  |           |  |  |  +**hRYdBLBLiI|Amphiprion
+                       |               |  |                            |  |           |  +--| (Node390)
+                       |               |  |                            |  |           |     +--kkYdtPQLmh|Lucifuga
+                       |               |  |                            |  |        +--| (Node388)
+                       |               |  |                            |  |        |  +--dDQWedKHtt|Lampris
+                       |               |  |                            |  |     +--| (Node387)
+                       |               |  |                            |  |     |  +--HrULLggdCp|Gadus
+                       |               |  |                            |  |  +--| (Node386)
+                       |               |  |                            |  |  |  +--DZqiwaizeP|Oncorhynchus
+                       |               |  |                            |  +--| (Node385)
+                       |               |  |                            |     |        +--lZVeUHlASy|Electrophorus
+                       |               |  |                            |     |     +--| (Node399)
+                       |               |  |                            |     |     |  +--LQMrHPrFIY|Neoarius
+                       |               |  |                            |     |  +--| (Node398)
+                       |               |  |                            |     |  |  +--MfMWNGjLjP|Sardina
+                       |               |  |                            |     +--| (Node397)
+                       |               |  |                            |        +--BUHsVXuHBO|Chanos
+                       |               |  |                         +--| (Node379)
+                       |               |  |                         |  |                    +--fbdSDoQMhL|Austrofundulus
+                       |               |  |                         |  |                 +--| (Node406)
+                       |               |  |                         |  |                 |  +--RuHneaqwQr|Nematolebias
+                       |               |  |                         |  |              +--| (Node405)
+                       |               |  |                         |  |              |  +--jWDHSWHnnP|Bagarius
+                       |               |  |                         |  |           +--| (Node404)
+                       |               |  |                         |  |           |  +--BPuovoEXpC|Chanos
+                       |               |  |                         |  |        +--| (Node403)
+                       |               |  |                         |  |        |  |     +--XaXsUWTkxD|Triplophysa
+                       |               |  |                         |  |        |  |  +--| (Node408)
+                       |               |  |                         |  |        |  |  |  +--OMtrKBKgWt|Danio
+                       |               |  |                         |  |        |  +--| (Node407)
+                       |               |  |                         |  |        |     +--nyJhkBrjiy|Denticeps
+                       |               |  |                         |  |     +--| (Node402)
+                       |               |  |                         |  |     |  +--ZzLSqGwClH|Astyanax
+                       |               |  |                         |  |  +--| (Node401)
+                       |               |  |                         |  |  |  |                                +--NaeBWESNWe|Nerophis
+                       |               |  |                         |  |  |  |                             +--| (Node419)
+                       |               |  |                         |  |  |  |                             |  +--GdpYVAWjLG|Knipowitschia
+                       |               |  |                         |  |  |  |                          +--| (Node418)
+                       |               |  |                         |  |  |  |                          |  +--OnkmJYPdyy|Parambassis
+                       |               |  |                         |  |  |  |                       +--| (Node417)
+                       |               |  |                         |  |  |  |                       |  +--ZMqvjIKvQm|Melanotaenia
+                       |               |  |                         |  |  |  |                    +--| (Node416)
+                       |               |  |                         |  |  |  |                    |  |  +--aWnxqgegTn|Betta
+                       |               |  |                         |  |  |  |                    |  +--| (Node420)
+                       |               |  |                         |  |  |  |                    |     +--KqsWouqUSv|Thalassophryne
+                       |               |  |                         |  |  |  |                 +**| (Node415)
+                       |               |  |                         |  |  |  |                 |  |  +**aAdmToyfKK|Thunnus
+                       |               |  |                         |  |  |  |                 |  +**| (Node421)
+                       |               |  |                         |  |  |  |                 |     +--PZOdfgBWTC|Scomber
+                       |               |  |                         |  |  |  |              +--| (Node414)
+                       |               |  |                         |  |  |  |              |  +--UUwloFYVqs|Oreochromis
+                       |               |  |                         |  |  |  |           +**| (Node413)
+                       |               |  |                         |  |  |  |           |  |  +--tZzcBACoAy|Gadus
+                       |               |  |                         |  |  |  |           |  +--| (Node422)
+                       |               |  |                         |  |  |  |           |     |  +--WSNBavUJBO|Pleuronectes
+                       |               |  |                         |  |  |  |           |     +--| (Node423)
+                       |               |  |                         |  |  |  |           |        +--tySroThLag|Dissostichus
+                       |               |  |                         |  |  |  |        +--| (Node412)
+                       |               |  |                         |  |  |  |        |  +--dLKeTbhqug|Micropterus
+                       |               |  |                         |  |  |  |     +--| (Node411)
+                       |               |  |                         |  |  |  |     |  +--QsYcTMGQky|Plectropomus
+                       |               |  |                         |  |  |  |  +--| (Node410)
+                       |               |  |                         |  |  |  |  |  +--LplxsSrJbL|Lampris
+                       |               |  |                         |  |  |  +--| (Node409)
+                       |               |  |                         |  |  |     +**TdsPYKRmjy|Myripristis
+                       |               |  |                         |  +--| (Node400)
+                       |               |  |                         |     |     +--AWWmrDsPCS|Dallia
+                       |               |  |                         |     |  +--| (Node425)
+                       |               |  |                         |     |  |  +--UiFmeUQadN|Oncorhynchus
+                       |               |  |                         |     +--| (Node424)
+                       |               |  |                         |        +--qExKFaeGZA|Paramormyrops
+                       |               |  |                      +--| (Node378)
+                       |               |  |                      |  +--dWAqKoNeMW|Atractosteus
+                       |               |  |                   +--| (Node377)
+                       |               |  |                   |  +--tBJwOxnpAK|Polyodon
+                       |               |  |                +--| (Node376)
+                       |               |  |                |  +--toJtUmAnWq|Polypterus
+                       |               |  |             +--| (Node375)
+                       |               |  |             |  |              +--ydDKZFfYgK|Xenopus
+                       |               |  |             |  |           +--| (Node430)
+                       |               |  |             |  |           |  |        +--vlCLHKXUnM|Monodon
+                       |               |  |             |  |           |  |     +--| (Node433)
+                       |               |  |             |  |           |  |     |  +**FgwpYHCgPp|Talpa
+                       |               |  |             |  |           |  |  +**| (Node432)
+                       |               |  |             |  |           |  |  |  |     +**HGMBNeoSRf|Eptesicus
+                       |               |  |             |  |           |  |  |  |  +**| (Node435)
+                       |               |  |             |  |           |  |  |  |  |  +**AcGVCmYRAe|Manis
+                       |               |  |             |  |           |  |  |  +**| (Node434)
+                       |               |  |             |  |           |  |  |     +**RWjPNNOwoA|Homo
+                       |               |  |             |  |           |  +--| (Node431)
+                       |               |  |             |  |           |     +--rJXRFxWZOQ|Trichechus
+                       |               |  |             |  |        +**| (Node429)
+                       |               |  |             |  |        |  +**LmVcntlwiT|Heliornis
+                       |               |  |             |  |     +--| (Node428)
+                       |               |  |             |  |     |  |           +--lsFXhnJLmo|Varanus
+                       |               |  |             |  |     |  |        +**| (Node439)
+                       |               |  |             |  |     |  |        |  +--ahRWKOEkHT|Poecile
+                       |               |  |             |  |     |  |     +**| (Node438)
+                       |               |  |             |  |     |  |     |  |              +--nVwTIEtejS|Chunga
+                       |               |  |             |  |     |  |     |  |           +**| (Node444)
+                       |               |  |             |  |     |  |     |  |           |  +--tADRMUJSUs|Melanocharis
+                       |               |  |             |  |     |  |     |  |        +**| (Node443)
+                       |               |  |             |  |     |  |     |  |        |  |  +**tVYNvxirRH|Dasyornis
+                       |               |  |             |  |     |  |     |  |        |  +**| (Node445)
+                       |               |  |             |  |     |  |     |  |        |     +**fVcjwXYrSo|Pomatostomus
+                       |               |  |             |  |     |  |     |  |     +**| (Node442)
+                       |               |  |             |  |     |  |     |  |     |  |  +**kTbshfrTFr|Chaetops
+                       |               |  |             |  |     |  |     |  |     |  +**| (Node446)
+                       |               |  |             |  |     |  |     |  |     |     |     +**HYqyWYYllq|Daphoenositta
+                       |               |  |             |  |     |  |     |  |     |     |  +**| (Node448)
+                       |               |  |             |  |     |  |     |  |     |     |  |  +**lAhFyCaHhw|Drymodes
+                       |               |  |             |  |     |  |     |  |     |     +**| (Node447)
+                       |               |  |             |  |     |  |     |  |     |        +**ARxtPvCwRs|Herpetotheres
+                       |               |  |             |  |     |  |     |  |  +**| (Node441)
+                       |               |  |             |  |     |  |     |  |  |  +**lVSpEhxxrY|Amazona
+                       |               |  |             |  |     |  |     |  +**| (Node440)
+                       |               |  |             |  |     |  |     |     |  +**SGXOmVqJdI|Haliaeetus
+                       |               |  |             |  |     |  |     |     +**| (Node449)
+                       |               |  |             |  |     |  |     |        |     +**yAeclotHgD|Nothocercus
+                       |               |  |             |  |     |  |     |        |  +**| (Node451)
+                       |               |  |             |  |     |  |     |        |  |  +**ruNOMFzfbW|Notiomystis
+                       |               |  |             |  |     |  |     |        +**| (Node450)
+                       |               |  |             |  |     |  |     |           +**mgfbnrsaqk|Tachuris
+                       |               |  |             |  |     |  |  +**| (Node437)
+                       |               |  |             |  |     |  |  |  |  +--sCSqGonZYs|Alligator
+                       |               |  |             |  |     |  |  |  +--| (Node452)
+                       |               |  |             |  |     |  |  |     |  +--FKJRjwqRcM|Vombatus
+                       |               |  |             |  |     |  |  |     +**| (Node453)
+                       |               |  |             |  |     |  |  |        +--AJUOYqPHYI|Terrapene
+                       |               |  |             |  |     |  +--| (Node436)
+                       |               |  |             |  |     |     +--cNQOICfMpL|Acanthisitta
+                       |               |  |             |  |  +--| (Node427)
+                       |               |  |             |  |  |  +--lZYZeaiSlf|Latimeria
+                       |               |  |             |  +--| (Node426)
+                       |               |  |             |     +--LRppIyKlCm|Protopterus
+                       |               |  |     +-------| (Node374)
+                       |               |  |     |       +--vPLHcLmiJP|Heptranchias
+                       |               |  |  +--| (Node373)
+                       |               |  |  |  |  +---UakjwmudIe|Rhopilema
+                       |               |  |  |  +--| (Node454)
+                       |               |  |  |     |  +--pRaZPBYNdC|Hydra
+                       |               |  |  |     +--| (Node455)
+                       |               |  |  |        |     +--zxyJBMMYwF|Hydractinia
+                       |               |  |  |        |  +--| (Node457)
+                       |               |  |  |        |  |  +--QAdioKLipL|Hydractinia
+                       |               |  |  |        +--| (Node456)
+                       |               |  |  |           +--rYHPogklDD|Clytia
+                       |               |  +--| (Node372)
+                       |               |     |  +-----GtcgFDNwBv|Dendronephthya
+                       |               |     +--| (Node458)
+                       |               |        |     +--uZWbxHWPig|Acropora
+                       |               |        |  +--| (Node460)
+                       |               |        |  |  |  +--QdwXoHWfEp|Stylophora
+                       |               |        |  |  +--| (Node461)
+                       |               |        |  |     +--CYdjfHRqcs|Orbicella
+                       |               |        +--| (Node459)
+                       |               |           |  +--tWCWCsWGNH|Actinia
+                       |               |           +--| (Node462)
+                       |               |              +--ShKLZALvVx|Nematostella
+                       |            +--| (Node362)
+                       |            |  |  +---ZIsoTsHyYg|Sycon
+                       |            |  +--| (Node463)
+                       |            |     +--CCZgYRAnYq|Sycon
+                       +------------| (Node361)
+                                    |     +--WuyDyROzNK|Amphimedon
+                                    |  +--| (Node465)
+                                    |  |  +--HASAJGiJdj|Gigantopelta
+                                    +--| (Node464)
+                                       |  +--cAalMEcZkv|Dysidea
+                                       +--| (Node466)
+                                          |  +--bsHrrqXzLb|Ephydatia
+                                          +--| (Node467)
+                                             +--nJGQNEkfqU|Halichondria
+
+Tree in newick format:
+
+(FsZTSPKlEN|Lineus:0.5909930864,(gtFLaGuGbO|Priapulus:0.3161775592,(XKDJaQieoU|Centruroides:0.1447422140,(BJmMnKGhgf|Amphibalanus:0.2590637708,((oEPVjLbriw|Daphnia:0.2237441365,((((dBIbVxioyF|Rhopalosiphum:0.0858139756,RnxjAFtsRK|Macrosteles:0.0245565585)Node10:0.0076204396,PwJnIMkHec|Bemisia:0.0230566990)Node9:0.0106102026,(MPiBhjNlXY|Nesidiocoris:0.0421248507,(oJJLWhyPhp|Cimex:0.0291667466,rQuLQuRKpo|Rhynocoris:0.0362008768)Node12:0.0094380464)Node11:0.0490045212)Node8:0.0197994395,(((EbBGDYmcof|Gryllus:0.0555015591,((((kFIcGobfdP|Popillia:0.0756126601,nVzgUkRcFe|Onthophagus:0.0654627097)Node19:0.0183382556,cXbRXwhgQv|Nicrophorus:0.0411753225)Node18:0.0149901153,(ALNcOfikWy|Agrilus:0.0427741796,(eQoLpMKnUK|Photinus:0.0283197324,TyXEoeKQPz|Ignelater:0.0215144797)Node21:0.0228040514)Node20:0.0281126601)Node17:0.0113644303,(((ZAUNNWmREn|Ceutorhynchus:0.0563373231,CsXJXkBBBv|Sitophilus:0.0270996654)Node24:0.0090009804,VugSJdKzvB|Cylas:0.0403201816)Node23:0.0150675764,(tbqyZVxWOQ|Aethina:0.0732022570,udKcKAQlDL|Tribolium:0.0044594731)Node25:0.0085112117)Node22:0.0328940053)Node16:0.0840315682)Node15:0.0153316670,XmyMLNisjt|Zootermopsis:0.0218280625)Node14:0.0122588591,(OtAqWpuQvS|Anabrus:0.0411967116,WVlYBdTCfG|Bacillus:0.0291905759)Node26:0.0078312061)Node13:0.0092153972)Node7:0.0497236989)Node6:0.0488025827,(((((WrMuNEyfoD|Parnassius:0.1129474534,rAdwdpmqrt|Galleria:0.0628633643)Node31:0.0210781524,(DIvVxgZhZR|Cydia:0.0688953474,QmQCIQQkeH|Pieris:0.0265840928)Node32:0.0045702025)Node30:0.0117766653,(((EZicsFAHVk|Manduca:0.0439258416,UogHgvZmvy|Bombyx:0.0305670737)Node35:0.0310291794,mEfOWKCvMf|Pectinophora:0.0411731394)Node34:0.0092535208,CtsCZaPxqx|Hyposmocoma:0.0486477010)Node33:0.0032498241)Node29:0.0033713076,hyEpgkYOpJ|Amyelois:0.0861372430)Node28:0.0045315274,ZJqsQUMqYW|Danaus:0.0415549505)Node27:0.1130859640)Node5:0.0516156705)Node4:0.1597459495)Node3:0.1220838099)Node2:0.1534819875,((((XchqRqCxdh|Eptatretus:0.6974534163,lMyRnTENoG|Petromyzon:0.4205678621)Node39:0.2075415508,((((((xJIXtVvweK|Nothobranchius:0.4314590390,(((((HELpFSNkCD|Coregonus:0.1818558377,(((((RBAmPjSism|Anguilla:0.1111284621,gDcirUPADl|Gymnothorax:0.0877012584)Node55:0.0133872028,UbMgqYbZIK|Conger:0.0497849105)Node54:0.0107366512,wwqEkfbgoV|Synaphobranchus:0.0691521830)Node53:0.0266404095,(ZZeeeAQGwq|Albula:0.0596779731,fJznYXXzFr|Aldrovandia:0.0475663310)Node56:0.0064246256)Node52:0.0129653046,SzwMjUCLGO|Megalops:0.0295902893)Node51:0.0289182829)Node50:0.0126494276,mkiIrLsnbu|Scleropages:0.1206845872)Node49:0.0648655485,(FokFnoLiUt|Amia:0.0621281694,AsgqPwtfdz|Lepisosteus:0.0604341016)Node57:0.0168213321)Node48:0.0509432165,ebBjFAeDiE|Huso:0.1014394444)Node47:0.0268092318,iVqvGCFdmm|Erpetoichthys:0.0933646795)Node46:0.0703293772)Node45:0.0468858609,((((((GNYgHMmxrx|Hymenochirus:0.1246309497,wmvqUdzXaH|Xenopus:0.1021078136)Node63:0.0165429780,(AWeXzPAkuh|Spea:0.0982338922,fIRQlZysSu|Pelobates:0.0646513444)Node64:0.0551421045)Node62:0.0309719348,(tsckLjolNz|Engystomops:0.1264986197,XGosRabsrM|Nanorana:0.0661949821)Node65:0.0277435646)Node61:0.1030051687,xvnqXEBbuK|Pleurodeles:0.1386279747)Node60:0.0278182897,IIlUtnPxnH|Geotrypetes:0.1133462067)Node59:0.0471072014,(((nLtkCBPdil|Pelodiscus:0.0364850251,(xctXzOcuoJ|Pterocnemia:0.0079587212,pPpSFFfytq|Berghia:0.0477394068)Node69:0.0424846990)Node68:0.0038942017,(QRdVzFJhJl|Euleptes:0.0456183917,njDOzEJrla|Tiliqua:0.0421902667)Node70:0.0490011137)Node67:0.0433910101,((jYynejgppE|Tachyglossus:0.1065862105,(RpmAqCghci|Homo:0.0252545701,ZbeQAGoiMw|Sorex:0.0192184539)Node73:0.0292770495)Node72:0.0098134459,xnIaTeXnth|Gracilinanus:0.0404661252)Node71:0.0840304208)Node66:0.0434977842)Node58:0.0711751377)Node44:0.0241491041,xwbUKfhKgu|Latimeria:0.1214559741)Node43:0.0435434609,(nPqrlRQAqI|Callorhinchus:0.0890904091,(krBlZLfuPp|Heterodontus:0.0342255944,(abZRebsZuU|Dasyatis:0.0593655087,YQDjjiMqbP|Amblyraja:0.0524102224)Node76:0.0697499138)Node75:0.0424988267)Node74:0.0952893141)Node42:0.0971510907,((((((wmadmvJAbJ|Geotrypetes:0.1090940415,fMBpPVNzDY|Rhinatrema:0.0650035625)Node82:0.1142248676,(((rpBglcbccH|Echinops:0.0917398009,kXuduTPOMY|Trichechus:0.0393950501)Node85:0.0236711924,hvaULsuzKO|Choloepus:0.0609628824)Node84:0.0512702853,(majfkpPYIA|Monodelphis:0.0956123632,ClZGhCBcRm|Trichosurus:0.0571273888)Node86:0.0851318302)Node83:0.1561415977)Node81:0.0796868048,pVuWOCDTOE|Latimeria:0.1480002052)Node80:0.0273970242,vDuQKFNEWn|Protopterus:0.2537397557)Node79:0.0287105617,(WdJVyQbktc|Polyodon:0.1125442558,(CkPDeuhxKs|Polypterus:0.1432020719,((QnmnuXDOSO|Amia:0.1070673652,aeeqENtjXg|Lepisosteus:0.1114921873)Node90:0.0389241185,(wPPaQEcukj|Scleropages:0.1773912389,((((sTzgnFNwqI|Synaphobranchus:0.0738226584,FcCqlhapds|Anguilla:0.0666491302)Node95:0.0102319493,XAjSBDwGGw|Gymnothorax:0.0670585926)Node94:0.0123819305,nXCgmIDRfN|Aldrovandia:0.0708846392)Node93:0.0156220768,crYGgqMjhE|Megalops:0.0407572141)Node92:0.0333263484)Node91:0.0833151886)Node89:0.0408870913)Node88:0.0325075095)Node87:0.1231788908)Node78:0.0637328008,(fsrtRGDbBm|Callorhinchus:0.1357783669,(bnVMraVLWk|Carcharodon:0.0607197808,CObPGWXZnj|Leucoraja:0.0553526570)Node97:0.0596332232)Node96:0.1038456147)Node77:0.0606580805)Node41:0.0898190779,(((((((((((mhnnkEsvZN|Gadus:0.3950918185,sZsQPXGqxx|Osmerus:0.1812247354)Node108:0.0585012128,(OsunYycnjz|Denticeps:0.2649815428,LYkzMEGsIM|Engraulis:0.2258956314)Node109:0.1062363797)Node107:0.1672737760,(((LYVZzGXTYQ|Synaphobranchus:0.0685098198,(PRnWlsJkym|Gymnothorax:0.0790113916,ibSUWwwOoP|Conger:0.0632166115)Node113:0.0148428540)Node112:0.0193256131,QWOCnlKJSY|Anguilla:0.0388666548)Node111:0.0664403714,HvuhvCqlcp|Albula:0.0742237922)Node110:0.0422054362)Node106:0.0221497230,qIAJkULQRV|Megalops:0.0586361181)Node105:0.0474520553,YsuXgUftTq|Scleropages:0.1359465102)Node104:0.0892259484,hgyRJxpFqv|Atractosteus:0.1707008825)Node103:0.0154461058,dcQfkYuVqh|Amia:0.0956423724)Node102:0.0357277272,UdZeZahffN|Acipenser:0.0929784346)Node101:0.0533630412,UzDHTMTAAo|Erpetoichthys:0.1566380423)Node100:0.1803956783,((TBOKFllXec|Protopterus:0.4341883907,(((((((gFpaaLnLUf|Spea:0.1813010510,jBNkkOSBAG|Pelobates:0.1387869392)Node122:0.0516677759,(vXiVbtYZcW|Hyla:0.1240060677,(IMVIxIoUZF|Rana:0.1370244984,NdLsdWunZg|Pseudophryne:0.0843784504)Node124:0.0404177859)Node123:0.0328635858)Node121:0.0414945690,zwTVeXOspJ|Bombina:0.1619886029)Node120:0.0290412797,(IEVuqHRMsc|Xenopus:0.0666738636,aiLSraXPLv|Hymenochirus:0.1014750030)Node125:0.0671745352)Node119:0.2458922468,jPBaWrZkJX|Pleurodeles:0.1955407684)Node118:0.0360460801,kLBNwQjjYX|Rhinatrema:0.1218199448)Node117:0.0369956042,((VoGDjSGZCa|Tachyglossus:0.0804997268,(OGPABxSmmT|Elephas:0.0521494240,BiQHgUzOaA|Antechinus:0.0683790606)Node128:0.0415255285)Node127:0.0950775265,((NEFhUhyHzr|Eublepharis:0.0287859683,ANGAUiOAIW|Sphaerodactylus:0.1040715776)Node130:0.1570136592,(EXdlmGHgiP|Emydura:0.0434972419,RAikvtugkp|Berghia:0.1297116848)Node131:0.0348428433)Node129:0.0742567582)Node126:0.0355154532)Node116:0.0902658557)Node115:0.0231928585,PbOIwJZBqg|Latimeria:0.1418152491)Node114:0.0605983496)Node99:0.0430982744,(CESFHHZIxS|Callorhinchus:0.2490013845,(leSNjlGhBa|Carcharodon:0.1288039028,(bojMIPiiWd|Pristis:0.0392383141,bojCllbYdi|Mobula:0.1081653090)Node134:0.0742441291)Node133:0.0610419356)Node132:0.1152908340)Node98:0.2310456978)Node40:0.0913972200)Node38:0.0926579518,((((acqiOJwkwG|Raja:0.1645436382,FSlnniahyk|Pristis:0.0216644713)Node138:0.0566931568,TZxGAtRniV|Heterodontus:0.0584978161)Node137:0.0315688609,vWHUSlklYz|Heptranchias:0.0726450606)Node136:0.2159467359,((((((bVXpKePZES|Ascaphus:0.1315012045,((((((DsiuqkJdFF|Nanorana:0.0752751054,RFYucZYNxQ|Rana:0.0554150252)Node150:0.0656491456,PKSSZhXiHe|Eleutherodactylus:0.0647400009)Node149:0.0226964277,ZhKJmnBvuB|Pseudophryne:0.0751406956)Node148:0.0371012223,(RyUplERqOc|Spea:0.0704763591,IcDCupaOKS|Pelobates:0.0747193506)Node151:0.0220017627)Node147:0.0173035369,(CxBexPxDQt|Hymenochirus:0.0681602005,IaiwhxVOUF|Xenopus:0.0894838643)Node152:0.0314641703)Node146:0.0192404954,KYgWuRKkZT|Bombina:0.0607750415)Node145:0.0250412487)Node144:0.1521647745,tGNHPxuYwU|Pleurodeles:0.1556641150)Node143:0.0706938072,(((CThBbgxMqG|Eublepharis:0.0638698336,(KduqoPNekv|Lacerta:0.0652460937,fbUvwvPJXo|Varanus:0.0642320161)Node156:0.0289915005)Node155:0.1100875139,((yZpRimCZGG|Emydura:0.0311081075,(nwfhXPDvZr|Chelydra:0.0102094638,vlwIqXVzNF|Chelonia:0.0130564440)Node159:0.0285316243)Node158:0.0266468305,(QPDgVGIkFv|Alligator:0.0452642075,(SCXqmaHRyQ|Gallus:0.0308619730,(erKIafvbTN|Origma:0.0053213413,tOgOwBEsXb|Berghia:0.0047782277)Node162:0.0279299662)Node161:0.0425210244)Node160:0.0207496907)Node157:0.0063226665)Node154:0.0414970613,(SIqoibguTk|Tachyglossus:0.0441647691,(xFebzNvgTI|Dromiciops:0.0455355585,(rHruojyAKS|Dipodomys:0.0161581985,(nPSevTIFKH|Puma:0.0100719351,MQvgvgsJRb|Odocoileus:0.0074650012)Node166:0.0069242807)Node165:0.0125506300)Node164:0.0139648902)Node163:0.0577871623)Node153:0.0384283421)Node142:0.0083972334,GZAfkOvZCs|Rhinatrema:0.0938572125)Node141:0.0903031848,iJeEettDFc|Latimeria:0.1779147831)Node140:0.1084273948,((lhAEoqZpzv|Polypterus:0.2929355819,((((((zEZTJTAAUZ|Triplophysa:0.1870546772,sMtxBSxOHY|Chanos:0.0769011880)Node174:0.0262433120,(((WEJVibwJyF|Muraenolepis:0.1187023697,(mGdBxvxZei|Lampris:0.0700409639,RolGQZUDIs|Myripristis:0.0434888091)Node178:0.0086379837)Node177:0.0363609143,(vCJyNWzbeh|Oncorhynchus:0.0259263639,CbDzSeoZLi|Esox:0.0605684416)Node179:0.0364297348)Node176:0.0099670371,FnkGoxKDuz|Hypomesus:0.0787455619)Node175:0.0208633765)Node173:0.0241045391,((sNtcFIXrHq|Paramormyrops:0.1110495804,pdgOkIOUOp|Scleropages:0.0880073325)Node181:0.0433226067,(((UomiJesGjf|Aldrovandia:0.0658780913,JMhzAmgYYs|Albula:0.0528048508)Node184:0.0030088308,(OmgqnrwKoz|Anguilla:0.0555397669,anKUZulYUK|Conger:0.0787111747)Node185:0.0336099988)Node183:0.0169513811,vfMCHtChlM|Megalops:0.0614602174)Node182:0.0132355467)Node180:0.0082851702)Node172:0.0118362417,(aUqVDyASSq|Megalops:0.1589467220,(((qDWvfvHGcZ|Gymnothorax:0.1131639255,lryxprXcoL|Anguilla:0.0394078881)Node189:0.0168960947,nAULuXUIcE|Synaphobranchus:0.0740913085)Node188:0.0164099602,ClWLgGUByv|Conger:0.0923237433)Node187:0.0732858310)Node186:0.0316420049)Node171:0.0250372558,(iFKYZRxiRX|Scleropages:0.1124517504,rNksZFzfGV|Brienomyrus:0.1258678299)Node190:0.0766914867)Node170:0.0224096489,((tZRAiqrRvO|Alosa:0.0630967990,iKdUGUqHBg|Clupea:0.0365116923)Node192:0.0944754795,jdMGyLvyaf|Denticeps:0.0959987789)Node191:0.0372047862)Node169:0.0711466146)Node168:0.0254619338,fDHKcOsKrS|Acipenser:0.1660414733)Node167:0.1558915692)Node139:0.1248056004)Node135:0.1801653971)Node37:0.2564572149,((((((((HNAxJnTrKC|Acropora:0.1001191203,(euLCveivGc|Pocillopora:0.0067415127,YKasFBdNeq|Stylophora:0.0135844748)Node201:0.0376623432)Node200:0.0124280812,ZJJAnwxCXw|Orbicella:0.0321478490)Node199:0.0049665383,wmIiUoILdw|Porites:0.0667202084)Node198:0.1191876004,(QwESURCNFu|Actinia:0.0743222822,dXeGeQRqYa|Nematostella:0.1056059606)Node202:0.0603041106)Node197:0.1455386297,(FJLbjSPhcs|Rhopilema:0.3443190417,((frfilaRjbZ|Clytia:0.1773094181,DakEOeZrNF|Hydractinia:0.0657111592)Node205:0.0683842525,BEQuHGMREs|Hydra:0.1047139533)Node204:0.1803831995)Node203:0.3292214722)Node196:0.0453412643,(((((vtSPfDuHpr|Holothuria:0.0265965384,SodlqMHUMm|Apostichopus:0.0348075775)Node210:0.1549437691,(MsINtRptIq|Lytechinus:0.0046891407,cHanWhAHXM|Strongylocentrotus:0.0108558784)Node211:0.1239920247)Node209:0.0236099155,(vmkhUzyIcd|Patiria:0.0590383441,ZHsqwlCCVy|Asterias:0.0511191820)Node212:0.0833492456)Node208:0.1525141931,HHOOCyQqoV|Saccoglossus:0.1171477220)Node207:0.0973682474,(ftvQzruOwR|Branchiostoma:0.1400391333,(((PJQOSprcEU|Petromyzon:0.1056684684,TKfZpzPHVx|Petromyzon:0.0686128778)Node216:0.0306430466,(kAKLuxyWgF|Callorhinchus:0.0339112808,(((tQampOqIvw|Protopterus:0.0371211218,tKMYRUNKEK|Latimeria:0.0031972492)Node220:0.0071227229,(((((IPjYSjpPin|Pelobates:0.0129165008,BbuwHMKVvM|Xenopus:0.0025392374)Node225:0.0000025195,itgzlgzfRH|Ascaphus:0.0076500936)Node224:0.0157011831,zFMeTsQGOz|Geotrypetes:0.0129863870)Node223:0.0074290858,NzxVWQBgFM|Pleurodeles:0.0077594619)Node222:0.0075428943,((hCBVgkNLSW|Ornithorhynchus:0.0155196588,ZLgBxhGosP|Platysternon:0.0077865333)Node227:0.0004096326,((VxNiASiKOi|Alligator:0.0065120374,(BPeGLNhgQi|Tiliqua:0.0000026314,mHRToARrvn|Euleptes:0.0076844128)Node230:0.0076074818)Node229:0.0038805478,(((VwCzEFvVnQ|Molossus:0.0004456484,AvUuuqiHRc|Rattus:0.0021820597)Node233:0.0049851339,lEhdWDHQvF|Orycteropus:0.0000012609)Node232:0.0050937438,FNXcwRFPnt|Gracilinanus:0.0000035019)Node231:0.0025735735)Node228:0.0048597208)Node226:0.0080455931)Node221:0.0048333411)Node219:0.0000026343,(((((((faQguLlryg|Erpetoichthys:0.0180742044,RCSKgvkCOL|Scleropages:0.0096610413)Node240:0.0031586591,lBHJxjPCLe|Scleropages:0.0076441750)Node239:0.0000028800,((nxnxYZxMRp|Gadus:0.0129784505,MEkEKTcVnj|Thunnus:0.0077188613)Node242:0.0051105186,qhnxNabpLX|Atractosteus:0.0051420593)Node241:0.0000026011)Node238:0.0025519303,((iWVgelljJZ|Anguilla:0.0000012609,WLWUhWUBcM|Megalops:0.0000012609)Node244:0.0000012609,QkyQvniPYT|Aldrovandia:0.0000012609)Node243:0.0000026376)Node237:0.0000025892,(WxozCwLmHK|Polyodon:0.0000030967,GVdinLCwRb|Acipenser:0.0000026125)Node245:0.0208718128)Node236:0.0025520180,XfAJTkGJYb|Oncorhynchus:0.0077172790)Node235:0.0000035008,(ursNIDLjIE|Paramormyrops:0.0076594955,xEpLbEQGEA|Trichomycterus:0.0025630021)Node246:0.0025511786)Node234:0.0103397833)Node218:0.0058187671)Node217:0.0375737656)Node215:0.0215041096,(((((((((((((CaLEJvHHfC|Megalops:0.0559659262,(simBLjKpaj|Aldrovandia:0.0130787954,((((ipOMBJpnVC|Gymnothorax:0.0154208080,CDVuvYBSWn|Anguilla:0.0103868980)Node264:0.0000026554,YNRUnoUHUr|Synaphobranchus:0.0050825872)Node263:0.0025314433,pLwIiSJjWB|Conger:0.0025487583)Node262:0.0049900280,anMVeWcHPH|Albula:0.0079073342)Node261:0.0023589827)Node260:0.0121395333)Node259:0.0203980250,cOUThLFnku|Muraenolepis:0.0104198364)Node258:0.0000034486,((ENgBghAZno|Scleropages:0.0154852186,EfXuwmTcLe|Polyodon:0.0158004511)Node266:0.0000026094,(NkHpXRMoqh|Engraulis:0.0051640096,HdaRuNQmgM|Clupea:0.0051232444)Node267:0.0051647404)Node265:0.0077171148)Node257:0.0025695469,(CFxmFLegVS|Denticeps:0.0181275902,lfRUfBXkyD|Chanos:0.0025394394)Node268:0.0025961910)Node256:0.0000025580,((AmktbkMSRv|Conger:0.0103450323,(yabeBZzLKc|Gymnothorax:0.0051250467,gFAXsnUJyy|Albula:0.0000024971)Node271:0.0000034099)Node270:0.0025694282,GjmuZkMFrY|Anguilla:0.0025571604)Node269:0.0051394915)Node255:0.0025635460,eYVQBtbHJE|Lampris:0.0025710081)Node254:0.0000025388,(SsAFTRKlFB|Danio:0.0102771913,NqedEkUmvl|Megalops:0.0000028755)Node272:0.0025620868)Node253:0.0000026448,((CmPFCckzvx|Osmerus:0.0212094577,kBBiDmfHUG|Salvelinus:0.0102865175)Node274:0.0000028495,MtfrQsWoRP|Paramormyrops:0.0051276603)Node273:0.0025603695)Node252:0.0051345211,(((FjygZorMQm|Brienomyrus:0.0133145602,cAKORgebSH|Scleropages:0.0131057459)Node277:0.0024773931,YsMAqJvQEt|Atractosteus:0.0025696616)Node276:0.0025639551,uBPootHclX|Amia:0.0051518426)Node275:0.0000026436)Node251:0.0102581755,(((DmMidyXKTE|Chiloscyllium:0.0000012609,AlUZrCvuqA|Heptranchias:0.0000012609)Node280:0.0000027045,(mDWOkyrBCZ|Callorhinchus:0.0025672332,xgxWROHtvc|Pristis:0.0025745317)Node281:0.0025680051)Node279:0.0155863964,IfSXHjXAgB|Latimeria:0.0052238130)Node278:0.0026213551)Node250:0.0051489451,(((((hWkLNbbnyh|Bombina:0.0151314627,((jncYQCYuNv|Bufo:0.0103016383,(((GGXhyMGUsJ|Spea:0.0025797881,lvYgiJajeH|Pelobates:0.0025768635)Node291:0.0077609507,(pfXspRTDkQ|Ascaphus:0.0077731509,iJJtoELTVf|Hymenochirus:0.0000027470)Node292:0.0025588801)Node290:0.0000033758,(zxcWepKWci|Xenopus:0.0051417825,gArxVZTzQD|Rana:0.0000027465)Node293:0.0025583897)Node289:0.0000031848)Node288:0.0025621360,UamxjpMZEK|Pseudophryne:0.0025623155)Node287:0.0048892462)Node286:0.0139708604,kDdGYZLqCo|Pleurodeles:0.0150618095)Node285:0.0031750616,(ioJLiZbROa|Erinaceus:0.0051275154,(((FJlHZRAech|Orycteropus:0.0000012609,aEWFlmmkRx|Homo:0.0000012609)Node297:0.0000012609,RIZRTtwIbZ|Puma:0.0000012609)Node296:0.0000012609,PjrKFkoTJW|Tupaia:0.0000012609)Node295:0.0000027416)Node294:0.0051257712)Node284:0.0025647686,(IRXCqdkljh|Geotrypetes:0.0025613696,AEfwFoXpKe|Rhinatrema:0.0000029003)Node298:0.0158716453)Node283:0.0000025058,((((IHxLSzjYDZ|Tachyglossus:0.0025616830,uBDRBoMzVz|Trichosurus:0.0025561863)Node302:0.0025524852,(xUKOuXipGQ|Odontophorus:0.0025551249,((jFDKMxbecU|Eudromia:0.0000012609,CgDXpfgQAU|Berghia:0.0000027407)Node305:0.0000026871,wuRCFvRBvq|Myiagra:0.0000012609)Node304:0.0000026558)Node303:0.0025552855)Node301:0.0000025742,(cOFHJAYSyO|Alligator:0.0000012609,kgARxlPZVK|Platysternon:0.0000012609)Node306:0.0000012609)Node300:0.0000025560,((OzBzYMJUep|Rhineura:0.0051293878,(vhtOFFFkFW|Heteronotia:0.0000012609,HHHYIuPDuD|Pogona:0.0000012609)Node309:0.0000012609)Node308:0.0000026602,xJNEXVjXKt|Hemicordylus:0.0051251908)Node307:0.0025523686)Node299:0.0025633758)Node282:0.0052718392)Node249:0.0000030054,MDCagLeSrU|Polypterus:0.0261634705)Node248:0.0108139789,kNsLHVwFOC|Protopterus:0.0513117453)Node247:0.0187573585)Node214:0.1111993627)Node213:0.0298830242)Node206:0.0164879667)Node195:0.0659651230,((sSTYUMAeKz|Lingula:0.1291062047,(((nKMELdelvS|Biomphalaria:0.0290265643,KGUUKGEbyT|Physa:0.0059537353)Node314:0.0804649310,KyltisCzTz|Pomacea:0.0480948197)Node313:0.0388741165,((((((PiQtsKinzj|Mya:0.0633299226,IEjaWqxkal|Ruditapes:0.0229078358)Node320:0.0132262582,yFDxesRRkl|Dreissena:0.0198050990)Node319:0.0503717222,(lIelLPGcKJ|Ylistrum:0.0429714360,uJcWRwvgOq|Saccostrea:0.0478785306)Node321:0.0267371531)Node318:0.0159557670,(wLbkHbjASc|Patella:0.0537005778,(dFtVlNAYrh|Gigantopelta:0.0649896884,QgyqBPeXme|Haliotis:0.0253619326)Node323:0.0269573809)Node322:0.0287274524)Node317:0.0087920152,FHGYhvbZAJ|Liolophura:0.0579953790)Node316:0.0143898563,iAIvsmnKqf|Octopus:0.0473546708)Node315:0.0148292538)Node312:0.0558750080)Node311:0.0867743745,((((dzxXnHdbLe|Galendromus:0.1828957446,(DduaDNARUo|Ixodes:0.0093657672,HgjnuoHSWE|Dermacentor:0.0141477015)Node328:0.0575424489)Node327:0.0132844948,(gJqNQnpxyA|Uloborus:0.0150459109,KdCdVAJhbR|Stegodyphus:0.0079573079)Node329:0.1100827387)Node326:0.0165920355,GsqSmPWrJJ|Cordylochernes:0.1240582642)Node325:0.0237348430,((((((aVushdIKOk|Cydia:0.0433035199,((NalhyOtwYH|Pectinophora:0.0386631322,tgdaDywsIp|Spodoptera:0.0177393519)Node337:0.0116950984,kHiQMWMaDt|Aricia:0.0123101407)Node336:0.0220249952)Node335:0.0729548773,(cCVOQZjVPU|Ctenocephalides:0.0000012609,nYgYpSiEee|Ctenocephalides:0.0000012609)Node338:0.0618228875)Node334:0.0139453517,((((ogkKYRQmrF|Neodiprion:0.0183376421,(((CSUtSSIuhF|Prorops:0.0180755660,vKlPwQElPs|Ampulex:0.0076407416)Node345:0.0022728214,spVSfUqVqU|Orussus:0.0036016191)Node344:0.0043025000,kbuprtArKR|Melipona:0.0099016157)Node343:0.0000026406)Node342:0.0025352740,(daMcqNmHVC|Chelonus:0.0204792548,oqnOgpZpjt|Diachasma:0.0025336856)Node346:0.0053826463)Node341:0.0027743130,FTZEoSYHAb|Cephus:0.0000031825)Node340:0.0033607965,(eDsXTItiKJ|Eretmocerus:0.0050569088,swXgbQkSDv|Nasonia:0.0025161663)Node347:0.0119701609)Node339:0.0296673213)Node333:0.0027000445,alUyhDUOad|Nicrophorus:0.0470885662)Node332:0.0074840722,(((HmoTiBcadJ|Diaphorina:0.0400765498,(emIZwJtJCX|Macrosiphum:0.0011625464,gGIzOKeIwS|Daktulosphaira:0.0222873914)Node351:0.0361201082)Node350:0.0218444089,(TCBryYRChr|Polyplax:0.0052074275,SbLIIkXjyZ|Pediculus:0.0075993646)Node352:0.0347829593)Node349:0.0070570955,((((((jJIoADHMCE|Nesidiocoris:0.0193462486,deuYiZPRVK|Nezara:0.0248564855)Node358:0.0249477517,RNbXPYcCpO|Bacillus:0.0304358690)Node357:0.0085059417,yWFYmQcMtT|Homalodisca:0.0000023986)Node356:0.0026108741,cLEggCzCOR|Bemisia:0.0208079864)Node355:0.0060916329,RQCadhUqeR|Nilaparvata:0.0278948516)Node354:0.0079762340,(LMCAhbcwex|Parthenolecanium:0.0265213804,ajUjrWbRcm|Planococcus:0.0106838902)Node359:0.0253509155)Node353:0.0088701892)Node348:0.0056410670)Node331:0.0112549367,(fhJsfxpdrV|Cloeon:0.0025425206,zMTEXIegZH|Neocloeon:0.0000025019)Node360:0.0549628793)Node330:0.0434420877)Node324:0.0354616104)Node310:0.0529522686)Node194:0.6984139238,((((GJeVEpiMoq|Oscarella:0.4108045682,((BbwRArzAcw|Sycon:0.3074473997,(xcHYJAzfzK|Parthenolecanium:0.1303584083,(ZRohTINQSA|Lingula:0.0639665431,(AGvXZgGBtq|Lineus:0.0647485038,(wTMUeevdEZ|Owenia:0.0750378954,NlepuccEIh|Lamellibrachia:0.0576100631)Node370:0.0170440392)Node369:0.0227809678)Node368:0.0763644878)Node367:0.1455924977)Node366:0.0699903132,(ZykZmQFWuC|Ephydatia:0.2108350056,CCYuQvdbHc|Dysidea:0.2127390726)Node371:0.1024342640)Node365:0.0381109648)Node364:0.1075320024,(((((((((((((AeRTQsmrZm|Scleropages:0.0534353078,qkBtMyQNpl|Brienomyrus:0.0541164057)Node384:0.0441154771,kAZySGXBQN|Xiphophorus:0.1047776646)Node383:0.0115518203,PMGNDBQWcR|Anguilla:0.0520032508)Node382:0.0034837143,nEangzEWRE|Gymnothorax:0.0454128065)Node381:0.0094005173,(((((oNOGYGHTQw|Nothobranchius:0.1113402917,(((((RIXbwOaiPr|Larimichthys:0.0099646449,PAFqKKBuky|Archocentrus:0.0049860908)Node394:0.0024347968,KrIWeQzTgi|Thalassophryne:0.0074621910)Node393:0.0024798162,((JMCXEwZYbf|Epinephelus:0.0074183414,ULrjZPEzlr|Micropterus:0.0049578715)Node396:0.0000026679,yjsqjEZoLS|Scophthalmus:0.0050684815)Node395:0.0024642583)Node392:0.0000025037,hRYdBLBLiI|Amphiprion:0.0000012609)Node391:0.0000026028,kkYdtPQLmh|Lucifuga:0.0074079508)Node390:0.0057394045)Node389:0.0072275900,dDQWedKHtt|Lampris:0.0161118787)Node388:0.0132935556,HrULLggdCp|Gadus:0.0168152518)Node387:0.0192830760,DZqiwaizeP|Oncorhynchus:0.0278540748)Node386:0.0046770041,(((lZVeUHlASy|Electrophorus:0.0673392377,LQMrHPrFIY|Neoarius:0.0197435302)Node399:0.0196944589,MfMWNGjLjP|Sardina:0.0526939293)Node398:0.0137595320,BUHsVXuHBO|Chanos:0.0273805175)Node397:0.0191823750)Node385:0.0264158991)Node380:0.0002987016,(((((((fbdSDoQMhL|Austrofundulus:0.0448821001,RuHneaqwQr|Nematolebias:0.0212001262)Node406:0.0728216310,jWDHSWHnnP|Bagarius:0.0251552013)Node405:0.0100204188,BPuovoEXpC|Chanos:0.0249338232)Node404:0.0032348741,((XaXsUWTkxD|Triplophysa:0.0948186112,OMtrKBKgWt|Danio:0.0113089311)Node408:0.0029579129,nyJhkBrjiy|Denticeps:0.0678150784)Node407:0.0084789897)Node403:0.0056854576,ZzLSqGwClH|Astyanax:0.0193519978)Node402:0.0066158983,(((((((((((NaeBWESNWe|Nerophis:0.0651657796,GdpYVAWjLG|Knipowitschia:0.0105759213)Node419:0.0063845410,OnkmJYPdyy|Parambassis:0.0083566954)Node418:0.0049521285,ZMqvjIKvQm|Melanotaenia:0.0102956508)Node417:0.0040236452,(aWnxqgegTn|Betta:0.0271299376,KqsWouqUSv|Thalassophryne:0.0142672351)Node420:0.0026138526)Node416:0.0023467078,(aAdmToyfKK|Thunnus:0.0000012609,PZOdfgBWTC|Scomber:0.0025365515)Node421:0.0000025973)Node415:0.0000027162,UUwloFYVqs|Oreochromis:0.0265881067)Node414:0.0047193462,(tZzcBACoAy|Gadus:0.0279296257,(WSNBavUJBO|Pleuronectes:0.0164796449,tySroThLag|Dissostichus:0.0109045952)Node423:0.0024016372)Node422:0.0079672293)Node413:0.0000029746,dLKeTbhqug|Micropterus:0.0103195190)Node412:0.0028945160,QsYcTMGQky|Plectropomus:0.0025612729)Node411:0.0087995013,LplxsSrJbL|Lampris:0.0077498520)Node410:0.0029175129,TdsPYKRmjy|Myripristis:0.0000029327)Node409:0.0056808927)Node401:0.0023014003,((AWWmrDsPCS|Dallia:0.0338275643,UiFmeUQadN|Oncorhynchus:0.0283989618)Node425:0.0200457451,qExKFaeGZA|Paramormyrops:0.0336264421)Node424:0.0036258413)Node400:0.0045154401)Node379:0.0068948358,dWAqKoNeMW|Atractosteus:0.0203775201)Node378:0.0197985685,tBJwOxnpAK|Polyodon:0.0548182901)Node377:0.0046578878,toJtUmAnWq|Polypterus:0.0338386163)Node376:0.0485043736,(((((ydDKZFfYgK|Xenopus:0.0648220227,(((vlCLHKXUnM|Monodon:0.0076786141,FgwpYHCgPp|Talpa:0.0000024692)Node433:0.0025548513,((HGMBNeoSRf|Eptesicus:0.0000012609,AcGVCmYRAe|Manis:0.0000012609)Node435:0.0000012609,RWjPNNOwoA|Homo:0.0000012609)Node434:0.0000025724)Node432:0.0000024704,rJXRFxWZOQ|Trichechus:0.0024721036)Node431:0.0074797948)Node430:0.0024680036,LmVcntlwiT|Heliornis:0.0000012609)Node429:0.0000028150,((((lsFXhnJLmo|Varanus:0.0208985408,ahRWKOEkHT|Poecile:0.0025486091)Node439:0.0000012609,(((((nVwTIEtejS|Chunga:0.0025508888,tADRMUJSUs|Melanocharis:0.0025486720)Node444:0.0000012609,(tVYNvxirRH|Dasyornis:0.0000012609,fVcjwXYrSo|Pomatostomus:0.0000012609)Node445:0.0000024718)Node443:0.0000012609,(kTbshfrTFr|Chaetops:0.0000012609,((HYqyWYYllq|Daphoenositta:0.0000012609,lAhFyCaHhw|Drymodes:0.0000012609)Node448:0.0000012609,ARxtPvCwRs|Herpetotheres:0.0000012609)Node447:0.0000012609)Node446:0.0000012609)Node442:0.0000012609,lVSpEhxxrY|Amazona:0.0000012609)Node441:0.0000012609,(SGXOmVqJdI|Haliaeetus:0.0000012609,((yAeclotHgD|Nothocercus:0.0000012609,ruNOMFzfbW|Notiomystis:0.0000012609)Node451:0.0000012609,mgfbnrsaqk|Tachuris:0.0000012609)Node450:0.0000012609)Node449:0.0000012609)Node440:0.0000012609)Node438:0.0000027680,(sCSqGonZYs|Alligator:0.0049305022,(FKJRjwqRcM|Vombatus:0.0050892000,AJUOYqPHYI|Terrapene:0.0050969651)Node453:0.0000025240)Node452:0.0024652996)Node437:0.0000025264,cNQOICfMpL|Acanthisitta:0.0074239682)Node436:0.0024699971)Node428:0.0086357748,lZYZeaiSlf|Latimeria:0.0449226583)Node427:0.0080132064,LRppIyKlCm|Protopterus:0.0407592183)Node426:0.0227135019)Node375:0.0153805105,vPLHcLmiJP|Heptranchias:0.0293858641)Node374:0.3594730685,(UakjwmudIe|Rhopilema:0.1908497512,(pRaZPBYNdC|Hydra:0.0937778834,((zxyJBMMYwF|Hydractinia:0.1382368100,QAdioKLipL|Hydractinia:0.0579821107)Node457:0.0498861029,rYHPogklDD|Clytia:0.0813136114)Node456:0.0247605041)Node455:0.0665582164)Node454:0.1444625029)Node373:0.0326158699,(GtcgFDNwBv|Dendronephthya:0.2800194420,((uZWbxHWPig|Acropora:0.0726885748,(QdwXoHWfEp|Stylophora:0.0826499167,CYdjfHRqcs|Orbicella:0.0442219806)Node461:0.0291036664)Node460:0.1174636333,(tWCWCsWGNH|Actinia:0.0814765156,ShKLZALvVx|Nematostella:0.1156008153)Node462:0.0562072980)Node459:0.0656119675)Node458:0.0583202056)Node372:0.0482941849)Node363:0.0370706297,(ZIsoTsHyYg|Sycon:0.1853566775,CCZgYRAnYq|Sycon:0.1406558481)Node463:0.1337265036)Node362:0.0747407558,((WuyDyROzNK|Amphimedon:0.0820734787,HASAJGiJdj|Gigantopelta:0.1605951028)Node465:0.0670888562,(cAalMEcZkv|Dysidea:0.1271716404,(bsHrrqXzLb|Ephydatia:0.1231006608,nJGQNEkfqU|Halichondria:0.1059138280)Node467:0.0175932516)Node466:0.0501342992)Node464:0.0834254105)Node361:0.5433486963)Node193:0.8345952536)Node36:0.0495929062)Node1;
+
+ALISIM COMMAND
+--------------
+To simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis, you can use the following command:
+
+--alisim simulated_MSA -t /lustre/scratch126/gengen/projects/alpha-allostery-global/git-phylo-dms/00.inputs/07.src_topiary_iqtree_sh3_sh2_kd_domain/02.out_asr/src_topiary_asr/src_topiary_asr.treefile -m "Q.insect+R8{0.162781,0.0246228,0.143805,0.188419,0.160391,0.411384,0.122293,0.726434,0.131984,1.10982,0.0998364,1.59755,0.108184,2.30045,0.0707257,3.66532}" --length 496
+
+To mimic the alignment used to produce this analysis, i.e. simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis *and* copying the same gap positions as the original alignment, you can use the following command:
+
+iqtree -s /lustre/scratch126/gengen/projects/alpha-allostery-global/git-phylo-dms/00.inputs/02.src_topiary/seed_to_ali/10_aligned_cleaned_trimed_sh3_sh2_kd.fasta --alisim mimicked_MSA
+
+To simulate any number of alignments in either of the two commandlines above, use the --num-alignments options, for example mimic 100 alignments you would use the command line:
+
+iqtree -s /lustre/scratch126/gengen/projects/alpha-allostery-global/git-phylo-dms/00.inputs/02.src_topiary/seed_to_ali/10_aligned_cleaned_trimed_sh3_sh2_kd.fasta --alisim mimicked_MSA --num-alignments 100
+
+For more information on using AliSim, please visit: www.iqtree.org/doc/AliSim
+
+TIME STAMP
+----------
+
+Date and time: Fri Sep  6 21:17:42 2024
+Total CPU time used: 23790.9 seconds (6h:36m:30s)
+Total wall-clock time used: 13220.6 seconds (3h:40m:20s)
+

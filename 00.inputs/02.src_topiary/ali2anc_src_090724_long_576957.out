@@ -1,0 +1,132 @@
+
+Non-microbial dataset detected. Gene/species tree reconciliation will be performed
+----------------------------------------------------------------------
+Checking raxml-ng
+----------------------------------------------------------------------
+
+    installed:       Y
+    binary_path:     /software/hgi/envs/conda/team354/xl7/topiary/bin/raxml-ng
+    binary runs:     Y
+    version:         1.2.2
+    minimum version: 1.1
+    passes:          Y
+
+----------------------------------------------------------------------
+Checking generax
+----------------------------------------------------------------------
+
+    installed:       Y
+    binary_path:     /software/hgi/envs/conda/team354/xl7/topiary/bin/generax
+    binary runs:     Y
+    version:         2.1.3
+    minimum version: 2.0
+    passes:          Y
+
+----------------------------------------------------------------------
+Checking mpirun
+----------------------------------------------------------------------
+
+    installed:       Y
+    binary_path:     /software/hgi/envs/conda/team354/xl7/topiary/bin/mpirun
+    binary runs:     Y
+    version:         4.1.6
+    minimum version: 0.0
+    passes:          Y
+
+
+----------------------------------------------------------------------
+
+topiary is starting a find_best_model calculation in ./00_find-model:
+
+
+Generating maximum parsimony tree.
+
+Launching raxml-ng, 0:00:00.019222 (H:M:S)
+Constructing set of possible models.
+Testing 360 models.
+, 0:00:00.172255 (H:M:S)
+
+Top 10 models:
+
+               model           AICc prob
+              JTT+G8               0.999
+        JTT-DCMut+G8               0.001
+              DEN+G8               0.000
+               LG+G8               0.000
+             HIVb+FO               0.000
+          HIVb+FO+IC               0.000
+          HIVb+FO+IO               0.000
+             HIVb+G8               0.000
+          HIVb+G8+IC               0.000
+          HIVb+G8+IO               0.000
+
+
+topiary ran a find_best_model calculation in ./00_find-model:
+
++ Completed in 0:15:32.781148 (H:M:S)
++ Wrote results to ./00_find-model/output
+
+----------------------------------------------------------------------
+
+
+
+------------------------------------------------------------
+Sender: LSF System <lsfadmin@node-13-11>
+Subject: Job 576957: <#!/bin/bash;#BSUB -G team354;#BSUB -n 10  # Requesting 10 threads (cores);#BSUB -M 80000  # Memory requirement (adjust as needed);#BSUB -R "select[mem>80000] rusage[mem=80000]" ;#BSUB -R "affinity[core(10)]";#BSUB -o /lustre/scratch126/gengen/projects/alpha-allostery-global/git-phylo-dms/00.inputs/02.src_topiary/ali2anc_src_090724_long_%J.out;#BSUB -e /lustre/scratch126/gengen/projects/alpha-allostery-global/git-phylo-dms/00.inputs/02.src_topiary/ali2anc_src_090724_long_%J.err;#BSUB -q long; #topiary-fasta-into-dataframe 05_clean-aligned-dataframe.csv 10_aligned_cleaned_trimed_sh3_sh2_kd.fasta final_dataframe_10.csv; conda activate  /software/hgi/envs/conda/team354/xl7/topiary; cd /lustre/scratch126/gengen/projects/alpha-allostery-global/git-phylo-dms/00.inputs/02.src_topiary; topiary-alignment-to-ancestors /lustre/scratch126/gengen/projects/alpha-allostery-global/git-phylo-dms/00.inputs/02.src_topiary/seed_to_ali/final_dataframe_10.csv --out_dir /lustre/scratch126/gengen/projects/alpha-allostery-global/git-phylo-dms/00.inputs/02.src_topiary/ali_to_anc_week --num_threads 10> in cluster <farm22> Exited
+
+Job <#!/bin/bash;#BSUB -G team354;#BSUB -n 10  # Requesting 10 threads (cores);#BSUB -M 80000  # Memory requirement (adjust as needed);#BSUB -R "select[mem>80000] rusage[mem=80000]" ;#BSUB -R "affinity[core(10)]";#BSUB -o /lustre/scratch126/gengen/projects/alpha-allostery-global/git-phylo-dms/00.inputs/02.src_topiary/ali2anc_src_090724_long_%J.out;#BSUB -e /lustre/scratch126/gengen/projects/alpha-allostery-global/git-phylo-dms/00.inputs/02.src_topiary/ali2anc_src_090724_long_%J.err;#BSUB -q long; #topiary-fasta-into-dataframe 05_clean-aligned-dataframe.csv 10_aligned_cleaned_trimed_sh3_sh2_kd.fasta final_dataframe_10.csv; conda activate  /software/hgi/envs/conda/team354/xl7/topiary; cd /lustre/scratch126/gengen/projects/alpha-allostery-global/git-phylo-dms/00.inputs/02.src_topiary; topiary-alignment-to-ancestors /lustre/scratch126/gengen/projects/alpha-allostery-global/git-phylo-dms/00.inputs/02.src_topiary/seed_to_ali/final_dataframe_10.csv --out_dir /lustre/scratch126/gengen/projects/alpha-allostery-global/git-phylo-dms/00.inputs/02.src_topiary/ali_to_anc_week --num_threads 10> was submitted from host <farm22-head1> by user <xl7> in cluster <farm22> at Sat Sep  7 11:58:41 2024
+Job was executed on host(s) <10*node-13-11>, in queue <long>, as user <xl7> in cluster <farm22> at Sat Sep  7 11:59:32 2024
+</nfs/users/nfs_x/xl7> was used as the home directory.
+</lustre/scratch126/gengen/projects/alpha-allostery-global/git-phylo-dms/00.inputs/02.src_topiary> was used as the working directory.
+Started at Sat Sep  7 11:59:32 2024
+Terminated at Sat Sep  7 12:15:33 2024
+Results reported at Sat Sep  7 12:15:33 2024
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#!/bin/bash
+#BSUB -G team354
+#BSUB -n 10  # Requesting 10 threads (cores)
+#BSUB -M 80000  # Memory requirement (adjust as needed)
+#BSUB -R "select[mem>80000] rusage[mem=80000]" 
+#BSUB -R "affinity[core(10)]"
+#BSUB -o /lustre/scratch126/gengen/projects/alpha-allostery-global/git-phylo-dms/00.inputs/02.src_topiary/ali2anc_src_090724_long_%J.out
+#BSUB -e /lustre/scratch126/gengen/projects/alpha-allostery-global/git-phylo-dms/00.inputs/02.src_topiary/ali2anc_src_090724_long_%J.err
+#BSUB -q long
+
+#topiary-fasta-into-dataframe 05_clean-aligned-dataframe.csv 10_aligned_cleaned_trimed_sh3_sh2_kd.fasta final_dataframe_10.csv
+
+conda activate  /software/hgi/envs/conda/team354/xl7/topiary
+
+cd /lustre/scratch126/gengen/projects/alpha-allostery-global/git-phylo-dms/00.inputs/02.src_topiary
+
+topiary-alignment-to-ancestors /lustre/scratch126/gengen/projects/alpha-allostery-global/git-phylo-dms/00.inputs/02.src_topiary/seed_to_ali/final_dataframe_10.csv --out_dir /lustre/scratch126/gengen/projects/alpha-allostery-global/git-phylo-dms/00.inputs/02.src_topiary/ali_to_anc_week --num_threads 10
+
+
+------------------------------------------------------------
+
+Exited with exit code 1.
+
+Resource usage summary:
+
+    CPU time :                                   8610.00 sec.
+    Max Memory :                                 1414 MB
+    Average Memory :                             1176.13 MB
+    Total Requested Memory :                     80000.00 MB
+    Delta Memory :                               78586.00 MB
+    Max Swap :                                   -
+    Max Processes :                              25
+    Max Threads :                                41
+    Run time :                                   962 sec.
+    Turnaround time :                            1012 sec.
+
+The output (if any) is above this job summary.
+
+
+
+PS:
+
+Read file </lustre/scratch126/gengen/projects/alpha-allostery-global/git-phylo-dms/00.inputs/02.src_topiary/ali2anc_src_090724_long_576957.err> for stderr output of this job.
+
