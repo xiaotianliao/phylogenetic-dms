@@ -1,0 +1,54 @@
+
+RAxML-NG v. 1.2.2 released on 11.04.2024 by The Exelixis Lab.
+Developed by: Alexey M. Kozlov and Alexandros Stamatakis.
+Contributors: Diego Darriba, Tomas Flouri, Benoit Morel, Sarah Lutteropp, Ben Bettisworth, Julia Haag, Anastasis Togkousidis.
+Latest version: https://github.com/amkozlov/raxml-ng
+Questions/problems/suggestions? Please visit: https://groups.google.com/forum/#!forum/raxml
+
+System: AMD EPYC 7713 64-Core Processor, 128 cores, 2015 GB RAM (allocated: 100 physical cores)
+
+RAxML-NG was called at 07-Sep-2024 13:32:58 as follows:
+
+/software/hgi/envs/conda/team354/xl7/topiary/bin/raxml-ng --start --msa alignment.phy --model LG --seed 2235532704 --threads 10 --tree pars{1}
+
+Analysis options:
+  run mode: Starting tree generation
+  start tree(s): parsimony (1)
+  random seed: 2235532704
+  SIMD kernels: AVX2
+  parallelization: coarse-grained (auto), PTHREADS (10 threads), thread pinning: OFF
+
+[00:00:00] Reading alignment from file: alignment.phy
+[00:00:00] Loaded alignment with 478 taxa and 922 sites
+
+WARNING: Sequences aEWFlmmkRx and FJlHZRAech are exactly identical!
+WARNING: Sequences wuRCFvRBvq and CgDXpfgQAU are exactly identical!
+WARNING: Sequences cOFHJAYSyO and kgARxlPZVK are exactly identical!
+WARNING: Duplicate sequences found: 3
+
+NOTE: Reduced alignment (with duplicates and gap-only sites/taxa removed) 
+NOTE: was saved to: /lustre/scratch126/gengen/projects/alpha-allostery-global/git-phylo-dms/00.inputs/02.src_topiary/ali_to_anc_09/00_find-model/working/max-parsimony/alignment.phy.raxml.reduced.phy
+
+Alignment comprises 1 partitions and 878 patterns
+
+Partition 0: noname
+Model: LG
+Alignment sites / patterns: 922 / 878
+Gaps: 39.01 %
+Invariant sites: 13.34 %
+
+
+NOTE: Binary MSA file created: alignment.phy.raxml.rba
+
+[00:00:00] Generating 1 parsimony starting tree(s) with 478 taxa
+Parallel parsimony with 10 threads
+
+All starting trees saved to: /lustre/scratch126/gengen/projects/alpha-allostery-global/git-phylo-dms/00.inputs/02.src_topiary/ali_to_anc_09/00_find-model/working/max-parsimony/alignment.phy.raxml.startTree
+
+
+Execution log saved to: /lustre/scratch126/gengen/projects/alpha-allostery-global/git-phylo-dms/00.inputs/02.src_topiary/ali_to_anc_09/00_find-model/working/max-parsimony/alignment.phy.raxml.log
+
+Analysis started: 07-Sep-2024 13:32:58 / finished: 07-Sep-2024 13:32:58
+
+Elapsed time: 0.172 seconds
+

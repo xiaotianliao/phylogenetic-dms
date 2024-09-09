@@ -1,0 +1,81 @@
+
+CondaError: Run 'conda init' before 'conda activate'
+
+/software/hgi/envs/conda/team354/xl7/topiary/lib/python3.11/site-packages/Bio/Application/__init__.py:39: BiopythonDeprecationWarning: The Bio.Application modules and modules relying on it have been deprecated.
+
+Due to the on going maintenance burden of keeping command line application
+wrappers up to date, we have decided to deprecate and eventually remove these
+modules.
+
+We instead now recommend building your command line and invoking it directly
+with the subprocess module.
+  warnings.warn(
+  0%|          | 0/360 [00:00<?, ?it/s]  0%|          | 1/360 [00:00<03:37,  1.65it/s]  1%|          | 3/360 [00:01<03:11,  1.87it/s]  2%|▏         | 7/360 [00:06<05:29,  1.07it/s]  2%|▏         | 8/360 [00:06<05:03,  1.16it/s]  2%|▎         | 9/360 [00:09<07:31,  1.29s/it]  3%|▎         | 10/360 [00:11<08:13,  1.41s/it]  3%|▎         | 11/360 [00:33<38:45,  6.66s/it]  3%|▎         | 12/360 [00:39<37:02,  6.39s/it]  4%|▍         | 16/360 [01:21<51:04,  8.91s/it]  9%|▉         | 34/360 [01:51<17:05,  3.15s/it] 14%|█▍        | 52/360 [02:14<11:07,  2.17s/it] 19%|█▉        | 70/360 [03:07<12:06,  2.50s/it] 24%|██▍       | 88/360 [03:26<08:48,  1.94s/it] 29%|██▉       | 104/360 [03:31<06:01,  1.41s/it] 29%|██▉       | 105/360 [03:47<07:48,  1.84s/it] 29%|██▉       | 106/360 [04:25<13:39,  3.23s/it] 30%|██▉       | 107/360 [05:08<22:32,  5.35s/it] 35%|███▍      | 125/360 [05:21<10:24,  2.66s/it] 39%|███▉      | 142/360 [05:25<05:50,  1.61s/it] 40%|███▉      | 143/360 [06:08<11:09,  3.09s/it] 40%|████      | 144/360 [06:19<12:28,  3.46s/it] 44%|████▍     | 160/360 [06:36<07:19,  2.20s/it] 49%|████▉     | 178/360 [06:58<05:19,  1.76s/it] 54%|█████▍    | 196/360 [07:34<05:04,  1.86s/it] 59%|█████▉    | 214/360 [08:37<05:58,  2.45s/it] 60%|█████▉    | 215/360 [10:42<14:08,  5.85s/it] 74%|███████▍  | 268/360 [11:02<03:16,  2.14s/it] 75%|███████▍  | 269/360 [11:04<03:13,  2.13s/it] 75%|███████▌  | 270/360 [11:10<03:20,  2.23s/it] 79%|███████▉  | 286/360 [11:27<02:14,  1.82s/it] 80%|███████▉  | 287/360 [11:31<02:16,  1.87s/it] 84%|████████▍ | 304/360 [11:50<01:26,  1.55s/it] 89%|████████▉ | 322/360 [13:10<01:42,  2.69s/it] 90%|████████▉ | 323/360 [13:23<01:51,  3.01s/it] 90%|█████████ | 324/360 [13:39<02:08,  3.57s/it] 99%|█████████▉| 358/360 [14:54<00:05,  2.65s/it]100%|██████████| 360/360 [14:54<00:00,  2.49s/it]
+Traceback (most recent call last):
+  File "/software/hgi/envs/conda/team354/xl7/topiary/lib/python3.11/site-packages/topiary/_private/interface.py", line 32, in wrapper
+    value = func(*args, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "/software/hgi/envs/conda/team354/xl7/topiary/lib/python3.11/site-packages/topiary/raxml/tree.py", line 137, in generate_ml_tree
+    return supervisor.finalize(successful=True,plot_if_success=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/software/hgi/envs/conda/team354/xl7/topiary/lib/python3.11/site-packages/topiary/_private/supervisor.py", line 654, in finalize
+    return topiary.draw.tree(calculation=self.calc_dir,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/software/hgi/envs/conda/team354/xl7/topiary/lib/python3.11/site-packages/topiary/draw/tree.py", line 181, in tree
+    pt = PrettyTree(T,
+         ^^^^^^^^^^^^^
+  File "/software/hgi/envs/conda/team354/xl7/topiary/lib/python3.11/site-packages/topiary/draw/prettytree.py", line 91, in __init__
+    if issubclass(type(T),toytree.tree):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: issubclass() arg 2 must be a class, a tuple of classes, or a union
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/software/hgi/envs/conda/team354/xl7/topiary/lib/python3.11/site-packages/topiary/_private/interface.py", line 32, in wrapper
+    value = func(*args, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "/software/hgi/envs/conda/team354/xl7/topiary/lib/python3.11/site-packages/topiary/pipeline/alignment_to_ancestors.py", line 343, in alignment_to_ancestors
+    topiary.generate_ml_tree(prev_calculation=prev_calculation,
+  File "/software/hgi/envs/conda/team354/xl7/topiary/lib/python3.11/site-packages/topiary/_private/interface.py", line 38, in wrapper
+    raise WrappedFunctionException(err) from e
+topiary._private.interface.WrappedFunctionException: 
+
+Caught exception in function 'generate_ml_tree'. Returning to starting
+directory and cleaning up. Check error stack for cause of
+this error.
+
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/software/hgi/envs/conda/team354/xl7/topiary/lib/python3.11/site-packages/topiary/_private/wrap.py", line 185, in wrap_function
+    ret = fcn(**fcn_args.__dict__)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/software/hgi/envs/conda/team354/xl7/topiary/lib/python3.11/site-packages/topiary/_private/interface.py", line 38, in wrapper
+    raise WrappedFunctionException(err) from e
+topiary._private.interface.WrappedFunctionException: 
+
+Caught exception in function 'alignment_to_ancestors'. Returning to starting
+directory and cleaning up. Check error stack for cause of
+this error.
+
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/software/hgi/envs/conda/team354/xl7/topiary/bin/topiary-alignment-to-ancestors", line 26, in <module>
+    main()
+  File "/software/hgi/envs/conda/team354/xl7/topiary/bin/topiary-alignment-to-ancestors", line 21, in main
+    wrap_function(alignment_to_ancestors,
+  File "/software/hgi/envs/conda/team354/xl7/topiary/lib/python3.11/site-packages/topiary/_private/wrap.py", line 189, in wrap_function
+    raise RuntimeError(err) from e
+RuntimeError: 
+
+Function alignment_to_ancestors raised an error.
+
+To see command line help, run topiary-alignment-to-ancestors --help
+
+

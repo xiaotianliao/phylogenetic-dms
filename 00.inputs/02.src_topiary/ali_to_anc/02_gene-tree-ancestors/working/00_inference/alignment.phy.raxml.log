@@ -1,0 +1,104 @@
+
+RAxML-NG v. 1.2.2 released on 11.04.2024 by The Exelixis Lab.
+Developed by: Alexey M. Kozlov and Alexandros Stamatakis.
+Contributors: Diego Darriba, Tomas Flouri, Benoit Morel, Sarah Lutteropp, Ben Bettisworth, Julia Haag, Anastasis Togkousidis.
+Latest version: https://github.com/amkozlov/raxml-ng
+Questions/problems/suggestions? Please visit: https://groups.google.com/forum/#!forum/raxml
+
+System: AMD EPYC 7713 64-Core Processor, 128 cores, 2015 GB RAM (allocated: 100 physical cores)
+
+RAxML-NG was called at 07-Sep-2024 15:47:38 as follows:
+
+/software/hgi/envs/conda/team354/xl7/topiary/bin/raxml-ng --ancestral --msa alignment.phy --tree tree.newick --model JTT+G8 --seed 8721918964 --threads 10
+
+Analysis options:
+  run mode: Ancestral state reconstruction
+  start tree(s): user
+  random seed: 8721918964
+  tip-inner: ON
+  pattern compression: OFF
+  per-rate scalers: OFF
+  site repeats: OFF
+  logLH epsilon: general: 0.100000, brlen-triplet: 1000.000000
+  branch lengths: proportional (ML estimate, algorithm: NR-FAST)
+  SIMD kernels: AVX2
+  parallelization: coarse-grained (auto), PTHREADS (10 threads), thread pinning: OFF
+
+[00:00:00] Reading alignment from file: alignment.phy
+[00:00:00] Loaded alignment with 468 taxa and 494 sites
+
+WARNING: Sequences RWjPNNOwoA and AcGVCmYRAe are exactly identical!
+WARNING: Sequences RWjPNNOwoA and HGMBNeoSRf are exactly identical!
+WARNING: Sequences aEWFlmmkRx and FJlHZRAech are exactly identical!
+WARNING: Sequences aEWFlmmkRx and PjrKFkoTJW are exactly identical!
+WARNING: Sequences aEWFlmmkRx and RIZRTtwIbZ are exactly identical!
+WARNING: Sequences yAeclotHgD and HYqyWYYllq are exactly identical!
+WARNING: Sequences yAeclotHgD and SGXOmVqJdI are exactly identical!
+WARNING: Sequences yAeclotHgD and ruNOMFzfbW are exactly identical!
+WARNING: Sequences yAeclotHgD and mgfbnrsaqk are exactly identical!
+WARNING: Sequences yAeclotHgD and fVcjwXYrSo are exactly identical!
+WARNING: Sequences yAeclotHgD and ARxtPvCwRs are exactly identical!
+WARNING: Sequences yAeclotHgD and tVYNvxirRH are exactly identical!
+WARNING: Sequences yAeclotHgD and kTbshfrTFr are exactly identical!
+WARNING: Sequences yAeclotHgD and lAhFyCaHhw are exactly identical!
+WARNING: Sequences yAeclotHgD and lVSpEhxxrY are exactly identical!
+WARNING: Sequences GVdinLCwRb and WxozCwLmHK are exactly identical!
+WARNING: Sequences cCVOQZjVPU and nYgYpSiEee are exactly identical!
+WARNING: Sequences wuRCFvRBvq and CgDXpfgQAU are exactly identical!
+WARNING: Sequences wuRCFvRBvq and jFDKMxbecU are exactly identical!
+WARNING: Sequences cOFHJAYSyO and kgARxlPZVK are exactly identical!
+WARNING: Sequences vhtOFFFkFW and HHHYIuPDuD are exactly identical!
+WARNING: Sequences DmMidyXKTE and AlUZrCvuqA are exactly identical!
+WARNING: Sequences WLWUhWUBcM and QkyQvniPYT are exactly identical!
+WARNING: Sequences WLWUhWUBcM and iWVgelljJZ are exactly identical!
+WARNING: Duplicate sequences found: 24
+
+NOTE: Reduced alignment (with duplicates and gap-only sites/taxa removed) 
+NOTE: was saved to: /lustre/scratch126/gengen/projects/alpha-allostery-global/git-phylo-dms/00.inputs/02.src_topiary/ali_to_anc/02_gene-tree-ancestors/working/00_inference/alignment.phy.raxml.reduced.phy
+
+Alignment comprises 1 partitions and 494 sites
+
+Partition 0: noname
+Model: JTT+G8m
+Alignment sites: 494
+Gaps: 10.04 %
+Invariant sites: 11.54 %
+
+
+NOTE: Binary MSA file created: alignment.phy.raxml.rba
+
+Parallelization scheme autoconfig: 1 worker(s) x 10 thread(s)
+
+[00:00:00] Loading user starting tree(s) from: tree.newick
+Parallel reduction/worker buffer size: 1 KB  / 0 KB
+
+[00:00:00] Data distribution: max. partitions/sites/weight per thread: 1 / 50 / 8000
+[00:00:00] Data distribution: max. searches per worker: 1
+
+Starting ML tree search with 1 distinct starting trees
+
+[00:00:00] Tree #1, initial LogLikelihood: -79011.151711
+
+[00:00:00 -79011.151711] Initial branch length optimization
+[00:00:00 -79010.230456] Model parameter optimization (eps = 0.100000)
+
+[00:00:02] Tree #1, final logLikelihood: -78978.108457
+
+
+Optimized model parameters:
+
+   Partition 0: noname
+   Rate heterogeneity: GAMMA (8 cats, mean),  alpha: 0.764887 (ML),  weights&rates: (0.125000,0.034384) (0.125000,0.141753) (0.125000,0.292838) (0.125000,0.492368) (0.125000,0.758862) (0.125000,1.134597) (0.125000,1.736799) (0.125000,3.408398) 
+   Base frequencies (model): 0.076748 0.051691 0.042645 0.051544 0.019803 0.040752 0.061830 0.073152 0.022944 0.053761 0.091904 0.058676 0.023826 0.040126 0.050901 0.068765 0.058565 0.014261 0.032102 0.066005 
+   Substitution rates (model): 58.000000 54.000000 81.000000 56.000000 57.000000 105.000000 179.000000 27.000000 36.000000 30.000000 35.000000 54.000000 15.000000 194.000000 378.000000 475.000000 9.000000 11.000000 298.000000 45.000000 16.000000 113.000000 310.000000 29.000000 137.000000 328.000000 22.000000 38.000000 646.000000 44.000000 5.000000 74.000000 101.000000 64.000000 126.000000 20.000000 17.000000 528.000000 34.000000 86.000000 58.000000 81.000000 391.000000 47.000000 12.000000 263.000000 30.000000 10.000000 15.000000 503.000000 232.000000 8.000000 70.000000 16.000000 10.000000 49.000000 767.000000 130.000000 112.000000 11.000000 7.000000 26.000000 15.000000 4.000000 15.000000 59.000000 38.000000 4.000000 46.000000 31.000000 9.000000 5.000000 59.000000 69.000000 17.000000 23.000000 7.000000 31.000000 78.000000 14.000000 223.000000 42.000000 115.000000 209.000000 62.000000 323.000000 26.000000 597.000000 9.000000 72.000000 292.000000 43.000000 4.000000 164.000000 53.000000 51.000000 18.000000 24.000000 20.000000 119.000000 26.000000 12.000000 9.000000 181.000000 18.000000 5.000000 18.000000 30.000000 32.000000 10.000000 7.000000 45.000000 23.000000 6.000000 6.000000 27.000000 14.000000 5.000000 24.000000 201.000000 33.000000 55.000000 8.000000 47.000000 16.000000 56.000000 45.000000 33.000000 40.000000 115.000000 73.000000 46.000000 8.000000 573.000000 11.000000 229.000000 21.000000 479.000000 89.000000 10.000000 40.000000 245.000000 9.000000 32.000000 961.000000 14.000000 388.000000 248.000000 102.000000 59.000000 25.000000 52.000000 24.000000 180.000000 65.000000 4.000000 21.000000 47.000000 103.000000 10.000000 8.000000 14.000000 43.000000 16.000000 29.000000 226.000000 24.000000 18.000000 323.000000 17.000000 92.000000 12.000000 53.000000 536.000000 62.000000 285.000000 118.000000 6.000000 10.000000 23.000000 477.000000 35.000000 63.000000 38.000000 12.000000 21.000000 112.000000 71.000000 25.000000 16.000000 
+
+Marginal ancestral probabilities saved to: /lustre/scratch126/gengen/projects/alpha-allostery-global/git-phylo-dms/00.inputs/02.src_topiary/ali_to_anc/02_gene-tree-ancestors/working/00_inference/alignment.phy.raxml.ancestralProbs
+Reconstructed ancestral sequences saved to: /lustre/scratch126/gengen/projects/alpha-allostery-global/git-phylo-dms/00.inputs/02.src_topiary/ali_to_anc/02_gene-tree-ancestors/working/00_inference/alignment.phy.raxml.ancestralStates
+Node-labeled tree saved to: /lustre/scratch126/gengen/projects/alpha-allostery-global/git-phylo-dms/00.inputs/02.src_topiary/ali_to_anc/02_gene-tree-ancestors/working/00_inference/alignment.phy.raxml.ancestralTree
+
+Execution log saved to: /lustre/scratch126/gengen/projects/alpha-allostery-global/git-phylo-dms/00.inputs/02.src_topiary/ali_to_anc/02_gene-tree-ancestors/working/00_inference/alignment.phy.raxml.log
+
+Analysis started: 07-Sep-2024 15:47:38 / finished: 07-Sep-2024 15:47:42
+
+Elapsed time: 4.676 seconds
+
